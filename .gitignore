@@ -1,0 +1,15 @@
+/**/.DS_Store
+/.idea
+/.vscode
+/**/node_modules
+
+
+/tmp.html
+/examples_html/emails/temp/
+/packages/CharcodeConverter/tmp_data_gitignored/
+
+/gen_Countries_and_languges_code_and_name.html
+/gen_LanguagesCodes_and_Countries.html
+/gen_UnicodeCharsFilteredData.html
+
+
