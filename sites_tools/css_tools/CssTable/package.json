@@ -1,0 +1,51 @@
+{
+  "name": "@jaisocx/css-table",
+  "version": "3.3.1",
+  "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types",
+  "author": "Jaisocx Company",
+  "keywords": [
+    "css",
+    "styles"
+  ],
+  "files": [
+    "index.example.html",
+    "css_table.example.html",
+    "css_table.theme_imaged.example.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/columns",
+    "MediaAndStyles/presets",
+    "MediaAndStyles/themes",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "webpack.aliases.json",
+
+    "README.md"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "~1.1.5"
+  }
+}
+
+
+

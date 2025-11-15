@@ -1,0 +1,45 @@
+{
+  "name": "@jaisocx/email-html-inliner",
+  "version": "1.3.7",
+  "keywords": [
+    "inline",
+    "css",
+    "styles",
+    "html",
+    "email"
+  ],
+  "description": "",
+  "author": "Jaisocx",
+  "private": false,
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "webpack.aliases.json",
+    "EmailHtmlInliner_Images.html",
+    "README.md",
+    "README_WEBPACK.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "optionalDependencies": {
+    "@jaisocx/text": "^1.2.2",
+    "@jaisocx/css-html": "^1.3.5"
+  }
+}

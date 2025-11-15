@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx theme_visible_height">
+<head>
+
+  <title>Css Table</title>
+
+  <base href="./">
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+    <!--# FAVICON -->
+    <!-- <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://sandbox.brightday.email/cdn/www/media/images/favicon/Icon_Jaisocx.ico"
+      href-fallback="favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
+    /> -->
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://sandbox.brightday.email/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico"
+      href-fallback="favicon/Icon_Sandbox_Brightday.ico"
+      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
+    />
+
+
+
+    <!--# FONTS PRELOAD WITHOUT JAVASCRIPT CALL -->
+    <link
+      fetchpriority="high"
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="https://sandbox.brightday.email/cdn/www/fonts/LibreFranklin/static/LibreFranklin-SemiBold.ttf"
+    />
+
+    <link
+      fetchpriority="high"
+      rel="preload"
+      as="font"
+      type="font/ttf"
+      href="https://sandbox.brightday.email/cdn/www/fonts/LibreFranklin/static/LibreFranklin-Regular.ttf"
+    />
+
+    <!--# CSS FOR FONTS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://sandbox.brightday.email/cdn/www/fonts_css/font_LibreFranklin_cdn.css"
+    />
+
+
+
+    <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+
+    <!--# importing @jaisocx/css-clean-start-2 IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB  -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
+      href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
+      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
+    /> -->
+
+    <!--# THE SAME importing @jaisocx/css-clean-start-2 IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved_minimal.css"
+      href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved_minimal.css"
+      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
+    />
+
+
+
+    <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+
+    <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/CssCleanStart_2_main_relative.css"
+    /> -->
+
+    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/CssTable_main_resolved_minimal.css"
+    />
+
+
+
+
+
+  <style>
+
+    .jsx {
+      --jsx--css-clean-start-2--site--padding: 2rem 1rem 3rem 1rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
+
+      --theme-button-width: fit-content;
+    }
+
+    @media screen and (orientation: portrait) {
+      .jsx description {
+        display: none;
+      }
+    }
+
+
+    .jsx main content {
+      /* padding: 1rem 1rem 1rem 1rem; */
+    }
+
+    .jsx themebuttons {
+      width: fit-content;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 3rem;
+      margin: 0.9rem 0px 1.6rem 0px;
+    }
+
+    .jsx themebuttons button {
+      width: var(--theme-button-width);
+    }
+
+    .current::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      border-bottom-width: 0.14rem;
+      border-bottom-style: solid;
+      border-bottom-color: var(--clean-start__text-color);
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    #tooltip-button {
+      font-family: fantasy;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <main>
+
+    <content>
+
+      <h1>Css Table 12 fields</h1>
+      <h2>@jaisocx/css-table</h2>
+      <h3>index.example.html</h3>
+      <description>
+        Css sites tool styling a server side rendered database table data to a grid view,
+        with solutions for scrolling and columns styling based on fileds values data types.
+      </description>
+
+      <ThemeButtons>
+        <button id="button-turn-on-base-theme" data-theme="">Base Theme</button>
+        <button id="button-turn-on-daymode" data-theme="theme_lightmode">Day Mode</button>
+        <button id="button-turn-on-nightmode" data-theme="theme_darkmode">Night Mode</button>
+      </ThemeButtons>
+
+    </content>
+
+
+
+  <!-- THE WORKAROUND TO BREAK URLS AFTER THE SLASH SYMBOL: THE ZERO LENGTH WHITESPACE SPECIAL CHAR: &#8203; -->
+
+  <div class="jsx-css-table-holder example-table-columns-12 theme_fixed_columns_labels">
+
+    <div class="jsx-css-table desktop-columns-labels-holder">
+      <div class="row">
+        <div class="cell"><span class="column-label">attribute</span></div>
+        <div class="cell"><span class="column-label">type</span></div>
+        <div class="cell"><span class="column-label">long text 1</span></div>
+        <div class="cell"><span class="column-label">long text 2</span></div>
+        <div class="cell"><span class="column-label">long text 3</span></div>
+        <div class="cell"><span class="column-label">values</span></div>
+        <div class="cell"><span class="column-label">description</span></div>
+        <div class="cell"><span class="column-label">attribute</span></div>
+        <div class="cell"><span class="column-label">type</span></div>
+        <div class="cell"><span class="column-label">values</span></div>
+        <div class="cell"><span class="column-label">values</span></div>
+        <div class="cell"><span class="column-label">description</span></div>
+      </div>
+    </div>
+
+    <div class="jsx-css-table records">
+      <div class="row">
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">
+            port</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">number</span></div>
+        <div class="cell"><span class="column-label">long text 1</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/&#8203;MediaAndStyles/themes/theme-lightmode/clean-start-theme-lightmode-webpack.css</span></div>
+        <div class="cell"><span class="column-label">long text 2</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-lightmode</span></div>
+        <div class="cell"><span class="column-label">long text 3</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 443</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 443</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">the port number for the server to accept
+            browsers' connections</span>
+        </div>
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">
+          port</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">number</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 443</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">the port number for the server to accept
+            browsers' connections</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">
+            alternative-port</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">number</span></div>
+        <div class="cell"><span class="column-label">long text 1</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-lightmode</span></div>
+        <div class="cell"><span class="column-label">long text 2</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-lightmode/clean-start-theme-lightmode-webpack.css</span></div>
+        <div class="cell"><span class="column-label">long text 3</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-lightmode/clean-start-theme-lightmode-webpack.css</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 8443</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">for development and testing purposes
+            only. if default port is busy,
+            then the server starts listening on the alternative port.</span></div>
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">
+          alternative-port</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">number</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 8443</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 443</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">for development and testing purposes
+            only. if default port is busy,
+            then the server starts listening on the alternative port.</span></div>
+      </div>
+      <div class="row">
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">secure</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">boolean</span></div>
+        <div class="cell"><span class="column-label">long text 1</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart</span></div>
+        <div class="cell"><span class="column-label">long text 2</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart</span></div>
+        <div class="cell"><span class="column-label">long text 3</span><span class="cell-value">https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-lightmode/clean-start-theme-lightmode-webpack.css</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">true | false</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">please specify, where to use HTTPS
+            secured connection with TLS or not.</span>
+        </div>
+        <div class="cell"><span class="column-label">attribute</span><span class="cell-value">secure</span></div>
+        <div class="cell"><span class="column-label">type</span><span class="cell-value">boolean</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">true | false</span></div>
+        <div class="cell"><span class="column-label">values</span><span class="cell-value">e.g. 443</span></div>
+        <div class="cell"><span class="column-label">description</span><span class="cell-value">please specify, where to use HTTPS
+            secured connection with TLS or not.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+
+
+  <script>
+
+    let currentButtonNodeClicked = null;
+
+
+    let cssClassesNames = [
+      "jsx",
+      "theme_visible_height"
+    ];
+
+
+
+    // declaring the function, this is used in the event handler of the theme turning button when clicked on this button.
+    function turnOnTheme ( buttonNodeClicked ) {
+
+      if ( currentButtonNodeClicked !==  null ) {
+        currentButtonNodeClicked.classList.remove( "current" );
+      }
+
+      const htmlNode = document.getElementsByTagName("html")[0];
+      const htmlNodeClassList = htmlNode.classList;
+
+      const themeCssClassPrefix = "theme";
+
+      htmlNodeClassList.forEach (
+        (cssClassName) => {
+          if ( cssClassesNames.includes( cssClassName ) ) {
+            return;
+          }
+
+          if ( cssClassName.startsWith( themeCssClassPrefix ) === true ) {
+            htmlNodeClassList.remove( cssClassName );
+          }
+        }
+      );
+
+      const themeName = buttonNodeClicked.dataset.theme;
+      if ( themeName && ( themeName.length !== 0 ) ) {
+        htmlNode.classList.add( themeName );
+      }
+
+      currentButtonNodeClicked = buttonNodeClicked;
+      currentButtonNodeClicked.classList.add( "current" );
+
+    }
+
+    // declaring the function, this adds to buttons the event handler to turn on the theme.
+    // this function is invoked when the site loads in the browser,
+    // in the event handler for the event DOMContentLoaded
+    function addThemeButtonsEventHandlers() {
+
+      const buttonsIDs = [
+        "button-turn-on-base-theme",
+        "button-turn-on-daymode",
+        "button-turn-on-nightmode"
+      ];
+
+      for ( let buttonId of buttonsIDs ) {
+
+        let buttonNode = document.getElementById( buttonId );
+
+        buttonNode.addEventListener (
+          "click",
+          (evt) => {
+            let buttonNodeClicked = evt.target;
+            turnOnTheme ( buttonNodeClicked );
+          }
+        );
+
+      }
+    }
+
+
+
+    // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // adding to buttons the event handler to turn on the theme.
+      addThemeButtonsEventHandlers();
+
+    });
+
+  </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

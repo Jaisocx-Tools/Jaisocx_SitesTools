@@ -1,0 +1,121 @@
+/* Main .css file for the sites tool: jsx-css-table-holder */
+
+/* IN THIS TABLE LAYOUT FIELDS IN A RECORD ARE PLACED IN ONE LINE. */
+/* display size tablet sm and bigger */
+@media only screen and (min-width: 1025px) {
+
+  .jsx-css-table-holder .jsx-css-table {
+    display:                   grid;
+    grid-template-columns:     100%;
+    justify-content:           var(--jsx--CssTable--bright--grid--justify-content);
+    align-content:             var(--jsx--CssTable--bright--grid--align-content);
+  }
+
+
+  /* .jsx-css-table-holder .jsx-css-table.desktop-columns-labels-holder .row {
+    display:                   flex;
+  } */
+
+  /* THE COLUMN LABEL, SHOWN IN MOBILE VIEW ON THE LEFT SIDE, here hides in the desktop view */
+  .jsx-css-table-holder .jsx-css-table.records .row .column-label {
+    display:                   none;
+  }
+
+
+  .jsx-css-table-holder .row {
+    display:                   grid;
+    grid-template-columns:     var(--jsx--CssTable--bright--grid-template-columns);
+    gap:                       var(--jsx--CssTable--bright--grid--row--gap);
+    justify-content:           var(--jsx--CssTable--bright--grid--row--justify-content);
+    align-content:             var(--jsx--CssTable--bright--grid--row--align-content);
+  }
+
+  .jsx-css-table-holder .cell:first-of-type {
+    border-left-width:         0;
+  }
+  .jsx-css-table-holder .cell:last-of-type {
+    flex-grow:                 1;
+  }
+
+  /* STYLES FOR ALL SPAN TAGS IN THE TABLE CELL. IN THE DESKTOP VIEW THERE IS JUST ONE SPAN WITH THE VALUE. COLUMN LABEL HIDES. */
+  .jsx-css-table-holder .jsx-css-table.desktop-columns-labels-holder .row .cell,
+  .jsx-css-table-holder .jsx-css-table.desktop-columns-labels-holder .row .cell .column-label {
+    width:                    100%;
+    max-width:                unset;
+    min-width:                unset;
+    display:                  flex;
+  }
+
+  .jsx-css-table-holder .cell,
+  .jsx-css-table-holder .cell .cell-value {
+    width:                    100%;
+    max-width:                unset;
+    min-width:                unset;
+  }
+
+
+
+
+
+  /* column labels have another look and feel */
+  .jsx-css-table-holder .jsx-css-table.desktop-columns-labels-holder .row .cell .column-label {
+    font-family:              var(--jsx--CssTable--bright--cell--column-label--font-family);
+    font-size:                var(--jsx--CssTable--bright--cell--column-label--font-size);
+    font-weight:              var(--jsx--CssTable--bright--cell--column-label--font-weight);
+    line-height:              var(--jsx--CssTable--bright--cell--column-label--line-height);
+    letter-spacing:           var(--jsx--CssTable--bright--cell--column-label--letter-spacing);
+    text-align:               var(--jsx--CssTable--bright--cell--column-label--text-align);
+
+    padding:                  var(--jsx--CssTable--bright--cell--column-label--padding);
+
+    color:                    var(--jsx--CssTable--bright--cell--column-label--color);
+    background-color:         var(--jsx--CssTable--bright--cell--column-label--background-color);
+
+    /*
+    background-image:         var(--jsx--CssTable--bright--cell--column-label--background-image);
+    background-position:      var(--jsx--CssTable--bright--cell--column-label--background-position);
+    background-size:          var(--jsx--CssTable--bright--cell--column-label--background-size);
+    background-repeat:        var(--jsx--CssTable--bright--cell--column-label--background-repeat);
+    background-origin:        var(--jsx--CssTable--bright--cell--column-label--background-origin);
+    background-clip:          var(--jsx--CssTable--bright--cell--column-label--background-clip);
+    background-attachment:    var(--jsx--CssTable--bright--cell--column-label--background-attachment);
+    */
+
+    line-break:               var(--jsx--CssTable--bright--cell--column-label--line-break);
+    word-break:               var(--jsx--CssTable--bright--cell--column-label--word-break);
+
+  }
+
+
+  /* cell values have another look and feel */
+  .jsx-css-table-holder .cell .cell-value {
+    font-family:              var(--jsx--CssTable--bright--cell--cell-value--font-family);
+    font-size:                var(--jsx--CssTable--bright--cell--cell-value--font-size);
+    font-weight:              var(--jsx--CssTable--bright--cell--cell-value--font-weight);
+    line-height:              var(--jsx--CssTable--bright--cell--cell-value--line-height);
+    letter-spacing:           var(--jsx--CssTable--bright--cell--cell-value--letter-spacing);
+    text-align:               var(--jsx--CssTable--bright--cell--cell-value--text-align);
+
+    padding:                  var(--jsx--CssTable--bright--cell--cell-value--padding);
+
+    color:                    var(--jsx--CssTable--bright--cell--cell-value--color);
+    background-color:         var(--jsx--CssTable--bright--cell--cell-value--background-color);
+
+    /*
+    background-image:         var(--jsx--CssTable--bright--cell--cell-value--background-image);
+    background-position:      var(--jsx--CssTable--bright--cell--cell-value--background-position);
+    background-size:          var(--jsx--CssTable--bright--cell--cell-value--background-size);
+    background-repeat:        var(--jsx--CssTable--bright--cell--cell-value--background-repeat);
+    background-origin:        var(--jsx--CssTable--bright--cell--cell-value--background-origin);
+    background-clip:          var(--jsx--CssTable--bright--cell--cell-value--background-clip);
+    background-attachment:    var(--jsx--CssTable--bright--cell--cell-value--background-attachment);
+    */
+
+    line-break:               var(--jsx--CssTable--bright--cell--cell-value--line-break);
+    word-break:               var(--jsx--CssTable--bright--cell--cell-value--word-break);
+
+  }
+
+}
+
+

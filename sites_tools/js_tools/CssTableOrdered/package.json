@@ -1,0 +1,52 @@
+{
+  "name": "@jaisocx/css-table-ordered",
+  "version": "2.3.2",
+  "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for sticky scroll and order by on columns via browser's js engine",
+  "author": "Jaisocx",
+  "keywords": [
+    "table",
+    "order_by",
+    "css",
+    "styles",
+    "ui"
+  ],
+  "files": [
+    "index.example.html",
+    "css_table_ordered_3_records.example.html",
+    "css_table_ordered.example.html",
+    "css_table_ordered.jaisocx_folder_listing.example.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+
+    "webpack.aliases.json",
+
+    "README.md"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "~1.1.5",
+    "@jaisocx/css-table": "~3.3.1"
+  }
+}

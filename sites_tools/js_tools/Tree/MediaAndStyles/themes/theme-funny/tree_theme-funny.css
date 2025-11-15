@@ -1,0 +1,29 @@
+
+
+.jsx.theme-funny .tree,
+.jsx .theme-funny .tree,
+.jsx .theme-funny.tree,
+.theme-funny .tree,
+.theme-funny.tree {
+  --node-label--font-family: Niconne;
+}
+
+
+
+.theme-funny .tree > ul > li > pre > pre.jstree-html-node-holder-icon.icon-show,
+.tree.theme-funny > ul > li > pre > pre.jstree-html-node-holder-icon.icon-show
+{
+  --datatype-array--image-url: url('./themes/theme-funny/mini-images/data-types/house.png');
+  --datatype-object--image-url: url('./themes/theme-funny/mini-images/data-types/house.png');
+}
+
+.theme-funny .tree,
+.tree.theme-funny {
+  --datatype-array--image-url: url('./themes/theme-funny/mini-images/data-types/house.png');
+  --datatype-object--image-url: url('./themes/theme-funny/mini-images/data-types/house.png');
+  --datatype-number--image-url: url('./themes/theme-funny/mini-images/data-types/track.png');
+  --datatype-string--image-url: url('./themes/theme-funny/mini-images/data-types/money-transfer.png');
+  --datatype-boolean--image-url: url('./themes/theme-funny/mini-images/data-types/track.png');
+}
+
+

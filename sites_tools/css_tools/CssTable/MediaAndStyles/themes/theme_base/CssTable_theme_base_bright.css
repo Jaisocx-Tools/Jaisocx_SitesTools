@@ -1,0 +1,69 @@
+/* Sites tool: CssTable, theme: theme_base */
+.jsx-css-table-holder {
+
+  --jsx--CssTable--bright--grid--justify-content:                       start;
+  --jsx--CssTable--bright--grid--align-content:                         start;
+
+  --jsx--CssTable--bright--grid--row--gap:                              0;
+  --jsx--CssTable--bright--grid--row--justify-content:                  start;
+  --jsx--CssTable--bright--grid--row--align-content:                    start;
+
+
+
+
+/* padding */
+  /* --jsx--CssTable--bright--cell--padding:                                0.3rem 0.9rem; */
+  --jsx--CssTable--bright--cell--column-label--padding-x:                0.72rem;
+
+
+
+
+/* column label padding */
+  /* --jsx--CssTable--bright--cell--column-label--padding:                  var(--jsx--CssTable--bright--cell--padding); */
+  --jsx--CssTable--bright--cell--column-label--padding:                  0.95rem var(--jsx--CssTable--bright--cell--column-label--padding-x);
+
+/* column label colors */
+  --jsx--CssTable--bright--cell--column-label--color:                    var(--jsx--CssTable--cell--column-label--color);
+  --jsx--CssTable--bright--cell--column-label--background-color:         var(--jsx--CssTable--cell--column-label--background-color);
+
+/* column label font */
+  --jsx--CssTable--bright--cell--column-label--font-family:              var(--jsx--CssTable--cell--column-label--font-family);
+
+  --jsx--CssTable--bright--cell--column-label--font-weight:              800;
+  --jsx--CssTable--bright--cell--column-label--font-size:                0.7rem;
+  --jsx--CssTable--bright--cell--column-label--line-height:              1.2rem;
+  --jsx--CssTable--bright--cell--column-label--letter-spacing:           0.08rem;
+  --jsx--CssTable--bright--cell--column-label--text-align:               left;
+
+  --jsx--CssTable--bright--cell--column-label--line-break:               normal;
+  --jsx--CssTable--bright--cell--column-label--word-break:               break-word;
+
+
+
+
+
+/* cell value padding */
+  /* --jsx--CssTable--bright--cell--cell-value--padding:                    var(--jsx--CssTable--bright--cell--padding); */
+  --jsx--CssTable--bright--cell--cell-value--padding:                    0.9rem var(--jsx--CssTable--bright--cell--column-label--padding-x);
+
+/* cell value colors */
+  --jsx--CssTable--bright--cell--cell-value--color:                      var(--jsx--CssTable--cell--cell-value--color);
+  --jsx--CssTable--bright--cell--cell-value--background-color:           var(--jsx--CssTable--cell--cell-value--background-color);
+
+/* cell value font */
+  --jsx--CssTable--bright--cell--cell-value--font-family:                var(--jsx--CssTable--cell--cell-value--font-family);
+
+  --jsx--CssTable--bright--cell--cell-value--font-weight:                400;
+  --jsx--CssTable--bright--cell--cell-value--font-size:                  0.85rem;
+  --jsx--CssTable--bright--cell--cell-value--line-height:                1.4rem;
+  --jsx--CssTable--bright--cell--cell-value--letter-spacing:             0;
+  --jsx--CssTable--bright--cell--cell-value--text-align:                 left;
+
+  --jsx--CssTable--bright--cell--cell-value--line-break:                 normal;
+  --jsx--CssTable--bright--cell--cell-value--word-break:                 break-word;
+
+}
+
+
+
+

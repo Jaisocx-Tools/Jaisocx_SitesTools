@@ -1,0 +1,30 @@
+{
+  "name": "@jaisocx/event-emitter",
+  "version": "1.4.2",
+  "author": "Jaisocx",
+  "private": false,
+  "description": "",
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "README.md"
+  ],
+  "keywords": [
+    "event",
+    "efficiency",
+    "improval"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC"
+}

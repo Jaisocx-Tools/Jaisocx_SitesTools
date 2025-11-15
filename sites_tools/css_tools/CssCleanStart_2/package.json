@@ -1,0 +1,51 @@
+{
+  "name": "@jaisocx/css-clean-start-2",
+  "version": "1.2.1",
+  "description": "Css sites resetting default styles with main.css of few hundereds css code lines, and the very nice infrastructure for responsive sites bugfixing and fine-tuning",
+  "author": "Jaisocx Company",
+  "keywords": [
+    "css",
+    "styles"
+  ],
+  "files": [
+    "favicon",
+
+    "index.example.html",
+    "css_clean_start_2.example.html",
+    "responsive_sizes.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "webpack.aliases.json",
+
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/responsive-sizes": "~1.3.2"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}
+
+
+

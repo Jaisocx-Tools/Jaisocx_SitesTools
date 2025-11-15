@@ -1,0 +1,45 @@
+{
+  "name": "@jaisocx/sites-tool-automation",
+  "version": "2.1.6",
+  "author": "Jaisocx",
+  "private": false,
+  "description": "Produces filesset for the quality improval in the responsive layout development and bugfixing",
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    }
+  },
+  "files": [
+    "bash",
+    "data",
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "responsive_sizes_user_friendly_view.html",
+    "README.md"
+  ],
+  "keywords": [
+    "responsive",
+    "js",
+    "mobile",
+    "display",
+    "css",
+    "styles",
+    "ui"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "optionalDependencies": {
+    "@jaisocx/file-writer": "~1.2.7",
+    "@jaisocx/template-renderer": "~1.6.1",
+    "@jaisocx/css-importer": "~1.4.1"
+  }
+}
+
+
+

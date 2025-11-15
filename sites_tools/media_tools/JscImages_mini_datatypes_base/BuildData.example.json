@@ -1,0 +1,9 @@
+    {
+      "path": "sites_tools/media_tools/JscImages_mini_datatypes_base",
+      "name": "image-mini-datatypes-base",
+      "update-published": "",
+      "build": true,
+      "build-simple-enable": false,
+      "dependencies": [],
+      "build-files": []
+    }

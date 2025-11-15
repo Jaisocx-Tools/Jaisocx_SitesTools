@@ -1,0 +1,59 @@
+{
+  "name": "@jaisocx/media_tools_images_mini_freepic_kawaii",
+  "version": "1.0.1",
+  "description": "",
+  "author": "Jaisocx Company",
+  "keywords": [
+    "css",
+    "styles",
+    "themes",
+    "images",
+    "mini-images"
+  ],
+  "files": [
+    "index.preview.html",
+    "prod_jsc_img_mini_freepic_kawaii__preview.html",
+    "dev_jsc_img_mini_freepic_kawaii__preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/images",
+    "MediaAndStyles/scss",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "webpack.aliases.json",
+
+    "README.md"
+  ],
+  "scripts": {
+    "build:sass": "/var/www/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
+  },
+  "peerDependencies": {
+    "sass": "^1.89.2"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "~1.1.10"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}
+
+
+

@@ -1,0 +1,25 @@
+{
+  "name": "@jaisocx/example-template-renderer",  
+  "version": "1.2.5",
+  "private": false,
+  "description": "",
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "MediaAndStyles/",
+    "README.md",
+    "LICENSE"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/template-renderer": "^1.5.6"
+  }
+}
+

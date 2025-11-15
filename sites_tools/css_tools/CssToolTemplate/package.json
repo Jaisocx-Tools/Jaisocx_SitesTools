@@ -1,0 +1,48 @@
+{
+  "name": "@jaisocx/css-tool-template",
+  "version": "2.1.4",
+  "description": "Two simple html blocks styles with base template and example for responsive styling and color themes. The infrastructure files are here for the webpack, typescript and publications on npm.",
+  "author": "Jaisocx Company",
+  "keywords": [
+    "css"
+  ],
+  "files": [
+    "index.example.html",
+    "css_tool_template.example.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+
+    "webpack.aliases.json",
+
+    "README.md"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "dependencies": {
+    "@jaisocx/css-clean-start-2": "~1.1.5"
+  }
+}
+
+
+

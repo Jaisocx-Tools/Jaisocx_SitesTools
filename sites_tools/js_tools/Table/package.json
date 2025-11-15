@@ -1,0 +1,34 @@
+{
+  "name": "@jaisocx/table",
+  "version": "1.2.1",
+  "private": false,
+  "description": "",
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "MediaAndStyles/",
+    "README.md",
+    "LICENSE"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/event-emitter": "^1.4.x",
+    "@jaisocx/template-renderer": "^1.4.x"
+  },
+  "keywords": [
+    "json",
+    "table"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Jaisocx",
+  "license": "ISC"
+}

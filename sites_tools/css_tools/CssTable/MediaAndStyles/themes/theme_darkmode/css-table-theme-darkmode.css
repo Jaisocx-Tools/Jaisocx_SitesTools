@@ -1,0 +1,28 @@
+/* theme-darkmode */
+
+.jsx.theme_darkmode .jsx-css-table-holder,
+.jsx .theme_darkmode.jsx-css-table-holder {
+
+  color-scheme: dark;
+
+/* borders */
+  --jsx--CssTable--border-color:                             #7ad;
+
+
+
+/* column label */
+  --jsx--CssTable--cell--column-label--color:                #a6e2ff;
+  --jsx--CssTable--cell--column-label--background-color:     #12203d;
+
+
+
+/* cell value */
+  --jsx--CssTable--cell--cell-value--color:                  #e0f2ff;
+  --jsx--CssTable--cell--cell-value--background-color:       #02102d;
+
+  --jsx--CssTable--cell--cell-value--a--color:               #a6e2ff;
+  --jsx--CssTable--cell--cell-value--a-hover--color:         #ace9ff;
+
+}
+
+

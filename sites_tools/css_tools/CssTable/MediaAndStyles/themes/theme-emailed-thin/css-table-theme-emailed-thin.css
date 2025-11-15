@@ -1,0 +1,89 @@
+/* theme-emailed-thin */
+.jsx.theme-emailed-thin .jsx-css-table-holder {
+  --jsx--CssTable--thin--cell--column-label--width: 9rem;
+
+  --jsx--CssTable--thin--cell--column-label--font-size: 0.98rem;
+  --jsx--CssTable--thin--cell--column-label--line-height: 1.095rem;
+
+  --jsx--CssTable--thin--cell--cell-value--font-size: 0.95rem;
+  --jsx--CssTable--thin--cell--cell-value--line-height: 1.095rem;
+
+}
+
+.jsx.theme-emailed-thin .jsx-css-table-holder,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table:not(.desktop-columns-labels-holder) .row {
+  display: block;
+  flex-direction: unset;
+}
+
+
+
+.jsx.theme-emailed-thin .jsx-css-table-holder,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell {
+
+  width:                   100%;
+  min-width:               100%;
+  max-width:               100%;
+
+  overflow-x:              hidden;
+  overflow-y:              visible;
+
+  height:                  auto;
+  min-height:              fit-content;
+  max-height:              unset;
+}
+
+
+.jsx.theme-emailed-thin .jsx-css-table-holder .row.desktop-columns-labels-holder {
+  display: none;
+}
+
+
+.jsx.theme-emailed-thin .jsx-css-table-holder,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table:not(.desktop-columns-labels-holder) .row {
+  display: block;
+}
+
+
+/* .theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row:not(.desktop-columns-labels-holder),
+.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell {
+} */
+
+
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell {
+  display: flex;
+}
+
+
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell .column-label,
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell .cell-value {
+  overflow-x:              hidden;
+  overflow-y:              visible;
+
+  height:                  auto;
+  min-height:              100%;
+  max-height:              unset;
+}
+
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell .column-label {
+  width:                   var(--jsx--CssTable--thin--cell--column-label--width);
+  min-width:               var(--jsx--CssTable--thin--cell--column-label--width);
+  max-width:               var(--jsx--CssTable--thin--cell--column-label--width);
+
+  background:              var(--jsx--CssTable--thin--cell--column-label--background-color);
+}
+
+.jsx.theme-emailed-thin .jsx-css-table-holder .jsx-css-table .row .cell .cell-value {
+  flex-grow:               1;
+
+  width:                   unset;
+  min-width:               unset;
+  max-width:               unset;
+
+  background:              var(--jsx--CssTable--thin--cell--cell-value--background-color) !important;
+}
+
