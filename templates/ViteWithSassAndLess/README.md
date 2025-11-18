@@ -1,8 +1,6 @@
 
 # Vite Framework Template
 
-![images/Vite_Framework_logo.svg](images/Vite_Framework_logo.svg) 
-
 ![images/preview.png](images/preview.png)
 
 
