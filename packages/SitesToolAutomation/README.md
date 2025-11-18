@@ -78,11 +78,11 @@ produceSitesTool_MediaAndStyles_base.sh ( args )
 
 in docker:
 
-/var/www/workspace/ts/www/packages/SitesToolAutomation/bash/produceSitesToolTemplate.sh ( args )
+/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/bash/produceSitesToolTemplate.sh ( args )
 
 node in dockerized ts service:
 
-/var/www/workspace/ts/www/packages/SitesToolAutomation/src/main/produceSitesTool_byExtendedPropsForTemplate.ts ( args )
+/opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/src/main/produceSitesTool_byExtendedPropsForTemplate.ts ( args )
 
 args mapped to js object:
 
@@ -113,7 +113,7 @@ The overriding method args explained
 
 1. responsiveDatasetPropName: id of the json object in dataset at path
 
-`workspace/ts/www/packages/SitesToolAutomation/data/ResponsiveSizes/ResponsiveSizes.json`
+`workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/data/ResponsiveSizes/ResponsiveSizes.json`
 
 available for You on url
 

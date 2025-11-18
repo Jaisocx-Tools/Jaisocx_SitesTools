@@ -34,8 +34,8 @@ workspace/ts/node_modules/
 
 - dockerized ts service absolute path:
 ```path
-/var/www/workspace/ts/package.json
-/var/www/workspace/ts/node_modules/
+/opt/jaisocx/sites_tools/workspace/ts/package.json
+/opt/jaisocx/sites_tools/workspace/ts/node_modules/
 ```
 
 

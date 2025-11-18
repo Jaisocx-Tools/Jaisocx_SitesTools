@@ -72,7 +72,7 @@ Also, when You install the package via `yarn install "PackageName"` or `npm inst
 
 path: `${PackagRoot}/webpack.config.mjs`
 
-For example, in Workspace when importing `@jaisocx/tree` in `ExampleTree` package: `workspace/ts/www/webpack_builds/ExampleTree/webpack.config.mjs`
+For example, in Workspace when importing `@jaisocx/tree` in `ExampleTree` package: `workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree/webpack.config.mjs`
 
 the webpack aliases You can import for the webpack here:
 
@@ -235,7 +235,7 @@ The use of the built package is in the doc point 2. below.
 
 ### 2.a. You may use this template package to start a new package from scratch.
 
-Just save a copy in the `${Workspace}/workspace/ts/www/packages` folder.
+Just save a copy in the `${Workspace}/workspace/ts/Jaisocx_SitesTools/packages` folder.
 
 
 
@@ -252,7 +252,7 @@ docker compose exec ts bash
 Then, in the same Terminal Tab, however already in the docker volume of the node service "ts", this was mapped in `${Workspace}/docker-compose.yml`
 ```
 # 1. navigate to Your new package folder in the node service volume:
-cd /var/www/workspace/ts/www/packages/<YourNewPackage>
+cd /opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/<YourNewPackage>
 
 # 2. install the npm package
 npm install "@jaisocx/template-css-clean-start"
@@ -383,7 +383,7 @@ Then You may install the packages
 
 ```
 # 1. navigate to Your new package folder in the node service volume:
-cd /var/www/workspace/ts/www/packages/<YourNewPackage>
+cd /opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/<YourNewPackage>
 
 # 2. install development npm packages
 npm install
@@ -406,7 +406,7 @@ import { fileURLToPath } from "node:url";
 import postcssUrl from "postcss-url";
 
 // when using aliases from other jaisocx tool,
-// Use like in workspace/ts/www/webpack_builds/ExampleCssCleanStartWebpack:
+// Use like in workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleCssCleanStartWebpack:
 import { WebpackAliases } from '@jaisocx/template-css-clean-start/WebpackAliases';
 
 // when building with the Webpack and using the aliases of this package, then:
@@ -494,7 +494,7 @@ Then You may build Your new package with Webpack
 
 ```
 # 1. navigate to Your new package folder in the node service volume:
-cd /var/www/workspace/ts/www/packages/<YourNewPackage>
+cd /opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/<YourNewPackage>
 
 # 2. start building with Webpack:
 npm run webpack --config=webpack.config.mjs

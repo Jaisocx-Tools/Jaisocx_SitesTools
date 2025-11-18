@@ -2,7 +2,7 @@
 
 ## Theme-Custom
 
-`workspace/ts/www/webpack_builds/ExampleCssCleanStartWebpack/MediaAndStyles/themes/theme-custom/clean-start-theme-custom.css`
+`workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleCssCleanStartWebpack/MediaAndStyles/themes/theme-custom/clean-start-theme-custom.css`
 
 ## where are imported jaisocx tool's styles imported
 
@@ -10,7 +10,7 @@
 
 ## wherre is the resulting bundle.js used
 
-Path: `workspace/ts/www/examples_html/webpack_feature/ExampleCss_CssCodeSnippet_minimal.html`
+Path: `workspace/ts/Jaisocx_SitesTools/examples_html/webpack_feature/ExampleCss_CssCodeSnippet_minimal.html`
 
 
 Url: [https://sandbox.brightday.email/examples_html/webpack_feature/ExampleCss_CssCodeSnippet_minimal.html](https://sandbox.brightday.email/examples_html/webpack_feature/ExampleCss_CssCodeSnippet_minimal.html)

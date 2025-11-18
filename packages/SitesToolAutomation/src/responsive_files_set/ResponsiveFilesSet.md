@@ -10,7 +10,7 @@ Example:
 ```css
 /* responsive_size_e04_mobile_s_portrait_CssToolTemplate.css */
 
-/* ${SandboxProject}/workspace/ts/www/sites_tools/css_tools/CssToolTemplate/MediaAndStyles/themes/theme_base/responsive_size_e04_mobile_s_portrait_CssToolTemplate.css */
+/* ${SandboxProject}/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssToolTemplate/MediaAndStyles/themes/theme_base/responsive_size_e04_mobile_s_portrait_CssToolTemplate.css */
 
 /* Responsive rules */
 @media only screen and (min-width: 321px) and (max-width: 374px) and (orientation: portrait) {
@@ -42,7 +42,7 @@ Example:
 
 You may copy, paste and then modify the new template for this filesset.
 
-for example, the template for The Css Clean Start: `workspace/ts/www/packages/SitesToolAutomation/data/templates/ResponsiveTemplate_CssCleanStart.template`
+for example, the template for The Css Clean Start: `workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/data/templates/ResponsiveTemplate_CssCleanStart.template`
 
 
 ```

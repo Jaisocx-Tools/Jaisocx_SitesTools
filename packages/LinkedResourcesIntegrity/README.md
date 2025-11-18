@@ -10,7 +10,7 @@
 on line 55 set path to file in the ts dockerized service like this:
 
 ```bash
-      --filePath="/var/www/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico" \
+      --filePath="/opt/jaisocx/sites_tools/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico" \
 ```
 
 

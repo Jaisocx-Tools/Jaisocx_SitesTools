@@ -9,10 +9,10 @@
 3. [https://sandbox.brightday.email/webpack_builds/ExampleTree/](https://sandbox.brightday.email/webpack_builds/ExampleTree/)
 
 
-4. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/webpack_builds/ExampleTree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/webpack_builds/ExampleTree)
+4. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTree)
 
 
-5. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/js_tools/Tree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/js_tools/Tree)
+5. [https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree)
 
 
 

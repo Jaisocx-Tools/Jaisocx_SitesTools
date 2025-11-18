@@ -27,7 +27,7 @@
     "README.md"
   ],
   "scripts": {
-    "build:sass": "/var/www/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
+    "build:sass": "/opt/jaisocx/sites_tools/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
   },
   "peerDependencies": {
     "sass": "^1.89.2"

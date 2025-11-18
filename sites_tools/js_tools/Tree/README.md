@@ -26,7 +26,7 @@ git clone ssh:
 git clone https:
 `https://github.com/Jaisocx-Tools/Workspace.git`
 
-at relative path `workspace/ts/www/sites_tools/js_tools/Tree`
+at relative path `workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree`
 
 
 

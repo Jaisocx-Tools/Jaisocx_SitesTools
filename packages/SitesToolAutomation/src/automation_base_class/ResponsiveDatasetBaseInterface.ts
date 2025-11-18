@@ -22,7 +22,7 @@ export interface ResponsiveDatasetBaseInterface {
   setCdnUrl( cdnUrl: string ): ResponsiveDatasetBase;
 
 
-  // for example, workspace/ts/www/packages/SiteToolAutomation/MediaAndStyles/responsive
+  // for example, workspace/ts/Jaisocx_SitesTools/packages/SiteToolAutomation/MediaAndStyles/responsive
   //    when the MediaAndStyles/responsive folder is not there, then this folder will be created.
   setMediaAndStylesResponsiveFolderPath( inFolderRelativePath: string ): ResponsiveDatasetBase;
 

@@ -124,7 +124,7 @@ several .css files will be loaded with size of very few KB.
 
 
 ## Github
-[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/css_tools/CssCleanStart)
+[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart)
 
 
 

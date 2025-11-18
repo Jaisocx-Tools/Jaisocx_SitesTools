@@ -19,7 +19,7 @@
 #       "port": 9229,
 #       "address": "localhost",
 #       "localRoot": "${workspaceFolder}/workspace/ts",
-#       "remoteRoot": "/var/www/workspace/ts",
+#       "remoteRoot": "/opt/jaisocx/sites_tools/workspace/ts",
 #       "restart": false,
 #       "skipFiles": ["<node_internals>/**"]
 #     },

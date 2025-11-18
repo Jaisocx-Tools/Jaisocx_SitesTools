@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/template-vite-with-sass-and-less",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "author": "Jaisocx",
   "keywords": [],
   "private": false,
@@ -14,13 +14,17 @@
     "import": "./transpiled/ESNext/index.js"
   },
   "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
+    "images",
+    "src",
+    "test",
+    "vite.config.ts",
     "README.md"
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@jaisocx/css-clean-start-2": "~1.1.5"
   }
 }
 

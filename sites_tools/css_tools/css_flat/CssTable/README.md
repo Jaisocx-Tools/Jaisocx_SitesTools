@@ -80,7 +80,7 @@ the theme .css file with css variables to use the @jaisocx/css-table in an email
 
 ## Github
 
-[Github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/css_tools/CssTable](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/www/sites_tools/css_tools/CssTable)
+[Github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssTable](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssTable)
 
 
 ## Status
