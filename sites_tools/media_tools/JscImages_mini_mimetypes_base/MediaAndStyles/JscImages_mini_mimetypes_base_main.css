@@ -1,3 +1,40 @@
+.jsc images-block.JscImages_mini_mimetypes_base,
+.jsc .JscImages_mini_mimetypes_base images-block {
+
+  --jsc--images-mini--mimetypes--base--gap: 0.9rem;
+
+  --jsc--images-mini--mimetypes--base--size: 4rem;
+  --jsc--images-mini--mimetypes--base--width:  var(--jsc--images-mini--mimetypes--base--size);
+  --jsc--images-mini--mimetypes--base--height: var(--jsc--images-mini--mimetypes--base--size);
+
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+  gap: var(--jsc--images-mini--mimetypes--base--gap);
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+
+
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype {
+  width:  var(--jsc--images-mini--mimetypes--base--width);
+  height: var(--jsc--images-mini--mimetypes--base--height);
+
+  background-repeat:   no-repeat;
+  background-clip:     border-box;
+  background-origin:   border-box;
+  background-position: cover;
+  background-size:     var(--jsc--images-mini--mimetypes--base--width) var(--jsc--images-mini--mimetypes--base--height);
+}
+
+
+
+
 
 
 

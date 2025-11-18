@@ -1,0 +1,58 @@
+@use "./variables__mini-images-urls" as urls_variables;
+@use "../JscImages_mini_mimetypes_base_main";
+
+$base_url: #{urls_variables.$aliased_base_url}#{urls_variables.$relative_path};
+
+
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--base--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype {
+    background-image: url("#{$image-url}");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.base {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--folder--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.folder {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--audio_and_video--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.audio {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--audio_and_video--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.video {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--html--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.html {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--image--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.image {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--javascript--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.javascript {
+    background-image: url("#{$image-url}");
+}
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--text--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.text {
+    background-image: url("#{$image-url}");
+}
+
+
+$image-url: #{$base_url}#{urls_variables.$mini-image-mimetype--php--url--relative};
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.php {
+    background-image: url("#{$image-url}");
+}
+
+

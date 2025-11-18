@@ -1,7 +1,27 @@
+.jsc images-block.JscImages_mini_mimetypes_base,
+.jsc .JscImages_mini_mimetypes_base images-block {
+  --jsc--images-mini--mimetypes--base--gap: 0.9rem;
+  --jsc--images-mini--mimetypes--base--size: 4rem;
+  --jsc--images-mini--mimetypes--base--width: var(--jsc--images-mini--mimetypes--base--size);
+  --jsc--images-mini--mimetypes--base--height: var(--jsc--images-mini--mimetypes--base--size);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--jsc--images-mini--mimetypes--base--gap);
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
 
-/* main css file, css logics with rules set via variables in the theme .css files imported above */
-@import url("@JscImages_mini_mimetypes_base_MediaAndStyles/JscImages_mini_mimetypes_base_main.css");
-
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype {
+  width: var(--jsc--images-mini--mimetypes--base--width);
+  height: var(--jsc--images-mini--mimetypes--base--height);
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-position: cover;
+  background-size: var(--jsc--images-mini--mimetypes--base--width) var(--jsc--images-mini--mimetypes--base--height);
+}
 
 .jsc .JscImages_mini_mimetypes_base .mini-image.mimetype {
   background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/mime_type_base.png");
@@ -42,8 +62,3 @@
 .jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.php {
   background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/php_mime_type.png");
 }
-
-
-
-
-
