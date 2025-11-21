@@ -2,57 +2,34 @@
 <html lang="en" class="jsx theme_visible_height">
 <head>
 
-  <title>Css Table</title>
+  <title>Tree Preview</title>
 
-  <base href="./">
+  <base href="./" />
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
 
-    <!--# FAVICON -->
-    <!-- <link
+  <link
+      id="icon_jaisocx"
       rel="icon"
       type="image/x-icon"
-      href="https://sandbox.brightday.email/cdn/www/media/images/favicon/Icon_Jaisocx.ico"
-      href-fallback="favicon/Icon_Jaisocx.ico"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    /> -->
+      href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css-clean-start-2/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
 
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://sandbox.brightday.email/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico"
-      href-fallback="favicon/Icon_Sandbox_Brightday.ico"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    />
+  <!--    <link-->
+  <!--            id="icon_brightday"-->
+  <!--            rel="icon"-->
+  <!--            type="image/x-icon"-->
+  <!--            href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"-->
+  <!--            href-fallback="../css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"-->
+  <!--            onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"-->
+  <!--    />-->
 
 
-
-    <!--# FONTS PRELOAD WITHOUT JAVASCRIPT CALL -->
-    <link
-      fetchpriority="high"
-      rel="preload"
-      as="font"
-      type="font/ttf"
-      href="https://sandbox.brightday.email/cdn/www/fonts/LibreFranklin/static/LibreFranklin-SemiBold.ttf"
-    />
-
-    <link
-      fetchpriority="high"
-      rel="preload"
-      as="font"
-      type="font/ttf"
-      href="https://sandbox.brightday.email/cdn/www/fonts/LibreFranklin/static/LibreFranklin-Regular.ttf"
-    />
-
-    <!--# CSS FOR FONTS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://sandbox.brightday.email/cdn/www/fonts_css/font_LibreFranklin_cdn.css"
-    />
 
 
 
@@ -95,12 +72,16 @@
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/CssTable_main_resolved_minimal.css"
+      href="MediaAndStyles/CssTable_main_relative.css"
     />
 
 
 
-  <!-- <link rel="stylesheet" href="js_tools/CssTableOrdered/MediaAndStyles/themes/theme_jaisocx_folder_listing/CssTable_theme_jaisocx_folder_listing_Relative.css" /> -->
+<!--   <link-->
+<!--       rel="stylesheet"-->
+<!--       type="text/css"-->
+<!--       charset="utf-8"-->
+<!--       href="MediaAndStyles/themes/theme_imaged_mimetypes_base/CssTable_theme_imaged_mimetypes_base.css" />-->
 
 
 
@@ -170,7 +151,7 @@
 
       <h1>Server Side Rendered Imaged Table</h1>
       <h2>@jaisocx/css-table</h2>
-      <h3>css_table.theme_imaged.example.html</h3>
+      <h3> index.preview.html </h3>
       <description>
         Css sites tool styling a server side rendered database table data to a grid view,
         with solutions for scrolling and columns styling based on fileds values data types.
@@ -189,7 +170,7 @@
 
 
         <!--starts markup of the table styled by @jaisocx/css-table-ordered npm package-->
-        <div class="jsx-css-table-holder jaisocx-folder-listing-columns theme_fixed_columns_labels theme_imaged theme_imaged_base">
+        <div class="jsx-css-table-holder jaisocx-folder-listing-columns theme_fixed_columns_labels theme_imaged theme_imaged_mimetypes_base">
           <div class="jsx-css-table desktop-columns-labels-holder">
             <!--the first table record with the names of the table columns, shown in the table bright mode-->
             <div class="row">
@@ -1777,89 +1758,91 @@
   </body>
 
 
-  <script>
 
-    let currentButtonNodeClicked = null;
+<script>
+
+  let currentButtonNodeClicked = null;
 
 
-    let cssClassesNames = [
-      "jsx",
-      "theme_visible_height"
+  let cssClassesNames = [
+    "jsx",
+    "theme_visible_height"
+  ];
+
+
+
+  // declaring the function, this is used in the event handler of the theme turning button when clicked on this button.
+  function turnOnTheme ( buttonNodeClicked ) {
+
+    if ( currentButtonNodeClicked !==  null ) {
+      currentButtonNodeClicked.classList.remove( "current" );
+    }
+
+    const htmlNode = document.getElementsByTagName("html")[0];
+    const htmlNodeClassList = htmlNode.classList;
+
+    const themeCssClassPrefix = "theme";
+
+    htmlNodeClassList.forEach (
+      (cssClassName) => {
+        if ( cssClassesNames.includes( cssClassName ) ) {
+          return;
+        }
+
+        if ( cssClassName.startsWith( themeCssClassPrefix ) === true ) {
+          htmlNodeClassList.remove( cssClassName );
+        }
+      }
+    );
+
+    const themeName = buttonNodeClicked.dataset.theme;
+    if ( themeName && ( themeName.length !== 0 ) ) {
+      htmlNode.classList.add( themeName );
+    }
+
+    currentButtonNodeClicked = buttonNodeClicked;
+    currentButtonNodeClicked.classList.add( "current" );
+
+  }
+
+  // declaring the function, this adds to buttons the event handler to turn on the theme.
+  // this function is invoked when the site loads in the browser,
+  // in the event handler for the event DOMContentLoaded
+  function addThemeButtonsEventHandlers() {
+
+    const buttonsIDs = [
+      "button-turn-on-base-theme",
+      "button-turn-on-daymode",
+      "button-turn-on-nightmode"
     ];
 
+    for ( let buttonId of buttonsIDs ) {
 
+      let buttonNode = document.getElementById( buttonId );
 
-    // declaring the function, this is used in the event handler of the theme turning button when clicked on this button.
-    function turnOnTheme ( buttonNodeClicked ) {
-
-      if ( currentButtonNodeClicked !==  null ) {
-        currentButtonNodeClicked.classList.remove( "current" );
-      }
-
-      const htmlNode = document.getElementsByTagName("html")[0];
-      const htmlNodeClassList = htmlNode.classList;
-
-      const themeCssClassPrefix = "theme";
-
-      htmlNodeClassList.forEach (
-        (cssClassName) => {
-          if ( cssClassesNames.includes( cssClassName ) ) {
-            return;
-          }
-
-          if ( cssClassName.startsWith( themeCssClassPrefix ) === true ) {
-            htmlNodeClassList.remove( cssClassName );
-          }
+      buttonNode.addEventListener (
+        "click",
+        (evt) => {
+          let buttonNodeClicked = evt.target;
+          turnOnTheme ( buttonNodeClicked );
         }
       );
 
-      const themeName = buttonNodeClicked.dataset.theme;
-      if ( themeName && ( themeName.length !== 0 ) ) {
-        htmlNode.classList.add( themeName );
-      }
-
-      currentButtonNodeClicked = buttonNodeClicked;
-      currentButtonNodeClicked.classList.add( "current" );
-
     }
-
-    // declaring the function, this adds to buttons the event handler to turn on the theme.
-    // this function is invoked when the site loads in the browser,
-    // in the event handler for the event DOMContentLoaded
-    function addThemeButtonsEventHandlers() {
-
-      const buttonsIDs = [
-        "button-turn-on-base-theme",
-        "button-turn-on-daymode",
-        "button-turn-on-nightmode"
-      ];
-
-      for ( let buttonId of buttonsIDs ) {
-
-        let buttonNode = document.getElementById( buttonId );
-
-        buttonNode.addEventListener (
-          "click",
-          (evt) => {
-            let buttonNodeClicked = evt.target;
-            turnOnTheme ( buttonNodeClicked );
-          }
-        );
-
-      }
-    }
+  }
 
 
 
-    // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
-    document.addEventListener('DOMContentLoaded', () => {
+  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
+  document.addEventListener('DOMContentLoaded', () => {
 
-      // adding to buttons the event handler to turn on the theme.
-      addThemeButtonsEventHandlers();
+    // adding to buttons the event handler to turn on the theme.
+    addThemeButtonsEventHandlers();
 
-    });
+  });
 
-  </script>
+</script>
 
 </html>
+
 

@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/css-table",
-  "version": "3.3.1",
+  "version": "3.4.1",
   "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types",
   "author": "Jaisocx Company",
   "keywords": [
@@ -8,9 +8,9 @@
     "styles"
   ],
   "files": [
-    "index.example.html",
     "css_table.example.html",
-    "css_table.theme_imaged.example.html",
+    "dev_css_table__theme_imaged_mimetypes_base__preview.html",
+    "index.preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/columns",
@@ -43,7 +43,8 @@
     }
   },
   "optionalDependencies": {
-    "@jaisocx/css-clean-start-2": "~1.1.5"
+    "@jaisocx/css-clean-start-2": "~1.1.10",
+    "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.0.4"
   }
 }
 
