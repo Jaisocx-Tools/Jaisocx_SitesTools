@@ -60,14 +60,6 @@
     <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
 
     <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/CssCleanStart_2_main_relative.css"
-    /> -->
-
-    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -75,13 +67,63 @@
       href="MediaAndStyles/CssTable_main_relative.css"
     />
 
+    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      type="text/css"-->
+<!--      charset="utf-8"-->
+<!--      href="MediaAndStyles/CssTable_main_resolved.css"-->
+<!--    />-->
+
+<!--    <link-->
+<!--      rel="stylesheet"-->
+<!--      type="text/css"-->
+<!--      charset="utf-8"-->
+<!--      href="MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css"-->
+<!--      href-fallback="MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css"-->
+<!--      onerror="javascript: ( () => { console.log( this ); this.href = this.getAttribute( 'href-fallback' ); this.onerror = () => { return 1; }; } )();"-->
+<!--  />-->
 
 
-<!--   <link-->
-<!--       rel="stylesheet"-->
-<!--       type="text/css"-->
-<!--       charset="utf-8"-->
-<!--       href="MediaAndStyles/themes/theme_imaged_mimetypes_base/CssTable_theme_imaged_mimetypes_base.css" />-->
+
+  <script>
+
+    function addLink( url ) {
+        let lnk = document.createElement( "LINK" );
+        lnk.rel = "stylesheet";
+        lnk.type = "text/css";
+        lnk.charset = "utf-8";
+        lnk.href = url;
+        document.getElementsByTagName( "HEAD" )[0].append( lnk );
+    }
+
+  const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
+  const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
+  let linkUrlLoading = "";
+  fetch( "./node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
+  .then (
+
+    ( response ) => {
+      if ( response.status === 200 ) {
+        // linkUrlLoading = linkUrlHoisted;
+        linkUrlLoading = linkUrlShallow;
+
+        addLink ( linkUrlLoading );
+      }
+    }
+
+  ).catch (
+
+   ( err ) => {
+        linkUrlLoading = linkUrlHoisted;
+        // linkUrlLoading = linkUrlShallow;
+
+        addLink ( linkUrlLoading );
+   }
+
+  );
+
+  </script>
 
 
 

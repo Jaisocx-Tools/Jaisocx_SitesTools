@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/css-table",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types",
   "author": "Jaisocx Company",
   "keywords": [
