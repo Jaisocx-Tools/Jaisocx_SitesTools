@@ -65,6 +65,8 @@
   border: var(--code-snippet-tool--border-width) var(--code-snippet-tool--border-style) var(--code-snippet-tool--border-color);
 }
 
+
+
 /* the overlapping placeholder, to cover the text near right border,
 to draw right margin, when the width is scrollable to right. */
 .jsx .CodeSnippetHolder::after {

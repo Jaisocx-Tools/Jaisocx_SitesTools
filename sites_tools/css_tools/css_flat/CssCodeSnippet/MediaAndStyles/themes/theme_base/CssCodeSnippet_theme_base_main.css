@@ -3,11 +3,7 @@
 
   --lines-numbers--content: var(--lines-numbers--content--99);
 
-
-
-  --jsx--css-clean-start-2--all-tags--font-family: LibreFranklin, "Franklin Gothic Medium";
-
-
+  --code-snippet-tool--overflow-y: auto;
 
   /* base theme css var assignment example */
   /* --jsx--CssCodeSnippet--toolHtmlElement--font-size: 1rem; */
@@ -34,8 +30,7 @@
    */
   --lines-numbers--content: var(--lines-numbers--content--99);
 
-
-  --code_snippet__font_family: Courier;
+  --code_snippet__font_family: var(--css-clean-start-2--monospace--font-family) Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
 
   /* code snippet tool borders */
   /* by color */

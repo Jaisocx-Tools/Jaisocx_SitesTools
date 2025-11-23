@@ -87,6 +87,7 @@
 
 
   <script>
+    // node_modules index.preview.html purposes, loading mini images pack referenced in package.json
 
     function addLink( url ) {
         let lnk = document.createElement( "LINK" );
@@ -97,31 +98,32 @@
         document.getElementsByTagName( "HEAD" )[0].append( lnk );
     }
 
-  const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
-  const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
-  let linkUrlLoading = "";
-  fetch( "./node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
-  .then (
+    const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
+    const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
+    let linkUrlLoading = "";
 
-    ( response ) => {
-      if ( response.status === 200 ) {
-        // linkUrlLoading = linkUrlHoisted;
-        linkUrlLoading = linkUrlShallow;
+    fetch( "./node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
+      .then (
 
-        addLink ( linkUrlLoading );
-      }
-    }
+        ( response ) => {
+          if ( response.status === 200 ) {
+            // linkUrlLoading = linkUrlHoisted;
+            linkUrlLoading = linkUrlShallow;
 
-  ).catch (
+            addLink ( linkUrlLoading );
+          }
+        }
 
-   ( err ) => {
-        linkUrlLoading = linkUrlHoisted;
-        // linkUrlLoading = linkUrlShallow;
+      ).catch (
 
-        addLink ( linkUrlLoading );
-   }
+       ( err ) => {
+            linkUrlLoading = linkUrlHoisted;
+            // linkUrlLoading = linkUrlShallow;
 
-  );
+            addLink ( linkUrlLoading );
+       }
+
+      );
 
   </script>
 

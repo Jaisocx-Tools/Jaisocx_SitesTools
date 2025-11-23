@@ -18,3 +18,22 @@
   --code_snippet__column_numbers__background-color: white;
 
 }
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-thumb {
+    background-color: magenta;
+  }
+
+  .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-track {
+    background: #fffafa;
+  }
+
+}

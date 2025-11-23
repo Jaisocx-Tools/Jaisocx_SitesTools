@@ -20,3 +20,21 @@
 
 
 
+@supports selector(::-webkit-scrollbar) {
+
+  .jsx .CodeSnippetHolder.salad::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+   .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-thumb {
+    background-color: lime;
+  }
+
+  .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-track {
+    background: #fefffe;
+  }
+
+}
+
+

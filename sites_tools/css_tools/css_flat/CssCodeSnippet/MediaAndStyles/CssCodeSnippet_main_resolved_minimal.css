@@ -9,18 +9,14 @@
 
 
 
-.jsx .CodeSnippetHolder.css_clean_start_2__color_theme {
-  --code-snippet--theme-color: var(--jsx--css-clean-start-2--body-tag--background);
-  --code-snippet--background-color: var(--jsx--css-clean-start-2--site--background);
 
 
-  --code-snippet--text-color: var(--jsx--css-clean-start-2--all-tags--color);
 
-  --code-snippet-tool--border-color: var(--jsx--css-clean-start-2--all-tags--border-color);
 
-  --code_snippet__column_numbers__text-color: var(--jsx--css-clean-start-2--all-tags--border-color);
-  --code_snippet__column_numbers__background-color: var(--jsx--css-clean-start-2--body-tag--background);
-}
+
+
+
+
 
 
 
@@ -40,11 +36,7 @@
 
   --lines-numbers--content: var(--lines-numbers--content--99);
 
-
-
-  --jsx--css-clean-start-2--all-tags--font-family: LibreFranklin, "Franklin Gothic Medium";
-
-
+  --code-snippet-tool--overflow-y: auto;
 
   
   
@@ -62,8 +54,7 @@
   
   --lines-numbers--content: var(--lines-numbers--content--99);
 
-
-  --code_snippet__font_family: Courier;
+  --code_snippet__font_family: var(--css-clean-start-2--monospace--font-family) Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
 
   
   
@@ -98,8 +89,6 @@
   --code_snippet__column_numbers__text-color: lime;
   --code_snippet__column_numbers__background-color: #efe;
 }
-
-
 
 
 
@@ -169,6 +158,8 @@
   border-radius: var(--code-snippet-tool--border-radius);
   border: var(--code-snippet-tool--border-width) var(--code-snippet-tool--border-style) var(--code-snippet-tool--border-color);
 }
+
+
 
 
 .jsx .CodeSnippetHolder::after {
@@ -249,3 +240,6 @@
   color: var(--code-snippet--text-color);
   background-color: var(--code-snippet--background-color);
 }
+
+
+
