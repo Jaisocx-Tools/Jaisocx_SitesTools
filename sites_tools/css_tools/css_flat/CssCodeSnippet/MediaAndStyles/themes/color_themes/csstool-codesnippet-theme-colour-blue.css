@@ -33,7 +33,15 @@
   }
 
   .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-track {
-    background: #fafaff;
+    background-color:  #fafaff;
   }
 
 }
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.blue {
+    scrollbar-color: steelblue  #fafaff;
+    scrollbar-width: thin;
+  }
+}
+

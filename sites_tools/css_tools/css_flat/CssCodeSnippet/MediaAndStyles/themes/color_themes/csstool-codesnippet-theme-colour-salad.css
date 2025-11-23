@@ -32,9 +32,16 @@
   }
 
   .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-track {
-    background: #fefffe;
+    background-color: #fefffe;
   }
 
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.salad {
+    scrollbar-color: lime #fefffe;
+    scrollbar-width: thin;
+  }
 }
 
 

@@ -63,10 +63,18 @@
   }
 
   .jsx .CodeSnippetHolder.blue::-webkit-scrollbar-track {
-    background: #fafaff;
+    background-color:  #fafaff;
   }
 
 }
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.blue {
+    scrollbar-color: steelblue  #fafaff;
+    scrollbar-width: thin;
+  }
+}
+
 
 
 
@@ -105,10 +113,19 @@
   }
 
   .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-track {
-    background: #fffafa;
+    background-color: #fffafa;
   }
 
 }
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.rosa {
+    scrollbar-color: magenta #fffafa;
+    scrollbar-width: thin;
+  }
+}
+
+
 
 
 
@@ -146,9 +163,16 @@
   }
 
   .jsx .CodeSnippetHolder.salad::-webkit-scrollbar-track {
-    background: #fefffe;
+    background-color: #fefffe;
   }
 
+}
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.salad {
+    scrollbar-color: lime #fefffe;
+    scrollbar-width: thin;
+  }
 }
 
 

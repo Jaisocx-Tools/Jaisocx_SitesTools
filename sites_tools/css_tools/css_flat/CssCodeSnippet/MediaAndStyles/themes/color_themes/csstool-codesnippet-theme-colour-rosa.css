@@ -33,7 +33,16 @@
   }
 
   .jsx .CodeSnippetHolder.rosa::-webkit-scrollbar-track {
-    background: #fffafa;
+    background-color: #fffafa;
   }
 
 }
+
+@supports (scrollbar-color: auto) {
+  .jsx .CodeSnippetHolder.rosa {
+    scrollbar-color: magenta #fffafa;
+    scrollbar-width: thin;
+  }
+}
+
+
