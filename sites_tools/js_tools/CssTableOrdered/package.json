@@ -46,7 +46,7 @@
     }
   },
   "optionalDependencies": {
-    "@jaisocx/css-clean-start-2": "~1.1.10",
+   "@jaisocx/css-clean-start-2": "~1.2.3",
     "@jaisocx/css-table": "~3.3.1"
   }
 }

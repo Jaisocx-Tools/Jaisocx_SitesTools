@@ -39,7 +39,7 @@
     }
   },
   "optionalDependencies": {
-    "@jaisocx/css-clean-start-2": "~1.1.10",
+   "@jaisocx/css-clean-start-2": "~1.2.3",
     "@jaisocx/event-emitter": "~1.4.2",
     "@jaisocx/jpath": "~1.2.3",
     "@jaisocx/mime-type": "~1.0.7",

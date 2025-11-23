@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/css-clean-start-2",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Css sites resetting default styles with main.css of few hundereds css code lines, and the very nice infrastructure for responsive sites bugfixing and fine-tuning",
   "author": "Jaisocx Company",
   "keywords": [
@@ -10,9 +10,10 @@
   "files": [
     "favicon",
 
-    "index.example.html",
-    "css_clean_start_2.example.html",
+    "index.preview.html",
     "responsive_sizes.html",
+    "with_preloaded_fonts_cdn__preview.html",
+    "with_preloaded_fonts_node_modules__preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/themes",
@@ -25,7 +26,8 @@
     "README.md"
   ],
   "optionalDependencies": {
-    "@jaisocx/responsive-sizes": "~1.3.2"
+    "@jaisocx/media_tools_fonts_base": "~1.0.5",
+    "@jaisocx/responsive-sizes": "~1.3.1"
   },
   "private": false,
   "publishConfig": {
