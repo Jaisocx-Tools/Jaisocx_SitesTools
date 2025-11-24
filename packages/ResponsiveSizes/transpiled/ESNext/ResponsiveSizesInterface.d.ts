@@ -5,17 +5,20 @@ export interface ResponsiveSizesInterface {
     setResponsiveSizeSelector(selector: string): ResponsiveSizesInterface;
     getCssValueByHtmlNode(htmlNode: HTMLElement, cssVariableName: string): string;
     getCssValueBySelector(htmlNodeSelector: string, cssVariableName: string): string;
-    getResponsiveSizeName(force: boolean): string;
-    getCssVariableArray(force: boolean): string[];
-    getResponsiveSizes(force: boolean): object;
-    mobilePortrait(force: boolean): boolean;
-    mobile(force: boolean): boolean;
-    tablet(force: boolean): boolean;
-    desktop(force: boolean): boolean;
-    matchOrientation(keywords: string[], force: boolean): boolean;
-    orientationPortrait(force: boolean): boolean;
-    orientationLandscape(force: boolean): boolean;
-    toJson(force: boolean): any;
-    toString(): string;
+    getResponsiveSizeName(toUpdate: boolean): string;
+    getCssVariableArray(toUpdate: boolean): string[];
+    getResponsiveSizes(toUpdate: boolean): object;
+    mobilePortrait(toUpdate: boolean): boolean;
+    mobile(toUpdate: boolean): boolean;
+    tablet(toUpdate: boolean): boolean;
+    desktop(toUpdate: boolean): boolean;
+    matchOrientation(keywords: string[], toUpdate: boolean): boolean;
+    orientationPortrait(toUpdate: boolean): boolean;
+    orientationLandscape(toUpdate: boolean): boolean;
+    getInfoShort(asArray: boolean, toUpdate: boolean): any;
+    getInfoLong(toUpdate: boolean): any;
+    toJson(toUpdate: boolean): any;
+    json(asShortInfo: boolean, shortInfoAsArray: boolean, toUpdate: boolean): any;
+    toString(toUpdate: boolean): string;
 }
 //# sourceMappingURL=ResponsiveSizesInterface.d.ts.map

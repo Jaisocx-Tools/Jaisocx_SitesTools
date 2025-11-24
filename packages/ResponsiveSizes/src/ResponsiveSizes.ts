@@ -75,7 +75,7 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public setResponsiveSizeConstantName(name: string ): ResponsiveSizesInterface {
+  public setResponsiveSizeConstantName (name: string ): ResponsiveSizesInterface {
     this._responsiveSizeConstantName = name;
 
 
@@ -133,8 +133,8 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public getResponsiveSizeName( force: boolean ): string {
-    if ( !force && this._responsiveSizeName.length != 0 ) {
+  public getResponsiveSizeName ( toUpdate: boolean ): string {
+    if ( !toUpdate && this._responsiveSizeName.length != 0 ) {
       return this._responsiveSizeName;
     }
 
@@ -153,9 +153,9 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public getCssVariableArray( force: boolean ): string[] {
-    if ( force ) {
-      this.getResponsiveSizeName( force );
+  public getCssVariableArray ( toUpdate: boolean ): string[] {
+    if ( toUpdate ) {
+      this.getResponsiveSizeName( toUpdate );
     }
 
 
@@ -164,10 +164,10 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public getResponsiveSizes( force: boolean ): object {
+  public getResponsiveSizes ( toUpdate: boolean ): object {
     let responsiveSizesKeys: any = Object.keys( this._responsive_sizes );
 
-    if ( !force && responsiveSizesKeys && responsiveSizesKeys.length === 2 ) {
+    if ( !toUpdate && responsiveSizesKeys && responsiveSizesKeys.length === 2 ) {
       return this._responsive_sizes;
     }
 
@@ -213,11 +213,11 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
   // one very precise method for the specific case, the fewest pixels dimension when a site is shown.
-  public mobilePortrait( force: boolean ): boolean {
-    let mobile: boolean = this.mobile( force );
+  public mobilePortrait ( toUpdate: boolean ): boolean {
+    let mobile: boolean = this.mobile( toUpdate );
 
-    let forceUpdate_false: boolean = false;
-    let orientationPortrait: boolean = this.orientationPortrait( forceUpdate_false );
+    let notToUpdate: boolean = false;
+    let orientationPortrait: boolean = this.orientationPortrait( notToUpdate );
 
     let mobileAndPortrait: boolean = ( mobile && orientationPortrait );
 
@@ -227,9 +227,8 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public mobile( force: boolean ): boolean {
-    let responsiveSizeName = this.getResponsiveSizeName( force );
-
+  public mobile ( toUpdate: boolean ): boolean {
+    let responsiveSizeName: string = this.getResponsiveSizeName( toUpdate );
     let responsiveSizeNameMatches: boolean = responsiveSizeName.includes( this.#KEYWORD_MOBILE );
 
 
@@ -238,9 +237,8 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public tablet( force: boolean ): boolean {
-    let responsiveSizeName = this.getResponsiveSizeName( force );
-
+  public tablet ( toUpdate: boolean ): boolean {
+    let responsiveSizeName: string = this.getResponsiveSizeName( toUpdate );
     let responsiveSizeNameMatches: boolean = responsiveSizeName.includes( this.#KEYWORD_TABLET );
 
 
@@ -249,8 +247,8 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public desktop( force: boolean ): boolean {
-    let responsiveSizeName = this.getResponsiveSizeName( force );
+  public desktop ( toUpdate: boolean ): boolean {
+    let responsiveSizeName: string = this.getResponsiveSizeName( toUpdate );
 
     let keywordsDesktopNotMatching: string[] = [
       this.#KEYWORD_MOBILE,
@@ -280,12 +278,12 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
   public matchOrientation (
     keywords: string[],
-    force: boolean
+    toUpdate: boolean
   ): boolean {
-    let responsiveSizeName = this.getResponsiveSizeName( force );
+    let responsiveSizeName = this.getResponsiveSizeName( toUpdate );
     let matchFound: string|undefined = keywords
       .find( ( keyword: string ) => {
-        return responsiveSizeName.endsWith( keyword );
+        return responsiveSizeName.includes( keyword );
       });
     let responsiveSizeNameMatches: boolean = ( matchFound !== undefined );
 
@@ -295,10 +293,10 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public orientationPortrait( force: boolean ): boolean {
+  public orientationPortrait ( toUpdate: boolean ): boolean {
     let responsiveSizeNameMatches: boolean = this.matchOrientation(
       this.#KEYWORDS_ORIENTATION_PORTRAIT,
-      force
+      toUpdate
     );
 
 
@@ -307,10 +305,10 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public orientationLandscape( force: boolean ): boolean {
+  public orientationLandscape ( toUpdate: boolean ): boolean {
     let responsiveSizeNameMatches: boolean = this.matchOrientation(
       this.#KEYWORDS_ORIENTATION_LANDSCAPE,
-      force
+      toUpdate
     );
 
 
@@ -319,13 +317,76 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public toJson( force: boolean ): any {
-    let responsiveSizeName: string = this.getResponsiveSizeName( force );
-    let responsiveSizes: object = this.getResponsiveSizes( force );
+  public getInfoShort (
+    asArray: boolean,
+    toUpdate: boolean
+  ): any {
+    let retInfoShort: any = new Object();
+
+    let notToUpdate: boolean = false;
+
+    let locSizeMobile: boolean  = this.mobile( toUpdate );
+    let locSizeTablet: boolean  = this.tablet( notToUpdate );
+    let locSizeDesktop: boolean = this.desktop( notToUpdate );
+
+    let locSize: string = this.getCssVariableArray( notToUpdate )[4];
+
+    let locOrientationPortrait: boolean  = this.orientationPortrait( notToUpdate );
+    let locOrientationLandscape: boolean = this.orientationLandscape( notToUpdate );
+
+    let locDeviceName: string = "";
+
+    if ( locSizeMobile ) {
+      locDeviceName = "mobile";
+    } else if ( locSizeTablet ) {
+      locDeviceName = "tablet";
+    } else if ( locSizeDesktop ) {
+      locDeviceName = "display";
+    }
+
+    let locOrientationName: string = "";
+
+    if ( locOrientationPortrait ) {
+      locOrientationName = "portrait";
+    } else if ( locOrientationLandscape ) {
+      locOrientationName = "landscape";
+    }
+
+    let arrInfoShort: string[] = new Array(0) as string[];
+    let objInfoShort: any = new Object();
+
+    if ( asArray ) {
+      arrInfoShort = [
+        locDeviceName,
+        locSize,
+        locOrientationName
+      ];
+
+      retInfoShort = arrInfoShort;
+
+    } else {
+      objInfoShort = {
+        "device": locDeviceName,
+        "size": locSize,
+        "orientation": locOrientationName
+      };
+
+      retInfoShort = objInfoShort;
+    }
+
+
+    return retInfoShort;
+  }
+
+
+
+  public getInfoLong ( toUpdate: boolean ): any {
+    let responsiveSizeName: string = this.getResponsiveSizeName( toUpdate );
+    let responsiveSizes: object = this.getResponsiveSizes( toUpdate );
 
     let responsiveSizesJsonKeys: string[] = Object.keys(this._responsiveSizesJson);
 
-    if ( !force && responsiveSizesJsonKeys && responsiveSizesJsonKeys.length !== 0 ) {
+    if ( !toUpdate && responsiveSizesJsonKeys && responsiveSizesJsonKeys.length !== 0 ) {
       return this._responsiveSizesJson;
     }
 
@@ -366,9 +427,36 @@ export class ResponsiveSizes implements ResponsiveSizesInterface {
 
 
 
-  public toString(): string {
-    let force: boolean = true;
-    let responsiveSizesJson: any = this.toJson( force );
+  public toJson ( toUpdate: boolean ): any {
+    let retVal: any = this.getInfoLong( toUpdate );
+
+
+    return retVal;
+  }
+
+
+
+  public json (
+    asShortInfo: boolean,
+    shortInfoAsArray: boolean,
+    toUpdate: boolean
+  ): any {
+    let retVal: any = new Object();
+
+    if ( asShortInfo ) {
+      retVal = this.getInfoShort( shortInfoAsArray, toUpdate );
+    } else {
+      retVal = this.getInfoLong( toUpdate );
+    }
+
+
+    return retVal;
+  }
+
+
+
+  public toString ( toUpdate: boolean ): string {
+    let responsiveSizesJson: any = this.toJson( toUpdate );
     let jsonString: string = JSON.stringify( responsiveSizesJson, null, 2 );
 
 

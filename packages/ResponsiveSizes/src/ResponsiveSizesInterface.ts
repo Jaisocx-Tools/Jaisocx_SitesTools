@@ -1,10 +1,10 @@
 export interface ResponsiveSizesInterface {
 
   getResponsiveSizeConstantName (): string;
-  setResponsiveSizeConstantName (name: string): ResponsiveSizesInterface;
+  setResponsiveSizeConstantName ( name: string ): ResponsiveSizesInterface;
 
   getResponsiveSizeSelector (): string;
-  setResponsiveSizeSelector (selector: string): ResponsiveSizesInterface;
+  setResponsiveSizeSelector ( selector: string ): ResponsiveSizesInterface;
 
   getCssValueByHtmlNode (
     htmlNode: HTMLElement,
@@ -16,32 +16,45 @@ export interface ResponsiveSizesInterface {
     cssVariableName: string
   ): string;
 
-  getResponsiveSizeName( force: boolean ): string;
+  getResponsiveSizeName ( toUpdate: boolean ): string;
 
-  getCssVariableArray( force: boolean ): string[];
+  getCssVariableArray ( toUpdate: boolean ): string[];
 
-  getResponsiveSizes( force: boolean ): object;
+  getResponsiveSizes ( toUpdate: boolean ): object;
 
-  mobilePortrait( force: boolean ): boolean;
+  mobilePortrait ( toUpdate: boolean ): boolean;
 
-  mobile( force: boolean ): boolean;
+  mobile ( toUpdate: boolean ): boolean;
 
-  tablet( force: boolean ): boolean;
+  tablet ( toUpdate: boolean ): boolean;
 
-  desktop( force: boolean ): boolean;
+  desktop ( toUpdate: boolean ): boolean;
 
   matchOrientation (
     keywords: string[],
-    force: boolean
+    toUpdate: boolean
   ): boolean;
 
-  orientationPortrait( force: boolean ): boolean;
+  orientationPortrait ( toUpdate: boolean ): boolean;
 
-  orientationLandscape( force: boolean ): boolean;
+  orientationLandscape ( toUpdate: boolean ): boolean;
 
-  toJson( force: boolean ): any;
+  getInfoShort ( asArray: boolean, toUpdate: boolean ): any;
+  getInfoLong ( toUpdate: boolean ): any;
 
-  toString(): string;
+
+  // first json method, ver. elder than 1.3.2
+  toJson ( toUpdate: boolean ): any;
+
+
+  // newer method, ver. 1.3.3
+  json (
+      asShortInfo: boolean,
+      shortInfoAsArray: boolean,
+      toUpdate: boolean
+    ): any;
+
+  toString ( toUpdate: boolean ): string;
 
 }
 

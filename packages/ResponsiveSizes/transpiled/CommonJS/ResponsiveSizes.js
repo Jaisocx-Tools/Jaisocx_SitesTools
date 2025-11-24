@@ -83,8 +83,8 @@ class ResponsiveSizes {
         let cssValue = this.getCssValueByHtmlNode(htmlNode, cssVariableName);
         return cssValue;
     }
-    getResponsiveSizeName(force) {
-        if (!force && this._responsiveSizeName.length != 0) {
+    getResponsiveSizeName(toUpdate) {
+        if (!toUpdate && this._responsiveSizeName.length != 0) {
             return this._responsiveSizeName;
         }
         let cssVariableName = this.getResponsiveSizeConstantName();
@@ -93,15 +93,15 @@ class ResponsiveSizes {
         this._cssVariableArray = responsiveSizeName.split("_");
         return this._responsiveSizeName;
     }
-    getCssVariableArray(force) {
-        if (force) {
-            this.getResponsiveSizeName(force);
+    getCssVariableArray(toUpdate) {
+        if (toUpdate) {
+            this.getResponsiveSizeName(toUpdate);
         }
         return this._cssVariableArray;
     }
-    getResponsiveSizes(force) {
+    getResponsiveSizes(toUpdate) {
         let responsiveSizesKeys = Object.keys(this._responsive_sizes);
-        if (!force && responsiveSizesKeys && responsiveSizesKeys.length === 2) {
+        if (!toUpdate && responsiveSizesKeys && responsiveSizesKeys.length === 2) {
             return this._responsive_sizes;
         }
         let cssVariable_MinHeight = this.getCssValueBySelector(this._responsiveSizeSelector, __classPrivateFieldGet(this, _ResponsiveSizes_CSS_VARIABLE_NAME__MIN_HEIGHT, "f"));
@@ -119,25 +119,25 @@ class ResponsiveSizes {
         return this._responsive_sizes;
     }
     // one very precise method for the specific case, the fewest pixels dimension when a site is shown.
-    mobilePortrait(force) {
-        let mobile = this.mobile(force);
-        let forceUpdate_false = false;
-        let orientationPortrait = this.orientationPortrait(forceUpdate_false);
+    mobilePortrait(toUpdate) {
+        let mobile = this.mobile(toUpdate);
+        let notToUpdate = false;
+        let orientationPortrait = this.orientationPortrait(notToUpdate);
         let mobileAndPortrait = (mobile && orientationPortrait);
         return mobileAndPortrait;
     }
-    mobile(force) {
-        let responsiveSizeName = this.getResponsiveSizeName(force);
+    mobile(toUpdate) {
+        let responsiveSizeName = this.getResponsiveSizeName(toUpdate);
         let responsiveSizeNameMatches = responsiveSizeName.includes(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORD_MOBILE, "f"));
         return responsiveSizeNameMatches;
     }
-    tablet(force) {
-        let responsiveSizeName = this.getResponsiveSizeName(force);
+    tablet(toUpdate) {
+        let responsiveSizeName = this.getResponsiveSizeName(toUpdate);
         let responsiveSizeNameMatches = responsiveSizeName.includes(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORD_TABLET, "f"));
         return responsiveSizeNameMatches;
     }
-    desktop(force) {
-        let responsiveSizeName = this.getResponsiveSizeName(force);
+    desktop(toUpdate) {
+        let responsiveSizeName = this.getResponsiveSizeName(toUpdate);
         let keywordsDesktopNotMatching = [
             __classPrivateFieldGet(this, _ResponsiveSizes_KEYWORD_MOBILE, "f"),
             __classPrivateFieldGet(this, _ResponsiveSizes_KEYWORD_TABLET, "f")
@@ -153,28 +153,74 @@ class ResponsiveSizes {
         let isResponsiveSizeDesktop = (responsiveSizeNameMatches === false);
         return isResponsiveSizeDesktop;
     }
-    matchOrientation(keywords, force) {
-        let responsiveSizeName = this.getResponsiveSizeName(force);
+    matchOrientation(keywords, toUpdate) {
+        let responsiveSizeName = this.getResponsiveSizeName(toUpdate);
         let matchFound = keywords
             .find((keyword) => {
-            return responsiveSizeName.endsWith(keyword);
+            return responsiveSizeName.includes(keyword);
         });
         let responsiveSizeNameMatches = (matchFound !== undefined);
         return responsiveSizeNameMatches;
     }
-    orientationPortrait(force) {
-        let responsiveSizeNameMatches = this.matchOrientation(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORDS_ORIENTATION_PORTRAIT, "f"), force);
+    orientationPortrait(toUpdate) {
+        let responsiveSizeNameMatches = this.matchOrientation(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORDS_ORIENTATION_PORTRAIT, "f"), toUpdate);
         return responsiveSizeNameMatches;
     }
-    orientationLandscape(force) {
-        let responsiveSizeNameMatches = this.matchOrientation(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORDS_ORIENTATION_LANDSCAPE, "f"), force);
+    orientationLandscape(toUpdate) {
+        let responsiveSizeNameMatches = this.matchOrientation(__classPrivateFieldGet(this, _ResponsiveSizes_KEYWORDS_ORIENTATION_LANDSCAPE, "f"), toUpdate);
         return responsiveSizeNameMatches;
     }
-    toJson(force) {
-        let responsiveSizeName = this.getResponsiveSizeName(force);
-        let responsiveSizes = this.getResponsiveSizes(force);
+    getInfoShort(asArray, toUpdate) {
+        let retInfoShort = new Object();
+        let notToUpdate = false;
+        let locSizeMobile = this.mobile(toUpdate);
+        let locSizeTablet = this.tablet(notToUpdate);
+        let locSizeDesktop = this.desktop(notToUpdate);
+        let locSize = this.getCssVariableArray(notToUpdate)[4];
+        let locOrientationPortrait = this.orientationPortrait(notToUpdate);
+        let locOrientationLandscape = this.orientationLandscape(notToUpdate);
+        let locDeviceName = "";
+        if (locSizeMobile) {
+            locDeviceName = "mobile";
+        }
+        else if (locSizeTablet) {
+            locDeviceName = "tablet";
+        }
+        else if (locSizeDesktop) {
+            locDeviceName = "display";
+        }
+        let locOrientationName = "";
+        if (locOrientationPortrait) {
+            locOrientationName = "portrait";
+        }
+        else if (locOrientationLandscape) {
+            locOrientationName = "landscape";
+        }
+        let arrInfoShort = new Array(0);
+        let objInfoShort = new Object();
+        if (asArray) {
+            arrInfoShort = [
+                locDeviceName,
+                locSize,
+                locOrientationName
+            ];
+            retInfoShort = arrInfoShort;
+        }
+        else {
+            objInfoShort = {
+                "device": locDeviceName,
+                "size": locSize,
+                "orientation": locOrientationName
+            };
+            retInfoShort = objInfoShort;
+        }
+        return retInfoShort;
+    }
+    getInfoLong(toUpdate) {
+        let responsiveSizeName = this.getResponsiveSizeName(toUpdate);
+        let responsiveSizes = this.getResponsiveSizes(toUpdate);
         let responsiveSizesJsonKeys = Object.keys(this._responsiveSizesJson);
-        if (!force && responsiveSizesJsonKeys && responsiveSizesJsonKeys.length !== 0) {
+        if (!toUpdate && responsiveSizesJsonKeys && responsiveSizesJsonKeys.length !== 0) {
             return this._responsiveSizesJson;
         }
         let notToUpdate = false;
@@ -203,9 +249,22 @@ class ResponsiveSizes {
         };
         return this._responsiveSizesJson;
     }
-    toString() {
-        let force = true;
-        let responsiveSizesJson = this.toJson(force);
+    toJson(toUpdate) {
+        let retVal = this.getInfoLong(toUpdate);
+        return retVal;
+    }
+    json(asShortInfo, shortInfoAsArray, toUpdate) {
+        let retVal = new Object();
+        if (asShortInfo) {
+            retVal = this.getInfoShort(shortInfoAsArray, toUpdate);
+        }
+        else {
+            retVal = this.getInfoLong(toUpdate);
+        }
+        return retVal;
+    }
+    toString(toUpdate) {
+        let responsiveSizesJson = this.toJson(toUpdate);
         let jsonString = JSON.stringify(responsiveSizesJson, null, 2);
         return jsonString;
     }

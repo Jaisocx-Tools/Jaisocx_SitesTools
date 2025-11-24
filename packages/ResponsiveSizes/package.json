@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/responsive-sizes",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "author": "Jaisocx",
   "keywords": [],
   "private": false,
@@ -14,11 +14,17 @@
     "import": "./transpiled/ESNext/index.js"
   },
   "files": [
+    "index.preview.html",
+
     "transpiled/CommonJS",
     "transpiled/ESNext",
     "transpiled/Simple",
+
     "README.md"
   ],
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "~1.2.3"
+  },
   "publishConfig": {
     "access": "public"
   }

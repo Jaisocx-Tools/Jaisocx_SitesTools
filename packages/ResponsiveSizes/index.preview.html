@@ -23,7 +23,9 @@
   <link
       rel="icon"
       type="image/x-icon"
-      href="favicon/Icon_Sandbox_Brightday.ico"
+      href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"
+      href-fallback="../css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"
+      onerror="javascript: ( () => { console.log( this ); this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
   />
 
 
@@ -31,12 +33,12 @@
   <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
 
   <!--# importing @jaisocx/css-clean-start-2 IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB  -->
-  <link
+  <!-- <link
     rel="stylesheet"
     type="text/css"
     charset="utf-8"
     href="MediaAndStyles/CssCleanStart_2_main_relative.css"
-  />
+  /> -->
 
   <!--# PROD MODE -->
   <!--#
@@ -46,12 +48,14 @@
       SAME TRAFFIC, HOWEVER IN THE DEV CONSOLE JUST ONE CSS FILE IS SEEN.
   -->
   <!--# THE SAME importing @jaisocx/css-clean-start-2 IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL -->
-<!--  <link-->
-<!--      rel="stylesheet"-->
-<!--      type="text/css"-->
-<!--      charset="utf-8"-->
-<!--      href="MediaAndStyles/CssCleanStart_2_main_resolved.css"-->
-<!--  />-->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      href-fallback="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      onerror="javascript: ( () => { console.log( this ); this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
 
 
 
@@ -102,31 +106,28 @@
 <body>
 
 
-<main>
+  <main>
 
-  <h1> Responsive Sizes </h1>
-  <h2> @jaisocx/responsive-sizes </h2>
+    <h1> Responsive Sizes </h1>
+    <h2> @jaisocx/responsive-sizes </h2>
 
-  <description>
-    You get know the .css file where the @media query is set,
-    relevant to the currently opened browser's tab with the site being tested.
-  </description>
+    <description>
+      You get know the .css file where the @media query is set,
+      relevant to the currently opened browser's tab with the site being tested.
+    </description>
 
-  <h2 id="size_name">Tests</h2>
+    <h2 id="size_name">Tests</h2>
 
-  <pre id="info"></pre>
+    <pre id="info"></pre>
 
-</main>
+  </main>
 
 </body>
 
 
 
-<script src="node_modules/@jaisocx/responsive-sizes/transpiled/Simple/ResponsiveSizesConstants.js"></script>
-<script src="node_modules/@jaisocx/responsive-sizes/transpiled/Simple/ResponsiveSizes.js"></script>
-
-<script src="../responsive-sizes/transpiled/Simple/ResponsiveSizesConstants.js"></script>
-<script src="../responsive-sizes/transpiled/Simple/ResponsiveSizes.js"></script>
+<script src="transpiled/Simple/ResponsiveSizesConstants.js"></script>
+<script src="transpiled/Simple/ResponsiveSizes.js"></script>
 
 
 
