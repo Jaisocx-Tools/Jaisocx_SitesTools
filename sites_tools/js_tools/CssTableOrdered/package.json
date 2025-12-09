@@ -46,7 +46,10 @@
     }
   },
   "optionalDependencies": {
-   "@jaisocx/css-clean-start-2": "~1.2.3",
-    "@jaisocx/css-table": "~3.3.1"
+    "@jaisocx/css-clean-start-2": "~1.2.5",
+    "@jaisocx/css-table": "~3.4.2",
+    "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.0.4"
   }
 }
+
+

@@ -5,34 +5,112 @@
 
 
 
-.jsx .CssTableOrdered {
-
-  
-  --jsx--CssTableOrdered--toolHtmlElement--font-size: 1rem;
-
-
-  
-  --jsx--CssTableOrdered--toolHtmlElement--font-size: var(--jsx--css-clean-start-2--all-tags--font-size);
-
-
-  --jsx--CssTableOrdered--main--background-color: darkgreen;
-  --jsx--CssTableOrdered--main--color: white;
-}
 
 
 
 
 
 
-@media only screen and (min-width: 2px) and (max-width: 239px) and (min-height: 2px) and (max-height: 99999px) and (orientation: portrait) {
 
-  .jsx {
-    --theme_name: CssTableOrdered__theme_base;
-    --theme_name__CssTableOrdered: theme_base;
-    --responsive_size: responsive_size_d05_very_small_xxs_portrait;
-    --responsive_size__CssTableOrdered__theme_base: responsive_size_d05_very_small_xxs_portrait__CssTableOrdered__theme_base;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 2px) and (max-width: 99999px) and (min-height: 2px) and (max-height: 239px) and (orientation: landscape) {
 
@@ -45,6 +123,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 240px) and (max-width: 320px) and (min-height: 240px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -54,6 +134,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_e02_mobile_xs_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 240px) and (max-width: 99999px) and (min-height: 240px) and (max-height: 320px) and (orientation: landscape) {
 
@@ -66,6 +149,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 321px) and (max-width: 375px) and (min-height: 321px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -75,6 +160,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_e04_mobile_s_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 321px) and (max-width: 99999px) and (min-height: 321px) and (max-height: 375px) and (orientation: landscape) {
 
@@ -87,6 +175,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 376px) and (max-width: 430px) and (min-height: 376px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -96,6 +186,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_e06_mobile_sm_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 376px) and (max-width: 99999px) and (min-height: 376px) and (max-height: 430px) and (orientation: landscape) {
 
@@ -108,6 +201,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 431px) and (max-width: 480px) and (min-height: 431px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -117,6 +212,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_e08_mobile_md_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 431px) and (max-width: 99999px) and (min-height: 431px) and (max-height: 480px) and (orientation: landscape) {
 
@@ -129,6 +227,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 481px) and (max-width: 767px) and (min-height: 481px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -138,6 +238,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_h03_tablet_s_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 99999px) and (min-height: 481px) and (max-height: 767px) and (orientation: landscape) {
 
@@ -150,6 +253,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: portrait) {
 
   .jsx {
@@ -159,6 +264,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_h05_tablet_sm_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
 
@@ -171,6 +279,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1194px) and (orientation: portrait) {
 
   .jsx {
@@ -180,6 +290,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_h07_tablet_md_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1194px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
 
@@ -192,6 +305,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1195px) and (max-height: 99999px) and (orientation: portrait) {
 
   .jsx {
@@ -201,6 +316,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_h09_tablet_lg_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1195px) and (max-width: 99999px) and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
 
@@ -213,6 +331,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: portrait) {
 
   .jsx {
@@ -222,6 +342,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_l02_laptop_sm_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1365px) and (min-height: 1025px) and (max-height: 1365px) and (orientation: landscape) {
 
@@ -234,6 +357,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1440px) and (min-height: 1366px) and (max-height: 1440px) and (orientation: portrait) {
 
   .jsx {
@@ -243,6 +368,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_l03_laptop_md_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1366px) and (max-width: 1440px) and (min-height: 1025px) and (max-height: 1440px) and (orientation: landscape) {
 
@@ -255,6 +383,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1600px) and (min-height: 1441px) and (max-height: 1600px) and (orientation: portrait) {
 
   .jsx {
@@ -264,6 +394,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_l07_laptop_lg_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1441px) and (max-width: 1600px) and (min-height: 1025px) and (max-height: 1600px) and (orientation: landscape) {
 
@@ -276,6 +409,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1920px) and (min-height: 1601px) and (max-height: 1920px) and (orientation: portrait) {
 
   .jsx {
@@ -285,6 +420,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_s02_display_xl_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1601px) and (max-width: 1920px) and (min-height: 1025px) and (max-height: 1920px) and (orientation: landscape) {
 
@@ -297,6 +435,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 2560px) and (min-height: 1921px) and (max-height: 2560px) and (orientation: portrait) {
 
   .jsx {
@@ -306,6 +446,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_s04_display_xxl_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 1921px) and (max-width: 2560px) and (min-height: 1025px) and (max-height: 2560px) and (orientation: landscape) {
 
@@ -318,6 +461,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 3840px) and (min-height: 2561px) and (max-height: 3840px) and (orientation: portrait) {
 
   .jsx {
@@ -327,6 +472,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_s08_display_qhd_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 2561px) and (max-width: 3840px) and (min-height: 1025px) and (max-height: 3840px) and (orientation: landscape) {
 
@@ -339,6 +487,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 7680px) and (min-height: 3841px) and (max-height: 7680px) and (orientation: portrait) {
 
   .jsx {
@@ -348,6 +498,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_t04_tv_4k_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 3841px) and (max-width: 7680px) and (min-height: 1025px) and (max-height: 7680px) and (orientation: landscape) {
 
@@ -360,6 +513,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 15360px) and (min-height: 7681px) and (max-height: 15360px) and (orientation: portrait) {
 
   .jsx {
@@ -369,6 +524,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_t08_tv_8k_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 7681px) and (max-width: 15360px) and (min-height: 1025px) and (max-height: 15360px) and (orientation: landscape) {
 
@@ -381,6 +539,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 25360px) and (min-height: 15361px) and (max-height: 25360px) and (orientation: portrait) {
 
   .jsx {
@@ -390,6 +550,9 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_t16_tv_16k_portrait__CssTableOrdered__theme_base;
   }
 }
+
+
+
 
 @media only screen and (min-width: 15361px) and (max-width: 25360px) and (min-height: 1025px) and (max-height: 25360px) and (orientation: landscape) {
 
@@ -402,6 +565,8 @@
 }
 
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 999999px) and (min-height: 25361px) and (max-height: 999999px) and (orientation: portrait) {
 
   .jsx {
@@ -412,6 +577,9 @@
   }
 }
 
+
+
+
 @media only screen and (min-width: 25361px) and (max-width: 999999px) and (min-height: 1025px) and (max-height: 999999px) and (orientation: landscape) {
 
   .jsx {
@@ -421,6 +589,12 @@
     --responsive_size__CssTableOrdered__theme_base: responsive_size_t99_tv_xxxl_landscape__CssTableOrdered__theme_base;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -436,6 +610,10 @@
 .jsx .CssTableOrdered .class2 {
 
 }
+
+
+
+
 
 
 

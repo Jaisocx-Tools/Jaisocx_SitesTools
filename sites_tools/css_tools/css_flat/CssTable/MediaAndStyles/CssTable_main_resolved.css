@@ -44,6 +44,70 @@
 
 
 
+.jsx-css-table-holder .cell.example .cell-value {
+  
+
+  word-spacing: 0.9rem;
+  letter-spacing: 0.1rem;
+
+  
+  text-transform: capitalize;
+
+  
+  font-variant-caps: titling-caps;
+
+  font-variant: no-common-ligatures tabular-nums;
+
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: lime;
+  text-underline-position: under; 
+
+  font-variant-alternates: historical-forms;
+}
+
+
+.jsx-css-table-holder .cell.keep-like-in-text-editor span.cell-value {
+  white-space:  preserve nowrap !important;
+  word-break: keep-all !important;
+  display: block !important;
+}
+
+.jsx-css-table-holder .cell.keep-line .cell-value {
+  
+  
+  white-space: nowrap;
+}
+
+.jsx-css-table-holder .cell.number .cell-value {
+  
+  text-align:             right;
+  font-family:            monospace;
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -620,7 +684,6 @@
 
 
 
-
 .jsx-css-table-holder {
 
   --jsx--CssTable--thin--cell--column-label--width:                    9rem;
@@ -683,7 +746,6 @@
   --jsx--CssTable--thin--cell--cell-value--word-break:                 break-word;
 
 }
-
 
 
 
@@ -756,7 +818,6 @@
   --jsx--CssTable--bright--cell--cell-value--word-break:                 break-word;
 
 }
-
 
 
 
@@ -845,7 +906,6 @@
   --jsx--CssTable--cell--cell-value--a--color:                    #226d22;
   --jsx--CssTable--cell--cell-value--a-hover--color:              #22a022;
 }
-
 
 
 
@@ -1435,7 +1495,6 @@
 
 
 
-
 .jsx-css-table-holder.theme_imaged .cell.name.folder .cell-mini-image .in-cell-mini-image {
   background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/tree_theme_base/icons8-3-100.png");
 }
@@ -1541,7 +1600,6 @@
 
 
 
-
 .jsx.theme_visible_height main .jsx-css-table-holder {
 
   --jsx--CssTable--holder--overflow-x: auto;
@@ -1551,7 +1609,6 @@
   flex-shrink: 1;
 
 }
-
 
 
 
@@ -1648,7 +1705,6 @@
 
 
 
-
 .jsx.theme_lightmode .jsx-css-table-holder,
 .jsx .theme_lightmode.jsx-css-table-holder {
 
@@ -1671,7 +1727,6 @@
   --jsx--CssTable--cell--cell-value--a-hover--color:     #2299ff;
 
 }
-
 
 
 
@@ -1704,7 +1759,6 @@
   --jsx--CssTable--cell--cell-value--a-hover--color:         #ace9ff;
 
 }
-
 
 
 
@@ -1849,7 +1903,6 @@
 
 
 
-
 @media only screen and (min-width: 10px) and (max-width: 1024px) {
 
   .jsx-css-table-holder .jsx-css-table {
@@ -1981,7 +2034,6 @@
 
 
 
-
 @media only screen and (min-width: 1025px) {
 
   .jsx-css-table-holder .jsx-css-table {
@@ -2079,7 +2131,6 @@
   }
 
 }
-
 
 
 

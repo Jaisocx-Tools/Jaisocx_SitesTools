@@ -276,7 +276,7 @@ export class CssImporter implements CssImporterInterface {
     if ( this.debug === true ) {
       this.fileWriterQueue.addThisClassEventListener (
         this.fileWriterQueue.eventEOF.eventName,
-        (eventName, payload) => {
+        (eventName: any, payload: any) => {
           console.log (
             "EOF",
             {eventName,

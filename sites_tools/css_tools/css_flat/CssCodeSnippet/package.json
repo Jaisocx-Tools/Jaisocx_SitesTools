@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/css-code-snippet",
-  "version": "1.3.6",
+  "version": "1.3.7",
   "description": "Css sites tool rendering code blocks with numbered code rows",
   "author": "Jaisocx Company",
   "keywords": [
@@ -40,9 +40,8 @@
     }
   },
   "dependencies": {
-   "@jaisocx/css-clean-start-2": "~1.2.3"
+   "@jaisocx/css-clean-start-2": "~1.2.5"
   }
 }
-
 
 
