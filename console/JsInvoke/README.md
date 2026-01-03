@@ -4,8 +4,6 @@
 
 **Invoke node class in console, for debug either.**
 
-[README.md HOME](./../../../../../README.md)
-
 
 
 
