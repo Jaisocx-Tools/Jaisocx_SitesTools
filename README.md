@@ -13,14 +13,14 @@ written in **typescript** programming language
 and published in `@jaisocx` namespace 
 **for installation** with `yarn` or `npm`.
 
----
+
 
   
 ## Sites Tools
 
 ### A) CSS Tools
 
----
+
 
 ![CssTable.png](./images/md_images/sites_tools/CssTable.png)
 
@@ -31,12 +31,12 @@ and published in `@jaisocx` namespace
 
 ### B) CSS Tools with CSS Events
 
----
+
 
 
 ### C) Media Libs
 
----
+
 
 ![MediaFontOrbitron.png](./images/md_images/sites_tools/MediaFontOrbitron.png)
 
@@ -46,7 +46,7 @@ and published in `@jaisocx` namespace
 
 ### D) JS Tools
 
----
+
 
 ![Tooltip.png](./images/md_images/sites_tools/Tooltip.png)
 
@@ -54,7 +54,7 @@ and published in `@jaisocx` namespace
 
 ### E) JSON Rendering Tools
 
----
+
 
 ![Tree.png](./images/md_images/sites_tools/Tree.png)
 
@@ -63,7 +63,7 @@ and published in `@jaisocx` namespace
 
 ## Packages Templates
 
----
+
 
 1. Typescript development
 2. Sites Tools development
@@ -74,7 +74,7 @@ and published in `@jaisocx` namespace
 
 ## Programming Patterns
 
----
+
 
 I think of implementing in typescript 
 the well known development patterns.
@@ -83,7 +83,7 @@ the well known development patterns.
 
 ## Examples
 
----
+
 
 1. HTML pages with Webpack Builds of Sites Tools
 2. HTML pages with Sites Tools
@@ -93,7 +93,7 @@ the well known development patterns.
 
 ## Base typescript packages
 
----
+
 
 **Areas of development several tasks solved**
 
