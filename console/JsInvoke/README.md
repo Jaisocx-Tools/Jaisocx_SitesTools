@@ -92,9 +92,16 @@ the typescript package `@jaisocx/css-importer`:
 `cmd/cssImporter.sh`
 
 
+
 ```bash
 
-### ./cmd/cssImporter.sh Line 55:
+### TypescriptEnvironment
+### ./cmd/cssImporter.sh
+
+### https://github.com/Jaisocx-Tools/TypescriptEnvironment/
+### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/cmd/cssImporter.sh
+
+### Line 55:
 
 "${jsInvokePath}" "$commandLineArgs" \
   --Root="${IN_DOCKER_PROJECT_VOLUME}" \
