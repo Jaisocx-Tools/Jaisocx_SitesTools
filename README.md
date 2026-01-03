@@ -19,14 +19,13 @@ and published in `@jaisocx` namespace
 
 1. Themes
 2. Responsive styling
-3. Command Line Shell `bash`
-4. Solving tasks with fewer instruments and installations if not required.
+3. Emails Rendering Quality
+4. Command Line Shell `bash`
 5. Optimization
-   * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
    * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
+   * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
    * RAM for DOM ( thin html templates )
    * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
-   * Hard drive space ( package.json dependencies minimization )
    * Public repositories storage space ( Workarounds for CDN and Media storing repos )
    * Parsing ( ObjData )
 
@@ -74,6 +73,32 @@ and published in `@jaisocx` namespace
 
 ![Tree.png](./images/md_images/sites_tools/Tree.png)
 
+
+
+## Packages Templates
+
+---
+
+1. Typescript development
+2. Sites Tools development
+3. Webpack Builds
+
+
+
+## Programming Patterns
+
+---
+
+I think of implementing in typescript 
+the well known development patterns.
+
+
+## Examples
+
+---
+
+1. HTML pages with Webpack Builds
+2. HTML pages with Sites Tools
 
 
 
