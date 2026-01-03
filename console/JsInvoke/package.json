@@ -1,0 +1,33 @@
+{
+  "name": "@jaisocx/console-js-invoke",
+  "version": "1.0.1",
+  "author": "Jaisocx Company",
+  "keywords": [],
+  "private": false,
+  "description": "The @jaisocx template for a Typescript Package with The Vitest ts test example.",
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-importer": "=1.4.2"
+  },
+  "dependencies": {
+    "@jaisocx/command-line": "~1.0.3"
+  }
+}
+
+

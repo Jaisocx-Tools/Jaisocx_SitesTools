@@ -83,6 +83,7 @@ html.jsx script {
   max-width:  0;
   overflow-y: hidden;
   overflow-x: hidden;
+  display: none;
 }
 
 

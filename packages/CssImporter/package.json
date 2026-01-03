@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/css-importer",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "author": "Jaisocx Company",
   "private": false,
   "description": "Like the Webpack, builds a bundle of several sources, however just with .css stylesheets, and also very fast, in milliseconds.",
@@ -16,8 +16,8 @@
     "README.md"
   ],
   "dependencies": {
-    "@jaisocx/file-writer": "^1.2.7",
-    "@jaisocx/tokens-parser": "^1.2.2"
+    "@jaisocx/file-writer": "~1.2.7",
+    "@jaisocx/tokens-parser": "~1.2.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

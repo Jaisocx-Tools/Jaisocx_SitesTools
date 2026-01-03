@@ -1,0 +1,26 @@
+{
+  "id": {
+    "title": "id",
+    "type": "number",
+    "width": "100px",
+    "align": "right"
+  },
+  "priority": {
+    "title": "Priority",
+    "type": "number",
+    "width": "100px",
+    "align": "center"
+  },
+  "task": {
+    "title": "Task",
+    "type": "text",
+    "width": "1fr",
+    "align": "left"
+  },
+  "estimation": {
+    "title": "Estimation",
+    "type": "number",
+    "width": "100px",
+    "align": "right"
+  }
+}
