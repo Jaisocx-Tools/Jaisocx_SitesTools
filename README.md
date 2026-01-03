@@ -22,9 +22,9 @@ and published in `@jaisocx` namespace
 
 
 
-![CssTable.png](./images/md_images/sites_tools/iloveimg-resized450/CssTable.png)
+![CssTable.png](./images/md_images/sites_tools/iloveimg-resized350/CssTable.png)
 
-![CssCodeSnippet.png](./images/md_images/sites_tools/iloveimg-resized450/CssCodeSnippet.png)
+![CssCodeSnippet.png](./images/md_images/sites_tools/iloveimg-resized350/CssCodeSnippet.png)
 
 
 
@@ -38,9 +38,9 @@ and published in `@jaisocx` namespace
 
 
 
-![MediaFontOrbitron.png](./images/md_images/sites_tools/iloveimg-resized450/MediaFontOrbitron.png)
+![MediaFontOrbitron.png](./images/md_images/sites_tools/iloveimg-resized350/MediaFontOrbitron.png)
 
-![MediaMiniImages.png](./images/md_images/sites_tools/iloveimg-resized450/MediaMiniImages.png)
+![MediaMiniImages.png](./images/md_images/sites_tools/iloveimg-resized350/MediaMiniImages.png)
 
 
 
@@ -48,7 +48,7 @@ and published in `@jaisocx` namespace
 
 
 
-![Tooltip.png](./images/md_images/sites_tools/iloveimg-resized450/Tooltip.png)
+![Tooltip.png](./images/md_images/sites_tools/iloveimg-resized350/Tooltip.png)
 
 
 
@@ -56,7 +56,7 @@ and published in `@jaisocx` namespace
 
 
 
-![Tree.png](./images/md_images/sites_tools/iloveimg-resized450/Tree.png)
+![Tree.png](./images/md_images/sites_tools/iloveimg-resized/Tree.png)
 
 
 
