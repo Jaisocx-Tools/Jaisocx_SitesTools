@@ -6,29 +6,14 @@ In reconstruction, the preview site comes later.
 
 # Jaisocx Sites Tools
 
+
+
 Source code of packages, 
 written in **typescript** programming language 
 and published in `@jaisocx` namespace 
 **for installation** with `yarn` or `npm`.
 
-
-
-## Base typescript packages
-
-**Areas of development several tasks solved**
-
-1. Themes
-2. Responsive styling
-3. Emails Rendering Quality
-4. Command Line Shell `bash`
-5. Optimization
-   * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
-   * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
-   * RAM for DOM ( thin html templates )
-   * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
-   * Public repositories storage space ( Workarounds for CDN and Media storing repos )
-   * Parsing ( ObjData )
-
+---
 
   
 ## Sites Tools
@@ -75,6 +60,7 @@ and published in `@jaisocx` namespace
 
 
 
+
 ## Packages Templates
 
 ---
@@ -82,6 +68,7 @@ and published in `@jaisocx` namespace
 1. Typescript development
 2. Sites Tools development
 3. Webpack Builds
+
 
 
 
@@ -93,12 +80,35 @@ I think of implementing in typescript
 the well known development patterns.
 
 
+
 ## Examples
 
 ---
 
-1. HTML pages with Webpack Builds
+1. HTML pages with Webpack Builds of Sites Tools
 2. HTML pages with Sites Tools
+
+
+
+
+## Base typescript packages
+
+---
+
+**Areas of development several tasks solved**
+
+1. Themes
+2. Responsive support in `.css`
+3. Emails Rendering Quality
+4. Command Line Shell `bash`
+5. Optimization
+   * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
+   * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
+   * RAM for DOM ( thin html templates )
+   * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
+   * Public repositories storage space ( Workarounds for CDN and Media storing repos )
+   * Parsing ( ObjData )
+
 
 
 
