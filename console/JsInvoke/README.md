@@ -54,7 +54,7 @@ $_ ./cmd/cssImporter.sh --debug
 
 ## Why good
 
-1. The nice **command line arg** `--debug` for **node debug** purposes.
+1. The nice **command line arg** `--debug` for **node console .js debug**.
 2. In `bash`, the incoming **command line args** have the **format** like this: `--arg="whatever"`
 3. In `typescript`, these  **command line args** are available like this: ` commandArgs.arg `
 4. The **typescript variable Root** ` commandArgs.Root `, 
