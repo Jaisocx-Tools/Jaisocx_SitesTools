@@ -53,20 +53,20 @@ and published in `@jaisocx` namespace
 
 
 
-## 🍮 Packages Templates
+## Packages Templates
 1. Typescript development
 2. Sites Tools development
 3. Webpack Builds
 
 
 
-## 🍮 Programming Patterns
+## Programming Patterns
 > I think of publishing in typescript 
 the well known development patterns.
 
 
 
-## 🍮 Base typescript packages
+## Base typescript packages
 
 **Areas of development, with several tasks solved**
 
