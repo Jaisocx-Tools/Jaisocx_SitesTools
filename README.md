@@ -21,35 +21,29 @@ and published in `@jaisocx` namespace
 
 ### 🌿 CSS Tools
 
-![CssTable.png](./images/md_images/sites_tools/iloveimg-resized350/CssTable.png)
+![CssTable.png](./images/md_images/sites_tools/size350/CssTable.png)
 
-![CssCodeSnippet.png](./images/md_images/sites_tools/iloveimg-resized350/CssCodeSnippet.png)
-
-
-
-
-### 🌿 CSS Tools with CSS Events
-
+![CssCodeSnippet.png](./images/md_images/sites_tools/size350/CssCodeSnippet.png)
 
 
 
 ### 🌿 Media Libs
 
-![MediaFontOrbitron.png](./images/md_images/sites_tools/iloveimg-resized350/MediaFontOrbitron.png)
+![MediaFontOrbitron.png](./images/md_images/sites_tools/size350/MediaFontOrbitron.png)
 
-![MediaMiniImages.png](./images/md_images/sites_tools/iloveimg-resized350/MediaMiniImages.png)
+![MediaMiniImages.png](./images/md_images/sites_tools/size350/MediaMiniImages.png)
 
 
 
 ### 🌿 JS Tools
 
-![Tooltip.png](./images/md_images/sites_tools/iloveimg-resized350/Tooltip.png)
+![Tooltip.png](./images/md_images/sites_tools/size350/Tooltip.png)
 
 
 
 ### 🌿 JSON Rendering Tools
 
-![Tree.png](./images/md_images/sites_tools/iloveimg-resized/Tree.png)
+![Tree.png](./images/md_images/sites_tools/size350/Tree.png)
 
 
 
@@ -68,7 +62,7 @@ and published in `@jaisocx` namespace
 
 ## 🍮 Programming Patterns
 > I think of publishing in typescript 
-the well known development patterns of 1980s.
+the well known development patterns.
 
 
 
