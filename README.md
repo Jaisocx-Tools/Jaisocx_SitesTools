@@ -4,7 +4,7 @@
 
 
 
-# 🌃 Jaisocx Sites Tools
+# JAISOCX™ SITES TOOLS®
 
 
 
