@@ -1,10 +1,8 @@
 ![software_tm_label_jaisocx.svg](./images/software_labels/software_tm_label_jaisocx.svg)
 
-> In reconstruction, the preview site comes later.
-
-
-
 # JAISOCX™ SITES TOOLS®
+
+> In reconstruction, the preview site comes later.
 
 
 
