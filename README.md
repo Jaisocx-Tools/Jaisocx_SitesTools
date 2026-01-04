@@ -1,6 +1,6 @@
 ![software_tm_label_jaisocx.svg](./images/software_labels/software_tm_label_jaisocx.svg)
 
-In reconstruction, the preview site comes later.
+> In reconstruction, the preview site comes later.
 
 
 
@@ -8,7 +8,7 @@ In reconstruction, the preview site comes later.
 
 
 
-> Source code of packages, 
+Source code of packages, 
 written in **typescript** programming language 
 and published in `@jaisocx` namespace 
 **for installation** with `yarn` or `npm`.
