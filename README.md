@@ -4,7 +4,7 @@
 
 
 
-# Jaisocx Sites Tools
+# 🌃 Jaisocx Sites Tools
 
 
 
@@ -15,12 +15,11 @@ and published in `@jaisocx` namespace
 
 
 
+
   
-## Sites Tools
+## 🌿 Sites Tools
 
-### A) CSS Tools
-
-
+### 🌿 CSS Tools
 
 ![CssTable.png](./images/md_images/sites_tools/iloveimg-resized350/CssTable.png)
 
@@ -29,14 +28,12 @@ and published in `@jaisocx` namespace
 
 
 
-### B) CSS Tools with CSS Events
+### 🌿 CSS Tools with CSS Events
 
 
 
 
-### C) Media Libs
-
-
+### 🌿 Media Libs
 
 ![MediaFontOrbitron.png](./images/md_images/sites_tools/iloveimg-resized350/MediaFontOrbitron.png)
 
@@ -44,58 +41,40 @@ and published in `@jaisocx` namespace
 
 
 
-### D) JS Tools
-
-
+### 🌿 JS Tools
 
 ![Tooltip.png](./images/md_images/sites_tools/iloveimg-resized350/Tooltip.png)
 
 
 
-### E) JSON Rendering Tools
-
-
+### 🌿 JSON Rendering Tools
 
 ![Tree.png](./images/md_images/sites_tools/iloveimg-resized/Tree.png)
 
 
 
+## 🌿 Examples
+1. HTML pages with Webpack Builds of Sites Tools
+2. HTML pages with Sites Tools
 
-## Packages Templates
 
 
-
+## 🍮 Packages Templates
 1. Typescript development
 2. Sites Tools development
 3. Webpack Builds
 
 
 
-
-## Programming Patterns
-
-
-
-I think of implementing in typescript 
-the well known development patterns.
+## 🍮 Programming Patterns
+> I think of publishing in typescript 
+the well known development patterns of 1980s.
 
 
 
-## Examples
+## 🍮 Base typescript packages
 
-
-
-1. HTML pages with Webpack Builds of Sites Tools
-2. HTML pages with Sites Tools
-
-
-
-
-## Base typescript packages
-
-
-
-**Areas of development several tasks solved**
+**Areas of development, with several tasks solved**
 
 1. Themes
 2. Responsive support in `.css`
