@@ -103,6 +103,8 @@
 
 <script>
 
+  let globFunc_getChar = String.fromCodePoint.bind( Object.getPrototypeOf( String ) );
+
   let globUnicodeCharsRange = [ 129280, 129535 ];
 
 /* "chars_range"
@@ -113,106 +115,111 @@
 
 
 
-  function genUnicodeChars( inUnicodeCharsRange ) {
+function genUnicodeChars( inUnicodeCharsRange ) {
 
-      let locFunc_getChar = String.fromCodePoint.bind( Object.getPrototypeOf( String ) );
+let locFunc_getChar = String.fromCodePoint.bind( Object.getPrototypeOf( String ) );
 //      let locTextDecoder = new TextDecoder("utf-16");
 
 
-      let locArrayFirstValuePos = 0;
-      let locArrayOtherValuePos = 1;
+let locArrayFirstValuePos = 0;
+let locArrayOtherValuePos = 1;
 
-      let locRangeStart_ArrayValuePos = locArrayFirstValuePos;
-      let locRangeFinish_ArrayValuePos = locArrayOtherValuePos;
+let locRangeStart_ArrayValuePos = locArrayFirstValuePos;
+let locRangeFinish_ArrayValuePos = locArrayOtherValuePos;
 
-      let locUnicodeSymbolStartValue = inUnicodeCharsRange[ locRangeStart_ArrayValuePos ];
-      let locUnicodeSymbolFinishValue = inUnicodeCharsRange[ locRangeFinish_ArrayValuePos ];
+let locUnicodeSymbolStartValue = inUnicodeCharsRange[ locRangeStart_ArrayValuePos ];
+let locUnicodeSymbolFinishValue = inUnicodeCharsRange[ locRangeFinish_ArrayValuePos ];
 
-      let cyNextUnicodeSymbolValue = locUnicodeSymbolStartValue;
-
-
-
-      let cyIterationsMaxCount = 300;
-      let cyIterationsCounter = 1;
-      let cyStepBytesSize = 1;
-
-//      let cyBitsBuffer = new Uint32Array();
-      let locCyArrayOfSymbols = new Array();
-      let locCySymbol = "a";
-
-      while ( cyNextUnicodeSymbolValue < locUnicodeSymbolFinishValue ) {
-
-        cyIterationsCounter = ( cyIterationsCounter + 1 );
-
-        if ( cyIterationsCounter > cyIterationsMaxCount ) {
-          break;
-        }
-
-
-        cyNextUnicodeSymbolValue = ( cyNextUnicodeSymbolValue + cyStepBytesSize );
-
-        if ( cyNextUnicodeSymbolValue > locUnicodeSymbolFinishValue ) {
-          break;
-        }
+let cyNextUnicodeSymbolValue = locUnicodeSymbolStartValue;
 
 
 
-        // cyBitsBuffer.set( [ cyNextUnicodeSymbolValue ], cyIterationsCounter );
+let cyIterationsMaxCount = 1000;
+let cyIterationsCounter = 1;
+let cyStepBytesSize = 1;
 
-        locCySymbol = locFunc_getChar ( cyNextUnicodeSymbolValue );
-        locCyArrayOfSymbols.push( locCySymbol );
+let locCyArrayOfSymbols = new Array();
+let locCySymbol = "a";
 
-      }
+while ( cyNextUnicodeSymbolValue < locUnicodeSymbolFinishValue ) {
 
-      let retVal = locCyArrayOfSymbols;
+  cyIterationsCounter = ( cyIterationsCounter + 1 );
 
-      return retVal;
+  if ( cyIterationsCounter > cyIterationsMaxCount ) {
+    break;
+  }
+
+
+  cyNextUnicodeSymbolValue = ( cyNextUnicodeSymbolValue + cyStepBytesSize );
+
+  if ( cyNextUnicodeSymbolValue > locUnicodeSymbolFinishValue ) {
+    break;
   }
 
 
 
-  document.addEventListener( "DOMContentLoaded", () => {
+  locCySymbol = globFunc_getChar ( cyNextUnicodeSymbolValue );
+  locCyArrayOfSymbols.push( locCySymbol );
 
-      let locUnicodeCharsRange = new Array();
-      let locArrayOfSymbols = new Array();
-      let locCySymbols = new Array();
-      let tmpText = "";
+}
 
-      locUnicodeCharsRange = [ 127462, 127481 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
+let retVal = locCyArrayOfSymbols;
 
-      locUnicodeCharsRange = [ 127744, 128511 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
-
-      locUnicodeCharsRange = [ 128512, 128591 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
-
-      locUnicodeCharsRange = [ 128640, 128764 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
-
-      locUnicodeCharsRange = [ 129280, 129535 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
-
-      locUnicodeCharsRange = [ 129648, 129784 ];
-      locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
-      tmpText = locArrayOfSymbols.join( " " );
-      locCySymbols.push( tmpText );
+return retVal;
+}
 
 
-      let textBlock = document.getElementsByTagName( "body" )[ 0 ].querySelector( "#unicode_symbols_textblock" );
-      textBlock.innerHTML = locCySymbols.join( " " );
 
-  });
+document.addEventListener( "DOMContentLoaded", () => {
+
+let locUnicodeCharsRange = new Array();
+let locArrayOfSymbols = new Array();
+let locCySymbols = new Array();
+let tmpText = "";
+
+locUnicodeCharsRange = [ 127460, 127481 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+locUnicodeCharsRange = [ 127742, 128511 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+locUnicodeCharsRange = [ 128510, 128591 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+locUnicodeCharsRange = [ 128638, 128764 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+locUnicodeCharsRange = [ 129278, 129535 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+locUnicodeCharsRange = [ 129646, 129784 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+
+
+locUnicodeCharsRange = [ 127134, 127222 ];
+locArrayOfSymbols = genUnicodeChars( locUnicodeCharsRange );
+tmpText = locArrayOfSymbols.join( " " );
+locCySymbols.push( tmpText );
+
+
+
+let textBlock = document.getElementsByTagName( "body" )[ 0 ].querySelector( "#unicode_symbols_textblock" );
+textBlock.innerHTML = locCySymbols.join( " " );
+
+});
 
 </script>
 

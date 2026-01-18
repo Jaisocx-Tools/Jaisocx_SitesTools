@@ -13,14 +13,18 @@
     </main>
     <script src="js/JSTable.js"></script>
     <script>
+
       let jsTable = null;
+      let jsonBaseUrl = "https://local.basetasks.site:9443/json/";
+      let extension = "-by-express.json";
+      // let extension = ".json";
 
       document.addEventListener('DOMContentLoaded', () => {
         jstable = new JSTable();
         jstable
           .setElementId("jstable-01")
-          .setMetadataUrl("data/table-conf.json")
-          .setDataUrl("data/table-records.json")
+          .setMetadataUrl( [jsonBaseUrl, "data/table-conf", extension ].join("") )
+          .setDataUrl( [jsonBaseUrl, "data/table-records", extension ].join("") )
           .setMobileLookAndFeelMaxWidth(630)
           .load();
       });
