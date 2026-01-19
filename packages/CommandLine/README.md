@@ -138,7 +138,7 @@
 
 
 
-## 📄 API & Interfaces
+## 📄 Interfaces
 
   `src/CommandLineArgsInterface.ts`
 
