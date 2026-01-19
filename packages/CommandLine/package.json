@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/command-line",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Jaisocx",
   "keywords": [
     "command",
@@ -22,6 +22,7 @@
     "transpiled/CommonJS",
     "transpiled/ESNext",
 
+    "software_labels",
     "README.md"
   ],
   "publishConfig": {
