@@ -5,9 +5,9 @@
 
 
 
-# Command Line
+# 🗂 Command Line
 
-## What is this
+## 💡 What is this
   > Fine-tuning for Console
 
 
@@ -42,12 +42,12 @@
 
 
 
-## Status
-  > Ok
+##  Status
+  >  Ok
 
 
 
-## Supports
+##  Supports
   > Server Side
 
 ```
@@ -57,7 +57,7 @@
 
 
 
-## Size
+## 💾 Size
   > 60 KB - 30 KB - 5 KB 
 
 ```
@@ -73,60 +73,60 @@
 
 
 
-## Required
+##  Required
   > Node installed
 
 
 
 
-## Latest update
+## 📅 Latest update
   > Winter 2026
 
   **Library**: `@jaisocx/command-line` ver. `1.2.3`
 
-  **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
+🗓 **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
 
 
 
 
 
-## Package Structure
+## 📂 Package Structure
   > 60 KB ( sixty kilobyte ) library folder's filesize
 
 ```fs
-  software_labels/
-    software_tm_label_jaisocx.svg
-  src/
-    index.ts
-    CommandLineArgsInterface.ts
-    CommandLineArgs.ts
-    example/
-      CommandArgsObjectExample.ts
-      invokeJsClassExample.ts
-  transpiled/
-    CommonJS/
-      CommandLineArgs.js
-      ...
-      ...
-      example/
-        invokeJsClassExample.js
+  📂 software_labels/
+      software_tm_label_jaisocx.svg
+  📂 src/
+      index.ts
+      CommandLineArgsInterface.ts
+      CommandLineArgs.ts
+    📂 example/
+        CommandArgsObjectExample.ts
+        invokeJsClassExample.ts
+  📂 transpiled/
+    📂 CommonJS/
+        CommandLineArgs.js
         ...
-    ESNext/
-      CommandLineArgs.js
-      ...
-      ...
-      example/
-        invokeJsClassExample.js
         ...
+      📂 example/
+          invokeJsClassExample.js
+          ...
+    📂 ESNext/
+        CommandLineArgs.js
+        ...
+        ...
+      📂 example/
+          invokeJsClassExample.js
+          ...
   package.json
-  README.md
+📄 README.md
 ```
 
 
 
 
 
-## Bash Coding Example
+## 📄 Bash Coding Example
   > 2 code lines ( bash | sh )
 
 ```bash
@@ -138,7 +138,7 @@
 
 
 
-## API & Interfaces
+## 📄 API & Interfaces
 
   `src/CommandLineArgsInterface.ts`
 
@@ -160,7 +160,7 @@
 
 
 
-## Typescript Coding Example
+## 📄 Typescript Coding Example
   > 10 - 30 code lines ( ts | js )
 
 
