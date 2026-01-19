@@ -6,7 +6,7 @@
 
 
 
-# 🗂️ Command Line
+# @jaisocx/command-line
 
 ## 💡 What is this
   > Fine-tuning for Console
