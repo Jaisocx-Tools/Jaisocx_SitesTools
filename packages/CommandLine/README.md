@@ -67,7 +67,7 @@
 
 ```
   Main js class:   src/CommandLineArgs.ts                                   2.1 KB
-  Latest Tarball:  jaisocx-command-line-1.2.3.tgz                           7.0 KB
+  Latest Tarball:  jaisocx-command-line-1.2.4.tgz                           7.0 KB
   Current Folder:  workspace/ts/Jaisocx_SitesTools/packages/CommandLine    51.0 KB
 ```
 
@@ -82,7 +82,7 @@
 ## 📅 Latest update
   > Winter 2026
 
-  **Library**: `@jaisocx/command-line` ver. `1.2.3`
+  **Library**: `@jaisocx/command-line` ver. `1.2.4`
 
 🗓 **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
 
