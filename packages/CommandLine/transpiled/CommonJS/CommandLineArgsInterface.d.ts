@@ -1,7 +1,7 @@
-import { CommandLineArgs } from "./CommandLineArgs.js";
 export interface CommandLineArgsInterface {
     getCommandLineArgs(): object;
-    readCommandLineArgs(): CommandLineArgs;
-    transformCommandLineArgs(): CommandLineArgs;
+    getAfterReadNTransformed(): object;
+    readCommandLineArgs(): CommandLineArgsInterface;
+    transformCommandLineArgs(): CommandLineArgsInterface;
 }
 //# sourceMappingURL=CommandLineArgsInterface.d.ts.map

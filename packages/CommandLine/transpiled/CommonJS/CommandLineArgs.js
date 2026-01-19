@@ -9,6 +9,13 @@ class CommandLineArgs {
     getCommandLineArgs() {
         return this._commandLineArgs;
     }
+    getAfterReadNTransformed() {
+        let commandArgs = this
+            .readCommandLineArgs()
+            .transformCommandLineArgs()
+            .getCommandLineArgs();
+        return commandArgs;
+    }
     readCommandLineArgs() {
         // Get command-line arguments
         // and set to protected property of this ts class.

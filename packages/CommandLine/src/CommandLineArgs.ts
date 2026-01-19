@@ -22,7 +22,19 @@ export class CommandLineArgs implements CommandLineArgsInterface {
 
 
 
-  public readCommandLineArgs(): CommandLineArgs {
+  public getAfterReadNTransformed(): object {
+    let commandArgs: object = this
+      .readCommandLineArgs()
+      .transformCommandLineArgs()
+      .getCommandLineArgs();
+
+
+    return commandArgs;
+  }
+
+
+
+  public readCommandLineArgs(): CommandLineArgsInterface {
 
     // Get command-line arguments
     // and set to protected property of this ts class.
@@ -48,7 +60,7 @@ export class CommandLineArgs implements CommandLineArgsInterface {
 
 
 
-  public transformCommandLineArgs(): CommandLineArgs {
+  public transformCommandLineArgs(): CommandLineArgsInterface {
     this._commandLineArgs = new Object();
 
 

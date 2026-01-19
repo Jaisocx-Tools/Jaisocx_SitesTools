@@ -4,7 +4,8 @@ export declare class CommandLineArgs implements CommandLineArgsInterface {
     protected _commandLineArgs: object;
     constructor();
     getCommandLineArgs(): object;
-    readCommandLineArgs(): CommandLineArgs;
-    transformCommandLineArgs(): CommandLineArgs;
+    getAfterReadNTransformed(): object;
+    readCommandLineArgs(): CommandLineArgsInterface;
+    transformCommandLineArgs(): CommandLineArgsInterface;
 }
 //# sourceMappingURL=CommandLineArgs.d.ts.map

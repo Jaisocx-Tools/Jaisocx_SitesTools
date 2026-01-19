@@ -67,7 +67,7 @@
 
 ```
   Main js class:   src/CommandLineArgs.ts                                   2.1 KB
-  Latest Tarball:  jaisocx-command-line-1.0.6.tgz                           7.0 KB
+  Latest Tarball:  jaisocx-command-line-1.2.3.tgz                           7.0 KB
   Current Folder:  workspace/ts/Jaisocx_SitesTools/packages/CommandLine    51.0 KB
 ```
 
@@ -80,11 +80,11 @@
 
 
 ## Latest update
-  > Summer 2025
+  > Winter 2026
 
-  **Library**: `@jaisocx/command-line` ver. `1.0.6`
+  **Library**: `@jaisocx/command-line` ver. `1.2.3`
 
-  **Updated at**: `Satturday, 30th of August 2026, 17:11:31 CEST`
+  **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
 
 
 
@@ -137,8 +137,39 @@
 
 
 
+
+## API & Interfaces
+
+  `src/CommandLineArgsInterface.ts`
+
+```typescript
+  interface CommandLineArgsInterface {
+    
+    getCommandLineArgs(): object;
+    
+    getAfterReadNTransformed(): object;
+    
+    readCommandLineArgs(): CommandLineArgsInterface;
+    
+    transformCommandLineArgs(): CommandLineArgsInterface;
+
+  }
+```
+
+
+
+
+
 ## Typescript Coding Example
   > 10 - 30 code lines ( ts | js )
+
+
+
+```typescript
+  console.log( (new CommandLineArgs()).getAfterReadNTransformed() );
+```
+
+
 
 ```typescript
   // Script Name: invokeJsInConsoleExample.js

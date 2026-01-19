@@ -1,11 +1,10 @@
-import { CommandLineArgs } from "./CommandLineArgs.js";
-
-
 export interface CommandLineArgsInterface {
 
   getCommandLineArgs(): object;
 
-  readCommandLineArgs(): CommandLineArgs;
+  getAfterReadNTransformed(): object;
+
+  readCommandLineArgs(): CommandLineArgsInterface;
 
 
   /*
@@ -19,8 +18,7 @@ export interface CommandLineArgsInterface {
     }
 
   */
-  transformCommandLineArgs(): CommandLineArgs;
-
+  transformCommandLineArgs(): CommandLineArgsInterface;
 }
 
 
