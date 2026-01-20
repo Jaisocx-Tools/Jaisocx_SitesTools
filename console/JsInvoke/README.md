@@ -75,7 +75,7 @@
 
   **For example, to solve a task**:
 
-    You need to invoke in console somehow the node console library "@jaisocx/css-importer", maybe for debug, too.
+    You need to invoke in console somehow the node console library "@jaisocx/css-importer", for debug, too.
 
 
   You need first a custom `.js` script, that uses js classes from the imported node library `"@jaisocx/css-importer"`.
