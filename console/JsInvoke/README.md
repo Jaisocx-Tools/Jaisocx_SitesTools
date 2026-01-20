@@ -160,9 +160,9 @@
 
 ### 2. Invoke in console
 
-  3. **write bash script** calling this new custom `.ts` file **like in the example**: `./cmd/cssImporter.sh`
+  3. **write bash script** calling this new custom `.ts` script ( transpiled to `.js` in folder `transpiled/ESNext/` ) **like in the example**: `./cmd/cssImporter.sh`
   4. **invoke** like this in **local terminal**.
-        The good thing is, You are sure, this new custom `.ts` file is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**:
+        The good thing is, You are sure, this new custom `.js` is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**:
 ```bash
 
   $_ ./cmd/cssImporter.sh --debug
