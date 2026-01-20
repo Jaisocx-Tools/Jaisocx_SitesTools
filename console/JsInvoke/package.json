@@ -1,5 +1,5 @@
 {
-  "name": "@jaisocx/console-js-invoke",
+  "name": "@jaisocx/jsc_console_js_invoke",
   "version": "1.0.1",
   "author": "Jaisocx Company",
   "keywords": [],
@@ -12,6 +12,9 @@
   "exports": {
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
+  },
+  "scripts": {
+    "start": "node ./transpiled/ESNext/invokeCssImporter.js"
   },
   "files": [
     "transpiled/CommonJS",

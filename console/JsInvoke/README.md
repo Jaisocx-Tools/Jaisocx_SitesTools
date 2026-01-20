@@ -1,52 +1,113 @@
-![software_tm_label_jaisocx.svg](./docs/images/software_tm_label_jaisocx.svg)
 
-# JS INVOKE
+![./software_labels/software_tm_label_jaisocx.svg](./software_labels/software_tm_label_jaisocx.svg)
 
-**Invoke node class in console, for debug either.**
-
+![./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg](./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg)
 
 
 
 
-The Jaisocx bash infrastructure allows the very ease way
-to accept command line shell args
-in node console scripts thanks to
-**base bash script** `cmd/base/js_invoke.sh`
-and the **node library** `@jaisocx/command-line`.
+
+# 💻 CONSOLE JS INVOKE
+  > 💡 Write and store scripts to invoke in console, for debugging too.
+
+
+  not published for yarn or npm for now, since no need to import in other javascript code.
+
+---
 
 
 
-## For what
 
-1. You need **custom script for package** `@jaisocx/css-importer`
-2. Invokes in **console** very very easy, using **docker the right way**:
+
+##  Status
+  >  Ok
+
+
+
+##  Supports
+  > Server Side
+
+```
+   Browser |   Express |   Console
+        no |       yes |       yes
+```
+
+
+
+
+## 💾 Size
+  > 60 KB - 5 KB
+
+```
+  Current Folder |   node_modules/ |   typescript in src/ |   Latest Tarball |   Main js class
+           55 KB |                 |                5 KB  |                  |            5 KB
+```
+
+```
+  Main js class:   src/invokeCssImporter.ts                                 5.0 KB
+  Current Folder:  workspace/ts/Jaisocx_SitesTools/console/JsInvoke        55.0 KB
+```
+
+
+
+##  Required
+  > Node installed
+
+
+
+
+## 📅 Latest update
+  > Winter 2026
+
+  **Library**: `@jaisocx/jsc_console_js_invoke` ver. `1.0.1` not published
+
+🗓 **Updated at**: `Tue Jan 20 06:28:29 CET 2026`
+
+
+
+
+
+
+## 💡 For what
+  > Just the central place in this project, to store somewhere the console node scripts, calling other node libraries, locally linked or installed with yarn or npm.
+
+
+
+  **For example, to solve a task**:
+
+    You need to invoke in console somehow the node console library "@jaisocx/css-importer", maybe for debug, too.
+
+
+  You need first a custom `.js` script, that uses js classes from the imported node library `"@jaisocx/css-importer"`.
+
+  The `.js` script is invoked then in console,
+  and console commands can be stored as `.sh` scripts.
+
+  In our Jaisocx Typescript Environment project, `.js` scripts are invoked in **console** very very easy, using **docker the right way** thanks to the console base bash script `cmd/base/js_invoke.sh`.
+
+  Also, in `${TypescriptEnvironment}/cmd` folder, there we have `.sh` scripts, these can be used as examples or templates.
 
 ```bash
     ### You need custom script for package @jaisocx/css-importer
     ### Invokes in console like this:
-$_ ./cmd/cssImporter.sh --debug
+  $_ ./cmd/cssImporter.sh --debug
 ```
 
-
-## How does it work
-1. **write** in **console/JsInvoke** custom **typescript** code in a `.ts` file in folder `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/src/` like in example: `invokeCssImporter.ts`
-2. **transpile** with ProjectBuilder
-3. **write bash script** calling this new custom `.ts` file **like in the example**: `./cmd/cssImporter.sh`
-4. **invoke** like this in **local terminal**. 
-      The good thing is, You are sure, this new custom `.ts` file is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**: 
-```bash
-
-$_ ./cmd/cssImporter.sh --debug
-```
+  Try, You'll see later how convinient to run commands, prestored in `.sh` scripts with all command line args, no retyping in console, but saved in `.sh` script.
 
 
 
-## Call Chain
 
-1. **bash** `cmd/cssImporter.sh`
-2. **bash** `cmd/base/js_invoke.sh`
-3. **node** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/transpiled/ESNext/invokeCssImporter.js`
-4. **node** `"@jaisocx/css-importer"`
+
+
+## Calls flow
+
+  1. **bash** `cmd/cssImporter.sh`
+  2. **bash** `cmd/base/js_invoke.sh`
+  3. **node** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/transpiled/ESNext/invokeCssImporter.js`
+  4. **node** `"@jaisocx/css-importer"`
+
+
 
 
 
@@ -54,78 +115,208 @@ $_ ./cmd/cssImporter.sh --debug
 
 ## Why good
 
-1. The nice **command line arg** `--debug` for **node console .js debug**.
-2. In `bash`, the incoming **command line args** have the **format** like this: `--arg="whatever"`
-3. In `typescript`, these  **command line args** are available like this: ` commandArgs.arg `
-4. The **typescript variable Root** ` commandArgs.Root `, 
-     pointing to the **folder** `./workspace/ts`, set in `.env` file for **docker** context.
+  The Jaisocx bash infrastructure allows the very ease way
+  to accept command line shell args
+  in node console scripts thanks to
+  **base bash script** `${TypescriptEnvironment}/cmd/base/js_invoke.sh`
+  and the **node library** `@jaisocx/command-line`.
+
+
+  1. **Stored Centrally**: Easy to get know One **console/JsInvoke folder** for all `typescript` files ( `workspace/ts/Jaisocx_SitesTools/console/JsInvoke` ), to invoke in terminal.
+
+  2. **Local node_modules as a sandbox just for console examples**: These scripts then can be debugged
+  in the context of the local `node_modules`
+  and `package.json` and `package-lock.json` in this folder `${TypescriptEnvironment}/workspace/ts/Jaisocx_SitesTools/console/JsInvoke`,
+  for example to **link** other
+  imported `js` libraries,
+  **to navigate via symlink at debug time to source code** in this project,
+  and not to the installed subfolder in the local `node_modules/@jaisocx/...`.
+
+  3. **Nice command line args format**: The **Jaisocx bash infrastructure** supports for **command line args** the since longer **best coding practice format** like this: `--arg="whatever"`
+
+  4. **Easy read in typescript**: the  **command line args** are available like this: ` commandArgs.arg `
+
+  5. The cleaver **typescript variable Root** `commandArgs.Root`,
+      pointing to the **folder** `./workspace/ts`, set in `.env` file for **docker** context.
 ```
-.env
-    PROJECT_VOLUME="./workspace/ts"
-    IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts" 
-        => docker-compose.yml
+  .env
+      PROJECT_VOLUME="./workspace/ts"
+      IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
+          => docker-compose.yml
 ```
-5. The **console/JsInvoke folder** for all `typescript` files ( `workspace/ts/Jaisocx_SitesTools/console/JsInvoke` ), to invoke in terminal.
-    
-    These scripts then can be debugged 
-    in the context of the local `node_modules` 
-    and `package.json` and `package-lock.json`, 
-    for example to **link** other
-    imported `js` libraries,
-    **to navigate via symlink at debug time to source code** in this project, 
-    and not to the installed subfolder in the local `node_modules/@jaisocx/...`.
 
-   
+  6. **CLI arg --debug**: The easy to notice **command line arg** `--debug` for **node console .js debug**.
 
-## Example bash script
 
-**./cmd/cssImporter.sh**
 
-The example is thought for copy and save as other **bash** script in the same folder `./cmd`,
-hardcoding there other command line args, for calling another `.js` file.
 
-The reusable via copy/paste working `bash` example to invoke a custom bash script, 
-however nearly same like in ProjectBuilder's `ts` code, 
-on the imported to `node_modules/@jaisocx/css-importer`, 
-available in typescript code, 
-the typescript package `@jaisocx/css-importer`:
-`cmd/cssImporter.sh`
+
+## How does it work
+
+  ### 1. Writing a custom script to invoke in console.
+
+  1. **write** in **console/JsInvoke** custom **typescript** code in a `.ts` file in folder `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/src/` like in example: `invokeCssImporter.ts`
+
+  2. **transpile** on demand with ProjectBuilder.
+  > ( since 2025 node runs both, javascript and typescript, and in this project typescript via node didn't test yet. We still shall support legacy, very good for deploy and Your sites user experience multiplatform LTS )
+
+
+
+### 2. Invoke in console
+
+  3. **write bash script** calling this new custom `.ts` file **like in the example**: `./cmd/cssImporter.sh`
+  4. **invoke** like this in **local terminal**.
+        The good thing is, You are sure, this new custom `.ts` file is **called in docker the right way**, while, on demand, **easy** knew the arg to start **node debug**:
+```bash
+
+  $_ ./cmd/cssImporter.sh --debug
+```
+
+
+
+### 3. Debug
+  > 2 options: easier in local OS, or finer under docker.
+
+
+
+
+
+  ### 3.A) Debugs easier
+  > Debug Not in docker, in local OS
+
+  > package.json "scripts"."start": "node ... invokeCssImporter.js" in MS VSCode IDE choose option "start debug"
+
+
+
+  **MS VSCode IDE** debugs node scripts out-of-the-box.
+
+  Like a charm.
+
+  The **VSCode** remains since longer the only IDE with debug for js and other programming languages, without have required payments for plugins in addition.
+
+  The **VSCode** supports the most of known OS like `MS Windows`, `Linux` ( like Ubuntu, Linux under MS Windows WSL ), Apple Macintosh OS `MacOS`.
+
+  **Do like this**: In `package.json`, in the json property "scripts", You may set a **bash script, invoking node cli**, like the example json code snippet below. In VSCode in opened for view `package.json`, mouse over json object property name `"scripts"."start"` shoes command option "debug". Debug works really like a charm, without no having had need of plugins install in addition.
+
+  **Path in the Jaisocx Typescript Environment project**: `workspace/ts/Jaisocx_SitesTools/console/JsInvoke/package.json`
+
+  **Runs | Debugs "invokeCssImporter.js" via node cli** in this `package.json` Line 17
+
+```json
+1:  {
+      ...
+      {
+      ...
+      ...
+      },
+16:   "scripts": {
+17:     "start": "node ./transpiled/ESNext/invokeCssImporter.js"
+18:   },
+      ...
+    }
+```
+
+
+
+  I didn't try to set a custom `.sh` script in the `package.json` "scripts"."start", neither know for now, how then to notice where our central `cmd` folder for bash `.sh` scripts in this project)).
+
+  Just invokes on `node` cli in `package.json` "scripts" are well seen in repos for `js` libs, like `yarn` or `npm`. Notice, that repos for js libs are thought for `.js`, not for `.sh` command line scripts.
+
+
+
+
+
+  ### 3.B) Debug finer, under Docker. MS VSCode, too.
+  >  Alpine Image with fixed versions numbers of node, typescript and other software.
+
+
+
+  #### Why under Docker well
+  > Fixed numbers of versions of software packages and all confs relevant just to this project, not touching Host OS confs and software bundles installed.
+
+
+
+  The **Jaisocx Typescript Environment** Project was started **under Docker**
+  for architecturing later the finer control about:
+
+  - **Known OS and Command Line Shell**, like for now `Alpine ver. 3.22.2`, knew that **with Bash**, not just sh, known Users Groups and Users' Names and IDs, also whether with sudier users' group.
+  - **Known set of software packages**, installed for NodeJS and Typescript on Your Computer,
+  - **Fixed versions numbers** for NodeJS, Node Package Managing Software, Typescript versions,
+  - **Turning on|off** the https endpoints ran on Your Computer, **serving Your sites** in development.
+
+
+
+
+
+
+
+## 📄 Bash Coding Example
+  > 2 code lines ( bash | sh )
+
+```bash
+
+  # invokes the .js from example below 'ts coding example'
+  node invokeJsInConsoleExample.js --Root="/home/user/MyProject" --sitesToolPath="sites_tools/SitesTool"
+```
 
 
 
 ```bash
 
-### TypescriptEnvironment
-### ./cmd/cssImporter.sh
+  $_ cd "${TypescriptEnvironment}"
+  $_ ./cmd/cssImporter.sh --debug
+```
 
-### https://github.com/Jaisocx-Tools/TypescriptEnvironment/
-### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/cmd/cssImporter.sh
 
-### Line 55:
 
-"${jsInvokePath}" "$commandLineArgs" \
-  --Root="${IN_DOCKER_PROJECT_VOLUME}" \
-  --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
-  --packagePath="Jaisocx_SitesTools/console/JsInvoke" \
-  --script="invokeCssImporter.js" \
-      --sitesToolPath="Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart_2" \
-      --cssFilePath="MediaAndStyles/CssCleanStart_2_main_Webpack.css" \
-      --cssTargetFilePath="MediaAndStyles/CssCleanStart_2_543_resolved.css"
+
+  **./cmd/cssImporter.sh**
+
+  The example is thought for copy and save as other **bash** script in the same folder `./cmd`,
+  hardcoding there other command line args, for calling another `.js` file.
+
+  The reusable via copy/paste working `bash` example to invoke a custom bash script,
+  however nearly same like in ProjectBuilder's `ts` code,
+  on the imported to `node_modules/@jaisocx/css-importer`,
+  available in typescript code,
+  the typescript package `@jaisocx/css-importer`:
+  `cmd/cssImporter.sh`
+
+
+
+```bash
+
+  ### TypescriptEnvironment
+  ### ./cmd/cssImporter.sh
+
+  ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/
+  ### https://github.com/Jaisocx-Tools/TypescriptEnvironment/blob/main/cmd/cssImporter.sh
+
+  ### Line 55:
+
+  "${jsInvokePath}" "$commandLineArgs" \
+    --Root="${IN_DOCKER_PROJECT_VOLUME}" \
+    --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
+    --packagePath="Jaisocx_SitesTools/console/JsInvoke" \
+    --script="invokeCssImporter.js" \
+        --sitesToolPath="Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart_2" \
+        --cssFilePath="MediaAndStyles/CssCleanStart_2_main_Webpack.css" \
+        --cssTargetFilePath="MediaAndStyles/CssCleanStart_2_543_resolved.css"
 
 ```
 
 
 
 ## Bash example explained
-Let's imagine, the task was to write and to invoke a custom `.js` file 
-for test or debug purposes of `.js` package `@jaisocx/css-importer`.
+  Let's imagine, the task was to write and to invoke a custom `.js` file
+  for test or debug purposes of `.js` package `@jaisocx/css-importer`.
 
-For console scripts, I started folder **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`,
-where the first example for `@jaisocx/css-importer` resides: 
-`src/invokeCssImporter.ts`.
+  For console scripts, I started folder **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`,
+  where the first example for `@jaisocx/css-importer` resides:
+  `src/invokeCssImporter.ts`.
 
-The script `invokeCssImporter.ts` implements free logic for tasks using `@jaisocx/css-importer` package,
-and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `cmd/cssImporter.sh`
+  The script `invokeCssImporter.ts` implements free logic for tasks using `@jaisocx/css-importer` package,
+  and for tests or debug purposes, the transpiled `.js` file can be invoked the very ease way like in the example bash script: `cmd/cssImporter.sh`
 
 
 
@@ -136,20 +327,57 @@ and for tests or debug purposes, the transpiled `.js` file can be invoked the ve
 
 ### 1. Command line shell
 
-There is the base script in command line shell scripting language `bash` 
-to invoke a `.js` file the nice way.
+  There is the base script in command line shell scripting language `bash`
+  to invoke a `.js` file the nice way.
 
-**js_invoke** `cmd/base/js_invoke.sh`
+  **js_invoke** `cmd/base/js_invoke.sh`
 
 
 
 ### 2. Typescript
 
-In order to invoke in terminal a .js file,
-there are 2 base Typescript packages:
+  In order to invoke in terminal a .js file,
+  there are 2 base Typescript packages:
 
-1. **CommandLine** `workspace/ts/Jaisocx_SitesTools/packages/CommandLine`
-2. **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`
+  1. **CommandLine** `workspace/ts/Jaisocx_SitesTools/packages/CommandLine`
+  2. **JsInvoke** `workspace/ts/Jaisocx_SitesTools/console/JsInvoke`
+
+
+
+
+
+
+
+## 📂 Package Structure
+  > 60 KB ( sixty kilobyte ) library folder's filesize
+
+```fs
+  📂 node_modules/
+      📂 @jaisocx/
+          📂 command-line/ ( linked )
+          📂 css-importer/ ( linked )
+  📂 software_labels/
+      js_serverside_jaisocx_jsc_console_js_invoke.svg
+      software_tm_label_jaisocx.svg
+  📂 src/
+      AnyClass.ts
+      index.ts
+      invokeCssImporter.ts
+  📂 test/
+      AnyClass.test.ts
+  📂 transpiled/
+    📂 CommonJS/
+        invokeCssImporter.js
+        ...
+        ...
+    📂 ESNext/
+        invokeCssImporter.js
+        ...
+        ...
+  package.json
+📄 README.md
+```
+
 
 
 
