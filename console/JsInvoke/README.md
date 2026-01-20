@@ -1,9 +1,5 @@
 
-![./software_labels/software_tm_label_jaisocx.svg](./software_labels/software_tm_label_jaisocx.svg)
-
-![./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg](./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg)
-
-
+![./software_labels/software_tm_label_jaisocx.svg](./software_labels/software_tm_label_jaisocx.svg)   ![./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg](./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg)
 
 
 
