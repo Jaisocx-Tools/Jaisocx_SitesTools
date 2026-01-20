@@ -263,7 +263,6 @@
 
 ```bash
 
-  $_ cd "${TypescriptEnvironment}"
   $_ ./cmd/cssImporter.sh --debug
 ```
 
