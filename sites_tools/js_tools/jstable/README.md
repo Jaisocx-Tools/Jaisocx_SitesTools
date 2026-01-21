@@ -3,7 +3,9 @@
 
 
 ## Status
-  ✅ Ok
+  > ❌  yarn add | npm install
+
+  > ✅ `.html` previews Ok
 
 
 

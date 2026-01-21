@@ -10,12 +10,10 @@
 
 
 
-[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
+## Status
+  > ✅  yarn add | npm install Ok
 
-
-## Watch In Action:
-
-[https://sandbox.brightday.email/tree.html](https://sandbox.brightday.email/tree.html)
+  > ✅ `.html` previews Ok
 
 
 
@@ -29,6 +27,19 @@
    Browser |   Express |   Console |
     ✅ yes |      ❌ no |     ❌ no |
 ```
+
+
+
+
+[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
+
+
+## Watch In Action:
+
+[https://sandbox.brightday.email/tree.html](https://sandbox.brightday.email/tree.html)
+
+
+
 
 
 
