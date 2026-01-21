@@ -1,15 +1,26 @@
 # CSS Clean Start 2
 
 
-## Status of the Project
-
-ready
-
 
 
 ## Status
+  > ✅  yarn add | npm install Ok
 
-Ready to use since the 19-th of July in the Year 2025.
+  > ✅ `.html` previews Ok
+
+
+
+
+##  Supports
+  > Client Side
+  > Server Side
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |     ✅ yes |     ❌ no |
+```
+
+
 
 
 

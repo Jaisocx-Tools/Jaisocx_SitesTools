@@ -18,6 +18,20 @@
 [https://sandbox.brightday.email/tree.html](https://sandbox.brightday.email/tree.html)
 
 
+
+
+##  Supports
+  > Client Side
+
+
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
+
+
 ## tarball
 
 [https://sandbox.brightday.email/sites_tools/js_tools/Tree/jaisocx-tree-2.2.16.tgz](https://sandbox.brightday.email/sites_tools/js_tools/Tree/jaisocx-tree-2.2.16.tgz)
@@ -68,7 +82,7 @@ Need first webpack bundle.js, and to reference in tag script in html page.
 
     <!-- SCRIPT TO RENDER JSON IN TREE VIEW -->
     <script>
-    
+
     let glob_TreeClassInstance = new Object();
 
 
@@ -125,14 +139,14 @@ Need first webpack bundle.js, and to reference in tag script in html page.
 
       document.addEventListener('DOMContentLoaded', () => {
         glob_TreeClassInstance = new Tree();
-        
+
         glob_TreeClassInstance
           .setMainHtmlNodeId ( "example-tree-holder" )
           .render ( treeJsonData );
-          
-          
-          
-        /* 
+
+
+
+        /*
         Another example with several methods to configure the Tree.
         glob_TreeClassInstance
           .setDebug ( true ) // turns on extended infos in browser's developer tools

@@ -1,5 +1,22 @@
 # js table
 
+
+
+## Status
+  ✅ Ok
+
+
+
+##  Supports
+  > Client Side
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
+
+
 ## url
 https://jaisocx-tools.github.io/jstable/
 
@@ -19,7 +36,7 @@ in this example, the click on column header sorts the table by column values.
 
 in a real application, in the most cases, the table data is loaded by pages.
 
-this sorting example is only arranging the subset of records 
+this sorting example is only arranging the subset of records
 of the one loaded page.
 
 if Your table will use paginated loaded from server rows,
@@ -68,20 +85,20 @@ index.html, line 18:
 
 ```
 
-for more informations, how to specify columns widths, feel free to read css3 documentation 
-about "grid layout". 
+for more informations, how to specify columns widths, feel free to read css3 documentation
+about "grid layout".
 
 
 ### styling
-in file www/css/jstable.css from the top, there are css variables specified, 
-those enable fast applying some basic look and feel customization. 
+in file www/css/jstable.css from the top, there are css variables specified,
+those enable fast applying some basic look and feel customization.
 
 
 ### urls, images sources, paths
-in this project, the urls are relative, without domain name, 
+in this project, the urls are relative, without domain name,
 however here was supposed, that the www folder is published as /jstable/www/ folder for the domain.
 
-so, the {github project root}/www/index.html file is published like http://{domain}/jstable/www/index.html 
+so, the {github project root}/www/index.html file is published like http://{domain}/jstable/www/index.html
 
 please, adjust urls in index.html and .css files to be accessible when You publish at Your domain.
 

@@ -1,9 +1,25 @@
 # CSS Table Ordered
 
 
-## Status
 
-Ready
+
+## Status
+  > ✅  yarn add | npm install Ok
+
+  > ✅ `.html` previews Ok
+
+
+
+
+##  Supports
+  > Client Side
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
+
 
 
 

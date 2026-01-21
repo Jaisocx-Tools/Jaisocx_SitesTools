@@ -1,17 +1,47 @@
 # JS PACKAGE jaisocx/tooltip
 
+
+
+## Status
+  > ✅  yarn add | npm install Ok
+
+  > ❌ `.html` previews in plan
+
+
+
+
+##  Supports
+  > Client Side
+
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
+
+
+
 [https://sandbox.brightday.email/ExampleSimple_Tooltip.html](https://sandbox.brightday.email/ExampleSimple_Tooltip.html)
 
 
 [https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
 
-## Status:
-All basic features are ready.
-26th of March 2025: bugfix paddingEventTarget set
-
 
 ## What is this
 this is the site ui tool, this is shown or hidden on a click on some another html node on the site.
+
+
+##  Supports
+  > Client Side
+
+
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
 
 
 
@@ -82,7 +112,7 @@ export class ExampleTooltip {
 
 ## Future improvals:
 . shadow basic theme example
-. refining behaviour onscroll and on window resize, when a tooltip is drawn beyond the window border.  
+. refining behaviour onscroll and on window resize, when a tooltip is drawn beyond the window border.
 
 
 ## Hiding a tooltip and other tooltips, when available on the site:

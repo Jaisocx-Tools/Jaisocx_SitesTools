@@ -25,7 +25,7 @@
 
 ```
    Browser |   Express |   Console
-        no |       yes |       yes
+     ❌ no |    ✅ yes |     ✅ yes
 ```
 
 

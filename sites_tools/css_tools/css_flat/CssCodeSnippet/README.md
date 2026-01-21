@@ -1,7 +1,26 @@
 # CSS Code Snippet
 
-## Author, Owner
-Jaisocx Company
+
+
+## Status
+  > ✅  yarn add | npm install Ok
+
+  > ✅ `.html` previews Ok
+
+
+
+
+##  Supports
+  > Client Side
+  > Server Side
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |     ✅ yes |     ❌ no |
+```
+
+
+
 
 ## see in action
 

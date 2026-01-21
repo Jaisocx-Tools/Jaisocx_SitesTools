@@ -5,8 +5,24 @@ npm install @jaisocx/email-html-inliner
 ```
 
 
+
 ## Status
-Ready to use since the 06-th of May in the Year 2025.
+  > ✅  yarn add | npm install Ok
+
+  > ❌ `.html` previews in reconstruction
+
+
+
+
+##  Supports
+  > Client Side
+
+```
+   Browser |   Express |   Console |
+    ✅ yes |      ❌ no |     ❌ no |
+```
+
+
 
 
 # Watch in Action
