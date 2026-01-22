@@ -1,14 +1,13 @@
 
 /.env
-/temp/
-
-
-/**/.DS_Store
+/.cpanel.yml
 /.idea
 /.vscode
 /**/node_modules
 
+/**/.DS_Store
 
+/temp/
 /tmp.html
 /examples_html/emails/temp/
 /packages/CharcodeConverter/tmp_data/
