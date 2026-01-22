@@ -6,15 +6,14 @@ npm install @jaisocx/email-html-inliner
 
 
 
-## Status
+#### status
   > ✅  yarn add | npm install Ok
 
   > ❌ `.html` previews in reconstruction
 
 
 
-
-##  Supports
+#### supports
   > Client Side
 
 ```
@@ -22,20 +21,11 @@ npm install @jaisocx/email-html-inliner
     ✅ yes |      ❌ no |     ❌ no |
 ```
 
+---
 
 
 
-# Watch in Action
-
-[https://sandbox.brightday.email/examples_html/ImagesEmailed/EmailHtmlInliner_100width.html](https://sandbox.brightday.email/examples_html/ImagesEmailed/EmailHtmlInliner_100width.html)
-
-
-[https://sandbox.brightday.email/examples_html/ImagesEmailed/EmailHtmlInliner_Images.html](https://sandbox.brightday.email/examples_html/ImagesEmailed/EmailHtmlInliner_Images.html)
-
-
-
-
-## The aim of the setup
+## 💡 The aim of the setup
 
 The webmail apps due to security reasons do stipping out certain markup from the email messges sent with Content-Type text/html.
 
@@ -62,9 +52,9 @@ Unfortunately, I could not find the workaround, when a html node has CSS `paddin
 
 
 
-## Usage
+## js example
 
-```
+```js
 import { EmailHtmlInliner } from "@jaisocx/email-html-inliner";
 
 function inlineText() {

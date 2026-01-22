@@ -10,66 +10,32 @@
 
 
 
-## Status
+#### status
   > ✅  yarn add | npm install Ok
 
   > ✅ `.html` previews Ok
 
 
 
-
-##  Supports
+#### supports
   > Client Side
-
-
 
 ```
    Browser |   Express |   Console |
     ✅ yes |      ❌ no |     ❌ no |
 ```
 
+---
 
 
 
-[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
-
-
-## Watch In Action:
-
-[https://sandbox.brightday.email/tree.html](https://sandbox.brightday.email/tree.html)
-
-
-
-
-
-
-## tarball
-
-[https://sandbox.brightday.email/sites_tools/js_tools/Tree/jaisocx-tree-2.2.16.tgz](https://sandbox.brightday.email/sites_tools/js_tools/Tree/jaisocx-tree-2.2.16.tgz)
-
-
-
-
-In Project "Workspace"
-[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
-
-git clone ssh:
-`git@github.com:Jaisocx-Tools/Workspace.git`
-
-git clone https:
-`https://github.com/Jaisocx-Tools/Workspace.git`
-
-at relative path `workspace/ts/Jaisocx_SitesTools/sites_tools/js_tools/Tree`
-
-
-
-## What is this
+## 💡 What is this
 
 The js site ui tool to render a multilevel nested objects json.
 
 
 
-## How to use in ts code
+## ts examples
 
 ### 1. Need to import js code first on html page.
 
@@ -77,9 +43,6 @@ The js site ui tool to render a multilevel nested objects json.
 
 Need first webpack bundle.js, and to reference in tag script in html page.
 
-#### 1.2. Like in tree preview example
-
-[https://sandbox.brightday.email/tree.html](https://sandbox.brightday.email/tree.html)
 
 
 ### 2. then instantiate Tree class in html page in DOMContentLoaded event handler like here:

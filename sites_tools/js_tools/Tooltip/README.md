@@ -1,51 +1,30 @@
 # JS PACKAGE jaisocx/tooltip
 
-
-
-## Status
+#### status
   > ✅  yarn add | npm install Ok
 
   > ❌ `.html` previews in plan
 
 
 
-
-##  Supports
+#### supports
   > Client Side
-
 
 ```
    Browser |   Express |   Console |
     ✅ yes |      ❌ no |     ❌ no |
 ```
 
+---
 
 
 
-[https://sandbox.brightday.email/ExampleSimple_Tooltip.html](https://sandbox.brightday.email/ExampleSimple_Tooltip.html)
-
-
-[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
-
-
-## What is this
+## 💡 What is this
 this is the site ui tool, this is shown or hidden on a click on some another html node on the site.
 
 
-##  Supports
-  > Client Side
 
-
-
-```
-   Browser |   Express |   Console |
-    ✅ yes |      ❌ no |     ❌ no |
-```
-
-
-
-
-## How to use in js code
+## js example
 
 ### .html example with webpack build bundle.js
 ```

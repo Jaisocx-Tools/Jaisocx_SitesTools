@@ -56,7 +56,7 @@
 
 
 
-## 💡 For what this package
+## 💡 The aim of the setup
   > Just a **fine-tuning** little js library **for console** javascript.
 
 

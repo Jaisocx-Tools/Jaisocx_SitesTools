@@ -2,14 +2,14 @@
 
 
 
-## Status
+#### status
   > ❌  yarn add | npm install
 
   > ✅ `.html` previews Ok
 
 
 
-##  Supports
+#### supports
   > Client Side
 
 ```
@@ -17,13 +17,10 @@
     ✅ yes |      ❌ no |     ❌ no |
 ```
 
+---
 
 
-## url
-https://jaisocx-tools.github.io/jstable/
 
-
-## screenshot
 ![JSTable screenshot](./Screenshot.2024-09-18.at.01.28.20.png)
 
 

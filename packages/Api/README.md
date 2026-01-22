@@ -1,6 +1,21 @@
-# JS PACKAGE jaisocx/api
+# @jaisocx/api
 
-[https://github.com/Jaisocx-Tools/Workspace](https://github.com/Jaisocx-Tools/Workspace)
+
+####  status
+> ✅ Ok
+
+
+
+#### supports
+> Client Side
+
+```
+    Browser |    Express |   Console
+     ✅ yes |      ❌ no |      ❌ no 
+```
+
+---
+
 
 
 ## How to obtain ObjData from a remote URL

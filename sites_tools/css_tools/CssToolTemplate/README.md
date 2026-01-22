@@ -2,15 +2,14 @@
 
 
 
-## Status
+#### status
   > ✅  yarn add | npm install Ok
 
   > ✅ `.html` previews Ok
 
 
 
-
-##  Supports
+#### supports
   > Client Side
   > Server Side
 
@@ -19,15 +18,13 @@
     ✅ yes |     ✅ yes |     ❌ no |
 ```
 
+---
 
 
 
 ## Aim of the setup
 
 
-
-
-## Status
 
 
 

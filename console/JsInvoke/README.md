@@ -60,7 +60,7 @@
 
 
 
-## 💡 For what
+## 💡 The aim of the setup
   > Just the central place in this project, to store somewhere the console node scripts, calling other node libraries, locally linked or installed with yarn or npm.
 
 

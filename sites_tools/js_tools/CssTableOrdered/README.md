@@ -1,17 +1,13 @@
 # CSS Table Ordered
 
-
-
-
-## Status
+#### status
   > ✅  yarn add | npm install Ok
 
   > ✅ `.html` previews Ok
 
 
 
-
-##  Supports
+#### supports
   > Client Side
 
 ```
@@ -19,11 +15,11 @@
     ✅ yes |      ❌ no |     ❌ no |
 ```
 
+---
 
 
 
-
-## The aim of the setup
+## 💡 The aim of the setup
 
 For the Jaisocx Sits Server Files Listing server side rendered CssTable with JSP.
 
@@ -31,55 +27,15 @@ The jaisocx templates for files listing, https exceptions and others will be ava
 
 
 
-## The latest .tgz archive (v.2.3.1 26th of month August 2025)
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/jaisocx-css-table-ordered-2.3.1.tgz](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/jaisocx-css-table-ordered-2.3.1.tgz)
-
-
-
-
-
-## Watch site in action
-
-### With Orderby on laptops and larger displays.
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/index.example.html](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/index.example.html)
-
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered_3_records.example.html](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered_3_records.example.html)
-
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered.example.html](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered.example.html)
-
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered.jaisocx_folder_listing.example.html](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/css_table_ordered.jaisocx_folder_listing.example.html)
-
-
-
-
-
-
-
-### Same html with theme jaisocx folder listing
-
-The mobile portrait view was fine tuned for the folder listing in the Jaisocx Sites Server.
-
-
-[https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/jaisocx-folder-listing-preview.html](https://sandbox.brightday.email/sites_tools/js_tools/CssTableOrdered/jaisocx-folder-listing-preview.html)
-
-
-
-
-
-### Tasks to do
+### Tasks planned
 
 1. css themes npm package example to install on a Jaisocx server instance with @jaisocx/css-table-ordered
 
 
 
-## Usage
+## html example
 
-```js
+```html
   <link rel="stylesheet" href="/sites_tools/css_tools/CssCleanStart_2/MediaAndStyles/CssCleanStart_2_main_resolved_minimal.css" />
   <link rel="stylesheet" href="/sites_tools/css_tools/CssTable/MediaAndStyles/CssTable_main_resolved_minimal.css" />
 
@@ -125,8 +81,6 @@ The mobile portrait view was fine tuned for the folder listing in the Jaisocx Si
 
 
 ## npm for webpack
-
-
 
 ```
 npm install @jaisocx/css-table-ordered

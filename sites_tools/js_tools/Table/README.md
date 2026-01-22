@@ -1,25 +1,19 @@
 # js table
 
-## Status
-
-❌ Under construction. Last updated in October 2024.
-
-
-
-## screenshot
-![JSTable screenshot](./Screenshot.2024-09-18.at.01.28.20.png)
+#### status
+  > ❌ Under construction. Last updated in October 2024.
 
 
 
-##  Supports
+#### supports
   > Client Side
-
-
 
 ```
    Browser |   Express |   Console |
     ✅ yes |      ❌ no |     ❌ no |
 ```
+
+---
 
 
 
