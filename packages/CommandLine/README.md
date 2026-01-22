@@ -1,5 +1,4 @@
 
-
 ![./software_labels/software_tm_label_jaisocx.svg](./software_labels/software_tm_label_jaisocx.svg)   ![./software_labels/js_serverside_jaisocx_command_line.svg](./software_labels/js_serverside_jaisocx_command_line.svg)
 
 
@@ -8,45 +7,13 @@
   > Fine-tuning for Console
 
 
-
-```bash
-  node example.js  --arg1="value1"  --argBC="Another Value 2"  --debug
-```
-
-```json
-  { "arg1": "value1",   "argBC": "Another Value 2",   "debug": true }
-```
-
-
-  The very base library,
-  installable via `yarn` or `npm`,
-  written in `typescript` programming language.
-
-  Just a **fine-tuning** little js library **for console** javascript.
-
-  Supports **bash key-value args**,
-  and provides in ts or js code **as a js variable** of js datatype **Object**.
-
-  The only `js` class `CommandLineArgs` with the `interface`,
-  was thought **for reading command line args**,
-  sent from console, **in another javascript function**.
-
-  **Other** `.js` or `.ts` files are **for the infrastructure** of this package,
-  like for example,
-  the current `README.md` is for the documentation
-  about this library.
-
----
+####  status
+> ✅ Ok
 
 
 
-##  Status
-  >  Ok
-
-
-
-##  Supports
-  > Server Side
+#### supports
+> Server Side
 
 ```
    Browser |   Express |   Console
@@ -55,9 +22,8 @@
 
 
 
-
-## 💾 Size
-  > 70 KB - 50 KB - 5 KB
+#### size
+> 70 KB - 50 KB - 5 KB
 
 
 ```
@@ -74,18 +40,53 @@
 
 
 
-##  Required
-  > Node installed
+#### required
+> Node installed
 
 
 
+#### 📅 latest update
+> Winter 2026
 
-## 📅 Latest update
-  > Winter 2026
-
-  **Library**: `@jaisocx/command-line` ver. `1.2.4`
+**Library**: `@jaisocx/command-line` ver. `1.2.4`
 
 🗓 **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
+
+---
+
+
+
+## 💡 For what this package
+  > Just a **fine-tuning** little js library **for console** javascript.
+
+
+```bash
+  node example.js  --arg1="value1"  --argBC="Another Value 2"  --debug
+```
+
+```json
+  { "arg1": "value1",   "argBC": "Another Value 2",   "debug": true }
+```
+
+
+  The very base library,
+  installable via `yarn` or `npm`,
+  written in `typescript` programming language.
+
+  Supports **bash key-value args**,
+  and provides in ts or js code **as a js variable** of js datatype **Object**.
+
+  The only `js` class `CommandLineArgs` with the `interface`,
+  was thought **for reading command line args**,
+  sent from console, **in another javascript function**.
+
+  **Other** `.js` or `.ts` files are **for the infrastructure** of this package,
+  like for example,
+  the current `README.md` is for the documentation
+  about this library.
+
+---
+
 
 
 
