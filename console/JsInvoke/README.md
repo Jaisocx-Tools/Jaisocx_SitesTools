@@ -3,9 +3,8 @@
 
 
 
-# 💻 CONSOLE JS INVOKE
+# Console js invoke
   > 💡 Write and store scripts to invoke in console, for debugging too.
-
 
   not published for yarn or npm for now, since no need to import in other javascript code.
 
@@ -13,14 +12,12 @@
 
 
 
-
-
-##  Status
-  >  Ok
+#### status
+  >  ✅ Ok
 
 
 
-##  Supports
+####  supports
   > Server Side
 
 ```
@@ -30,8 +27,7 @@
 
 
 
-
-## 💾 Size
+#### size
   > 60 KB - 5 KB
 
 ```
@@ -48,19 +44,17 @@
 
 
 
-##  Required
+####  required
   > Node installed
 
-
-
-
-## 📅 Latest update
+#### 📅 latest update
   > Winter 2026
 
   **Library**: `@jaisocx/jsc_console_js_invoke` ver. `1.0.1` not published
 
-🗓 **Updated at**: `Tue Jan 20 06:28:29 CET 2026`
+  🗓 **Updated at**: `Tue Jan 20 06:28:29 CET 2026`
 
+---
 
 
 
