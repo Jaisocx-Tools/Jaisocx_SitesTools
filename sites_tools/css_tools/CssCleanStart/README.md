@@ -101,34 +101,6 @@ several .css files will be loaded with size of very few KB.
 
 
 
-## The latest .tgz archive (v.1.5.6 23th of June 2025)
-
-[https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/jaisocx-css-clean-start-1.5.6.tgz](https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/jaisocx-css-clean-start-1.5.6.tgz)
-
-
-
-
-
-## Watch site in action
-
-[https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/index.template.html](https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/index.template.html)
-
-
-[https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/lightmode.html](https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/lightmode.html)
-
-
-[https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/darkmode.html](https://sandbox.brightday.email/sites_tools/css_tools/CssCleanStart/darkmode.html)
-
-
-
-
-
-## Github
-[https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart](https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/sites_tools/css_tools/CssCleanStart)
-
-
-
-
 ## Status
 Ready to use since the 24-th of March in the Year 2025.
 
@@ -142,7 +114,7 @@ Ready to use since the 24-th of March in the Year 2025.
 
 
 
-## Usage
+## html examples
 
 ### 1. &lt;html class="workspace"&gt;
 Normally set the css class `workspace` and theme css class in &lt;html&gt; tag.

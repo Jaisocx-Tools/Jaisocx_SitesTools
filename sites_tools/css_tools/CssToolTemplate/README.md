@@ -22,54 +22,6 @@
 
 
 
-## Aim of the setup
-
-
-
-
-
-
-## 💡 The aim of the setup
-
-
-
-
-## live urls with html examples
-
-[https://sandbox.brightday.email/sites_tools/css_tools/CssToolTemplate/index.example.html](https://sandbox.brightday.email/sites_tools/css_tools/CssToolTemplate/index.example.html)
-
-
-
-## in-npm-package urls to index.example.html
-
-[index.example.html](./index.example.html)
-
-
-
-## html coding example
-
-
-
-## css in index.example.html coding example
-
-
-
-## js in index.example.html coding example
-
-
-
-## ts coding example importing styles | themes styles
-
-
-
-## ts coding example with import npm lib in 3rd partie's ts code
-
-
-
-## js interfaces for API Models
-
-
-
 ## package structure
 
 `favicon/*.ico` site logo to show in browser's tab label above, referenced in index.example.html in `<link rel="icon" ... />` tag.
