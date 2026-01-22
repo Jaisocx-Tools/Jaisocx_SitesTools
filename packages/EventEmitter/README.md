@@ -114,7 +114,7 @@ export class SomeClass extends EventEmitter {
 ```
 
 
-## What is this
+## 💡 The aim of the setup
 
 The classes to extend in Your other classes, so that the new classes can have an improved way to emit events,
 and at the classes instances one can add an event handler.

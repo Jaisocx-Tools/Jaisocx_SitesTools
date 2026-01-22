@@ -29,7 +29,7 @@
 
 
 
-## 💡 What is this
+## 💡 The aim of the setup
 
 The js site ui tool to render a multilevel nested objects json.
 

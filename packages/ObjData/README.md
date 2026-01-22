@@ -18,7 +18,7 @@ const obj: any = ObjData.parse( objdataFormattedBytebuf );
 ```
 
 
-## What is this
+## 💡 The aim of the setup
 
 This is just another try to implement a binary data format for objects and arrays.
 

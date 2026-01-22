@@ -19,7 +19,7 @@
 
 
 
-## 💡 What is this
+## 💡 The aim of the setup
 this is the site ui tool, this is shown or hidden on a click on some another html node on the site.
 
 

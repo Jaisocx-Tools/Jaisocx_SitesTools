@@ -116,7 +116,7 @@ index.html
 ```
 
 
-## What is this
+## 💡 The aim of the setup
 
 The very lightweight class to populate an html template with values from a js object or json.
 

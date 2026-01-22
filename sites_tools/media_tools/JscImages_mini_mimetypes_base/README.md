@@ -12,7 +12,7 @@ for preview purposes.
 
 
 
-## What is this
+## 💡 The aim of the setup
 
 Set of images published once,
 to mention **in other sites tools** in `package.json` dependencies,
