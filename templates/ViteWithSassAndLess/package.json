@@ -1,10 +1,18 @@
 {
   "name": "@jaisocx/template-vite-with-sass-and-less",
   "version": "1.4.1",
-  "author": "Jaisocx",
-  "keywords": [],
-  "private": false,
   "description": "",
+  "keywords": [],
+  "files": [
+    "images",
+    "src",
+    "test",
+    "vite.config.ts",
+    "README.md"
+  ],
+  "dependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.1"
+  },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -13,18 +21,9 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "images",
-    "src",
-    "test",
-    "vite.config.ts",
-    "README.md"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-   "@jaisocx/css_clean_start_lite": "~1.0.1"
   }
 }
 

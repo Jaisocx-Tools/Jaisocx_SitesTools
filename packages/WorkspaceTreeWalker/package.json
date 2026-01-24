@@ -1,8 +1,16 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/workspace-tree-walker",
   "version": "1.2.1",
-  "private": false,
   "description": "",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "MediaAndStyles/",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -11,19 +19,10 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "MediaAndStyles/",
-    "README.md",
-    "LICENSE"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
 
 

@@ -1,10 +1,21 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "namespace/package-name",
   "version": "1.0.1",
-  "author": "<Author's Name>",
-  "keywords": [],
-  "private": false,
   "description": "The @jaisocx template for a Typescript Package with The Vitest ts test example.",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "axios": "^1.12.2",
+    "chalk": "^5.6.2",
+    "lodash": "^4.17.21",
+    "vitest": "^3.2.4"
+  },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -13,19 +24,8 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
-    "README.md"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "peerDependencies": {
-    "axios": "^1.12.2",
-    "chalk": "^5.6.2",
-    "lodash": "^4.17.21",
-    "vitest": "^3.2.4"
   }
 }

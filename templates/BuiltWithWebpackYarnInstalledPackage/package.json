@@ -1,7 +1,7 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/example-built-with-webpack",
   "version": "1.0.4",
-  "author": "Jaisocx",
   "private": false,
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

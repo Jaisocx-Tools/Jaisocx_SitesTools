@@ -1,9 +1,17 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css-js-html-constants",
   "version": "1.0.3",
-  "author": "Jaisocx Company",
-  "private": false,
   "description": "",
+  "keywords": [
+  ],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+
+    "README.md"
+  ],
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -12,19 +20,10 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
-
-    "README.md"
-  ],
-  "keywords": [
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "optionalDependencies": {}
+  }
 }
 
 

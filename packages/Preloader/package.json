@@ -1,18 +1,9 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/preloader",
   "version": "2.3.2",
-  "author": "Jaisocx",
-  "keywords": [],
-  "private": false,
   "description": "",
-  "type": "module",
-  "main": "./transpiled/CommonJS/index.js",
-  "types": "./transpiled/ESNext/index.d.ts",
-  "module": "./transpiled/ESNext/index.js",
-  "exports": {
-    "require": "./transpiled/CommonJS/index.js",
-    "import": "./transpiled/ESNext/index.js"
-  },
+  "keywords": [],
   "files": [
     "index.example.preloader.html",
     "index.example.html",
@@ -24,13 +15,22 @@
     "docs",
     "README.md"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "optionalDependencies": {
     "@jaisocx/text": "~2.2.2",
     "@jaisocx/template-renderer": "~1.6.1",
     "@jaisocx/mime-type": "~1.0.7"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
 

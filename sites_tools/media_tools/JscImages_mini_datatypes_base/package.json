@@ -1,8 +1,8 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/media_tools_images_mini_datatypes_base",
   "version": "1.0.2",
   "description": "",
-  "author": "Jaisocx Company",
   "keywords": [
     "css",
     "styles",
@@ -33,11 +33,7 @@
     "sass": "^1.89.2"
   },
   "optionalDependencies": {
-   "@jaisocx/css-clean-start-2": "~1.2.3"
-  },
-  "private": false,
-  "publishConfig": {
-    "access": "public"
+   "@jaisocx/css_clean_start_lite": "~1.0.1"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
@@ -52,6 +48,10 @@
       "import": "./transpiled/ESNext/webpack.aliases.mjs",
       "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
 

@@ -1,17 +1,12 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/template-renderer",
   "version": "1.6.1",
-  "author": "Jaisocx",
-  "private": false,
   "description": "",
-  "type": "module",
-  "main": "./transpiled/CommonJS/index.js",
-  "types": "./transpiled/ESNext/index.d.ts",
-  "module": "./transpiled/ESNext/index.js",
-  "exports": {
-    "require": "./transpiled/CommonJS/index.js",
-    "import": "./transpiled/ESNext/index.js"
-  },
+  "keywords": [
+    "template",
+    "render"
+  ],
   "files": [
     "transpiled/CommonJS",
     "transpiled/ESNext",
@@ -22,13 +17,18 @@
     "@jaisocx/event-emitter": "^1.4.2",
     "@jaisocx/tokens-parser": "^1.2.2"
   },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "keywords": [
-    "template",
-    "render"
-  ]
+  }
 }
 
 

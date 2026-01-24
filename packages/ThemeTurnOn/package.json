@@ -1,8 +1,8 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/theme-turn-on",
   "version": "1.0.3",
   "description": "",
-  "author": "Jaisocx",
   "keywords": [
     "css",
     "styles"
@@ -16,9 +16,9 @@
 
     "README.md"
   ],
-  "private": false,
-  "publishConfig": {
-    "access": "public"
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "~1.2.1",
+    "@jaisocx/preloader": "~2.3.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
@@ -34,9 +34,9 @@
       "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
   },
-  "optionalDependencies": {
-    "@jaisocx/css-clean-start-2": "~1.2.1",
-    "@jaisocx/preloader": "~2.3.2"
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
 

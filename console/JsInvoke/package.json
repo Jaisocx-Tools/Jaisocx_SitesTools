@@ -1,7 +1,7 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/jsc_console_js_invoke",
   "version": "1.0.1",
-  "author": "Jaisocx Company",
   "keywords": [],
   "private": false,
   "description": "The @jaisocx template for a Typescript Package with The Vitest ts test example.",

@@ -1,20 +1,12 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/api",
   "version": "1.2.3",
-  "private": false,
   "description": "",
   "keywords": [
     "api",
     "objdata"
   ],
-  "type": "module",
-  "main": "./transpiled/CommonJS/index.js",
-  "types": "./transpiled/ESNext/index.d.ts",
-  "module": "./transpiled/ESNext/index.js",
-  "exports": {
-    "require": "./transpiled/ComonJS/index.js",
-    "import": "./transpiled/ESNext/index.js"
-  },
   "files": [
     "transpiled/CommonJS",
     "transpiled/ESNext",
@@ -24,11 +16,18 @@
   "optionalDependencies": {
     "@jaisocx/objdata": "2.1.3"
   },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/ComonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "author": "Jaisocx",
-  "license": "nope"
+  }
 }
 
 

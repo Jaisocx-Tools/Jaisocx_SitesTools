@@ -1,9 +1,19 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/file-writer",
   "version": "1.2.7",
-  "author": "Jaisocx",
-  "private": false,
   "description": "",
+  "keywords": [
+    "fs",
+    "file write"
+  ],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/event-emitter": "^1.4.2"
+  },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -12,19 +22,9 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext"
-  ],
-  "keywords": [
-    "fs",
-    "file write"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "optionalDependencies": {
-    "@jaisocx/event-emitter": "^1.4.2"
   }
 }
 

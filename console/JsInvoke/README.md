@@ -27,32 +27,26 @@
 
 
 
+
+#### 📅 latest update
+> Winter 2026
+
+**Library**: `@jaisocx/jsc_console_js_invoke` ver. `1.0.1` not published
+
+🗓 **Updated at**: `Tue Jan 20 06:28:29 CET 2026`
+
+---
+
+
+
 #### size
   > 60 KB - 5 KB
 
 ```
-  Current Folder |   This lib, as installed    |   typescript in src/ |   Latest Tarball |   Main ts class
-                 |     in other node_modules/  |                      |                  |
-           55 KB |                             |                5 KB  |            10 KB |            5 KB
+  Current Folder |   This lib installed        |   typescript in src/  
+                 |     in other node_modules/  |                       
+           55 KB |                             |                5 KB   
 ```
-
-```
-  Main ts class:   src/invokeCssImporter.ts                                 5.0 KB
-  Latest Tarball:  jaisocx-jsc_console_js_invoke-1.0.1.tgz                  9.4 KB
-  Current Folder:  workspace/ts/Jaisocx_SitesTools/console/JsInvoke        55.0 KB
-```
-
-
-
-####  required
-  > Node installed
-
-#### 📅 latest update
-  > Winter 2026
-
-  **Library**: `@jaisocx/jsc_console_js_invoke` ver. `1.0.1` not published
-
-  🗓 **Updated at**: `Tue Jan 20 06:28:29 CET 2026`
 
 ---
 

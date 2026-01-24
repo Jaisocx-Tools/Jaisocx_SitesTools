@@ -1,7 +1,8 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/linked-resources-integrity",
   "version": "1.0.1",
-  "author": "Jaisocx",
+  "description": "",
   "keywords": [
     "link",
     "integrity",
@@ -10,8 +11,15 @@
     "image",
     "quality"
   ],
-  "private": false,
-  "description": "",
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/command-line": "~1.0.3"
+  },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -20,17 +28,9 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-
-    "README.md"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "optionalDependencies": {
-    "@jaisocx/command-line": "~1.0.3"
   }
 }
 

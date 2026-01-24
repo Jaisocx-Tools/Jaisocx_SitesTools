@@ -1,10 +1,15 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/mime-type",
   "version": "1.0.7",
-  "author": "Jaisocx",
-  "keywords": [],
-  "private": false,
   "description": "",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "README.md"
+  ],
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -13,12 +18,7 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
-    "README.md"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
   }

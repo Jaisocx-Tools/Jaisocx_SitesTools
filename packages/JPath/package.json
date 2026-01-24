@@ -1,7 +1,8 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/jpath",
   "version": "1.2.3",
-  "author": "Jaisocx",
+  "description": "JPath accepts queries of datatype (string|number)[] and performs lookup in js objects and arrays",
   "keywords": [
     "jpath",
     "json",
@@ -10,8 +11,13 @@
     "search",
     "lookup"
   ],
-  "private": false,
-  "description": "JPath accepts queries of datatype (string|number)[] and performs lookup in js objects and arrays",
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "test",
+    "README.md"
+  ],
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -20,13 +26,7 @@
     "require": "./transpiled/CommonJS/index.js",
     "import": "./transpiled/ESNext/index.js"
   },
-  "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
-    "test",
-    "README.md"
-  ],
+  "private": false,
   "publishConfig": {
     "access": "public"
   }
