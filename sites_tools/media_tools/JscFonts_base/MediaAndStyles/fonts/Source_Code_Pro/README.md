@@ -2,8 +2,6 @@
 # Source Code Pro
   > font
 
----
-
   This download contains Source Code Pro as both **variable fonts** and **static fonts**.
 
   Source Code Pro is a variable font with this axis:

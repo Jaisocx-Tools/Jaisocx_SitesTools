@@ -2,8 +2,6 @@
 # Playfair Display
   > font
 
----
-
   This download contains Playfair Display as both variable fonts and static fonts.
 
   Playfair Display is a variable font with this axis:

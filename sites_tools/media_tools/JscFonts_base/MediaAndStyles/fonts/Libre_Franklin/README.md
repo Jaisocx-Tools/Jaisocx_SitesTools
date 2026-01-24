@@ -2,8 +2,6 @@
 # Libre Franklin
  > font
 
----
-
   This download contains **Libre Franklin** as both **variable fonts** and **static fonts**.
   
   **Libre Franklin** variable font with this axis:
@@ -65,8 +63,7 @@
 
   1. Install the font files you want to use
 
-  2. Use your app's font picker to view the font family and all the
-  available styles
+  2. Use your app's font picker to view the font family and all the available styles
 
 
 
@@ -76,7 +73,9 @@
 
   https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts
   
+
   https://variablefonts.typenetwork.com
+
   
   https://medium.com/variable-fonts
 
