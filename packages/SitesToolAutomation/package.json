@@ -35,11 +35,9 @@
     "access": "public"
   },
   "optionalDependencies": {
+    "@jaisocx/css-importer": "~1.4.1",
     "@jaisocx/file-writer": "~1.2.7",
     "@jaisocx/template-renderer": "~1.6.1",
-    "@jaisocx/css-importer": "~1.4.1"
+    "@jaisocx/file-producer-by-template": "~1.2.2"
   }
 }
-
-
-

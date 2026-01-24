@@ -1,0 +1,19 @@
+/* @jaisocx/css_clean_start_lite     {{ responsiveSizeName }} */
+@media only screen and (min-width: {{ min-width }}px) and (max-width: {{ max-width }}px) and (min-height: {{ min-height }}px) and (max-height: {{ max-height }}px) and (orientation: {{ orientation }}) {
+
+  .jsx {
+    --theme_name__{{ SitesToolName }}: {{ SitesTool_ThemeName }};
+    {{ responsiveSizeConstantName }}: {{ responsiveSizeName }};
+
+    --jsx--css-clean-start-2--site--width: 90%;
+    --jsx--css-clean-start-2--site--max-width: 90%;
+    --jsx--css-clean-start-2--site--min-width: 90%;
+
+    --jsx--css-clean-start-2--all-tags--font-size: 1rem;
+    --jsx--css-clean-start-2--all-tags--line-height: 1.29rem;
+
+  }
+
+}
+
+
