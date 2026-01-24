@@ -24,11 +24,11 @@
 
 
 #### 📅 latest update
-> November 2025
+> Winter 2026
 
-**Library**: `@jaisocx/css-clean-start-2` ver. `1.2.5`
+**Library**: `@jaisocx/css_clean_start_lite` ver. `1.0.1`
 
-🗓 **Updated at**: `24th of November 2025`
+🗓 **Updated at**: `24th of January 2026`
 
 ---
 
