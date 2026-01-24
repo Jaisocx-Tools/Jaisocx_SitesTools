@@ -72,12 +72,12 @@ the well known development patterns.
 4. Command Line Shell `bash`
 5. Optimization
 
-   * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
-   * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
-   * RAM for DOM ( thin html templates )
-   * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
-   * Public repositories storage space ( Workarounds for CDN and Media storing repos )
-   * Parsing ( ObjData )
+     * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
+     * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
+     * RAM for DOM ( thin html templates )
+     * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
+     * Public repositories storage space ( Workarounds for CDN and Media storing repos )
+     * Parsing ( ObjData )
 
 
 
