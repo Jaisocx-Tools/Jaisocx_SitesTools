@@ -1,31 +1,49 @@
-# Orbitron Variable Font
+
+# Playfair Display
   > font
 
 ---
 
-  This download contains **Orbitron** as both a **variable font** and **static fonts**.
-  
-  Orbitron is a variable font with this axis:
+  This download contains Playfair Display as both variable fonts and static fonts.
+
+  Playfair Display is a variable font with this axis:
     `wght`
-  
-  This means all the styles are contained in a single file:
-    `Orbitron-VariableFont_wght.ttf`
-  
+
+  This means all the styles are contained in these files:
+
+  `PlayfairDisplay-VariableFont_wght.ttf`
+
+  `PlayfairDisplay-Italic-VariableFont_wght.ttf`
+
+
+
   If your app fully supports variable fonts, you can now pick intermediate styles
   that aren’t available as static fonts. Not all apps support variable fonts, and
-  in those cases you can use the **static font files for Orbitron**:
+  in those cases you can use the static font files for Playfair Display:
 
-  static/Orbitron-Regular.ttf
-  
-  static/Orbitron-Medium.ttf
+  static/PlayfairDisplay-Regular.ttf
 
-  static/Orbitron-SemiBold.ttf
+  static/PlayfairDisplay-Medium.ttf
 
-  static/Orbitron-Bold.ttf
+  static/PlayfairDisplay-SemiBold.ttf
 
-  static/Orbitron-ExtraBold.ttf
+  static/PlayfairDisplay-Bold.ttf
 
-  static/Orbitron-Black.ttf
+  static/PlayfairDisplay-ExtraBold.ttf
+
+  static/PlayfairDisplay-Black.ttf
+
+  static/PlayfairDisplay-Italic.ttf
+
+  static/PlayfairDisplay-MediumItalic.ttf
+
+  static/PlayfairDisplay-SemiBoldItalic.ttf
+
+  static/PlayfairDisplay-BoldItalic.ttf
+
+  static/PlayfairDisplay-ExtraBoldItalic.ttf
+
+  static/PlayfairDisplay-BlackItalic.ttf
 
 
 
@@ -35,8 +53,7 @@
 
   1. Install the font files you want to use
 
-  2. Use your app's font picker to view the font family and all the
-  available styles
+  2. Use your app's font picker to view the font family and all the available styles
 
 
 
@@ -50,37 +67,46 @@
 
   https://medium.com/variable-fonts
 
+
+
 ### In desktop apps
 
   https://theblog.adobe.com/can-variable-fonts-illustrator-cc
-  
+
   https://helpx.adobe.com/nz/photoshop/using/fonts.html#variable_fonts
+
+
 
 ### Online
 
   https://developers.google.com/fonts/docs/getting_started
-  
+
   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
-  
+
   https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts
 
 
 
 ## Installing fonts
 
-  MacOS: https://support.apple.com/en-us/HT201749
-  
-  Linux: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
-  
-  Windows: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
+---
+
+  **MacOS**: https://support.apple.com/en-us/HT201749
+
+  **Linux**: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
+
+  **Windows**: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
 
 
 
 ## Android Apps
 
+---
+
   https://developers.google.com/fonts/docs/android
-  
+
   https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
+
 
 
 ## License
@@ -89,10 +115,10 @@
 
   Please read the full license text (OFL.txt) to understand the permissions,
   restrictions and requirements for usage, redistribution, and modification.
-  
+
   You can use them in your products & projects – print or digital,
   commercial or otherwise.
-  
+
   This isn't legal advice, please consider consulting a lawyer and see the full
   license for all details.
 

@@ -1,31 +1,57 @@
-# Orbitron Variable Font
+
+# Source Code Pro
   > font
 
 ---
 
-  This download contains **Orbitron** as both a **variable font** and **static fonts**.
-  
-  Orbitron is a variable font with this axis:
+  This download contains Source Code Pro as both **variable fonts** and **static fonts**.
+
+  Source Code Pro is a variable font with this axis:
     `wght`
-  
-  This means all the styles are contained in a single file:
-    `Orbitron-VariableFont_wght.ttf`
-  
+
+  This means all the styles are contained in these files:
+
+  `SourceCodePro-VariableFont_wght.ttf`
+
+  `SourceCodePro-Italic-VariableFont_wght.ttf`
+
+
+
   If your app fully supports variable fonts, you can now pick intermediate styles
   that aren’t available as static fonts. Not all apps support variable fonts, and
-  in those cases you can use the **static font files for Orbitron**:
+  in those cases you can use the **static font files for Source Code Pro**:
 
-  static/Orbitron-Regular.ttf
-  
-  static/Orbitron-Medium.ttf
+  static/SourceCodePro-ExtraLight.ttf
 
-  static/Orbitron-SemiBold.ttf
+  static/SourceCodePro-Light.ttf
 
-  static/Orbitron-Bold.ttf
+  static/SourceCodePro-Regular.ttf
 
-  static/Orbitron-ExtraBold.ttf
+  static/SourceCodePro-Medium.ttf
 
-  static/Orbitron-Black.ttf
+  static/SourceCodePro-SemiBold.ttf
+
+  static/SourceCodePro-Bold.ttf
+
+  static/SourceCodePro-ExtraBold.ttf
+
+  static/SourceCodePro-Black.ttf
+
+  static/SourceCodePro-ExtraLightItalic.ttf
+
+  static/SourceCodePro-LightItalic.ttf
+
+  static/SourceCodePro-Italic.ttf
+
+  static/SourceCodePro-MediumItalic.ttf
+
+  static/SourceCodePro-SemiBoldItalic.ttf
+
+  static/SourceCodePro-BoldItalic.ttf
+
+  static/SourceCodePro-ExtraBoldItalic.ttf
+
+  static/SourceCodePro-BlackItalic.ttf
 
 
 
@@ -50,37 +76,46 @@
 
   https://medium.com/variable-fonts
 
+
+
 ### In desktop apps
 
   https://theblog.adobe.com/can-variable-fonts-illustrator-cc
-  
+
   https://helpx.adobe.com/nz/photoshop/using/fonts.html#variable_fonts
+
+
 
 ### Online
 
   https://developers.google.com/fonts/docs/getting_started
-  
+
   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
-  
+
   https://developer.microsoft.com/en-us/microsoft-edge/testdrive/demos/variable-fonts
 
 
 
 ## Installing fonts
 
-  MacOS: https://support.apple.com/en-us/HT201749
-  
-  Linux: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
-  
-  Windows: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
+---
+
+  **MacOS**: https://support.apple.com/en-us/HT201749
+
+  **Linux**: https://www.google.com/search?q=how+to+install+a+font+on+gnu%2Blinux
+
+  **Windows**: https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows
 
 
 
 ## Android Apps
 
+---
+
   https://developers.google.com/fonts/docs/android
-  
+
   https://developer.android.com/guide/topics/ui/look-and-feel/downloadable-fonts
+
 
 
 ## License
