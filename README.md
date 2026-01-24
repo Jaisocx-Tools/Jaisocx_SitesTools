@@ -71,6 +71,7 @@ the well known development patterns.
 3. Emails Rendering Quality
 4. Command Line Shell `bash`
 5. Optimization
+
    * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
    * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
    * RAM for DOM ( thin html templates )
