@@ -1,14 +1,14 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
-  "name": "@jaisocx/css-tool-template",
+  "name": "@jaisocx/css_tool_template",
   "version": "2.1.4",
   "description": "Two simple html blocks styles with base template and example for responsive styling and color themes. The infrastructure files are here for the webpack, typescript and publications on npm.",
   "keywords": [
     "css"
   ],
   "files": [
-    "index.example.html",
-    "css_tool_template.example.html",
+    "index.preview.html",
+    "css_tool_template.preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/themes/",
@@ -40,7 +40,7 @@
     }
   },
   "dependencies": {
-   "@jaisocx/css-clean-start-2": "~1.2.3"
+    "@jaisocx/css_clean_start_lite": "~1.0.1"
   }
 }
 

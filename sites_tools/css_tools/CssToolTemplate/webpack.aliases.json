@@ -1,5 +1,4 @@
 {
-  "@CssToolTemplate_MediaAndStyles": "${packageRoot}/MediaAndStyles/",
-  "@cdn_sandbox_fonts/": "https://sandbox.brightday.email/cdn/www/fonts/"
+  "@CssToolTemplate_MediaAndStyles": "${packageRoot}/MediaAndStyles/"
 }
 
