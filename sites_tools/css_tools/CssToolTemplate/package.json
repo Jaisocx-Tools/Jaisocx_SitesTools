@@ -15,12 +15,14 @@
 
     "transpiled/CommonJS",
     "transpiled/ESNext",
-    "transpiled/Simple",
 
     "webpack.aliases.json",
 
     "README.md"
   ],
+  "dependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.1"
+  },
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -38,9 +40,6 @@
       "import": "./transpiled/ESNext/webpack.aliases.mjs",
       "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
-  },
-  "dependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.1"
   }
 }
 
