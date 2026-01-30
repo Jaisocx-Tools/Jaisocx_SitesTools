@@ -1,7 +1,7 @@
 
 ![](./images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
-![](./images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 ![](./images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![](./images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
 
 
