@@ -1,9 +1,5 @@
-
-![./software_labels/software_tm_label_jaisocx.svg](./software_labels/software_tm_label_jaisocx.svg)   ![./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg](./software_labels/js_serverside_jaisocx_jsc_console_js_invoke.svg)
-
-
-
 # Console js invoke
+  `@jaisocx/jsc_console_js_invoke`
   > 💡 Write and store scripts to invoke in console, for debugging too.
 
   not published for yarn or npm for now, since no need to import in other javascript code.
