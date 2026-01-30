@@ -1,16 +1,20 @@
 
 
-# @jaisocx/command-line
-  > Fine-tuning for Console
+# Command Line
+  `@jaisocx/command-line`
+  > 💡 fine-tuning for console
+
+---
+
 
 
 ####  status
-> ✅ Ok
+  > ✅ Ok
 
 
 
 #### supports
-> Server Side
+  > Server Side
 
 ```
    Browser |   Express |   Console
@@ -20,7 +24,7 @@
 
 
 #### size
-> 70 KB - 50 KB - 5 KB
+  > 70 KB - 50 KB - 5 KB
 
 
 ```
@@ -38,16 +42,16 @@
 
 
 #### required
-> Node installed
+  > Node installed
 
 
 
-#### 📅 latest update
-> Winter 2026
+#### 📅 Updated
+  > Winter 2026
 
-**Library**: `@jaisocx/command-line` ver. `1.2.4`
+  **Library**: `@jaisocx/command-line` ver. `1.2.4`
 
-🗓 **Updated at**: `Mon Jan 19 03:29:44 UTC 2026`
+  🗓 **timestamp**: `Mon Jan 19 03:29:44 UTC 2026`
 
 ---
 

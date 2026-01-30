@@ -1,40 +1,40 @@
 
-# Typescript Package
-`@jaisocx/typescript_package`
-> 💡 The package does ...
+# Css Js Html Constants
+  `@jaisocx/css-js-html-constants`
+  > 💡 Datasets installable with yarn or npm for other packages 
 
 ---
 
 
 
 #### status
->  ✅ Ok
+  >  ✅ Ok
 
 
 
 ####  supports
-> Server Side
+  > Both Server Side and Client Side
 
 ```
    Browser |   Express |   Console
-     ❌ no |    ✅ yes |     ✅ yes
+    ✅ yes |    ✅ yes |     ✅ yes
 ```
 
 
 
 #### 📅 Updated
-> Winter 2026
+  > Winter 2026
 
-**Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/css-js-html-constants` ver. `1.0.3`
 
-🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+  🗓 **timestamp**: `Winter 2026`
 
 ---
 
 
 
 #### size
-> 60 KB - 5 KB
+  > 60 KB - 5 KB
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
@@ -49,15 +49,8 @@
 
 
 ## 💡 The aim of the setup
-> The package does ...
+  > Datasets installable with yarn or npm for other packages
 
-
-## Interfaces
-
-
-
-
-# CSS JS HTML CONSTANTS
 
 
 

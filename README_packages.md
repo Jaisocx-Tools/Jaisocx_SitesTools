@@ -11,19 +11,35 @@
 
 ---
 
-  ✅ [Api](./packages/Api/README.md) 📙 📙 `@jaisocx/api`
 
-  ✅  [CdnDatasetsBase](./packages/CdnDatasetsBase/README.md)  `@jaisocx/cdn-datasets-base`
 
-  ⛔  [CharcodeConverter](./packages/CharcodeConverter/README.md) 📙 `@jaisocx/charcode-converter`
+  ✅ Transpiled, published and tested
 
-  ✅  [CommandLine](./packages/CommandLine/README.md) 📙 `@jaisocx/command-line`
+  ⛔ Doesn't do or bugs encountered
 
-  ✅  [CssHtml](./packages/CssHtml/README.md) 📙 `@jaisocx/css-html`
+  📚 Newer items in readme.md docs
 
-  ✅  [CssImporter](./packages/CssImporter/README.md) 📙 `@jaisocx/css-importer`
+  📙 Documentation of 2024 2025 without review in Winter 2026
 
-  ✅  [CssJsHtmlConstants](./packages/CssJsHtmlConstants/README.md)  `@jaisocx/css-js-html-constants`
+  📒 Documentation reviewed 
+
+---
+
+
+
+  ✅ [Api](./packages/Api/README.md) 📚 📙 `@jaisocx/api`
+
+  ✅  [CdnDatasetsBase](./packages/CdnDatasetsBase/README.md) 📚 `@jaisocx/cdn-datasets-base`
+
+  ⛔  [CharcodeConverter](./packages/CharcodeConverter/README.md) 📚 📙 `@jaisocx/charcode-converter`
+
+  ✅  [CommandLine](./packages/CommandLine/README.md) 📚 📒 `@jaisocx/command-line`
+
+  ✅  [CssHtml](./packages/CssHtml/README.md) 📚 📒 `@jaisocx/css-html`
+
+  ✅  [CssImporter](./packages/CssImporter/README.md) 📚 📙 `@jaisocx/css-importer`
+
+  ✅  [CssJsHtmlConstants](./packages/CssJsHtmlConstants/README.md) 📚 `@jaisocx/css-js-html-constants`
 
   ✅  [EventEmitter](./packages/EventEmitter/README.md) 📙 `@jaisocx/event-emitter`
 

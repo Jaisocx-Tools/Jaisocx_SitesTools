@@ -1,33 +1,33 @@
 
-# Typescript Package
-`@jaisocx/typescript_package`
-> 💡 The package does ...
+# css html
+  `@jaisocx/css-html`
+  > 💡 js methods for work with css3
 
 ---
 
 
 
 #### status
->  ✅ Ok
+  >  ✅ Ok
 
 
 
 ####  supports
-> Server Side
+  > Client Side
 
 ```
-   Browser |   Express |   Console
-     ❌ no |    ✅ yes |     ✅ yes
+    Browser |   Express |   Console
+     ✅ yes |     ❌ no |      ❌ no
 ```
 
 
 
 #### 📅 Updated
-> Winter 2026
+  > Autumn 2025
 
-**Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/css-html` ver. `1.3.6`
 
-🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+  🗓 **timestamp**: `Autumn 2025`
 
 ---
 
@@ -49,37 +49,19 @@
 
 
 ## 💡 The aim of the setup
-> The package does ...
+  > Package with methods to work with CSS and HTML
 
-
-## Interfaces
-
-
-
-# Package with methods to work with CSS and HTML
-
-```
-npm install @jaisocx/css-html
-```
-
-
-## Status
-Ready to use since the 06-th of May in the Year 2025.
-
-
-
-## The aim of the setup
-
-I shall publish in this package some basic methods to work with string variables, related to CSS and HTML.
-
-The aim of the setup is to keep the package little and reusable, installing via npm on demand with very few kilobytes cost.
+  Base methods to work with string variables, 
+  related to CSS and HTML.
+  
 
 
 ## Classes available
-1. CssHtml
-2. CssSelectorWeight
+  1. CssHtml
+  2. CssSelectorWeight
 
-## Usage
+
+## TypeScript coding examples
 
 ### 1. CssHtml 
 
