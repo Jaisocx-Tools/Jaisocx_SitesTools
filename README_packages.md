@@ -41,7 +41,7 @@
 
   ✅  [CssJsHtmlConstants](./packages/CssJsHtmlConstants/README.md) 📚 `@jaisocx/css-js-html-constants`
 
-  ✅  [EventEmitter](./packages/EventEmitter/README.md) 📙 `@jaisocx/event-emitter`
+  ✅  [EventEmitter](./packages/EventEmitter/README.md) 📚 📒 `@jaisocx/event-emitter`
 
   ✅  [FileProducerByTemplate](./packages/FileProducerByTemplate/README.md)  `@jaisocx/file-producer-by-template`
 
