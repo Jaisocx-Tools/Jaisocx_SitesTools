@@ -8,18 +8,18 @@
     fill="#222222"
     xmlns="http://www.w3.org/2000/svg" >
 
-        <title>Jaisocx 3.0.16</title>
+        <title> Jaisocx 3.0.16 </title>
 
 
 
         <g>
 
-            <rect
+           <rect
                 x="3"
                 y="3"
                 width="250"
                 height="20"
-                fill="#ddd"
+                fill="#eef"
                 rx="3"
                 ry="3"
             />

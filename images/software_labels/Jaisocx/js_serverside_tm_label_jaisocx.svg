@@ -1,25 +1,23 @@
 <!-- Jaisocx badge -->
 
-
-
 <svg
     height="23"
-    width="353"
+    width="255"
     fill="#222222"
     xmlns="http://www.w3.org/2000/svg" >
 
-        <title>@jaisocx serverside js</title>
+        <title> @jaisocx serverside js </title>
 
 
 
         <g>
 
-            <rect
+           <rect
                 x="3"
                 y="3"
-                width="302"
+                width="252"
                 height="20"
-                fill="#ddd"
+                fill="#efe"
                 rx="3"
                 ry="3"
             />
@@ -43,7 +41,7 @@
             <rect
                 x="213"
                 y="1"
-                width="90"
+                width="40"
                 height="20"
                 fill="#e3f3c5"
             />
@@ -72,7 +70,7 @@
                   y="148"
                   fill="#333"
                   textLength="980" >
-                    /command_line
+                    /server_side_js
               </text>
 
               <text
@@ -80,7 +78,7 @@
                   y="148"
                   fill="#222"
                   textLength="400" >
-                    2.1.5
+
               </text>
 
         </g>

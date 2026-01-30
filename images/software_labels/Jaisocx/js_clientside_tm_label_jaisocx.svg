@@ -4,11 +4,11 @@
 
 <svg
     height="23"
-    width="353"
+    width="285"
     fill="#222222"
     xmlns="http://www.w3.org/2000/svg" >
 
-        <title>@jaisocx clientside js</title>
+        <title> @jaisocx clientside js </title>
 
 
 
@@ -19,7 +19,7 @@
                 y="3"
                 width="282"
                 height="20"
-                fill="#ddd"
+                fill="#ffe"
                 rx="3"
                 ry="3"
             />
@@ -35,15 +35,15 @@
             <rect
                 x="23"
                 y="1"
-                width="170"
+                width="220"
                 height="20"
                 fill="#f5e575"
             />
 
             <rect
-                x="193"
+                x="243"
                 y="1"
-                width="90"
+                width="40"
                 height="20"
                 fill="#f3f3b5"
             />
@@ -71,8 +71,8 @@
                   x="905"
                   y="148"
                   fill="#c95513"
-                  textLength="630" >
-                    /jsc_tree
+                  textLength="1230" >
+                    /clientside_js_css
               </text>
 
               <text
@@ -80,7 +80,7 @@
                   y="148"
                   fill="#222"
                   textLength="400" >
-                    2.1.5
+
               </text>
 
         </g>
