@@ -1,11 +1,60 @@
-# @jaisocx/charcode-converter
+
+# Charcode Converter
+  `@jaisocx/charcode-converter`
+  > 💡 Workarounds with data bufs
+
+---
 
 
-## For what
-the class enhances the ImprovedTemplateRenderer Javascript class' performance,
-while rewriting and rendering templates,
-assigning the rendered templates by reference,
-and not copying each byte in the bytebuffer, when copying texts of datatype string by value.
+
+#### status
+  >  ❌ in development
+
+
+
+####  supports
+  > Client Side
+
+```
+    Browser |   Express |   Console
+     ✅ yes |      ❌ no |     ❌ no 
+```
+
+
+
+#### 📅 Updated
+  > Winter 2026
+
+  **Library**: `@jaisocx/charcode-converter` ver. `1.4.2`
+
+  🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+
+---
+
+
+
+#### size
+  > 60 KB - 5 KB
+
+```
+  Current Folder |   This lib installed        |   typescript in src/  
+                 |     in other node_modules/  |                       
+           55 KB |                             |                5 KB   
+```
+
+---
+
+
+
+
+
+## 💡 The aim of the setup
+  > Workarounds with data bufs
+
+  the class enhances the ImprovedTemplateRenderer Javascript class' performance,
+  while rewriting and rendering templates,
+  assigning the rendered templates by reference,
+  and not copying each byte in the bytebuffer, when copying texts of datatype string by value.
 
 
 ## How does it improve

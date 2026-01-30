@@ -68,6 +68,8 @@ the well known development patterns.
 
 ## Base typescript packages
 
+[README_packages.md](./README_packages.md)
+
 **Areas of development, with several tasks solved**
 
 1. Themes
@@ -77,7 +79,7 @@ the well known development patterns.
 5. Optimization
 
      * HTML templates transparency ( Template Renderer for JSON Rendering Tools )
-     * Optimization for DOM Reactivity ( Improved Renderer Event Emitter )
+     * Optimization for DOM Interactivity ( Improved Renderer Event Emitter )
      * RAM for DOM ( thin html templates )
      * Traffic, requests number minimization ( Workarounds for CDN and Preloading )
      * Public repositories storage space ( Workarounds for CDN and Media storing repos )

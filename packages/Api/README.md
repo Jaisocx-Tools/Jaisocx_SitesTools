@@ -1,19 +1,58 @@
 
-# @jaisocx/api
+# Api
+  `@jaisocx/api`
+  > 💡 Loads json and objdata
+
+---
 
 
-####  status
-> ✅ Ok
+
+#### status 
+  > ✅ Ok
 
 
 
-#### supports
-> Client Side
+####  supports
+  > Client Side
 
 ```
-    Browser |    Express |   Console
-     ✅ yes |      ❌ no |      ❌ no 
+   Browser |   Express |   Console 
+    ✅ yes |      ❌ no |     ❌ no 
 ```
+
+
+
+#### 📅 Updated
+  > Winter 2026
+
+  **Library**: `@jaisocx/api` ver. `1.2.3`
+
+  🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+
+---
+
+
+
+#### size
+  > 60 KB - 5 KB
+
+```
+  Current Folder |   This lib installed        |   typescript in src/  
+                 |     in other node_modules/  |                       
+           55 KB |                             |                5 KB   
+```
+
+---
+
+
+
+
+
+## 💡 The aim of the setup
+  > Loads json and objdata.
+
+
+
 
 ---
 

@@ -13,7 +13,6 @@
     "transpiled/CommonJS",
     "transpiled/ESNext",
 
-    "software_labels",
     "README.md"
   ],
   "type": "module",

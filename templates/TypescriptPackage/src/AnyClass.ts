@@ -1,3 +1,5 @@
+import { AnyClassInterface } from "./AnyClassInterface.js";
+
 export class AnyClass {
 
   protected _prop: any;
@@ -10,7 +12,13 @@ export class AnyClass {
     return this._prop;
   }
 
-  public setProp( inPropValue: any ): AnyClass {
+  /** ts code line ( )return this; ) allows coding like this:
+   *  anyClassInstance
+   *    .setPropOne( propOneValue )
+   *    .setAnotherProp( anotherPropValue )
+   *    .someMethod();
+  */
+  public setProp( inPropValue: any ): AnyClassInterface {
     this._prop = inPropValue;
 
     return this;

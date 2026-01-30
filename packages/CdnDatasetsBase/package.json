@@ -10,6 +10,8 @@
     "transpiled/CommonJS",
     "transpiled/ESNext",
     "transpiled/Simple",
+
+    "cdn_data",
     "README.md"
   ],
   "optionalDependencies": {

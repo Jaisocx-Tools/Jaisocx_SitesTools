@@ -7,6 +7,7 @@
   - `test/AnyClass.test.ts` tests with The Vitest Testing Framework, on the same-named ts class `AnyClass` in this package
 - `src/` .ts files 
   - `src/AnyClass.ts` a ts class example with a field, constructor(), get..() and set..() methods examples.
+  - `src/AnyClassInterface.ts`
   - `src/index.ts` package's entry point for later imports in other ts packages in ts code as `import { AnyClass } from 'package-name;'`
 - `README.md` this .md docs file
 

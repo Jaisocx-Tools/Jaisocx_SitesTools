@@ -1,2 +1,2 @@
-export { AnyClass } from "./AnyClass.js";
+void(0);
 
