@@ -118,10 +118,10 @@ if ( matchedValue.includes("rem") ) {
 ```
 
 
-### 1. CssSelectorWeight 
+### 2. CssSelectorWeight 
 
 
-#### Example 1. Get Specifity value denoting weight of a css selector 
+#### Example 2.1. Get Specifity value denoting weight of a css selector 
 ```
 import { CssSelectorWeight } from "@jaisocx/css-html";
 
@@ -145,7 +145,7 @@ console.log( specifitiesComparison );
 ```
 
 
-#### Example 2. Compare specifity values, to get know what css rule has the higher priority.
+#### Example 2,2. Compare specifity values, to get know what css rule has the higher priority.
 ```
 import { CssSelectorWeight } from "@jaisocx/css-html";
 
@@ -161,7 +161,7 @@ let specifitiesComparison = this.cssSelectorWeightPackage.compareSpecificity (
 
 
 
-#### Example 3. A more detailed example.
+#### Example 2.3. Detailed example.
 ```
 import { CssSelectorWeight } from "@jaisocx/css-html";
 

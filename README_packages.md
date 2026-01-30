@@ -13,15 +13,15 @@
 
 
 
-  ✅ Transpiled, published and tested
+  ✅ Ok. Transpiled, published and tested
 
   ⛔ Doesn't do or bugs encountered
 
-  📚 Newer items in readme.md docs
+  📚 Improved structure of `README.md` in 2026
 
-  📙 Documentation of 2024 2025 without review in Winter 2026
+  📙 Documentation of **2024 2025 without review** in Winter 2026
 
-  📒 Documentation reviewed 
+  📒 Documentation **reviewed in Winter 2026**
 
 ---
 
