@@ -11,11 +11,11 @@
 
 
 ####  supports
-  > Server Side
+  > Client Side
 
 ```
-   Browser |   Express |   Console
-     ❌ no |    ✅ yes |     ✅ yes
+   Browser |   Express |   Console 
+    ✅ yes |      ❌ no |     ❌ no 
 ```
 
 
