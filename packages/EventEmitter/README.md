@@ -226,11 +226,6 @@
 
 
 
-## HELLO WORLD MESSAGE:
-
-GOOD LUCK AND HAVE FUN WITH CODING ))
-
-
 Yours [jaisocx.com](https://jaisocx.com/) Software Architect and Dev,
 
 Elias
