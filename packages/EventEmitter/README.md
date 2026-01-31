@@ -14,8 +14,7 @@
   > Another fine workaround planned, 
   > the lazy renderer, 
   > since rendering 14 MB is nice, 
-  > however the render cost can be saved up, 
-  > since all rendered data isn't shown in display in browser's tab.
+  > however, all rendered data isn't shown in display in browser's tab.
   
 ---
 
