@@ -1,6 +1,6 @@
 
-# Typescript Package
-  `@jaisocx/typescript_package`
+# Linked Resources Integrity
+  `@jaisocx/linked-resources-integrity`
   > 💡 The package does ...
 
 
@@ -23,7 +23,7 @@
 #### 📅 Updated
   > Winter 2026
 
-  **Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/linked-resources-integrity` ver. `1.0.1`
 
   🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
 
@@ -32,12 +32,12 @@
 
 
 #### size
-  > 60 KB - 5 KB
+  > 40 KB
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
                  |     in other node_modules/  |                       
-           55 KB |                             |                5 KB   
+           40 KB |                             |                5 KB   
 ```
 
 ---

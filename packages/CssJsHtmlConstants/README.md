@@ -32,12 +32,12 @@
 
 
 #### size
-  > 60 KB - 5 KB
+  > 600 KB
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
                  |     in other node_modules/  |                       
-           55 KB |                             |                5 KB   
+          600 KB |                             |                5 KB   
 ```
 
 ---

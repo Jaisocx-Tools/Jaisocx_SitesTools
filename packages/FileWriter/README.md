@@ -1,6 +1,6 @@
 
-# Typescript Package
-  `@jaisocx/typescript_package`
+# File Writer
+  `@jaisocx/file-writer`
   > 💡 The package does ...
 
 
@@ -22,7 +22,7 @@
 #### 📅 Updated
   > Winter 2026
 
-  **Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/file-writer` ver. `1.2.7`
 
   🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
 
@@ -31,12 +31,12 @@
 
 
 #### size
-  > 60 KB - 5 KB
+  > 125 KB 
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
                  |     in other node_modules/  |                       
-           55 KB |                             |                5 KB   
+          125 KB |                             |                5 KB   
 ```
 
 ---

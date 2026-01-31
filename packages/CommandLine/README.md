@@ -21,13 +21,13 @@
 
 
 #### size
-  > 70 KB - 50 KB - 5 KB
+  > 40 KB
 
 
 ```
   Current Folder |   This lib, as installed    |   typescript in src/ |   Latest Tarball |   Main ts class
                  |     in other node_modules/  |                      |                  |
-           70 KB |                      41 KB  |                4 KB  |             7 KB |            2 KB
+           40 KB |                      41 KB  |                4 KB  |             7 KB |            2 KB
 ```
 
 ```
