@@ -1,19 +1,17 @@
 
 # Typescript Package
-`@jaisocx/typescript_package`
-> 💡 The package does ...
-
----
+  `@jaisocx/typescript_package`
+  > 💡 The package does ...
 
 
 
 #### status
->  ✅ Ok
+  >  ✅ Ok
 
 
 
 ####  supports
-> Server Side
+  > Server Side
 
 ```
    Browser |   Express |   Console
@@ -23,18 +21,18 @@
 
 
 #### 📅 Updated
-> Winter 2026
+  > Winter 2026
 
-**Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/typescript_package` ver. `1.0.1`
 
-🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+  🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
 
 ---
 
 
 
 #### size
-> 60 KB - 5 KB
+  > 60 KB - 5 KB
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
@@ -49,7 +47,7 @@
 
 
 ## 💡 The aim of the setup
-> The package does ...
+  > The package does ...
 
 
 ## Interfaces
@@ -63,25 +61,30 @@
 
 ### Link tag integrity to prove hash of the resource being loaded
 
-1. modify file ./cmd/linkedResourceHash.sh
+  1. modify file ./cmd/linkedResourceHash.sh
 
-on line 55 set path to file in the ts dockerized service like this:
+  on line 55 set path to file in the ts dockerized service like this:
 
 ```bash
+
       --filePath="/opt/jaisocx/sites_tools/cdn/www/media/images/favicon/Icon_Sandbox_Brightday.ico" \
+
 ```
 
 
-2. invoke bash script in terminal
+  2. invoke bash script in terminal
 
 ```bash
+
 ./cmd/linkedResourceHash.sh
+
 ```
 
 
-3. Improve quality of the linked resources on Your sites
+  3. Improve quality of the linked resources on Your sites
 
 ```html
+
     <link
       rel="icon"
       type="image/x-icon"
@@ -90,6 +93,7 @@ on line 55 set path to file in the ts dockerized service like this:
       integrity="sha512-t3XuLqNXUNFqkrdBlRf4me63watpaFBd8TZzcCAvxUMG4msGTx2/k6OFQdEl0wUj3iKDK9z2Z9h+YQF71i8S+Q=="
       onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
     />
+
 ```
 
 
@@ -100,23 +104,36 @@ on line 55 set path to file in the ts dockerized service like this:
 ### Hasher
 
 ```typescript
-export interface LinkedResourceHasherInterface {
-
-  preloadedResourceIntegrityProduce (
-    filePath: string,
-    algo: string
-  ): string;
-
-
-  linkPreloaderProduce (
-    href: string,
-    path: string,
-    rel: string,
-    as: string,
-    fetchpriority: string,
-    prettified: boolean
-  ): string;
-
-}
+  
+  export interface LinkedResourceHasherInterface {
+  
+    preloadedResourceIntegrityProduce (
+      filePath: string,
+      algo: string
+    ): string;
+  
+  
+    linkPreloaderProduce (
+      href: string,
+      path: string,
+      rel: string,
+      as: string,
+      fetchpriority: string,
+      prettified: boolean
+    ): string;
+  
+  }
+  
 ```
+
+
+
+---
+
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
+
 

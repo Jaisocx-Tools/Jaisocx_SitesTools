@@ -3,8 +3,6 @@
   `@jaisocx/css-importer`
   > 💡 packs all .css into single .css file
 
----
-
 
 
 #### status
@@ -118,9 +116,12 @@
 ```
 
 
+---
 
-Yours [jaisocx.com](https://jaisocx.com/) Software Architect and Dev,
 
-Elias
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
 
 

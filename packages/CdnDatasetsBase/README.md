@@ -3,8 +3,6 @@
   `@jaisocx/cdn-datasets-base`
   > 💡 Base methods for producing aand publishing datasets, for example constants of opensource libraries.
 
----
-
 
 
 #### status
@@ -54,5 +52,15 @@
 
 
 ## Interfaces
+
+
+
+---
+
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
 
 

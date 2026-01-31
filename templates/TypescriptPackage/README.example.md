@@ -2,8 +2,6 @@
   `@jaisocx/typescript_package`
   > 💡 The package does ...
 
----
-
 
 
 #### status

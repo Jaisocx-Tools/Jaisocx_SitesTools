@@ -3,8 +3,6 @@
   `@jaisocx/css-js-html-constants`
   > 💡 Datasets installable with yarn or npm for other packages 
 
----
-
 
 
 #### status
@@ -54,8 +52,13 @@
 
 
 
-Yours [jaisocx.com](https://jaisocx.com/) Software Architect and Dev,
 
-Elias
+---
+
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
 
 

@@ -16,7 +16,6 @@
   > since rendering 14 MB is nice, 
   > however, all rendered data isn't shown in display in browser's tab.
   
----
 
 
 
@@ -94,7 +93,8 @@
 
 ### 1. Constants of Events Names
 
-```
+```typescript
+
     const eventHandler1: any = ( eventName: any, payload: any ) => {
       payload.html = payload.html.replaceAll (
         "<", 
@@ -163,7 +163,8 @@
   the processed payload 
   from the previous event handler.
 
-```
+```typescript
+
 // example code from class TemplateRenderer
 
   render(): any {
@@ -219,17 +220,15 @@
   }
 ```
 
+
+
 ---
 
 
 
+Have a nice day.
 
-
-Yours [jaisocx.com](https://jaisocx.com/) Software Architect and Dev,
-
-Elias
-
-
+Elias, Software Architect of Jaisocx Company
 
 
 

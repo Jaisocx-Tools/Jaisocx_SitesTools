@@ -1,10 +1,7 @@
 
-
 # Command Line
   `@jaisocx/command-line`
   > 💡 fine-tuning for console
-
----
 
 
 
@@ -136,6 +133,7 @@
 
   # invokes the .js from example below 'ts coding example'
   node invokeJsInConsoleExample.js --Root="/home/user/MyProject" --sitesToolPath="sites_tools/SitesTool"
+
 ```
 
 
@@ -146,6 +144,7 @@
   `src/CommandLineArgsInterface.ts`
 
 ```typescript
+
   interface CommandLineArgsInterface {
 
     getCommandLineArgs(): object;
@@ -157,6 +156,7 @@
     transformCommandLineArgs(): CommandLineArgsInterface;
 
   }
+  
 ```
 
 
@@ -169,12 +169,15 @@
 
 
 ```typescript
+
   console.log( (new CommandLineArgs()).getAfterReadNTransformed() );
+
 ```
 
 
 
 ```typescript
+
   // Script Name: invokeJsInConsoleExample.js
   // invoked in bash terminal like this:
   // $_ node invokeJsInConsoleExample.js --Root="/home/user/MyProject" --sitesToolPath="sites_tools/SitesTool"
@@ -257,21 +260,15 @@
 
 
   // END OF .ts EXAMPLE
+  
 ```
 
 ---
 
 
 
-
 Have a nice day.
 
 Elias, Software Architect of Jaisocx Company
-
-
-
-
-
-
 
 

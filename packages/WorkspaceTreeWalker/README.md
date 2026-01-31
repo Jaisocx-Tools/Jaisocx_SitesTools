@@ -1,19 +1,17 @@
 
 # Typescript Package
-`@jaisocx/typescript_package`
-> 💡 The package does ...
-
----
+  `@jaisocx/typescript_package`
+  > 💡 The package does ...
 
 
 
 #### status
->  ✅ Ok
+  >  ✅ Ok
 
 
 
 ####  supports
-> Server Side
+  > Server Side
 
 ```
    Browser |   Express |   Console
@@ -23,18 +21,18 @@
 
 
 #### 📅 Updated
-> Winter 2026
+  > Winter 2026
 
-**Library**: `@jaisocx/typescript_package` ver. `1.0.1`
+  **Library**: `@jaisocx/typescript_package` ver. `1.0.1`
 
-🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
+  🗓 **timestamp**: `Tue Jan 20 06:28:29 CET 2026`
 
 ---
 
 
 
 #### size
-> 60 KB - 5 KB
+  > 60 KB - 5 KB
 
 ```
   Current Folder |   This lib installed        |   typescript in src/  
@@ -46,16 +44,18 @@
 
 
 
-
-
 ## 💡 The aim of the setup
-> The package does ...
-
-
-## Interfaces
+  > The package does ...
 
 
 
+---
 
-# @jaisocx/workspace-tree-walker
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
+
+
 
