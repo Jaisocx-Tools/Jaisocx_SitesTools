@@ -43,35 +43,35 @@
 
   ✅  [EventEmitter](./packages/EventEmitter/README.md) 📚 📒 `@jaisocx/event-emitter`
 
-  ✅  [FileProducerByTemplate](./packages/FileProducerByTemplate/README.md)  `@jaisocx/file-producer-by-template`
+  ✅  [FileProducerByTemplate](./packages/FileProducerByTemplate/README.md) 📚 `@jaisocx/file-producer-by-template`
 
-  ✅  [FileWriter](./packages/FileWriter/README.md)  `@jaisocx/file-writer`
+  ✅  [FileWriter](./packages/FileWriter/README.md) 📚 `@jaisocx/file-writer`
 
-  ✅  [ImprovedTemplateRenderer](./packages/ImprovedTemplateRenderer/README.md) 📙 `@jaisocx/improved-template-renderer`
+  ✅  [ImprovedTemplateRenderer](./packages/ImprovedTemplateRenderer/README.md) 📚 📙 `@jaisocx/improved-template-renderer`
 
-  ✅  [JPath](./packages/JPath/README.md)  `@jaisocx/jpath`
+  ✅  [JPath](./packages/JPath/README.md) 📚 `@jaisocx/jpath`
 
-  ✅  [LinkedResourcesIntegrity](./packages/LinkedResourcesIntegrity/README.md) 📙 `@jaisocx/linked-resources-integrity`
+  ✅  [LinkedResourcesIntegrity](./packages/LinkedResourcesIntegrity/README.md) 📚 📙 `@jaisocx/linked-resources-integrity`
 
-  ✅  [MimeType](./packages/MimeType/README.md) 📙 `@jaisocx/mime-type`
+  ✅  [MimeType](./packages/MimeType/README.md) 📚 📙 `@jaisocx/mime-type`
 
-  ✅  [ObjData](./packages/ObjData/README.md) 📙 `@jaisocx/objdata`
+  ✅  [ObjData](./packages/ObjData/README.md) 📚 📙 `@jaisocx/objdata`
 
-  ✅  [Preloader](./packages/Preloader/README.md) 📙 `@jaisocx/preloader`
+  ✅  [Preloader](./packages/Preloader/README.md) 📚 📙 `@jaisocx/preloader`
 
-  ✅  [ResponsiveSizes](./packages/ResponsiveSizes/README.md)  `@jaisocx/responsive-sizes`
+  ✅  [ResponsiveSizes](./packages/ResponsiveSizes/README.md) 📚  `@jaisocx/responsive-sizes`
 
-  ✅  [SitesToolAutomation](./packages/SitesToolAutomation/README.md) 📙 `@jaisocx/sites-tool-automation`
+  ✅  [SitesToolAutomation](./packages/SitesToolAutomation/README.md) 📚 📙 `@jaisocx/sites-tool-automation`
 
-  ✅  [TemplateRenderer](./packages/TemplateRenderer/README.md) 📙 `@jaisocx/template-renderer`
+  ✅  [TemplateRenderer](./packages/TemplateRenderer/README.md) 📚 📙 `@jaisocx/template-renderer`
 
-  ✅  [Text](./packages/Text/README.md) 📙 `@jaisocx/text`
+  ✅  [Text](./packages/Text/README.md) 📚 📙 `@jaisocx/text`
 
-  ✅  [ThemeTurnOn](./packages/ThemeTurnOn/README.md) 📙 `@jaisocx/theme-turn-on`
+  ✅  [ThemeTurnOn](./packages/ThemeTurnOn/README.md) 📚 📙 `@jaisocx/theme-turn-on`
 
-  ✅  [TokensParser](./packages/TokensParser/README.md)  `@jaisocx/tokens-parser`
+  ✅  [TokensParser](./packages/TokensParser/README.md) 📚  `@jaisocx/tokens-parser`
 
-  ⛔  [WorkspaceTreeWalker](./packages/WorkspaceTreeWalker/README.md)  `@jaisocx/workspace-tree-walker`
+  ⛔  [WorkspaceTreeWalker](./packages/WorkspaceTreeWalker/README.md) 📚  `@jaisocx/workspace-tree-walker`
   
 
 
