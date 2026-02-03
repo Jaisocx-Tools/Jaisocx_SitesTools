@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="jsx theme_visible_height theme_darkmode">
+<html lang="en" class="jsx theme_visible_height theme_lightmode blue">
 <head>
 
-  <title>CssCodeSnippet</title>
+  <title> CssCodeSnippet </title>
 
-  <base href="./">
+  <base href="./" />
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -12,13 +12,13 @@
 
 
     <!--# FAVICON -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://sandbox.basetasks.site/cdn/www/media/images/favicon/Icon_Jaisocx.ico"
-      href-fallback="favicon/Icon_Jaisocx.ico"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    />
+<!--    <link-->
+<!--      rel="icon"-->
+<!--      type="image/x-icon"-->
+<!--      href="https://sandbox.basetasks.site/cdn/www/media/images/favicon/Icon_Jaisocx.ico"-->
+<!--      href-fallback="favicon/Icon_Jaisocx.ico"-->
+<!--      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"-->
+<!--    />-->
 
 
 
@@ -33,6 +33,8 @@
       href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
       onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
     /> -->
+
+
 
   <link
       rel="stylesheet"
@@ -192,8 +194,8 @@
 
         padding:    0 1rem 0 1rem;
 
-        color:            whitesmoke;
-        background-color: green;
+        color:            var(--code-snippet--text-color);
+        background-color: var(--code-snippet-tool--border-color);
       }
 
     </style>
@@ -231,20 +233,21 @@
 
       <content>
 
-        <h1>Css Code Snippet</h1>
-        <h2>@jaisocx/css-code-snippet</h2>
+        <h1> Css Code Snippet </h1>
+        <h2> @jaisocx/css-code-snippet </h2>
         <h3> index.preview.html </h3>
-        <description>Css sites tool rendering code blocks with numbered code rows</description>
+        <description> Css sites tool rendering code blocks with numbered code rows </description>
 
 
 
         <ThemeButtons>
+          <button id="button-turn-on-base" data-theme=""> Base </button>
           <button id="button-turn-on-daymode" data-theme="theme_lightmode">Day Mode</button>
           <button id="button-turn-on-nightmode" data-theme="theme_darkmode">Night Mode</button>
         </ThemeButtons>
 
 
-        <CodeSnippetHolder id="code-snippet-example" class="CodeSnippetHolder little salad">
+        <CodeSnippetHolder id="code-snippet-example" class="CodeSnippetHolder little blue">
           <pre class="CodeSnippetArea">
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
@@ -284,7 +287,7 @@ describe('AppComponent', () => {
 
 
       <page_signed>
-        <text>CSS Code Snippet 1.2.7 2025</text>
+        <text> CSS Code Snippet 1.3.7 2026 </text>
       </page_signed>
 
     </main>
@@ -299,7 +302,8 @@ describe('AppComponent', () => {
 
     let cssClassesNames = [
       "jsx",
-      "theme_visible_height"
+      "theme_visible_height",
+      "blue"
     ];
 
 
@@ -344,7 +348,7 @@ describe('AppComponent', () => {
     function addThemeButtonsEventHandlers() {
 
       const buttonsIDs = [
-//        "button-turn-on-base-theme",
+        "button-turn-on-base",
         "button-turn-on-daymode",
         "button-turn-on-nightmode"
       ];
