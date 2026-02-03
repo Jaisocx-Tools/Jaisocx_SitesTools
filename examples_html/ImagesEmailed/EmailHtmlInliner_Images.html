@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html class="jsx theme-emailed-thin">
+<html class="jsx jaisocx_email_for_webmail theme_emailed_thin">
 <head>
 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta
+      charset="utf-8"
+  />
+
+  <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+  />
+
 
 
   <!-- THIS IS THE SETTING TO USE THE URLS LIKE IN THE FOLDER www WITH ALL HTML EXAMPLES. -->
-  <base href="../../">
-
+  <base
+      href="../../"
+  />
 
   <title> Example EmailHtmlInliner: Images </title>
 
 
-  <link
-      rel="stylesheet"
-      href="sites_tools/css_tools/CssCleanStart_Lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
-  />
+
+<!--  <link-->
+<!--      rel="stylesheet"-->
+<!--      href="sites_tools/css_tools/CssCleanStart_Lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"-->
+<!--  />-->
 
 
 
@@ -33,86 +42,230 @@
 
 
 
-  <style>
-    /* Images with styles for emails in WebMail apps */
+  <style name="variables_jaisocx_html_email_inliner">
 
-    .jsx.theme-emailed-thin .images {
+    .jaisocx_email_for_webmail.theme_emailed_thin {
+
+      --jaisocx-email-for-webmail--email--height: fit-content;
+      --jaisocx-email-for-webmail--email--background-color: navy;
+
+      --jaisocx-email-for-webmail--images-layout-block--width: 75%;
+      --jaisocx-email-for-webmail--images-layout-block--border: 1px solid #ace;
+
+      --jaisocx-email-for-webmail--image-cell--height: 14rem;
+      --jaisocx-email-for-webmail--image-cell--width: 24.4%;
+      --jaisocx-email-for-webmail--image-cell--padding: 1rem;
+      --jaisocx-email-for-webmail--image-cell--border: 1px solid lime;
+      --jaisocx-email-for-webmail--image-cell--background: cornsilk;
+
+      --jaisocx-email-for-webmail--inner-image-holder--padding: 0.8rem;
+      --jaisocx-email-for-webmail--inner-image-holder--border: 1px solid crimson;
+      --jaisocx-email-for-webmail--inner-image-holder--background: white;
+
+      --jaisocx-email-for-webmail--all-tags--box-sizing: border-box;
+
+    }
+
+
+
+    /* styles overrides of Css Code Snippet for HTML Inliner UI  */
+
+    .jsx .CssCodeSnippet email_html_inliner.jaisocx_email_html_inliner .CodeSnippetHolder#css_code_snippet_email_images ,
+    .jsx email_html_inliner.jaisocx_email_html_inliner.CssCodeSnippet .CodeSnippetHolder#css_code_snippet_email_images {
+      --lines-numbers--content: var(--lines-numbers--content--300);
+      --lines-number: 100;
+
+      --code-snippet-tool--width: 29rem;
+      --code-snippet-tool--height: 26rem;
+
+      --code-snippet-tool--overflow-y: auto;
+    }
+
+
+    /* .jsx.jaisocx_email_for_webmail.theme_emailed_thin {
+
+      --jsx--css-clean-start-2--body-tag--min-height: auto;
+      --jsx--css-clean-start-2--body-tag--max-height: fit-content;
+      --jsx--css-clean-start-2--body-tag--height: fit-content;
+
+      --jsx--css-clean-start-2--body-tag--min-width: 100%;
+      --jsx--css-clean-start-2--body-tag--max-width: 100%;
+      --jsx--css-clean-start-2--body-tag--width: 100%;
+
+      --jsx--css-clean-start-2--body-tag--overflow-x: hidden;
+      --jsx--css-clean-start-2--body-tag--overflow-y: visible;
+
+
+      --jsx--css-clean-start-2--site--width: 100%;
+
+      --jsx--css-clean-start-2--site--overflow-x: hidden;
+      --jsx--css-clean-start-2--site--overflow-y: visible;
+    } */
+
+  </style>
+
+
+
+  <style name="images_jaisocx_html_email_inliner">
+
+    /**
+    * why hardcoded and with the Star
+    * several webmail applications set only padding-box style and several don't allow this css style.
+    * then we just develop the email, at once knew, that the padding-box will be set with no other choice in some webmail.
+    * this is now as the styles may be set for vieweing in other webmail applications,
+    * but for quality and multiplatform support we just set the style that some platform sets by default and other cannot override.
+    * no need for now getting know very exact the name of webmail app engine, chosen by a webmail provider,
+    * the update of an engine is very expensive,
+    * and this behavior tactic pattern is always good used.
+    */
+
+    .jaisocx_email_for_webmail ,
+    .jaisocx_email_for_webmail body ,
+    .jaisocx_email_for_webmail body.level_first ,
+    .jaisocx_email_for_webmail .level_first ,
+    .jaisocx_email_for_webmail .level_first .main_layout_block ,
+    .jaisocx_email_for_webmail .level_first .main_layout_block * {
       display: block;
-
-      width: var(--main-width);
-      max-width: var(--main-width);
-      min-width: var(--main-width);
-
-      height: auto;
-      max-height: max-content;
-      min-height: fit-content;
-
-      /* flex-wrap: wrap; */
-
-      background: var(--main-background-color);
-      margin-bottom: 3rem;
-
-      overflow-y: visible;
-      overflow-x: hidden;
+      position: relative;
+      box-sizing: var(--jaisocx-email-for-webmail--all-tags--box-sizing);
     }
 
 
 
-    .jsx.theme-emailed-thin .images > .cell {
-      display: inline-block;
-
-      width:     var(--img-width);
-      max-width: 100%;
-      min-width: unset;
-
-      height:     var(--img-height);
-      max-height: fit-content;
-      min-height: var(--img-height);
-
-      overflow-x: hidden;
-      overflow-y: visible;
-
-      margin: 0 0.6rem 0.6rem 0;
-      overflow: hidden;
-
-      /* background: #f2fff2; */
-      background: black;
-      border: 1px solid lime;
+    .jaisocx_email_for_webmail.theme_emailed_thin,
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first {
+      display: block;
     }
 
+    .jaisocx_email_for_webmail.theme_emailed_thin,
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first,
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block {
 
+      margin: 0;
 
-    .jsx.theme-emailed-thin .images .cell .image-holder {
-      display: inline-block;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+
+      padding: 0;
 
       width: 100%;
       max-width: 100%;
       min-width: 100%;
 
-      height: auto;
-      min-height: fit-content;
-      max-height: unset;
-
       overflow-x: hidden;
+
+      height: var(--jaisocx-email-for-webmail--email--height);
+      max-height: var(--jaisocx-email-for-webmail--email--height);
+      min-height: 100%;
+
       overflow-y: visible;
 
-      padding: 0.8rem;
-      margin: 0 0 0 0 !important;
-      /* background: #ffffff; */
-      background: inherit;
-      /* border: 1px solid crimson; */
+      background: var(--jaisocx-email-for-webmail--email--background-color);
+
     }
 
 
 
-    .jsx.theme-emailed-thin .images > .cell > .image-holder > img {
-      display: inline-block;
+    /* Images with styles for emails in WebMail apps */
 
-      width: auto;
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block {
+
+      display: block;
+
+      min-width: 100%;
       max-width: 100%;
+      width: 100%;
+
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+
+      text-align: center;
+
+    }
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block   .images {
+      display: inline-block;
+      text-align: left;
+
+      width: var(--jaisocx-email-for-webmail--images-layout-block--width);
+      max-width: var(--jaisocx-email-for-webmail--images-layout-block--width);
+      min-width: var(--jaisocx-email-for-webmail--images-layout-block--width);
 
       height: auto;
+      max-height: max-content;
+      min-height: fit-content;
+
+      margin-bottom: 3rem;
+
+      background: var(--jaisocx-email-for-webmail--email--background-color);
+      border: var(--jaisocx-email-for-webmail--images-layout-block--border);
+
+      overflow-y: visible;
+      overflow-x: hidden;
+    }
+
+
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block   .images .cell {
+      display:   inline-block;
+      text-align: center;
+
+      min-width: var(--jaisocx-email-for-webmail--image-cell--width);
+      max-width: 100%;
+      width:     var(--jaisocx-email-for-webmail--image-cell--width);
+      overflow-x: hidden;
+
+      min-height:  var(--jaisocx-email-for-webmail--image-cell--height);
+      max-height:  var(--jaisocx-email-for-webmail--image-cell--height);
+      height:      var(--jaisocx-email-for-webmail--image-cell--height);
+      overflow-y:  hidden;
+
+
+      margin: 0 0 0 0;
+
+      overflow: hidden;
+
+      padding: var(--jaisocx-email-for-webmail--image-cell--padding);
+
+      background: var(--jaisocx-email-for-webmail--image-cell--background);
+      border: var(--jaisocx-email-for-webmail--image-cell--border);
+    }
+
+
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block   .images .cell .image-holder {
+      display: block;
+
+      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
+      overflow-x: hidden;
+
+      min-height: fit-content;
       max-height: 100%;
+      height: fit-content;
+      overflow-y: hidden;
+
+      padding: var(--jaisocx-email-for-webmail--inner-image-holder--padding);
+      margin: 0 0 0 0 !important;
+      background: var(--jaisocx-email-for-webmail--inner-image-holder--background);
+      border: var(--jaisocx-email-for-webmail--inner-image-holder--border);
+    }
+
+
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .level_first .main_layout_block   .images .cell .image-holder   img {
+      display: block;
+
+      min-width: unset;
+      max-width: 100%;
+      width: auto;
+
+      min-height: unset;
+      max-height: 100%;
+      height: auto;
 
       overflow: hidden;
     }
@@ -121,33 +274,35 @@
 
 
 
-  <style>
+  <style name="texts_jaisocx_html_email_inliner">
 
     /* text styles for emails in WebMail apps */
 
-    .jsx.theme-emailed-thin .email_address {
+    .jaisocx_email_for_webmail.theme_emailed_thin .email_address {
       margin: 1.6rem 0;
     }
 
-    .jsx.theme-emailed-thin .text,
-    .jsx.theme-emailed-thin .text .paragraph {
+    .jaisocx_email_for_webmail.theme_emailed_thin .text,
+    .jaisocx_email_for_webmail.theme_emailed_thin .text .paragraph {
       width: 100%;
       max-width: 100%;
       line-break: normal;
     }
 
-    .jsx.theme-emailed-thin .text .paragraph {
+    .jaisocx_email_for_webmail.theme_emailed_thin .text .paragraph {
       margin: 1.4rem 0;
     }
 
-    .jsx.theme-emailed-thin .text .line {
+    .jaisocx_email_for_webmail.theme_emailed_thin .text .line {
       display: block;
       margin: 0;
     }
-    .jsx.theme-emailed-thin .text .line:first-of-type {
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .text .line:first-of-type {
       margin: 1.9rem 0 0 0;
     }
-    .jsx.theme-emailed-thin .text .line:last-of-type {
+
+    .jaisocx_email_for_webmail.theme_emailed_thin .text .line:last-of-type {
       margin: 0 0 1.9rem 0;
     }
 
@@ -155,169 +310,172 @@
 
 
 
-  <style name="inliner-ui-tool">
+  <style name="email_html_inliner_jaisocx_sites_js_tool">
 
-  /* Css Code Snippet for HTML Inliner UI  */
+    /* Styles of Jaisocx Email HTML Inliner Sites JS Tool */
 
-  .jsx.theme-emailed-thin .CodeSnippetHolder#code-snippet-inlinetext {
-    --lines-numbers--content: var(--lines-numbers--content--300);
-    --lines-number: 100;
+    email_html_inliner.jaisocx_email_html_inliner {
+      position: fixed;
+      display: block;
 
-    --code-snippet-tool--width: 29rem;
-    --code-snippet-tool--height: 20rem;
+      top: 2rem;
+      right: 1rem;
 
-    --code-snippet-tool--overflow-y: auto;
-  }
+      height: auto;
+      width: auto;
 
-  .jsx.theme-emailed-thin s {
-    text-decoration: none;
+      overflow: visible visible;
 
-    display: block;
-    position: static;
+      z-index: 1000;
+    }
 
-  }
+    email_html_inliner.jaisocx_email_html_inliner    layout-block {
+      display: block;
+    }
 
-  #inlinertoolarea {
-    position: fixed;
 
-    top: 2rem;
-    right: 1rem;
 
-    height: auto;
-    width: auto;
+    /** Styles for Button of Jaisocx Email HTML Inliner Sites JS Tool */
+    email_html_inliner.jaisocx_email_html_inliner   .inlinerbuttonarea {
+      display: block;
+      z-index: 1002;
+    }
 
-    overflow: visible visible;
+    email_html_inliner.jaisocx_email_html_inliner   .inlinerbuttonarea .btn-show-inline-text {
+      display: block;
+      position: static;
+      z-index: 1008;
 
-    z-index: 1000;
-  }
+      background-color: steelblue;
+      color: aliceblue;
+      border: 1px solid #66ddff;
+      border-radius: 0.2rem;
+      padding: 0.4rem 0.8rem;
+    }
 
-  #inlinerbuttonarea {
-    display: block;
-    z-index: 1002;
-  }
 
-  #btn-show-inline-text {
-    display: block;
-    position: static;
-    z-index: 1008;
 
-    background-color: steelblue;
-    color: aliceblue;
-    border: 1px solid #66ddff;
-    border-radius: 0.2rem;
-    padding: 0.4rem 0.8rem;
-  }
+    /** Styles for TextArea ( with automatique produced html ) of Jaisocx Email HTML Inliner Sites JS Tool */
+    email_html_inliner.jaisocx_email_html_inliner   .inlinertextarea {
+      height: var(--code-snippet-tool--height);
+      width: var(--code-snippet-tool--width);
+      max-width: var(--code-snippet-tool--width);
 
-  #inlinertextarea {
-    height: var(--code-snippet-tool--height);
-    width: var(--code-snippet-tool--width);
-    max-width: var(--code-snippet-tool--width);
+      position: absolute;
+      top: 4rem;
+      right: 0;
 
-    position: absolute;
-    top: 4rem;
-    right: 0;
+      overflow: visible visible;
+    }
 
-    overflow: visible visible;
-  }
+    email_html_inliner.jaisocx_email_html_inliner   .inlinertextarea nav {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: flex-start;
+    }
 
-  #inlinertextarea nav {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-  }
+    email_html_inliner.jaisocx_email_html_inliner   .inlinertextarea nav button {
+      width: auto;
+      height: auto;
+      overflow: visible;
 
-  #inlinertextarea nav button {
-    width: auto;
-    height: auto;
-    overflow: visible;
+      padding: 0.16rem 0.9rem 0.16rem 0.9rem;
+      margin: 0 0.3rem 0.16rem 0;
 
-    padding: 0.16rem 0.9rem 0.16rem 0.9rem;
-    margin: 0 0.3rem 0.16rem 0;
+      background-color: #f2f9ff;
+      color: #000;
+      border: 1px solid #44ddff;
+      border-radius: 0.6rem;
 
-    background-color: #f2f9ff;
-    color: #000;
-    border: 1px solid #44ddff;
-    border-radius: 0.6rem;
+      font-size: 0.674rem;
+      line-height: 0.674rem;
 
-    font-size: 0.674rem;
-    line-height: 0.674rem;
+      letter-spacing: 1px;
+    }
 
-    letter-spacing: 1px;
-  }
+    email_html_inliner.jaisocx_email_html_inliner   .inlinertextarea nav button:hover {
+      background-color: #a5d7ff;
+      color: #049;
+      border: 1px solid #1166ff;
+    }
 
-  #inlinertextarea nav button:hover {
-    background-color: #a5d7ff;
-    color: #049;
-    border: 1px solid #1166ff;
-  }
+    email_html_inliner.jaisocx_email_html_inliner   .inlinertextarea nav button:focus {
+      background-color: #c5e9ff;
+      color: #fff;
+      border: 1px solid #2288ff;
+    }
 
-  #inlinertextarea nav button:focus {
-    background-color: #c5e9ff;
-    color: #fff;
-    border: 1px solid #2288ff;
-  }
-
-</style>
+  </style>
 
 
 
 </head>
-<body>
+<body class="level_first">
 
-  <s id="inlinertoolarea" style="display: block;">
-    <s id="inlinerbuttonarea">
-      <button id="btn-show-inline-text">Show Inliner</button>
-    </s>
 
-    <s id="inlinertextarea" style="display: none;">
+
+<!--  Jaisocx HTML Inliner Sites JS Tool-->
+  <email_html_inliner class="jaisocx_email_html_inliner CssCodeSnippet">
+
+    <layout-block class="inlinerbuttonarea">
+      <button class="btn-show-inline-text">Show Inliner</button>
+    </layout-block>
+
+    <layout-block class="inlinertextarea" style="display: none;">
       <nav>
-        <button id="btn-inline-html">Produce Inline HTML</button>
-        <button id="btn-copy-inline-text">Copy To Clipboard</button>
-        <button id="btn-inline-text-in-new-tab">Show In New Tab</button>
+        <button class="btn-inline-html">Produce Inline HTML</button>
+        <button class="btn-copy-inline-text">Copy To Clipboard</button>
+        <button class="btn-inline-text-in-new-tab">Show In New Tab</button>
       </nav>
 
-      <CodeSnippetHolder id="code-snippet-inlinetext" class="CodeSnippetHolder blue">
-        <pre class="CodeSnippetArea" id="inlinetext"></pre>
-      </CodeSnippetHolder>
+      <css_code_snippet id="css_code_snippet_email_images" class="CodeSnippetHolder blue">
+        <pre class="inlinetext CodeSnippetArea"></pre>
+      </css_code_snippet>
 
-    </s>
-  </s>
+    </layout-block>
 
-  <main class="main">
+  </email_html_inliner>
+<!--  End of block   Jaisocx HTML Inliner Sites JS Tool-->
+
+
+
+
+
+  <main class="main_layout_block">
 
     <div class="images">
 
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/Desktop_1280.jpg" alt="Image Desktop" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/Desktop_1280.jpg" alt="Image Desktop" descrption="example of rendered image by cid." />
         </div>
       </div>
 
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/Laptop_1280.jpg" alt="Image Laptop" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/Laptop_1280.jpg" alt="Image Laptop" descrption="example of rendered image by cid." />
         </div>
       </div>
 
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/InCar-7740670_1280.jpg" alt="Image In the Car" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/InCar-7740670_1280.jpg" alt="Image In the Car" descrption="example of rendered image by cid." />
         </div>
       </div>
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/WorkTools-1924174_1280.jpg" alt="Image WorkTools" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/WorkTools-1924174_1280.jpg" alt="Image WorkTools" descrption="example of rendered image by cid." />
         </div>
       </div>
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/PhotoCamera-6835351_1280.jpg" alt="Image Photo Camera" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/PhotoCamera-6835351_1280.jpg" alt="Image Photo Camera" descrption="example of rendered image by cid." />
         </div>
       </div>
       <div class="cell">
         <div class="image-holder">
-          <img src="../../../images/html_previews_examples/images/Work_1280.jpg" alt="Image Work" descrption="example of rendered image by cid." />
+          <img src="images/html_previews_examples/images/Work_1280.jpg" alt="Image Work" descrption="example of rendered image by cid." />
         </div>
       </div>
     </div>
@@ -353,14 +511,14 @@
     let shift = withShift ? e.shift : true;
 
     if ( ctrl && shift && e.code === keyCode ) {
-      let inlinerToolArea = document.getElementById( "inlinertoolarea" );
+      let inlinerToolArea = document.querySelector( "email_html_inliner.jaisocx_email_html_inliner" );
 
       let shownStyleValue = ( inlinerToolArea.style.display === "none" ) ? "block" : "none";
 
       inlinerToolArea.style.display = shownStyleValue;
 
       if ( shownStyleValue === "none" ) {
-        let textArea = document.getElementById("inlinertextarea");
+        let textArea = document.querySelector("email_html_inliner.jaisocx_email_html_inliner .inlinertextarea");
         textArea.style.display = shownStyleValue;
       }
     }
@@ -368,7 +526,7 @@
 
 
   function showInlineText( e ) {
-    let textArea = document.getElementById("inlinertextarea");
+    let textArea = document.querySelector("email_html_inliner.jaisocx_email_html_inliner .inlinertextarea");
     let shownStyleValue = ( textArea.style.display === "none" ) ? "block" : "none";
     textArea.style.display = shownStyleValue;
   }
@@ -394,13 +552,13 @@
       baseUrlReplacedWith
     );
 
-    let textHtmlNode = document.getElementById("inlinetext");
+    let textHtmlNode = document.querySelector("email_html_inliner.jaisocx_email_html_inliner .inlinetext");
     textHtmlNode.innerHTML = cssHtmlPackage.escapeHTML( inlineText );
   }
 
   async function copyInlineText( e ) {
     let cssHtmlPackage = new CssHtml();
-    let textHtmlNode = document.getElementById("inlinetext");
+    let textHtmlNode = document.querySelector("email_html_inliner.jaisocx_email_html_inliner .inlinetext");
     let inlineText = cssHtmlPackage.unescapeHTML( textHtmlNode.innerHTML );
 
     await navigator.clipboard.writeText( inlineText );
@@ -411,7 +569,7 @@
 
   function inlineTextInNewTab( e ) {
     let cssHtmlPackage = new CssHtml();
-    let textHtmlNode = document.getElementById("inlinetext");
+    let textHtmlNode = document.querySelector( "email_html_inliner.jaisocx_email_html_inliner .inlinetext" );
     let inlineText = cssHtmlPackage.unescapeHTML( textHtmlNode.innerHTML );
 
     const newWin = window.open();
@@ -428,36 +586,35 @@
   }
 
   function assignEventHandler_BtnShowInlineText( buttonId, eventName ) {
-    let eventTriggeringHtmlElem = document.getElementById( buttonId );
+    let eventTriggeringHtmlElem = document.querySelector( buttonId );
 
     eventTriggeringHtmlElem.addEventListener ( eventName, function(e){ showInlineText( e ); } );
   }
 
   function assignEventHandler_BtnInlineText( buttonId, eventName, baseUrlToReplace, baseUrlReplacedWith ) {
-    let eventTriggeringHtmlElem = document.getElementById( buttonId );
+    let eventTriggeringHtmlElem = document.querySelector( buttonId );
 
     eventTriggeringHtmlElem.addEventListener ( eventName, function(e){ inlineText( e, baseUrlToReplace, baseUrlReplacedWith ); } );
   }
 
   function assignEventHandler_BtnCopyInlineText( buttonId, eventName ) {
-    let eventTriggeringHtmlElem = document.getElementById( buttonId );
+    let eventTriggeringHtmlElem = document.querySelector( buttonId );
 
     eventTriggeringHtmlElem.addEventListener ( eventName, function(e){ copyInlineText( e ); } );
   }
 
   function assignEventHandler_BtnInlineTextInNewTab( buttonId, eventName ) {
-    let eventTriggeringHtmlElem = document.getElementById( buttonId );
+    let eventTriggeringHtmlElem = document.querySelector( buttonId );
 
     eventTriggeringHtmlElem.addEventListener ( eventName, function(e){ inlineTextInNewTab( e ); } );
   }
 
-
   function assignEventsHandlers() {
     assignEventHandler_ShowHide_InlinerButton( true, false, "KeyQ" );
-    assignEventHandler_BtnShowInlineText( "btn-show-inline-text", "click" );
-    assignEventHandler_BtnInlineText( "btn-inline-html", "click", globBaseUrlToReplace, globBaseUrlReplacedWith );
-    assignEventHandler_BtnCopyInlineText( "btn-copy-inline-text", "click" );
-    assignEventHandler_BtnInlineTextInNewTab( "btn-inline-text-in-new-tab", "click" );
+    assignEventHandler_BtnShowInlineText( "email_html_inliner.jaisocx_email_html_inliner .btn-show-inline-text", "click" );
+    assignEventHandler_BtnInlineText( "email_html_inliner.jaisocx_email_html_inliner .btn-inline-html", "click", globBaseUrlToReplace, globBaseUrlReplacedWith );
+    assignEventHandler_BtnCopyInlineText( "email_html_inliner.jaisocx_email_html_inliner .btn-copy-inline-text", "click" );
+    assignEventHandler_BtnInlineTextInNewTab( "email_html_inliner.jaisocx_email_html_inliner .btn-inline-text-in-new-tab", "click" );
   }
 
   document.addEventListener( "DOMContentLoaded", () => { assignEventsHandlers(); } );
