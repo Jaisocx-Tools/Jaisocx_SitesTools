@@ -30,7 +30,7 @@
    */
   --lines-numbers--content: var(--lines-numbers--content--99);
 
-  --code_snippet__font_family: var(--css-clean-start-2--monospace--font-family) Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
+  --code_snippet__font_family: Courier, "Courier New", Menlo, Consolas, 'Liberation Mono';
 
   /* code snippet tool borders */
   /* by color */

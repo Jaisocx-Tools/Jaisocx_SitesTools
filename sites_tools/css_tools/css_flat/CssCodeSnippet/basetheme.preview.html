@@ -36,6 +36,7 @@
 
 
 
+<!--  CSS CLEAN START LITE SAME CSS VARIABLES NAMES, HOWEVER 10 TIMES SMALLER SINCE WITHOUT FINE-TUNING FOR RESPONSIVE STYLES-->
   <link
       rel="stylesheet"
       type="text/css"
@@ -68,14 +69,15 @@
     <style>
 
       .jsx#basetheme_css_code_snippet_preview {
-        --jsx--css-clean-start-2--site--min-width: 65%;
+        --jsx--css-clean-start-2--site--min-width: 55%;
         --jsx--css-clean-start-2--site--max-width: 100%;
-        --jsx--css-clean-start-2--site--width: 65%;
+        --jsx--css-clean-start-2--site--width: 55%;
 
         --jsx--css-clean-start-2--h1--font-size: 0.9rem;
       }
 
-      @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait) {
+      @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
 
         .jsx#basetheme_css_code_snippet_preview {
 
@@ -167,7 +169,6 @@ describe('AppComponent', () => {
 });
           </pre>
         </CodeSnippetHolder>
-
 
       </content>
 
