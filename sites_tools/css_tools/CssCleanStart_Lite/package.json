@@ -1,25 +1,30 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css_clean_start_lite",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Css sites resetting default styles with main.css of few hundreds css lines, without 30 css files for media queries of 30 displays sizes",
   "keywords": [
     "css",
     "styles"
   ],
   "files": [
-    "index.preview.html",
-
     "favicon/",
-    "MediaAndStyles/*.css",
-    "MediaAndStyles/themes/",
-
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-
     "webpack.aliases.json",
 
-    "README.md"
+    "README.md",
+
+    "index.preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/theme_lightmode/",
+    "MediaAndStyles/themes/theme_darkmode/",
+    "MediaAndStyles/themes/theme_visible_height/",
+
+    "src/",
+
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/"
   ],
   "private": false,
   "publishConfig": {
@@ -40,6 +45,5 @@
     }
   }
 }
-
 
 

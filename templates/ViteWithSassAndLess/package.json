@@ -4,14 +4,14 @@
   "description": "",
   "keywords": [],
   "files": [
+    "README.md",
     "images",
     "src",
     "test",
-    "vite.config.ts",
-    "README.md"
+    "vite.config.ts"
   ],
   "dependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.1"
+    "@jaisocx/css_clean_start_lite": "~1.0.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

@@ -10,79 +10,46 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
-
   <link
       id="icon_jaisocx"
       rel="icon"
       type="image/x-icon"
-      href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Jaisocx.ico"
-      href-fallback="../css-clean-start-2/favicon/Icon_Jaisocx.ico"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
       onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
   />
 
-  <!--    <link-->
-  <!--            id="icon_brightday"-->
-  <!--            rel="icon"-->
-  <!--            type="image/x-icon"-->
-  <!--            href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"-->
-  <!--            href-fallback="../css-clean-start-2/favicon/Icon_Sandbox_Brightday.ico"-->
-  <!--            onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"-->
-  <!--    />-->
 
 
-
-
-
-    <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
-
-    <!--# importing @jaisocx/css-clean-start-2 IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB  -->
-    <!-- <link
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
-      href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    /> -->
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
 
-    <!--# THE SAME importing @jaisocx/css-clean-start-2 IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
-    <link
+
+
+  <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+
+  <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    charset="utf-8"
+    href="MediaAndStyles/CssTable_main_relative.css"
+  />
+
+  <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved_minimal.css"
-      href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved_minimal.css"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    />
-
-
-
-    <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
-
-    <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/CssTable_main_relative.css"
-    />
-
-    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
-<!--    <link-->
-<!--      rel="stylesheet"-->
-<!--      type="text/css"-->
-<!--      charset="utf-8"-->
-<!--      href="MediaAndStyles/CssTable_main_resolved.css"-->
-<!--    />-->
-
-<!--    <link-->
-<!--      rel="stylesheet"-->
-<!--      type="text/css"-->
-<!--      charset="utf-8"-->
-<!--      href="MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css"-->
-<!--      href-fallback="MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css"-->
-<!--      onerror="javascript: ( () => { console.log( this ); this.href = this.getAttribute( 'href-fallback' ); this.onerror = () => { return 1; }; } )();"-->
-<!--  />-->
+      href="MediaAndStyles/CssTable_main_resolved.css"
+  /> -->
 
 
 
@@ -204,7 +171,7 @@
 
 
       <ThemeButtons>
-        <button id="button-turn-on-base-theme" data-theme="">Base Theme</button>
+        <button id="button-turn-on-base" data-theme=""> Base </button>
         <button id="button-turn-on-daymode" data-theme="theme_lightmode">Day Mode</button>
         <button id="button-turn-on-nightmode" data-theme="theme_darkmode">Night Mode</button>
       </ThemeButtons>
@@ -1799,14 +1766,13 @@
 
   </main>
 
-  </body>
+</body>
 
 
 
 <script>
 
   let currentButtonNodeClicked = null;
-
 
   let cssClassesNames = [
     "jsx",
@@ -1855,7 +1821,7 @@
   function addThemeButtonsEventHandlers() {
 
     const buttonsIDs = [
-      "button-turn-on-base-theme",
+      "button-turn-on-base",
       "button-turn-on-daymode",
       "button-turn-on-nightmode"
     ];

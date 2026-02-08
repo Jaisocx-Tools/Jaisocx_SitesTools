@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/media_tools_images_mini_freepic_kawaii",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [
     "css",
@@ -13,7 +13,6 @@
   "files": [
     "index.preview.html",
     "prod_jsc_img_mini_freepic_kawaii__preview.html",
-    "dev_jsc_img_mini_freepic_kawaii__preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/images",
@@ -29,11 +28,11 @@
   "scripts": {
     "build:sass": "/opt/jaisocx/sites_tools/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
   },
-  "peerDependencies": {
-    "sass": "^1.89.2"
+  "devDependencies": {
+    "sass": "^1.97.3"
   },
   "optionalDependencies": {
-   "@jaisocx/css-clean-start-2": "~1.2.3"
+    "@jaisocx/css_clean_start_lite": "~1.0.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
