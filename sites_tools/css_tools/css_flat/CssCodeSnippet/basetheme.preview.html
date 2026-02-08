@@ -2,7 +2,7 @@
 <html id="basetheme_css_code_snippet_preview" class="jsx" lang="en">
 <head>
 
-  <title> CssCodeSnippet </title>
+  <title> Jaisocx Css Code Snippet </title>
 
   <base href="./" />
 
@@ -11,171 +11,89 @@
 
 
 
-    <!--# FAVICON -->
-<!--    <link-->
-<!--      rel="icon"-->
-<!--      type="image/x-icon"-->
-<!--      href="https://sandbox.basetasks.site/cdn/www/media/images/favicon/Icon_Jaisocx.ico"-->
-<!--      href-fallback="favicon/Icon_Jaisocx.ico"-->
-<!--      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"-->
-<!--    />-->
-
-
-
-    <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
-
-    <!--# importing @jaisocx/css-clean-start-2 IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB  -->
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
-      href-fallback="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_relative.css"
-      onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
-    /> -->
-
-
-
 <!--  CSS CLEAN START LITE SAME CSS VARIABLES NAMES, HOWEVER 10 TIMES SMALLER SINCE WITHOUT FINE-TUNING FOR RESPONSIVE STYLES-->
   <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
-      href-fallback="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
       onerror="javascript: ( () => { console.log( this ); this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); } )();"
   />
 
-
-    <!--# STYLES CssCodeSnippet and theme_base -->
-    <link
-        fetchpriority="medium"
-        rel="stylesheet"
-        type="text/css"
-        charset="utf-8"
-        href="MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css"
-    />
-
-    <link
-      fetchpriority="medium"
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/CssCodeSnippet_main_resolved.css"
-    />
+<!--  CSS CODE SNIPPET-->
+  <link
+    fetchpriority="medium"
+    rel="stylesheet"
+    type="text/css"
+    charset="utf-8"
+    href="MediaAndStyles/CssCodeSnippet_main_resolved.css"
+  />
 
 
 
-    <style>
+  <style name="css clean start overrides for this site">
+
+    .jsx#basetheme_css_code_snippet_preview {
+      --jsx--css-clean-start-2--h1--font-size: 0.9rem;
+    }
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
 
       .jsx#basetheme_css_code_snippet_preview {
-        --jsx--css-clean-start-2--site--min-width: 55%;
+
+        --responsive_size: responsive_size_til_h03_tablet_s_portrait;
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
         --jsx--css-clean-start-2--site--max-width: 100%;
-        --jsx--css-clean-start-2--site--width: 55%;
+        --jsx--css-clean-start-2--site--width: 100%;
 
-        --jsx--css-clean-start-2--h1--font-size: 0.9rem;
-      }
-
-      @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
-      only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
-
-        .jsx#basetheme_css_code_snippet_preview {
-
-          --responsive_size: responsive_size_til_h03_tablet_s_portrait;
-
-          --jsx--css-clean-start-2--site--min-width: 100%;
-          --jsx--css-clean-start-2--site--max-width: 100%;
-          --jsx--css-clean-start-2--site--width: 100%;
-
-          --jsx--css-clean-start-2--h1--font-size: 1rem;
-
-        }
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
 
       }
 
-    </style>
+    }
+
+  </style>
 
 
 
-    <style>
+  <style name="css code snippet overrides for this site">
 
-      .jsx .CodeSnippetHolder#code-snippet-example,
-      .jsx .CodeSnippetHolder#code-snippet-example-thin {
+    .jsx .CodeSnippetHolder#code-snippet-example {
 
-        /* when a .css is loaded with hardcoded lines numbers in code-snippet-lines-numbers-99.css
-        * on path MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css
-        */
+      --lines-numbers--content--10: "\0031\00a\0032\00a\0033\00a\0034\00a\0035\00a\0036\00a\0037\00a\0038\00a\0039\00a\0031\0030\00a";
 
-        --lines-numbers--content: var(--lines-numbers--content--99);
-        --lines-number: 29;
+      --lines-numbers--content: var(--lines-numbers--content--10);
+      --lines-number: 3;
 
-      }
+    }
 
+  </style>
 
+</head>
+<body>
 
-      .jsx .CodeSnippetHolder#code-snippet-example {
-        --code-snippet-tool--width: fit-content;
-        --code-snippet-tool--overflow-y: auto;
-      }
+  <main>
 
-      .jsx .CodeSnippetHolder#code-snippet-example-thin {
-        --code-snippet-tool--width:  28rem;
-        --code-snippet-tool--height: 22rem;
-        --code-snippet-tool--overflow-y: auto;
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <main>
-
-      <content>
+    <content>
 
         <h1> @jaisocx/css-code-snippet </h1>
 
-        <CodeSnippetHolder id="code-snippet-example" class="CodeSnippetHolder little salad">
+        <css_code_snippet id="code-snippet-example" class="CodeSnippetHolder little salad">
           <pre class="CodeSnippetArea">
-import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
-  });
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have the 'angular' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular');
-  });
-});
+{
+    "@CssCodeSnippet_MediaAndStyles": "${packageRoot}/MediaAndStyles/"
+}
           </pre>
-        </CodeSnippetHolder>
+        </css_code_snippet>
 
       </content>
 
-    </main>
+  </main>
 
-  </body>
-
+</body>
 </html>
 
 
