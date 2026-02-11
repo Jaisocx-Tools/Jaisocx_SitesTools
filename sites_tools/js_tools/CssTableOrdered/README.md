@@ -80,10 +80,16 @@ The jaisocx templates for files listing, https exceptions and others will be ava
 ```
 
 
+
 ## npm for webpack
 
+`--omit=dev` to avoid installation of devDependencies.
+
+In the `package.json`, the mini images package requires **Sass styles preprocessor** for development purposes with **scss variables** for css3 style property `background-image`,
+and in this package the Sass installation wasn't required.
+
 ```
-npm install @jaisocx/css-table-ordered
+npm install @jaisocx/css-table-ordered --omit=dev
 ```
 
 
