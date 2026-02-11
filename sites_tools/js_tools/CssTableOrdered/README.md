@@ -52,7 +52,7 @@ The jaisocx templates for files listing, https exceptions and others will be ava
 
   <script>
 
-    let orderbyClassInstance = new Object();
+    let orderbyInstance = new Object();
 
     function addScrollEventHandlers() {
       cssTableScrollInstance = new CssTableScroll();
@@ -60,9 +60,9 @@ The jaisocx templates for files listing, https exceptions and others will be ava
     }
 
     function addOrderbyEventHandler() {
-      orderbyClassInstance = new CssTableOrderby();
-        orderbyClassInstance.setRowsNumberNotOrdered( 1 );
-      let eventHandlerRetval = orderbyClassInstance.addOrderbyEventHandler();
+      orderbyInstance = new CssTableOrderby();
+        orderbyInstance.setRowsNumberNotOrdered( 1 );
+      let eventHandlerRetval = orderbyInstance.addOrderbyEventHandler();
     }
 
 

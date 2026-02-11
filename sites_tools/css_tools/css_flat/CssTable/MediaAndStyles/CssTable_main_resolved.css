@@ -1,91 +1,71 @@
 
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.jsx-css-table-holder .cell.example .cell-value {
+.jsx-css-table-holder.jaisocx-folder-listing-columns {
   
-
-  word-spacing: 0.9rem;
-  letter-spacing: 0.1rem;
-
-  
-  text-transform: capitalize;
-
-  
-  font-variant-caps: titling-caps;
-
-  font-variant: no-common-ligatures tabular-nums;
-
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: lime;
-  text-underline-position: under; 
-
-  font-variant-alternates: historical-forms;
+  --jsx--CssTable--bright--grid-template-columns: 5rem 34rem 12rem 6rem 18rem 100rem;
 }
 
 
-.jsx-css-table-holder .cell.keep-like-in-text-editor span.cell-value {
-  white-space:  preserve nowrap !important;
-  word-break: keep-all !important;
-  display: block !important;
+
+.jsx-css-table-holder.example-table-columns-4 {
+  --jsx--CssTable--bright--grid-template-columns:   12rem 8rem 24rem minmax( 20rem, 1fr );
 }
 
-.jsx-css-table-holder .cell.keep-line .cell-value {
-  
-  
-  white-space: nowrap;
+
+.jsx-css-table-holder.example-table-columns-12 {
+  --jsx--CssTable--bright--grid-template-columns:   9rem 8rem 24rem 24rem 24rem 8rem 24rem 20rem 8rem 8rem 8rem minmax( 24rem, 1fr );
 }
 
-.jsx-css-table-holder .cell.number .cell-value {
-  
-  text-align:             right;
-  font-family:            monospace;
 
-  
+
+
+
+.jsx-css-table-holder .column-1 {
+  --jsx--CssTable--bright--column-width: 12rem;
 }
+.jsx-css-table-holder .column-2 {
+  --jsx--CssTable--bright--column-width: 8rem;
+}
+.jsx-css-table-holder .column-3 {
+  --jsx--CssTable--bright--column-width: 24rem;
+}
+.jsx-css-table-holder .column-4 {
+  --jsx--CssTable--bright--column-width: minmax( 20rem, 1fr );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1495,17 +1475,7 @@
 
 
 
-.jsx-css-table-holder.theme_imaged .cell.name.folder .cell-mini-image .in-cell-mini-image {
-  background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/tree_theme_base/icons8-3-100.png");
-}
 
-.jsx-css-table-holder.theme_imaged .cell.name.application_json .cell-mini-image .in-cell-mini-image {
-  background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/tree_theme_base/icons8-json-96.png");
-}
-
-.jsx-css-table-holder.theme_imaged .cell.name.text_html .cell-mini-image .in-cell-mini-image {
-  background-image: url("https://cdn.brightday.email/media/images/mini-images/mimetype/tree_theme_base/icons8-font-style-formatting-96.png");
-}
 
 
 

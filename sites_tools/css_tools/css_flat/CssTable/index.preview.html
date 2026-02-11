@@ -33,25 +33,43 @@
 
 
 
-  <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
   <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+
+  <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
+  <!-- <link
     rel="stylesheet"
     type="text/css"
     charset="utf-8"
     href="MediaAndStyles/CssTable_main_relative.css"
-  />
+  /> -->
 
   <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
-  <!-- <link
+  <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="MediaAndStyles/CssTable_main_resolved.css"
-  /> -->
+  />
 
 
 
-  <script>
+  <script name="imaged_styles">
+
+    const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
+    const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
+    let linkUrlLoading = "";
 
     function addLink( url ) {
         let lnk = document.createElement( "LINK" );
@@ -62,31 +80,33 @@
         document.getElementsByTagName( "HEAD" )[0].append( lnk );
     }
 
-  const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
-  const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
-  let linkUrlLoading = "";
-  fetch( "./node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
-  .then (
+    async function loadImagedStyles( testShallowUrl ) {
 
-    ( response ) => {
-      if ( response.status === 200 ) {
-        // linkUrlLoading = linkUrlHoisted;
-        linkUrlLoading = linkUrlShallow;
+      let response = { status: 404 };
 
-        addLink ( linkUrlLoading );
+      try {
+        response = await fetch ( testShallowUrl );
+      } catch ( e ) {
+        response = { status: 404 };
       }
+
+      if ( response.status === 200 ) {
+        linkUrlLoading = linkUrlShallow;
+      } else {
+        linkUrlLoading = linkUrlHoisted;
+      }
+
+      addLink ( linkUrlLoading );
+
+      return 1;
     }
 
-  ).catch (
 
-   ( err ) => {
-        linkUrlLoading = linkUrlHoisted;
-        // linkUrlLoading = linkUrlShallow;
 
-        addLink ( linkUrlLoading );
-   }
-
-  );
+    loadImagedStyles ( "node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
+      .then (
+        ( retVal ) => { return 1; }
+      );
 
   </script>
 
@@ -1768,12 +1788,20 @@
 
 <script>
 
-  let currentButtonNodeClicked = null;
-
-  let cssClassesNames = [
+  const cssClassesNames = [
     "jsx",
     "theme_visible_height"
   ];
+
+  const themeCssClassPrefix = "theme";
+
+  const buttonsIDs = [
+    "button-turn-on-base",
+    "button-turn-on-daymode",
+    "button-turn-on-nightmode"
+  ];
+
+  let currentButtonNodeClicked = null;
 
 
 
@@ -1786,8 +1814,6 @@
 
     const htmlNode = document.getElementsByTagName("html")[0];
     const htmlNodeClassList = htmlNode.classList;
-
-    const themeCssClassPrefix = "theme";
 
     htmlNodeClassList.forEach (
       (cssClassName) => {
@@ -1816,12 +1842,6 @@
   // in the event handler for the event DOMContentLoaded
   function addThemeButtonsEventHandlers() {
 
-    const buttonsIDs = [
-      "button-turn-on-base",
-      "button-turn-on-daymode",
-      "button-turn-on-nightmode"
-    ];
-
     for ( let buttonId of buttonsIDs ) {
 
       let buttonNode = document.getElementById( buttonId );
@@ -1838,14 +1858,14 @@
   }
 
 
-
-  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // adding to buttons the event handler to turn on the theme.
-    addThemeButtonsEventHandlers();
-
-  });
+  // DOCUMENT ONLOAD
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      // adding to buttons the event handler to turn on the theme.
+      addThemeButtonsEventHandlers();
+    }
+  );
 
 </script>
 

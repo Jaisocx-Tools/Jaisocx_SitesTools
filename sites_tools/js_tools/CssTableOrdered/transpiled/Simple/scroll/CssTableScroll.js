@@ -38,8 +38,8 @@ class CssTableScroll {
 
         while (rowId < rowsNumber) {
             tb = tableRowsHolder[rowId];
-            tb.addEventListener(
-                "scroll",
+            tb.addEventListener (
+                "wheel",
                 (evt) => {
                     this.onTableScroll(evt);
                 }

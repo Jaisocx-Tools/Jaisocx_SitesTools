@@ -36,20 +36,20 @@
     <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
 
     <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/CssTable_main_relative.css"
-    />
-
-    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
     <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/CssTable_main_resolved.css"
+      href="MediaAndStyles/CssTable_main_relative.css"
     /> -->
+
+    <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/CssTable_main_resolved.css"
+    />
 
 
 
@@ -234,12 +234,20 @@
 
 <script>
 
-  let currentButtonNodeClicked = null;
-
-  let cssClassesNames = [
+  const cssClassesNames = [
     "jsx",
     "theme_visible_height"
   ];
+
+  const themeCssClassPrefix = "theme";
+
+  const buttonsIDs = [
+    "button-turn-on-base",
+    "button-turn-on-daymode",
+    "button-turn-on-nightmode"
+  ];
+
+  let currentButtonNodeClicked = null;
 
 
 
@@ -252,8 +260,6 @@
 
     const htmlNode = document.getElementsByTagName("html")[0];
     const htmlNodeClassList = htmlNode.classList;
-
-    const themeCssClassPrefix = "theme";
 
     htmlNodeClassList.forEach (
       (cssClassName) => {
@@ -282,12 +288,6 @@
   // in the event handler for the event DOMContentLoaded
   function addThemeButtonsEventHandlers() {
 
-    const buttonsIDs = [
-      "button-turn-on-base",
-      "button-turn-on-daymode",
-      "button-turn-on-nightmode"
-    ];
-
     for ( let buttonId of buttonsIDs ) {
 
       let buttonNode = document.getElementById( buttonId );
@@ -304,14 +304,14 @@
   }
 
 
-
-  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // adding to buttons the event handler to turn on the theme.
-    addThemeButtonsEventHandlers();
-
-  });
+  // DOCUMENT ONLOAD
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      // adding to buttons the event handler to turn on the theme.
+      addThemeButtonsEventHandlers();
+    }
+  );
 
 </script>
 

@@ -21,8 +21,6 @@ for the preview,
 and `.css` to **import** these mini images in `.html`
 via css class name.
 
-![docs/img/preview.png](docs/img/preview.png)
-
 
 
 For example:
@@ -73,5 +71,4 @@ For example:
 </html>
 ```
 
-![docs/img/preview_audio.png](docs/img/preview_audio.png)
 

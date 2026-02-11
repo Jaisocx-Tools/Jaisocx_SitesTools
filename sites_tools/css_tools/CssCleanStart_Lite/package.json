@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css_clean_start_lite",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Css sites resetting default styles with main.css of few hundreds css lines, without 30 css files for media queries of 30 displays sizes",
   "keywords": [
     "css",
@@ -14,6 +14,7 @@
     "README.md",
 
     "index.preview.html",
+    "css_clean_start_lite.preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/themes/theme_base/",

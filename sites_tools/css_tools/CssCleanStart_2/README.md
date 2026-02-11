@@ -51,9 +51,9 @@
 
 
 
-## html coding example
+## 1. html coding example
 
-### 1. &lt;html class="jsx"&gt;
+### 1.1. &lt;html class="jsx"&gt;
 Normally set the css class `jsx` and theme css class in &lt;html&gt; tag.
 
 ```html
@@ -78,7 +78,7 @@ Normally set the css class `jsx` and theme css class in &lt;html&gt; tag.
 
 
 
-### 2. class ul-reset
+### 1.2. class ul-reset
 You can set css class `ul-reset` when You don't need html lists rendering with the predefined 90-s years html look and feel.
 
 ```html
@@ -91,6 +91,96 @@ or in some tag, where You don't need html lists rendering with the predefined 90
       ...
     <a-tag class="ul-reset">
 ```
+
+
+
+## 2. css coding example
+
+```css
+
+    /* Css Clean Start Lite styles overrides */
+
+    .jsx {
+      --jsx--css-clean-start-2--h1--margin: 1.4rem 0 1rem 0;
+      --jsx--css-clean-start-2--h1--font-weight: 500;
+    }
+
+    .jsx label {
+      padding: 0.1rem 1rem;
+      background-color: #f5fff5;
+      border-radius: 0.35rem;
+      border: 1px solid #e0ffe0;
+    }
+
+```
+
+
+
+## 3. Improvals planned
+
+### 3.1. renamings
+
+#### 3.1.1. Libraries:
+
+`@jaisocx/css-clean-start-2` => `@jaisocx/css_clean_start_responsive`
+
+
+
+#### 3.1.2. Main css class name "jaisocx" turning on | off tools by Jaisocx:
+
+```html
+<html lang="en" class="jaisocx">
+```
+
+
+
+#### 3.1.3. Main css class name "css_clean_start" turning on | off the CssCleanStart:
+
+```html
+<html lang="en" class="jaisocx css_clean_start">
+```
+
+
+
+#### 3.1.4. Variables start with the Jaisocx keyword: "--jaisocx--"
+
+```css
+/* Jaisocx_CssCleanStart_Main.css */
+
+html.jaisocx.css_clean_start * {
+
+  position:     var(--jaisocx--css_clean_start--all-tags--position);
+  display:      var(--jaisocx--css_clean_start--custom-tags--display);
+  
+  ...
+  ...
+
+}
+
+```
+
+
+
+```css
+/* Jaisocx_CssCleanStart_ThemeBase_Main.css */
+
+.jaisocx.css_clean_start {
+
+  ...
+  ...
+
+  --jaisocx--css_clean_start--block-tags--display: block;
+  
+```
+
+---
+
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
+
 
 
 

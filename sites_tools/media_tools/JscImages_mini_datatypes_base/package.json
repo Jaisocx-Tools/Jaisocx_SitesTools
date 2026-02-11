@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/media_tools_images_mini_datatypes_base",
-  "version": "1.0.3",
+  "version": "1.2.2",
   "description": "",
   "keywords": [
     "css",
@@ -11,19 +11,18 @@
     "mini-images"
   ],
   "files": [
+    "README.md",
+    "webpack.aliases.json",
+
     "index.preview.html",
-    "prod_jsc_img_mini_datatypes_base__preview.html",
+    "img_datatypes_base.preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/images",
     "MediaAndStyles/scss",
 
     "transpiled/CommonJS",
-    "transpiled/ESNext",
-
-    "webpack.aliases.json",
-
-    "README.md"
+    "transpiled/ESNext"
   ],
   "scripts": {
     "build:sass": "/opt/jaisocx/sites_tools/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
@@ -32,7 +31,7 @@
     "sass": "^1.97.3"
   },
   "optionalDependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.2"
+    "@jaisocx/css_clean_start_lite": "~1.0.3"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

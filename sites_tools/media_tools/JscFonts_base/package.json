@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/media_tools_fonts_base",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.",
   "keywords": [
     "imports",
@@ -10,9 +10,11 @@
     "css"
   ],
   "files": [
+    "README.md",
+    "webpack.aliases.json",
+
     "index.preview.html",
-    "fonts_preview_prod.html",
-    "fonts_preview_dev.html",
+    "fonts_base.preview.html",
 
     "MediaAndStyles/fonts",
     "MediaAndStyles/css_importer_relative",
@@ -20,14 +22,10 @@
     "MediaAndStyles/*.css",
 
     "transpiled/CommonJS",
-    "transpiled/ESNext",
-
-    "webpack.aliases.json",
-
-    "README.md"
+    "transpiled/ESNext"
   ],
   "optionalDependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.2"
+    "@jaisocx/css_clean_start_lite": "~1.0.3"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

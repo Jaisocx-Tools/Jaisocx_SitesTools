@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css-code-snippet",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Css sites tool rendering code blocks with numbered code rows",
   "keywords": [
     "css",
@@ -14,7 +14,7 @@
 
     "index.preview.html",
     "basetheme.preview.html",
-    "dev_css_code_snippet__preview.html",
+    "css_code_snippet.preview.html",
 
     "MediaAndStyles/*.css",
     "MediaAndStyles/lines-numbers-variables",
@@ -27,7 +27,7 @@
     "transpiled/Simple"
   ],
   "optionalDependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.2"
+    "@jaisocx/css_clean_start_lite": "~1.0.3"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

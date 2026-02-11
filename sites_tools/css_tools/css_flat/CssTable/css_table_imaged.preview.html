@@ -2,14 +2,6 @@
 <html lang="en" class="jsx theme_visible_height">
 <head>
 
-  <title>Tree Preview</title>
-
-  <base href="./" />
-
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-
   <link
       id="icon_jaisocx"
       rel="icon"
@@ -18,6 +10,15 @@
       href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
       onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
   />
+
+  <title> Table Imaged </title>
+
+
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
 
@@ -32,29 +33,31 @@
   />
 
 
-
   <!--# CSS TABLE: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
 
   <!--# importing @jaisocx/css-table IN DEV MODE, TO RESEARCH THE .css STYLES IN BROWSER'S DEV TOOLS IN NETWORKS TAB -->
-  <link
+  <!-- <link
     rel="stylesheet"
     type="text/css"
     charset="utf-8"
     href="MediaAndStyles/CssTable_main_relative.css"
-  />
+  /> -->
 
   <!--# THE SAME importing @jaisocx/css-table IN PROD MODE, PACKED BY @jaisocx/css-importer TOOL  -->
-  <!-- <link
+  <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="MediaAndStyles/CssTable_main_resolved.css"
-  /> -->
+  />
 
 
 
-  <script>
-    // node_modules index.preview.html purposes, loading mini images pack referenced in package.json
+  <script name="imaged_styles">
+
+    const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
+    const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
+    let linkUrlLoading = "";
 
     function addLink( url ) {
         let lnk = document.createElement( "LINK" );
@@ -65,31 +68,32 @@
         document.getElementsByTagName( "HEAD" )[0].append( lnk );
     }
 
-    const linkUrlHoisted = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_hoisted.css";
-    const linkUrlShallow = "MediaAndStyles/themes/theme_imaged_mimetypes_base_dep/CssTable_theme_imaged_mimetypes_base_dep_shallow.css";
-    let linkUrlLoading = "";
+    async function loadImagedStyles( testShallowUrl ) {
 
-    fetch( "./node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
+      let response = { status: 404 };
+
+      try {
+        response = await fetch ( testShallowUrl );
+      } catch ( e ) {
+        response = { status: 404 };
+      }
+
+      if ( response.status === 200 ) {
+        linkUrlLoading = linkUrlShallow;
+      } else {
+        linkUrlLoading = linkUrlHoisted;
+      }
+
+      addLink ( linkUrlLoading );
+
+      return 1;
+    }
+
+
+
+    loadImagedStyles ( "node_modules/@jaisocx/media_tools_images_mini_mimetypes_base/MediaAndStyles/images/audio_and_video_mime_type.png" )
       .then (
-
-        ( response ) => {
-          if ( response.status === 200 ) {
-            // linkUrlLoading = linkUrlHoisted;
-            linkUrlLoading = linkUrlShallow;
-
-            addLink ( linkUrlLoading );
-          }
-        }
-
-      ).catch (
-
-       ( err ) => {
-            linkUrlLoading = linkUrlHoisted;
-            // linkUrlLoading = linkUrlShallow;
-
-            addLink ( linkUrlLoading );
-       }
-
+        ( retVal ) => { return 1; }
       );
 
   </script>
@@ -153,6 +157,7 @@
     }
 
   </style>
+
 </head>
 <body>
 
@@ -1772,12 +1777,20 @@
 
 <script>
 
-  let currentButtonNodeClicked = null;
-
-  let cssClassesNames = [
+  const cssClassesNames = [
     "jsx",
     "theme_visible_height"
   ];
+
+  const themeCssClassPrefix = "theme";
+
+  const buttonsIDs = [
+    "button-turn-on-base",
+    "button-turn-on-daymode",
+    "button-turn-on-nightmode"
+  ];
+
+  let currentButtonNodeClicked = null;
 
 
 
@@ -1790,8 +1803,6 @@
 
     const htmlNode = document.getElementsByTagName("html")[0];
     const htmlNodeClassList = htmlNode.classList;
-
-    const themeCssClassPrefix = "theme";
 
     htmlNodeClassList.forEach (
       (cssClassName) => {
@@ -1820,12 +1831,6 @@
   // in the event handler for the event DOMContentLoaded
   function addThemeButtonsEventHandlers() {
 
-    const buttonsIDs = [
-      "button-turn-on-base",
-      "button-turn-on-daymode",
-      "button-turn-on-nightmode"
-    ];
-
     for ( let buttonId of buttonsIDs ) {
 
       let buttonNode = document.getElementById( buttonId );
@@ -1842,14 +1847,14 @@
   }
 
 
-
-  // DOCUMENT ONLOAD, INVOKES THE FUNCTION TO PRELOAD THEME FONTS
-  document.addEventListener('DOMContentLoaded', () => {
-
-    // adding to buttons the event handler to turn on the theme.
-    addThemeButtonsEventHandlers();
-
-  });
+  // DOCUMENT ONLOAD
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      // adding to buttons the event handler to turn on the theme.
+      addThemeButtonsEventHandlers();
+    }
+  );
 
 </script>
 
