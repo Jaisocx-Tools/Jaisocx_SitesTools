@@ -6,6 +6,7 @@
   "author": "ILLIA POLIANSKYI",
   "dependencies": {
     "@jaisocx/css_clean_start_lite": "~1.0.3",
+    "@jaisocx/css-clean-start-2": "~1.2.9",
     "@jaisocx/css-code-snippet": "~1.4.2",
     "@jaisocx/css-table": "~3.5.91",
     "@jaisocx/css-table-ordered": "~2.3.5",
