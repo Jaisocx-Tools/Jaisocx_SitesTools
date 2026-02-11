@@ -3,7 +3,7 @@
 #### status
   > ✅  yarn add | npm install Ok
 
-  > ✅ `.html` previews Ok
+  > ⛔ `.html` previews are shown, but js isn't bugfixed. orderby doesn't do for now.
 
 
 
