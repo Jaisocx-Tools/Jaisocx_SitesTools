@@ -9,20 +9,15 @@
   ],
   "files": [
     "README.md",
-
     "webpack.aliases.json",
-
     "css_table_3records_12_columns.preview.html",
     "css_table_imaged.preview.html",
     "index.preview.html",
-
     "MediaAndStyles/*.css",
     "MediaAndStyles/columns",
     "MediaAndStyles/presets",
     "MediaAndStyles/themes",
-
     "src",
-
     "transpiled/CommonJS",
     "transpiled/ESNext"
   ],
@@ -47,8 +42,8 @@
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@jaisocx/css-table": "^3.5.91"
   }
 }
-
-
-
