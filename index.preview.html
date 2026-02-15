@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="jsx">
+<html lang="en" class="jsx jaisocx express-framework-preview">
 <head>
 
   <title> Express </title>
@@ -31,14 +31,34 @@
       href="sites_tools/css_tools/CssCleanStart_Lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
     />
 
+  <style>
+    .jsx.jaisocx.express-framework-preview {
+      --jaisocx--express-framework-preview--notice--border-color: #f20;
+      --jaisocx--express-framework-preview--notice--background: #fff9f9;
+    }
+
+
+    .jsx.jaisocx.express-framework-preview notice {
+      border: 1px solid var(--jaisocx--express-framework-preview--notice--border-color);
+      background: var(--jaisocx--express-framework-preview--notice--background);
+      color: #ff8040;
+      margin: 0.4rem 0 0.4rem 0;
+      padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+      border-radius: 0.4rem;
+    }
+  </style>
+
   </head>
   <body>
 
     <main>
 
+      <notice> In reconstruction, node dockerized service for Express Framework isn't deployed </notice>
+
     <h1> Express Framework example </h1>
 
       <p> Jaisocx example of Express Framework provides json data with very nice configured cors response headers for cross domain requests. </p>
+      <p> Feel free to explore responses in Browsers' Developers Tools, changing settings in Network Tab for logs and caches. </p>
 
 
 

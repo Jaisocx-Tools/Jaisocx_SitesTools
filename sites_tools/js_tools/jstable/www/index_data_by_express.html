@@ -3,8 +3,6 @@
   <head>
     <title> JS Table </title>
 
-    <base href="./" />
-
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link id="jstableStylesheet" rel="stylesheet" href="css/jstable.css" />
     <link id="jstableStylesheetLittle" rel="stylesheet" href="css/jstable-little.css" />
@@ -12,6 +10,8 @@
   <body>
     <main>
       <div class="jstable" id="jstable-01"></div>
+
+      <notice> Works with local Express "https://local.basetasks.site:9443/" env setting in "workspace/ts/.env.dynamic": Line 23 export   start_express_secure=true </notice>
     </main>
   </body>
 
@@ -21,8 +21,9 @@
 <script>
 
   let jsTable = null;
-  let jsonBaseUrl = "data/";
-  let extension = ".json";
+  let jsonBaseUrl = "https://local.basetasks.site:9443/json/data/";
+  let extension = "-by-express.json";
+  // let extension = ".json";
 
   document.addEventListener('DOMContentLoaded', () => {
     jstable = new JSTable();
@@ -33,6 +34,7 @@
       .setMobileLookAndFeelMaxWidth(630)
       .load();
   });
+
 </script>
 </html>
 

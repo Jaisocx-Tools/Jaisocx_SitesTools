@@ -1,28 +1,52 @@
 {
-  "author": "ILLIA POLIANSKYI, Jaisocx Company",
-  "name": "@jaisocx/template-css-clean-start",
-  "version": "1.3.12",
+  "name": "@jaisocx/sites_tool",
+  "version": "1.0.1",
   "description": "",
+  "author": "<Author's name>",
   "keywords": [
-    "clean start",
-    "css",
-    "styles",
-    "ui"
+    "<keyword 1>",
+    "<keyword 2>"
   ],
   "files": [
-    "transpiled/CommonJS",
-    "transpiled/ESNext",
-    "transpiled/Simple",
-    "MediaAndStyles/themes/",
-    "MediaAndStyles/responsive/",
-    "MediaAndStyles/fonts/",
-    "MediaAndStyles/*.css",
-    "webpack.aliases.json",
-    "index.template.html",
     "README.md",
-    "README_WEBPACK.md",
-    "LICENSE"
+    "webpack.aliases.json",
+
+    "sites_tool_preview.html",
+    "index.preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/layout_theme_a/",
+    "MediaAndStyles/themes/colour_scheme_a/",
+
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/",
+    "transpiled/Simple/"
   ],
+  "devDependencies": {
+    "@jaisocx/responsive-sizes": "latest" // Increasing Development Time Work Quality on 30 displays sizes
+  },
+  "optionalDependencies": { // for Preview Pages
+    "@jaisocx/css_clean_start_lite": "latest"
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality__forPreviewPages": {
+    "@jaisocx/preloader": "latest" // for management of timestamps and number of loads of files and images
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality": {
+    "@jaisocx/css_clean_start_responsive": "latest",
+    "@jaisocx/media_tools_fonts_base": "latest", // like example for fonts files install
+    "@jaisocx/media_tools_images_mini_datatypes_base": "latest" // like example for a publishrd mini-images pack
+  },
+  "notInstalledPossibleDependencies__basePurposesForSitesTools": {
+    "@jaisocx/template-renderer": "latest",
+    "@jaisocx/event-emitter": "latest",
+    "@jaisocx/workspace-tree-walker": "latest", // few methods for processing of few types of datasets as js objects recursively
+    "@jaisocx/jpath": "latest"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
   "types": "./transpiled/ESNext/index.d.ts",
@@ -36,12 +60,7 @@
       "import": "./transpiled/ESNext/webpack.aliases.mjs",
       "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
-  },
-  "private": false,
-  "publishConfig": {
-    "access": "public"
   }
 }
-
 
 
