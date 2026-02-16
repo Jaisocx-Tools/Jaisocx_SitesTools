@@ -1,8 +1,8 @@
 {
+  "author": "<Author's name>",
   "name": "@jaisocx/sites_tool",
   "version": "1.0.1",
   "description": "",
-  "author": "<Author's name>",
   "keywords": [
     "<keyword 1>",
     "<keyword 2>"
@@ -34,8 +34,8 @@
   },
   "notInstalledPossibleDependencies__IncreasingQuality": {
     "@jaisocx/css_clean_start_responsive": "latest",
-    "@jaisocx/media_tools_fonts_base": "latest", // like example for fonts files install
-    "@jaisocx/media_tools_images_mini_datatypes_base": "latest" // like example for a publishrd mini-images pack
+    "@jaisocx/media_tools_fonts_base": "latest", // like example for fonts install
+    "@jaisocx/media_tools_images_mini_datatypes_base": "latest" // like example of a published set of mini-images
   },
   "notInstalledPossibleDependencies__basePurposesForSitesTools": {
     "@jaisocx/template-renderer": "latest",
