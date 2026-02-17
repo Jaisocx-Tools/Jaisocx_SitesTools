@@ -252,6 +252,7 @@
 
   let glob_TreeJson_SubtreeArrayOfObjects      = new Array();
   let glob_TreeJson_SubtreeLikeObjects         = new Object();
+  let glob_TreeJson_Url                        = "data/tree.json";
 
 
 
@@ -373,7 +374,7 @@
   // e.g. label text, Tree node html holding element css classes names, and similar.
 
   // -------------------
-  // START TREE CONF DATA
+  // START TREE DATA
   glob_TreeJson_SubtreeArrayOfObjects = [
     {
       "icon": "MediaAndStyles/themes/theme_base/mini_images/home_tree_mode_conf/house.png",
@@ -475,7 +476,7 @@
     }
   };
   // -------------------
-  // END TREE CONF DATA
+  // END TREE DATA
 
 
 
@@ -627,7 +628,7 @@
 
       this.loadDataAndRenderTree (
         "example-tree-holder_SubtreeArrayOfObjects",
-        "https://sandbox.brightday.email/cdn/www/data_public/json/tree-data/tree-data-to-use-with-conf.json"
+        glob_TreeJson_Url
       );
 
     }

@@ -8,21 +8,27 @@
     "tree"
   ],
   "files": [
-    "favicon",
+    "README.md",
+
     "index.preview.html",
     "tree_preview_prod.html",
-    "tree_preview_dev.html",
+
     "transpiled/CommonJS",
     "transpiled/ESNext",
     "transpiled/Simple",
     "MediaAndStyles",
-    "webpack.aliases.json",
-    "docs",
-    "README.md"
+    "webpack.aliases.json"
   ],
-  "private": false,
-  "publishConfig": {
-    "access": "public"
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.2",
+    "@jaisocx/event-emitter": "~1.4.2",
+    "@jaisocx/jpath": "~1.2.3",
+    "@jaisocx/mime-type": "~1.0.7",
+    "@jaisocx/preloader": "~2.3.2",
+    "@jaisocx/template-renderer": "~1.6.1",
+    "@jaisocx/text": "~2.2.2",
+    "@jaisocx/theme-turn-on": "~1.0.2",
+    "@jaisocx/tokens-parser": "~1.2.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",
@@ -38,16 +44,9 @@
       "require": "./transpiled/CommonJS/webpack.aliases.cjs"
     }
   },
-  "optionalDependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.2",
-    "@jaisocx/event-emitter": "~1.4.2",
-    "@jaisocx/jpath": "~1.2.3",
-    "@jaisocx/mime-type": "~1.0.7",
-    "@jaisocx/preloader": "~2.3.2",
-    "@jaisocx/template-renderer": "~1.6.1",
-    "@jaisocx/text": "~2.2.2",
-    "@jaisocx/theme-turn-on": "~1.0.2",
-    "@jaisocx/tokens-parser": "~1.2.2"
+  "private": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
 

@@ -71,8 +71,8 @@
                   x="905"
                   y="148"
                   fill="#c95513"
-                  textLength="630" >
-                    /jsc_tree
+                  textLength="350" >
+                    /tree
               </text>
 
               <text
@@ -80,7 +80,7 @@
                   y="148"
                   fill="#222"
                   textLength="400" >
-                    2.2.18
+                    2.2.12
               </text>
 
         </g>
