@@ -117,9 +117,16 @@
       recalcMediaQueriesVariables
     ).join( " " );
 
-    let responsiveSizeJsonText = globResponsiveSizesInstance.toString (
-      notToUpdate
+    const asShortInfo_false = false;
+    const shortInfoAsArray_false = false;
+    const toUpdate_true = true;
+    let responsiveSizeJson = globResponsiveSizesInstance.json (
+      asShortInfo_false,
+      shortInfoAsArray_false,
+      toUpdate_true
     );
+
+    let responsiveSizeJsonText = JSON.stringify( responsiveSizeJson, null, 2 );
 
     setOnSite( "size_name", sizeName );
     setOnSite( "info", responsiveSizeJsonText );
