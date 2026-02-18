@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/theme-turn-on",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "keywords": [
     "css",
@@ -17,8 +17,7 @@
     "README.md"
   ],
   "optionalDependencies": {
-    "@jaisocx/css-clean-start-2": "~1.2.1",
-    "@jaisocx/preloader": "~2.3.2"
+    "@jaisocx/css_clean_start_lite": "^1.0.3"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

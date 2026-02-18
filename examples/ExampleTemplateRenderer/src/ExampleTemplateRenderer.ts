@@ -4,26 +4,26 @@ import { EventHandlerReturnValue } from "@jaisocx/event-emitter";
 
 
 export class ExampleTemplateRenderer {
-  TemplateRenderer: TemplateRenderer;
+  _templateRenderer: TemplateRenderer;
 
-  holderHtmlNodeSelector: any|null;
+  _holderHtmlNodeSelector: any|null;
 
-  data: object;
+  _data: object;
 
-  template: any;
+  _templateHtml: any;
 
 
 
   constructor() {
-    this.data = {
+    this._data = {
       message: "Hello World!"
     };
-    this.template = `
+    this._templateHtml = `
 <h3>{{ message }}</h3>      
       `;
 
-    this.TemplateRenderer = new TemplateRenderer();
-    this.holderHtmlNodeSelector = null;
+    this._templateRenderer = new TemplateRenderer();
+    this._holderHtmlNodeSelector = null;
   }
 
 
@@ -31,18 +31,18 @@ export class ExampleTemplateRenderer {
   run(): void {
     let holderHtmlNode: HTMLElement|null = null;
 
-    if (!this.holderHtmlNodeSelector) {
-      this.holderHtmlNodeSelector = "body";
+    if (!this._holderHtmlNodeSelector) {
+      this._holderHtmlNodeSelector = "body";
     }
-    holderHtmlNode = document.querySelector(this.holderHtmlNodeSelector);
+    holderHtmlNode = document.querySelector(this._holderHtmlNodeSelector);
 
     if (!holderHtmlNode) {
       return;
     }
 
-    this.TemplateRenderer
-      .setTemplate(this.template)
-      .setData(this.data);
+    this._templateRenderer
+      .setTemplate(this._templateHtml)
+      .setData(this._data);
 
     const eventHandler1: any = ( _eventName: any, payload: any ) => {
       payload.html = payload.html.replaceAll(
@@ -58,8 +58,8 @@ export class ExampleTemplateRenderer {
       return eventHandlerReturnValue;
     };
 
-    this.TemplateRenderer.addThisClassEventListener (
-      this.TemplateRenderer.EVENT_NAME__AFTER_RENDER,
+    this._templateRenderer.addThisClassEventListener (
+      this._templateRenderer.EVENT_NAME__AFTER_RENDER,
       eventHandler1
     );
 
@@ -77,12 +77,12 @@ export class ExampleTemplateRenderer {
       return eventHandlerReturnValue;
     };
 
-    this.TemplateRenderer.addThisClassEventListener (
-      this.TemplateRenderer.EVENT_NAME__AFTER_RENDER,
+    this._templateRenderer.addThisClassEventListener (
+      this._templateRenderer.EVENT_NAME__AFTER_RENDER,
       eventHandler2
     );
 
-    const html = this.TemplateRenderer.render();
+    const html = this._templateRenderer.render();
 
     holderHtmlNode.insertAdjacentHTML (
       "afterbegin",

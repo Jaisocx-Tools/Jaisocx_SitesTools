@@ -88,7 +88,6 @@ class TemplateRenderer extends EventEmitter {
 
 
     setActiveDataRecord(dataRecord) {
-
         if (this.#activeDataRecordId === 0) {
             let obj = new Object();
             this.dataRecords.push(obj);
@@ -108,15 +107,6 @@ class TemplateRenderer extends EventEmitter {
 
 
         return id;
-    }
-
-
-
-    setDebug(debug) {
-        this.debug = debug;
-
-
-        return this;
     }
 
 
@@ -142,7 +132,6 @@ class TemplateRenderer extends EventEmitter {
 
 
     render() {
-
         if (this.#activeDataRecordId === 0) {
             throw new Error("No template neither data were set.");
         }

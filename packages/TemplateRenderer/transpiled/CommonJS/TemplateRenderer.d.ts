@@ -18,7 +18,6 @@ export declare class TemplateRenderer extends EventEmitter implements TemplateRe
     getDataRecordById(id: number): TemplateRendererDataRecord;
     setActiveRecordId(id: number): TemplateRendererDataRecord;
     setActiveDataRecord(dataRecord: TemplateRendererDataRecord): number;
-    setDebug(debug: boolean): TemplateRendererInterface;
     setTemplate(template: string): TemplateRendererInterface;
     setData(dataForRendering: object): TemplateRendererInterface;
     render(): any;

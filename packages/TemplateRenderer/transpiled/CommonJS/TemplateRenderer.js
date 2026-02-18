@@ -85,10 +85,6 @@ class TemplateRenderer extends event_emitter_1.EventEmitter {
         __classPrivateFieldSet(this, _TemplateRenderer_activeDataRecordId, id, "f");
         return id;
     }
-    setDebug(debug) {
-        this.debug = debug;
-        return this;
-    }
     setTemplate(template) {
         let dataRecord = this.getActiveDataRecord();
         dataRecord.textTemplate = template;

@@ -133,15 +133,6 @@ export class TemplateRenderer extends EventEmitter implements TemplateRendererIn
 
 
 
-  setDebug(debug: boolean): TemplateRendererInterface {
-    this.debug = debug;
-
-
-    return this;
-  }
-
-
-
   setTemplate( template: string ): TemplateRendererInterface {
     let dataRecord: TemplateRendererDataRecord = this.getActiveDataRecord();
     dataRecord.textTemplate = template;

@@ -1,10 +1,9 @@
-import { EventEmitter } from "@jaisocx/event-emitter";
-
+import { EventEmitterInterface } from "@jaisocx/event-emitter";
 import { OptimizedTemplateRecord, TemplateRendererDataRecord } from "./types/TemplateRendererTypes.js";
 
 
 
-export interface TemplateRendererInterface extends EventEmitter {
+export interface TemplateRendererInterface extends EventEmitterInterface {
 
   initDataRecord(): TemplateRendererDataRecord;
 
@@ -26,16 +25,8 @@ export interface TemplateRendererInterface extends EventEmitter {
 
   setActiveDataRecord( dataRecord: TemplateRendererDataRecord ): number;
 
-
-  setDebug( debug: boolean ): TemplateRendererInterface;
-
-
   setTemplate( template: string ): TemplateRendererInterface;
-
-
   setData( dataForRendering: object ): TemplateRendererInterface;
-
-
   render(): any;
 
 

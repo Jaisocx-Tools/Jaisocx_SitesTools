@@ -52,7 +52,6 @@ class EventEmitter {
     // this.emitEvent method call You can place inside Your js code,
     // where You wish to provide the interface of optional adding a custom event listener in Your JS class.
     addThisClassEventListener(eventName, eventHandler) {
-
         if (!this.eventsHandlersSetThisClass[eventName]) {
             this.eventsHandlersSetThisClass[eventName] = [];
         }
@@ -78,7 +77,6 @@ class EventEmitter {
         const eventHandlers = this.eventsHandlersSetThisClass[eventName];
 
         if (!eventHandlers || eventHandlers.length === 0) {
-
             if (this.debug) {
                 console.log(
                     "no event handler for this event",
@@ -91,7 +89,6 @@ class EventEmitter {
         }
 
         for (const eventHandler of eventHandlers) {
-
             if (this.debug) {
                 console.log(
                     "got event handler",
@@ -100,7 +97,6 @@ class EventEmitter {
             }
 
             if (!eventHandler || typeof eventHandler !== "function") {
-
                 if (this.debug) {
                     console.log(
                         "event handler is not a function",

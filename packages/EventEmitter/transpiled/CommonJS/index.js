@@ -1,5 +1,5 @@
 "use strict";
-// src/EventEmitter/index.ts
+// EventEmitter/src/index.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ImprovedRenderEventEmitter = exports.EventEmitter = void 0;
 var EventEmitter_js_1 = require("./EventEmitter.js");

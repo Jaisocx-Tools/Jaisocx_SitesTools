@@ -1,5 +1,6 @@
 import { EventHandlerReturnValue, EventEmitResult } from "./Types.js";
-export declare class EventEmitter {
+import { EventEmitterInterface } from "./EventEmitterInterface.js";
+export declare class EventEmitter implements EventEmitterInterface {
     eventsHandlersSetThisClass: any;
     debug: boolean;
     EventArtJSEvent: any;

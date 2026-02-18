@@ -58,7 +58,6 @@ class ImprovedRenderEventEmitter extends EventEmitter {
         selector,
         eventHandler
     ) {
-
         if (!this.eventsHandlersSetDom[eventName]) {
             this.eventsHandlersSetDom[eventName] = {};
         }
@@ -96,7 +95,6 @@ class ImprovedRenderEventEmitter extends EventEmitter {
             payload.eventTarget = eventTarget;
 
             for (const eventHandler of eventHandlers) {
-
                 if (!eventHandler || (typeof eventHandler) !== "function") {
                     continue;
                 }

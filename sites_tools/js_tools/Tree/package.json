@@ -1,6 +1,6 @@
 {
   "name": "@jaisocx/tree",
-  "version": "2.2.12",
+  "version": "2.2.21",
   "description": "Sites tool, styling json",
   "author": "Jaisocx Company",
   "keywords": [
@@ -8,27 +8,35 @@
     "tree"
   ],
   "files": [
+    "favicon/",
+    "software_labels/",
+
     "README.md",
+    "webpack.aliases.json",
 
     "index.preview.html",
     "tree_preview_prod.html",
 
+    "data/",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/presets/",
+    "MediaAndStyles/themes/theme-funny/",
+    "MediaAndStyles/themes/theme_base/",
+
     "transpiled/CommonJS",
     "transpiled/ESNext",
-    "transpiled/Simple",
-    "MediaAndStyles",
-    "webpack.aliases.json"
+    "transpiled/Simple"
   ],
-  "optionalDependencies": {
-    "@jaisocx/css_clean_start_lite": "~1.0.2",
-    "@jaisocx/event-emitter": "~1.4.2",
+  "dependencies": {
+    "@jaisocx/event-emitter": "~1.4.3",
     "@jaisocx/jpath": "~1.2.3",
-    "@jaisocx/mime-type": "~1.0.7",
+    "@jaisocx/template-renderer": "~1.6.2"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "^1.0.3",
     "@jaisocx/preloader": "~2.3.2",
-    "@jaisocx/template-renderer": "~1.6.1",
-    "@jaisocx/text": "~2.2.2",
-    "@jaisocx/theme-turn-on": "~1.0.2",
-    "@jaisocx/tokens-parser": "~1.2.2"
+    "@jaisocx/theme-turn-on": "~1.0.4"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

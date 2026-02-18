@@ -1,9 +1,9 @@
 import { TemplateRenderer } from "@jaisocx/template-renderer";
 export declare class ExampleTemplateRenderer {
-    TemplateRenderer: TemplateRenderer;
-    holderHtmlNodeSelector: any | null;
-    data: object;
-    template: any;
+    _templateRenderer: TemplateRenderer;
+    _holderHtmlNodeSelector: any | null;
+    _data: object;
+    _templateHtml: any;
     constructor();
     run(): void;
 }

@@ -17,7 +17,16 @@
     "very_small": {
       "range_orderby_id": "d05",
       "width": { "from": 2, "to": 239 },
-      "height": { "from": 2, "to": 99999 },
+      "height": { "from": 2, "to": 499 },
+      "art": "very_small",
+      "art_size": "xxs",
+      "orientation_standard": "portrait",
+      "is_orientation_standard_nearly_always": false
+    },
+    "browser_tab_very_small": {
+      "range_orderby_id": "d06",
+      "width": { "from": 2, "to": 239 },
+      "height": { "from": 500, "to": 99999 },
       "art": "very_small",
       "art_size": "xxs",
       "orientation_standard": "portrait",
@@ -26,7 +35,16 @@
     "mobile_xs": {
       "range_orderby_id": "e02",
       "width": { "from": 240, "to": 320 },
-      "height": { "from": 240, "to": 99999 },
+      "height": { "from": 240, "to": 864 },
+      "art": "mobile",
+      "art_size": "xs",
+      "orientation_standard": "portrait",
+      "is_orientation_standard_nearly_always": false
+    },
+    "browser_tab_xs": {
+      "range_orderby_id": "e02",
+      "width": { "from": 240, "to": 320 },
+      "height": { "from": 865, "to": 99999 },
       "art": "mobile",
       "art_size": "xs",
       "orientation_standard": "portrait",
@@ -34,8 +52,17 @@
     },
     "mobile_s": {
       "range_orderby_id": "e04",
-      "width": { "from": 321, "to": 375 },
-      "height": { "from": 321, "to": 99999 },
+      "width": { "from": 321, "to": 374 },
+      "height": { "from": 321, "to": 1024 },
+      "art": "mobile",
+      "art_size": "s",
+      "orientation_standard": "portrait",
+      "is_orientation_standard_nearly_always": false
+    },
+    "browser_tab_s": {
+      "range_orderby_id": "e04",
+      "width": { "from": 321, "to": 374 },
+      "height": { "from": 1025, "to": 99999 },
       "art": "mobile",
       "art_size": "s",
       "orientation_standard": "portrait",
@@ -43,8 +70,17 @@
     },
     "mobile_sm": {
       "range_orderby_id": "e06",
-      "width": { "from": 376, "to": 430 },
-      "height": { "from": 376, "to": 99999 },
+      "width": { "from": 375, "to": 430 },
+      "height": { "from": 376, "to": 1192 },
+      "art": "mobile",
+      "art_size": "sm",
+      "orientation_standard": "portrait",
+      "is_orientation_standard_nearly_always": false
+    },
+    "browser_tab_sm": {
+      "range_orderby_id": "e06",
+      "width": { "from": 375, "to": 430 },
+      "height": { "from": 1193, "to": 99999 },
       "art": "mobile",
       "art_size": "sm",
       "orientation_standard": "portrait",
@@ -53,7 +89,16 @@
     "mobile_md": {
       "range_orderby_id": "e08",
       "width": { "from": 431, "to": 480 },
-      "height": { "from": 431, "to": 99999 },
+      "height": { "from": 431, "to": 1250 },
+      "art": "mobile",
+      "art_size": "md",
+      "orientation_standard": "portrait",
+      "is_orientation_standard_nearly_always": false
+    },
+    "browser_tab_md": {
+      "range_orderby_id": "e08",
+      "width": { "from": 431, "to": 480 },
+      "height": { "from": 1251, "to": 99999 },
       "art": "mobile",
       "art_size": "md",
       "orientation_standard": "portrait",
@@ -62,7 +107,7 @@
     "tablet_s": {
       "range_orderby_id": "h03",
       "width": { "from": 481, "to": 767 },
-      "height": { "from": 481, "to": 99999 },
+      "height": { "from": 481, "to": 4320 },
       "art": "tablet",
       "art_size": "s",
       "orientation_standard": "portrait",
@@ -89,7 +134,7 @@
     "tablet_lg": {
       "range_orderby_id": "h09",
       "width": { "from": 768, "to": 1024 },
-      "height": { "from": 1195, "to": 99999 },
+      "height": { "from": 1195, "to": 1365 },
       "art": "tablet",
       "art_size": "lg",
       "orientation_standard": "portrait",
