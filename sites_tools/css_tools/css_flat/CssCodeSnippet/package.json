@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css-code-snippet",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Css sites tool rendering code blocks with numbered code rows",
   "keywords": [
     "css",

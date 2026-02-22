@@ -1,7 +1,7 @@
 {
   "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/css-table-ordered",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for sticky scroll and order by on columns via browser's js engine",
   "keywords": [
     "table",
@@ -29,7 +29,7 @@
   ],
   "optionalDependencies": {
     "@jaisocx/css_clean_start_lite": "~1.0.3",
-    "@jaisocx/css-table": "~3.5.91"
+    "@jaisocx/css-table": "~3.5.92"
   },
   "private": false,
   "publishConfig": {

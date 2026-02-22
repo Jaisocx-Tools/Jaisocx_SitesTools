@@ -1,8 +1,8 @@
 {
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
   "name": "@jaisocx/tree",
-  "version": "2.2.21",
+  "version": "2.2.22",
   "description": "Sites tool, styling json",
-  "author": "Jaisocx Company",
   "keywords": [
     "json",
     "tree"
@@ -36,7 +36,8 @@
   "optionalDependencies": {
     "@jaisocx/css_clean_start_lite": "^1.0.3",
     "@jaisocx/preloader": "~2.3.2",
-    "@jaisocx/theme-turn-on": "~1.0.4"
+    "@jaisocx/theme-turn-on": "~1.0.4",
+    "@jaisocx/media_tools_fonts_base": "~1.2.2"
   },
   "type": "module",
   "main": "./transpiled/CommonJS/index.js",

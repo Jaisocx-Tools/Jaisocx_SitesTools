@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="jsx css_table_ordered_preview theme_visible_height jaisocx-folder-listing">
+<html lang="en" id="css_table_few_rows" class="jsx css_table_ordered_preview theme_visible_height jaisocx-folder-listing">
 <head>
 
   <link
@@ -58,18 +58,15 @@
 
 
 
-  <style>
+  <style name="theme_turn_on">
 
     .jsx {
-      --jsx--css-clean-start-2--site--padding: 2rem 1rem 0 1rem;
-
-      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
-      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
-      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
-
-      --jsx--css-clean-start-2--h2--font-weight: 500;
-
       --theme-button-width: fit-content;
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
     }
 
     .jsx themebuttons {
@@ -77,7 +74,7 @@
       display: grid;
       grid-auto-flow: column;
       column-gap: 3rem;
-      margin: 0.9rem 0px 1.6rem 0px;
+      margin: 1.2rem 0 1.2rem 0;
     }
 
     .jsx themebuttons button {
@@ -98,33 +95,57 @@
       border-bottom-color: var(--clean-start__text-color);
     }
 
-    .jsx button {
-      background-color: transparent;
-      text-align: left;
-    }
-
-    #tooltip-button {
-      font-family: fantasy;
-    }
+  </style>
 
 
-    @media screen and ( min-width: 2px) and (max-width: 767px) {
-      .jsx.css_table_ordered_preview {
-        --jsx--css-clean-start-2--site--min-width: 100%;
-        --jsx--css-clean-start-2--site--max-width: 100%;
-        --jsx--css-clean-start-2--site--width: 100%;
-      }
 
-      .jsx.css_table_ordered_preview h2,
-      .jsx.css_table_ordered_preview h3,
-      .jsx.css_table_ordered_preview description {
-        display: none;
-      }
+  <style name="css clean start overrides for this site">
+
+    .jsx#css_table_few_rows {
+      --jsx--css-clean-start-2--site--padding: 1rem 1rem 0.3rem 1rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
     }
 
   </style>
 
 
+
+  <style name="css clean start lite mobile portrait">
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .jsx.theme_visible_height {
+
+        --responsive_size: responsive_size_til_h03_tablet_s_portrait;
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+        --jsx--css-clean-start-2--h1--font-size: 1rem;
+        --jsx--css-clean-start-2--h1--line-height: 1.3rem;
+
+      }
+
+      .jsx.theme_visible_height h2,
+      .jsx.theme_visible_height h3,
+      .jsx.theme_visible_height description {
+        display: none;
+      }
+
+      .jsx themebuttons {
+        margin: 1rem 0 1rem 0;
+      }
+
+    }
+
+  </style>
 
 </head>
 <body>
