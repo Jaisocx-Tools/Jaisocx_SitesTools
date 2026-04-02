@@ -24,10 +24,24 @@
     "transpiled/Simple/"
   ],
   "devDependencies": {
-    "@jaisocx/responsive-sizes": "latest"
+    "@jaisocx/responsive-sizes": "latest" // Increasing Development Time Work Quality on 30 displays sizes
   },
-  "optionalDependencies": {
+  "optionalDependencies": { // for Preview Pages
     "@jaisocx/css_clean_start_lite": "latest"
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality__forPreviewPages": {
+    "@jaisocx/preloader": "latest" // for management of timestamps and number of loads of files and images
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality": {
+    "@jaisocx/css_clean_start_responsive": "latest",
+    "@jaisocx/media_tools_fonts_base": "latest", // like example for fonts install
+    "@jaisocx/media_tools_images_mini_datatypes_base": "latest" // like example of a published set of mini-images
+  },
+  "notInstalledPossibleDependencies__basePurposesForSitesTools": {
+    "@jaisocx/template-renderer": "latest",
+    "@jaisocx/event-emitter": "latest",
+    "@jaisocx/workspace-tree-walker": "latest", // few methods for processing of few types of datasets as js objects recursively
+    "@jaisocx/jpath": "latest"
   },
   "private": false,
   "publishConfig": {

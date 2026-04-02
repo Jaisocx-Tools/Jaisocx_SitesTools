@@ -2,7 +2,8 @@
 
 /* IN THIS TABLE LAYOUT FIELDS IN A RECORD ARE PLACED IN ONE LINE. */
 /* display size tablet sm and bigger */
-@media only screen and (min-width: 1025px) {
+@media ( only screen and (min-width: 1025px) and (orientation: portrait) ),
+  ( only screen and (min-width: 768px) and (orientation: landscape) ) {
 
   .jsx-css-table-holder .jsx-css-table {
     display:                   grid;

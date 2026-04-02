@@ -25,12 +25,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "optionalDependencies": {
-    "@jaisocx/css-importer": "=1.4.2"
-  },
   "dependencies": {
-    "@jaisocx/command-line": "~1.0.3"
+    "@jaisocx/command-line": "~1.0.3",
+    "@jaisocx/file-writer": "^1.2.7"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-importer": "~1.4.1"
   }
 }
-
-
