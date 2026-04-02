@@ -37,6 +37,8 @@
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "@jaisocx/css_clean_start_lite": "^1.0.3"
+  }
 }
-

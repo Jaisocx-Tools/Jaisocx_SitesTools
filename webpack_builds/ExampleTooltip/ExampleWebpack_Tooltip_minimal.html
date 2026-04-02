@@ -1,11 +1,8 @@
 <html>
-  <head>
-    <title>Tooltip Example</title>
+<head>
+    <title> Tooltip </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <script src="transpiled/webpack/example-tooltip-bundle.js"></script>
 
     <style>
 
@@ -31,27 +28,41 @@
 
     </style>
 
-  </head>
-  <body>
+</head>
+<body>
 
     <main>
       
-      <h1>Tooltip Example</h1>
+      <h1> Tooltip </h1>
 
-      <button id="tooltip-button">Click me!</button>
+      <button id="tooltip-button"> Click me! </button>
 
     </main>
 
-    <script>
-      const tooltipDarkmode = new Tooltip();
+</body>
+
+
+
+<script src="transpiled/webpack/example-tooltip-bundle.js"></script>
+
+<script>
+
+  let tooltipDarkmode = new Object();
+
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      tooltipDarkmode = new Tooltip();
       tooltipDarkmode
         .setEventTargetSelector( "#tooltip-button" )
         .setCssClasses( "theme-darkmode shown_effect_minimize_and_fadeIn with-transition" )
         .setHtml ( "Hello World!" )
         .render();
+    }
+  );
 
-    </script>
-  </body>
-</html> 
+</script>
+
+</html>
 
 

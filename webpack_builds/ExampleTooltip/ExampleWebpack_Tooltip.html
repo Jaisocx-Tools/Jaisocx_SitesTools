@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" class="workspace">
-  <head>
-    <title>Tooltip Example</title>
+<html lang="en" id="css_table_imaged_preview" class="jsx workspace salad">
+<head>
 
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <title> Tooltip </title>
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
-    <!-- The built by webpack bundle.js -->
-    <script src="webpack_builds/ExampleTooltip/transpiled/webpack/example-tooltip-bundle.js"></script>
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+<!--  <link-->
+<!--      rel="stylesheet"-->
+<!--      type="text/css"-->
+<!--      charset="utf-8"-->
+<!--      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"-->
+<!--      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"-->
+<!--      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"-->
+<!--  />-->
 
 
-    <!-- a temporary theme to test a dynamic size context menu -->
-    <link rel="stylesheet" href="sites_tools/js_tools/Tooltip/MediaAndStyles/themes/theme-context/tooltip-theme-context.css" />
 
-    <style>
+  <!-- a temporary theme to test a dynamic size context menu -->
+  <link rel="stylesheet" href="/sites_tools/js_tools/Tooltip/MediaAndStyles/themes/theme-context/tooltip-theme-context.css" />
+
+
+  <!--# STYLES CssCodeSnippet and theme_base -->
+  <link
+      fetchpriority="medium"
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="/previews/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css"
+  />
+
+  <link
+      fetchpriority="medium"
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="/previews/node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+  />
+
+
+
+  <style>
 
     body, body * {
       box-sizing: border-box;
@@ -30,9 +71,9 @@
     html {
       --mini-image-size: 1.6rem;
 
-      --background-image-1: url("webpack_builds/ExampleTooltip/media/images/background-6804432_1280.jpg");
-      --background-image-2: url("webpack_builds/ExampleTooltip/media/images/flowers-7935944_1920.jpg");
-      --background-image-3: url("webpack_builds/ExampleTooltip/media/images/flowers-4818861_1920.jpg");
+      --background-image-1: url("media/images/background-6804432_1280.jpg");
+      --background-image-2: url("media/images/flowers-7935944_1920.jpg");
+      --background-image-3: url("media/images/flowers-4818861_1920.jpg");
 
       box-sizing: border-box;
 
@@ -122,7 +163,7 @@
 
       border: 0 solid white;
 
-      background-image: url("webpack_builds/ExampleTooltip/media/mini-images/icons8-notiz-pulsar-gradient/icons8-notiz-96.png");
+      background-image: url("media/mini-images/icons8-notiz-pulsar-gradient/icons8-notiz-96.png");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -200,48 +241,87 @@
 
     }
 
-    </style>
+  </style>
 
 
-  </head>
-  <body>
+
+
+
+  <style>
+
+    .jsx .CodeSnippetHolder#code-snippet-example,
+    .jsx .CodeSnippetHolder#code-snippet-example-thin {
+      /* when a .css is loaded with hardcoded lines numbers in code-snippet-lines-numbers-99.css
+      on path MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css */
+      --lines-numbers--content: var(--lines-numbers--content--99);
+      --lines-number: 10;
+    }
+
+    .jsx .CodeSnippetHolder#code-snippet-example {
+      --code-snippet-tool--width: fit-content;
+      --code-snippet-tool--overflow-y: auto;
+    }
+
+    .jsx .CodeSnippetHolder#code-snippet-example-thin {
+      --code-snippet-tool--width:  28rem;
+      --code-snippet-tool--height: 22rem;
+      --code-snippet-tool--overflow-y: auto;
+    }
+
+
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .jsx .CodeSnippetHolder#code-snippet-example,
+      .jsx .CodeSnippetHolder#code-snippet-example-thin {
+
+        --code-snippet-tool--overflow-x: hidden;
+        --code-snippet-tool--width: 100%;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+<body>
 
     <main>
       <background></background>
       <description>
-        <h1>Tooltip Example, built with Webpack</h1>
 
-        <h3>Url on the github</h3>
-        <p>
-          <a href="https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTooltip" target="blank_"> https://github.com/Jaisocx-Tools/Workspace/tree/main/workspace/ts/Jaisocx_SitesTools/webpack_builds/ExampleTooltip </a>
-        </p>
+        <h1> Jaisocx Tooltip </h1>
 
-        <h3>Example html markup to use this webpack bundle.js</h3>
-        <p>
-          <a href="https://sandbox.brightday.email/ExampleWebpack_Tooltip_minimal.html" target="blank_"> https://sandbox.brightday.email/ExampleWebpack_Tooltip_minimal.html </a>
-        </p>
-
-        <pre style="font-size: 0.9rem;">
-    &lt;script&gt;
-    const tooltipDarkmode = new Tooltip();
-    tooltipDarkmode
-      .setEventTargetSelector( "#tooltip-event-trigger" )
-      .setCssClasses( "shown_effect_minimize_and_fadeIn with-transition" )
-      .setHtml ( "Hello World!" )
-      .render();
-    &lt;/script&gt;
-        </pre>
-
-        <h2>Description</h2>
         <p>
           The Tooltip sites ui tool is able to do this:
-          <ul>
-            <li>The tooltip is placed near the event target the right way.</li>
-            <li>Easy theming via css variables, and the css file has very few css code lines.</li>
-            <li>The tooltip, and when many tooltips on the page, too, can hide after a timeout.</li>
-            <li>The tooltip class can have other html inside.</li>
-          </ul>
+        <ul>
+          <li>The tooltip is placed near the event target the right way.</li>
+          <li>Easy theming via css variables, and the css file has very few css code lines.</li>
+          <li>The tooltip, and when many tooltips on the page, too, can hide after a timeout.</li>
+          <li>The tooltip class can have other html inside.</li>
+        </ul>
         </p>
+
+
+
+        <h3> Example script </h3>
+
+        <CodeSnippetHolder id="code-snippet-example" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+&lt;script&gt;
+  const tooltipDarkmode = new Tooltip();
+  tooltipDarkmode
+    .setEventTargetSelector( "#tooltip-event-trigger" )
+    .setCssClasses( "shown_effect_minimize_and_fadeIn with-transition" )
+    .setHtml ( "Hello World!" )
+    .render();
+&lt;/script&gt;
+          </pre>
+        </CodeSnippetHolder>
+
+
 
         <div class="static-overflow-scroll">
           <div class="event-targets-holder static-overflow-scroll">
@@ -273,132 +353,136 @@
       </description>
     </main>
 
+</body>
 
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
+<!-- The built by webpack bundle.js -->
+<script src="transpiled/webpack/example-tooltip-bundle.js"></script>
 
-        // 1. one tooltip shown.
-        //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__ANYWHERE;
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
 
-        // 2. able to show all tooltips by clicking every,
-        //    and able to hide all tooltips one click on somewhere else in this site inside the open browser's tab.
-        const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__OTHER_THAN_EVENT_TARGET;
+    // 1. one tooltip shown.
+    //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__ANYWHERE;
 
-        // 3. all tooltips are shown, and in order to hide the event target has to be clicked.
-        //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__EVENT_TARGET;
+    // 2. able to show all tooltips by clicking every,
+    //    and able to hide all tooltips one click on somewhere else in this site inside the open browser's tab.
+    const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__OTHER_THAN_EVENT_TARGET;
 
-        // 1. one tooltip shown, and hides on timeout, too.
-        //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__ANYWHERE;
+    // 3. all tooltips are shown, and in order to hide the event target has to be clicked.
+    //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_WHEN_CLICK__EVENT_TARGET;
 
-        // 2. lke the 2. and with timeout feature
-        //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__OTHER_THAN_EVENT_TARGET;
+    // 1. one tooltip shown, and hides on timeout, too.
+    //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__ANYWHERE;
 
-        // 3. like the 3. and with the timeout feature
-        //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__EVENT_TARGET;
+    // 2. lke the 2. and with timeout feature
+    //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__OTHER_THAN_EVENT_TARGET;
 
-        const tooltipHideTimoutMilliseconds = 3000;
+    // 3. like the 3. and with the timeout feature
+    //const tooltipHideBehaviour = Constants.TooltipHideBehaviour.HIDE_AFTER_TIMEOUT__AND__WHEN_CLICK__EVENT_TARGET;
 
-
-        const tooltipBase = new Tooltip();
-        tooltipBase
-          .setEventTargetSelector( "#tooltip-show-button-base" )
-          .setHtml (
-            `<h2>Hello World!</h2>
-            <p>Tooltip with minimal required properties set. All default values applied.</p>
-            ` )
-          .render();
+    const tooltipHideTimoutMilliseconds = 3000;
 
 
-
-        const tooltipContext = new Tooltip();
-        tooltipContext
-          .setTooltipHideBehaviour( tooltipHideBehaviour )
-          .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
-          .setEventTargetHtmlNodeId( "tooltip-show-button-context" )
-          .setCssClasses( "theme-context shown_effect_fadeIn with-transition" )
-          .setHtml (
-            `
-            <ul class="context">
-              <li>Context Item 1</li>
-              <li>Context Item 2</li>
-              <li>Context Item 3</li>
-              <li>Context Item 4</li>
-              <li>Context Item 5</li>
-            </ul>
-            `
-           )
-          .setAlignDimensionOneValueOrder (
-            [
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_BOTTOM,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_BOTTOM,
-            ]
-          )
-          .setTooltipAlignDimensionTwo(Constants.AlignDimensionTwo.EVENT_TARGET_START)
-          .setTooltipPaddingAlignDimensionTwo (
-            0.6,
-            Constants.CssSizeDim.REM
-          )
-          .render();
+    const tooltipBase = new Tooltip();
+    tooltipBase
+      .setEventTargetSelector( "#tooltip-show-button-base" )
+      .setHtml (
+        `<h2>Hello World!</h2>
+        <p>Tooltip with minimal required properties set. All default values applied.</p>
+        ` )
+      .render();
 
 
 
-        const tooltipDarkmode = new Tooltip();
-        tooltipDarkmode
-          .setTooltipHideBehaviour( tooltipHideBehaviour )
-          .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
-          .setEventTargetHtmlNodeId( "tooltip-show-button-darkmode" )
-          .setCssClasses( "theme-darkmode shown_effect_minimize with-transition" )
-          .setHtml ( "Hello World!" )
-          .setAlignDimensionOneValueOrder (
-            [
-              //Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_TOP,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
-            ]
-          )
-          .render();
+    const tooltipContext = new Tooltip();
+    tooltipContext
+      .setTooltipHideBehaviour( tooltipHideBehaviour )
+      .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
+      .setEventTargetHtmlNodeId( "tooltip-show-button-context" )
+      .setCssClasses( "theme-context shown_effect_fadeIn with-transition" )
+      .setHtml (
+        `
+        <ul class="context">
+          <li>Context Item 1</li>
+          <li>Context Item 2</li>
+          <li>Context Item 3</li>
+          <li>Context Item 4</li>
+          <li>Context Item 5</li>
+        </ul>
+        `
+       )
+      .setAlignDimensionOneValueOrder (
+        [
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_BOTTOM,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_BOTTOM,
+        ]
+      )
+      .setTooltipAlignDimensionTwo(Constants.AlignDimensionTwo.EVENT_TARGET_START)
+      .setTooltipPaddingAlignDimensionTwo (
+        0.6,
+        Constants.CssSizeDim.REM
+      )
+      .render();
 
 
 
-          const tooltip = new Tooltip();
-        tooltip
-          .setTooltipHideBehaviour( tooltipHideBehaviour )
-          .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
-          .setCssClasses( "shown_effect_minimize_and_fadeIn  with-transition" )
-          .setEventTargetSelector("#tooltip-show-button")
-          .setTemplateData (
-            {
-              "html": `<h4>Greetings</h4><p>Hello,</p><p>Have a nice day.</p>`,
-            }
-          )
-          .setIsWithArrow(1)
-          .setArrowSize (
-            0.935,
-            "rem"
-          )
-          .setAlignDimensionOneValueOrder (
-            [
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_TOP,
-              Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
-            ]
-          )
-          .setTooltipAlignDimensionTwo(Constants.AlignDimensionTwo.EVENT_TARGET_START)
-          .setTooltipPaddingAlignDimensionTwo (
-            1.4,
-            Constants.CssSizeDim.REM
-          )
-          .render();
-
-        //tooltip.showTooltip();
+    const tooltipDarkmode = new Tooltip();
+    tooltipDarkmode
+      .setTooltipHideBehaviour( tooltipHideBehaviour )
+      .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
+      .setEventTargetHtmlNodeId( "tooltip-show-button-darkmode" )
+      .setCssClasses( "theme-darkmode shown_effect_minimize with-transition" )
+      .setHtml ( "Hello World!" )
+      .setAlignDimensionOneValueOrder (
+        [
+          //Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_TOP,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
+        ]
+      )
+      .render();
 
 
-      });
-    </script>
-  </body>
+
+      const tooltip = new Tooltip();
+    tooltip
+      .setTooltipHideBehaviour( tooltipHideBehaviour )
+      .setTimeoutToCloseMillis( tooltipHideTimoutMilliseconds )
+      .setCssClasses( "shown_effect_minimize_and_fadeIn  with-transition" )
+      .setEventTargetSelector("#tooltip-show-button")
+      .setTemplateData (
+        {
+          "html": `<h4>Greetings</h4><p>Hello,</p><p>Have a nice day.</p>`,
+        }
+      )
+      .setIsWithArrow(1)
+      .setArrowSize (
+        0.935,
+        "rem"
+      )
+      .setAlignDimensionOneValueOrder (
+        [
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_RIGHT,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_TOP,
+          Constants.AlignDimensionOne.BROWSER_TAB_BORDER_LEFT,
+        ]
+      )
+      .setTooltipAlignDimensionTwo(Constants.AlignDimensionTwo.EVENT_TARGET_START)
+      .setTooltipPaddingAlignDimensionTwo (
+        1.4,
+        Constants.CssSizeDim.REM
+      )
+      .render();
+
+    //tooltip.showTooltip();
+
+
+  });
+</script>
 </html>
+
 
