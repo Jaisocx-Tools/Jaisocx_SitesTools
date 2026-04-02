@@ -1,53 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" class="workspace">
-  <head>
-    <title>Tree, rendering big data Example</title>
+<html lang="en" id="css_table_imaged_preview" class="jsx">
+<head>
 
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <title> Tree </title>
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
 
-    <!-- Task: to check out the css rules applied -->
-    <script src="webpack_builds/ExampleTree/transpiled/webpack/example-tree-bundle.js"></script>
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
 
-  </head>
-  <body>
+</head>
+<body>
 
-    <h1>Tree example</h1>
+<main>
 
-    <h2>loading and rendering compressed 14MB to 400KB by url (should work only when published at an http server)</h2>
+  <h1> Tree example </h1>
 
-    <div id="tree-holder-configured" class="theme-funny"></div>
+  <h3> loading and rendering compressed 14MB to 400KB by url </h3>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
+  <div id="tree-holder-configured"></div>
 
-        class TreeMetadata2 {
-            constructor() {
-                this.NODE_ICON__SRC = "icon";
-                this.NODE_LABEL__TEXT = "label";
-                this.SUBTREE = "subtree";
-                this.NODE__ID = "id";
-                this.NODE__HOLDER_ID = "holderId";
-                this.NODE__PATH = "PATH";
-                this.NODE__ORDER = "order";
-                this.NODE__HYPERLINK = "href";
-                this.NODE__OPENED = "opened";
-                this.NODE__CSS_CLASS_NAME = "cssClassName";
-                this.NODE__ART = "art";
-            }
+</main>
+
+</body>
+
+
+
+<script src="transpiled/webpack/example-tree-bundle.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    class TreeMetadata2 {
+        constructor() {
+            this.NODE_ICON__SRC = "icon";
+            this.NODE_LABEL__TEXT = "label";
+            this.SUBTREE = "subtree";
+            this.NODE__ID = "id";
+            this.NODE__HOLDER_ID = "holderId";
+            this.NODE__PATH = "PATH";
+            this.NODE__ORDER = "order";
+            this.NODE__HYPERLINK = "href";
+            this.NODE__OPENED = "opened";
+            this.NODE__CSS_CLASS_NAME = "cssClassName";
+            this.NODE__ART = "art";
         }
+    }
 
-        const tree = new Tree();
-        tree
-          .setDebug(false)
-          .setMainHtmlNodeId("tree-holder-configured")
-          .setNodesOpenedMode( TreeConstants.NodesOpenedMode.ALL_HIDE )
-          .setRenderingMode( TreeConstants.RenderingMode.Conf )
-          .load( 'webpack_builds/ExampleTree/json/big_test_data.json' );
-      });
-    </script>
-  </body>
+    const tree = new Tree();
+    tree
+      .setDebug(false)
+      .setMainHtmlNodeId("tree-holder-configured")
+      .setNodesOpenedMode( TreeConstants.NodesOpenedMode.ALL_HIDE )
+      .setRenderingMode( TreeConstants.RenderingMode.Conf )
+      .load( 'json/big_test_data.json' );
+  });
+
+</script>
 </html>
+
 

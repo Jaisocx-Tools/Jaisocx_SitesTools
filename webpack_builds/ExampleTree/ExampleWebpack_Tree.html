@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" class="workspace">
-  <head>
-    <title>Tree Example</title>
+<html lang="en" id="css_table_imaged_preview" class="jsx">
+<head>
 
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <title> Tree </title>
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
-    <link rel="stylesheet" href="sites_tools/css_tools/CssCleanStart/MediaAndStyles/themes/theme-darkmode/clean-start-theme-darkmode-relative.css">
 
-    <!-- CSS CLEAN START THE MAIN .CSS FILE -->
-    <link rel="stylesheet" href="sites_tools/css_tools/CssCleanStart/MediaAndStyles/css_clean_start_main_relative.css">
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
 
-    <!-- Task: to check out the css rules applied -->
-    <script src="webpack_builds/ExampleTree/transpiled/webpack/example-tree-bundle.js"></script>
-
-  </head>
-  <body>
+</head>
+<body>
 
     <main>
 
@@ -29,35 +44,39 @@
 
     </main>
 
+</body>
 
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
 
-        const exampleTree = new ExampleTree('tree-holder', 'https://api.artic.edu/api/v1/artworks');
+<script src="transpiled/webpack/example-tree-bundle.js"></script>
 
-        const tree = new Tree();
-        tree
-          .setDebug(false)
-          .setMainHtmlNodeId("tree-holder-configured")
-          .setDataTypesCssClassesEnabled(true)
-          .setNodesWithIcons(true)
-          .setNodesOpenedMode(TreeConstants.NodesOpenedMode.ALL_HIDE)
-          .setRenderingMode(TreeConstants.RenderingMode.Ease)
-          .setModifiable(false)
-          .addJSTreeEventListener(
-            TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
-            (eventName, eventPayload) => {
-              console.log(eventName, eventPayload);
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
 
-              // on click payload has the ref to the tree.data json, and here we show in console it's value:
-              console.log( tree.getTreeDataNodeByJsonnodePathArray( eventPayload.jsonNode._pathArray ) );
-            }
-          )
-          .load('https://api.artic.edu/api/v1/artworks');
+    const exampleTree = new ExampleTree('tree-holder', 'https://api.artic.edu/api/v1/artworks');
 
-      });
-    </script>
-  </body>
+    const tree = new Tree();
+    tree
+      .setDebug(false)
+      .setMainHtmlNodeId("tree-holder-configured")
+      .setDataTypesCssClassesEnabled(true)
+      .setNodesWithIcons(true)
+      .setNodesOpenedMode(TreeConstants.NodesOpenedMode.ALL_HIDE)
+      .setRenderingMode(TreeConstants.RenderingMode.Ease)
+      .setModifiable(false)
+      .addJSTreeEventListener(
+        TreeConstants.TreeEventsNames.EVENT_NAME__TREE_NODE_LABEL__CLICK,
+        (eventName, eventPayload) => {
+          console.log(eventName, eventPayload);
+
+          // on click payload has the ref to the tree.data json, and here we show in console it's value:
+          console.log( tree.getTreeDataNodeByJsonnodePathArray( eventPayload.jsonNode._pathArray ) );
+        }
+      )
+      .load('https://api.artic.edu/api/v1/artworks');
+
+  });
+</script>
 </html>
+
 
