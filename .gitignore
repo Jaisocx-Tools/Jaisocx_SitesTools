@@ -1,7 +1,5 @@
 
 /.env
-/.cpanel.yml
-/acepanel.yml
 /.idea
 /.vscode
 /**/node_modules
