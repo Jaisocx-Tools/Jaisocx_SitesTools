@@ -1,4 +1,5 @@
 "use strict";
+// @jaisocx/jpath/index.ts
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.JPath = exports.JPathData = void 0;
 var JPathData_js_1 = require("./JPathData.js");

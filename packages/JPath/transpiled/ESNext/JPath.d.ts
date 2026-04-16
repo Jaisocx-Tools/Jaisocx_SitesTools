@@ -1,18 +1,14 @@
-export declare class JPath {
+import { JPathInterface } from "./JPathInterface.js";
+export declare class JPath implements JPathInterface {
     static JPATH_EXPRESSION_MAX_SIZE: number;
-    protected _jpath: (string | number)[];
-    protected _jpathExpression: string;
     protected _jpathExpressionMaxSize: number;
     constructor();
-    static setByJPath(obj: any, jpath: (string | number)[], value: any): void;
-    static setByJPathWalkFlatRebuild(obj: any, jpath: (string | number)[], value: any, nameHolderId: string, nameId: string, branchName: string): void;
-    static getByJPathExpression(jpathExpression: string, value: any): any;
-    static getByJPath(jpath: (string | number)[], value: any): any;
-    static parse(jpathExpression: string): (string | number)[];
-    setJPathExpression(jpathExpression: string): JPath;
-    setJPathExpressionMaxSize(maxSize: number): JPath;
-    setJPath(jpath: (string | number)[]): JPath;
-    getJPath(): (string | number)[];
-    static getJPathName(jpathExpression: string, delimiter: string): string;
+    parse(jpathExpression: string): (string | number)[];
+    serialize(jpath: (string | number)[], concatenator: string, start: string, finish: string): string;
+    getByJPathExpression(obj: any, jpathExpression: string): any;
+    getByJPath(obj: any, jpath: (string | number)[]): any;
+    setByJPathExpression(obj: any, jpathExpression: string, value: any): JPathInterface;
+    setByJPath(obj: any, jpath: (string | number)[], value: any): JPathInterface;
+    setByJPathWalkFlatRebuild(obj: any, jpath: (string | number)[], value: any, nameHolderId: string, nameId: string, branchName: string): JPathInterface;
 }
 //# sourceMappingURL=JPath.d.ts.map

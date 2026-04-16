@@ -3,121 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.JPath = void 0;
 class JPath {
     constructor() {
-        this._jpath = [];
-        this._jpathExpression = "";
         this._jpathExpressionMaxSize = JPath.JPATH_EXPRESSION_MAX_SIZE;
-    }
-    static setByJPath(obj, jpath, value) {
-        const jpathLen = jpath.length;
-        let jpathLastIx = jpathLen - 1;
-        let datatypeNode = "";
-        let key = null;
-        for (key of jpath) {
-            datatypeNode = typeof key;
-            if (!obj[key]) {
-                if (datatypeNode === "number") {
-                    obj[key] = new Array();
-                }
-                else {
-                    obj[key] = new Object();
-                }
-            }
-            obj = obj[key];
-        }
-        //@ts-ignore
-        obj[jpathLastIx] = value;
-    }
-    static setByJPathWalkFlatRebuild(obj, jpath, value, nameHolderId, nameId, branchName) {
-        const jpathLen = jpath.length;
-        let jpathIx;
-        let jpathLastIx = jpathLen - 1;
-        let id = null;
-        let holderId = jpath[0];
-        let foundNode = null;
-        let newItem = null;
-        id = jpath[0];
-        obj[nameId] = id;
-        for (jpathIx = 1; jpathIx < jpathLen; jpathIx++) {
-            id = jpath[jpathIx];
-            foundNode = false;
-            let toGetById = [];
-            if (Array.isArray(obj)) {
-                toGetById = obj;
-            }
-            else if (obj[branchName]) {
-                toGetById = obj[branchName];
-            }
-            else if (!obj[branchName]) {
-                obj[branchName] = new Array();
-                toGetById = obj[branchName];
-            }
-            foundNode = toGetById.find((node) => {
-                const matches = (node[nameId] === id);
-                return matches;
-            });
-            if (!foundNode) {
-                if (jpathIx === jpathLastIx) {
-                    newItem = Object.assign(Object.assign({}, value), { [nameId]: id, [nameHolderId]: holderId });
-                }
-                else {
-                    newItem = {
-                        [nameId]: id,
-                        [nameHolderId]: holderId
-                    };
-                }
-                toGetById.push(newItem);
-                obj[nameId] = holderId;
-                const lastIx = (toGetById.length - 1);
-                foundNode = toGetById[lastIx];
-            }
-            obj = foundNode;
-            holderId = id;
-        }
-    }
-    static getByJPathExpression(jpathExpression, value) {
-        const jpath = JPath.parse(jpathExpression);
-        return JPath.getByJPath(jpath, value);
-    }
-    // faster than JPath.getByJPathExpression( jpathExpression: string, value: any );
-    // recommended when the lookup more than once with the same jpathExpression,
-    // or when You already at once build the jpath array variables to perform lookups
-    // like this: let jpath: (string|number)[] = [ "tokens", "startTokens", 0, "length" ];
-    //    let jpath = JPath.parse( "subtree[1].opened" ); => [ "subtree", 1, "opened" ]
-    //    let obj = { "subtree": [{ "opened": false }, { "opened": true }] };
-    //    let valueFound = JPath.getByJPath( jpath, obj );
-    //    console.log( valueFound );
-    //    prints out => true
-    static getByJPath(jpath, value) {
-        if (!value) {
-            return null;
-        }
-        if (!jpath || jpath.length === 0) {
-            return value;
-        }
-        let targetValue = value;
-        let jpathValueFound = {};
-        let jpathPropertyKey = "";
-        let jpathPropLevel = 0;
-        let jpathLevelMax = Math.min(jpath.length, JPath.JPATH_EXPRESSION_MAX_SIZE);
-        for (jpathPropLevel = 0; jpathPropLevel < jpathLevelMax; jpathPropLevel++) {
-            if (!targetValue) {
-                break;
-            }
-            jpathPropertyKey = jpath[jpathPropLevel];
-            jpathValueFound = targetValue[jpathPropertyKey];
-            if (typeof jpathValueFound === "object") {
-                if (Array.isArray(jpathValueFound) === true) {
-                    targetValue = [...jpathValueFound];
-                }
-                else {
-                    targetValue = Object.assign({}, jpathValueFound);
-                }
-            }
-            else {
-                targetValue = jpathValueFound;
-            }
-        }
-        return targetValue;
     }
     // jpath string exression as "subtree[1].opened" => [ "subtree", 1, "opened" ]
     // with this art of array of properties names of javascript object tree
@@ -128,7 +14,7 @@ class JPath {
     //    let valueFound = JPath.getByJPath( jpath, obj );
     //    console.log( valueFound );
     //    prints out => true
-    static parse(jpathExpression) {
+    parse(jpathExpression) {
         const jpath = [];
         const jpathSplittedByPoints = jpathExpression.split(".");
         let jpathSplitted = "";
@@ -201,29 +87,160 @@ class JPath {
         }
         return jpath;
     }
-    setJPathExpression(jpathExpression) {
-        this._jpathExpression = jpathExpression;
-        return this;
-    }
-    setJPathExpressionMaxSize(maxSize) {
-        this._jpathExpressionMaxSize = maxSize;
-        return this;
-    }
-    setJPath(jpath) {
-        this._jpath = jpath;
-        return this;
-    }
-    getJPath() {
-        if (((this._jpathExpression !== null) && (this._jpathExpression.length !== 0)) &&
-            (this._jpath === null || this._jpath.length === 0)) {
-            this._jpath = JPath.parse(this._jpathExpression);
+    serialize(jpath, concatenator, start, finish) {
+        // @retVal
+        let jpathExpression = "";
+        let jpathJoined = jpath.join(concatenator);
+        let locJpath = new Array();
+        let startNotZerolen = ((start !== undefined) && (start !== null) && (start.length > 0));
+        let finishNotZerolen = ((finish !== undefined) && (finish !== null) && (finish.length > 0));
+        if ((startNotZerolen === false) && (finishNotZerolen === false)) {
+            // @retVal
+            jpathExpression = jpathJoined;
         }
-        return this._jpath;
+        else if (startNotZerolen === true) {
+            locJpath = [start, jpathJoined];
+        }
+        if (finishNotZerolen === true) {
+            locJpath.push(finish);
+        }
+        if (locJpath.length > 0) {
+            // @retVal
+            jpathExpression = locJpath.join("");
+        }
+        return jpathExpression;
     }
-    static getJPathName(jpathExpression, delimiter) {
-        let jpath = JPath.parse(jpathExpression);
-        let jpathName = jpath.join(delimiter);
-        return jpathName;
+    getByJPathExpression(obj, jpathExpression) {
+        const jpath = this.parse(jpathExpression);
+        return this.getByJPath(obj, jpath);
+    }
+    // faster than JPath.getByJPathExpression( jpathExpression: string, value: any );
+    // recommended when the lookup more than once with the same jpathExpression,
+    // or when You already at once build the jpath array variables to perform lookups
+    // like this: let jpath: (string|number)[] = [ "tokens", "startTokens", 0, "length" ];
+    //    let jpath = JPath.parse( "subtree[1].opened" ); => [ "subtree", 1, "opened" ]
+    //    let obj = { "subtree": [{ "opened": false }, { "opened": true }] };
+    //    let valueFound = JPath.getByJPath( jpath, obj );
+    //    console.log( valueFound );
+    //    prints out => true
+    getByJPath(obj, jpath) {
+        if ((obj === undefined) || (obj === null)) {
+            return null;
+        }
+        if (!jpath || jpath.length === 0) {
+            return obj;
+        }
+        let targetValue = obj;
+        let jpathValueFound = {};
+        let jpathPropertyKey = "";
+        let jpathPropLevel = 0;
+        let jpathLevelMax = Math.min(jpath.length, JPath.JPATH_EXPRESSION_MAX_SIZE);
+        for (jpathPropLevel = 0; jpathPropLevel < jpathLevelMax; jpathPropLevel++) {
+            if (!targetValue) {
+                break;
+            }
+            jpathPropertyKey = jpath[jpathPropLevel];
+            jpathValueFound = targetValue[jpathPropertyKey];
+            if (typeof jpathValueFound === "object") {
+                if (Array.isArray(jpathValueFound) === true) {
+                    targetValue = [...jpathValueFound];
+                }
+                else {
+                    targetValue = Object.assign({}, jpathValueFound);
+                }
+            }
+            else {
+                targetValue = jpathValueFound;
+            }
+        }
+        return targetValue;
+    }
+    setByJPathExpression(obj, jpathExpression, value) {
+        const jpath = this.parse(jpathExpression);
+        this.setByJPath(obj, jpath, value);
+        return this;
+    }
+    setByJPath(obj, jpath, value) {
+        let locObj = obj;
+        const jpathLen = jpath.length;
+        let jpathLastIx = (jpathLen - 1);
+        let datatypeNode = "";
+        let key = "";
+        let lastKey = jpath[jpathLastIx];
+        // @loop_counter
+        let counter = 0;
+        let maxCounter = jpathLastIx;
+        jpathLoop: while (counter < maxCounter) {
+            // @loop_counter
+            if (counter >= jpathLen) {
+                break jpathLoop;
+            }
+            key = jpath[counter];
+            // @inc_loop_counter
+            counter++;
+            if (!locObj[key]) {
+                datatypeNode = typeof key;
+                if (datatypeNode === "number") {
+                    locObj[key] = new Array();
+                }
+                else {
+                    locObj[key] = new Object();
+                }
+            }
+            locObj = locObj[key];
+            continue jpathLoop;
+        }
+        //@ts-ignore
+        locObj[lastKey] = value;
+        return this;
+    }
+    setByJPathWalkFlatRebuild(obj, jpath, value, nameHolderId, nameId, branchName) {
+        const jpathLen = jpath.length;
+        let jpathIx;
+        let jpathLastIx = jpathLen - 1;
+        let id = null;
+        let holderId = jpath[0];
+        let foundNode = null;
+        let newItem = null;
+        id = jpath[0];
+        obj[nameId] = id;
+        for (jpathIx = 1; jpathIx < jpathLen; jpathIx++) {
+            id = jpath[jpathIx];
+            foundNode = false;
+            let toGetById = [];
+            if (Array.isArray(obj)) {
+                toGetById = obj;
+            }
+            else if (obj[branchName]) {
+                toGetById = obj[branchName];
+            }
+            else if (!obj[branchName]) {
+                obj[branchName] = new Array();
+                toGetById = obj[branchName];
+            }
+            foundNode = toGetById.find((node) => {
+                const matches = (node[nameId] === id);
+                return matches;
+            });
+            if (!foundNode) {
+                if (jpathIx === jpathLastIx) {
+                    newItem = Object.assign(Object.assign({}, value), { [nameId]: id, [nameHolderId]: holderId });
+                }
+                else {
+                    newItem = {
+                        [nameId]: id,
+                        [nameHolderId]: holderId
+                    };
+                }
+                toGetById.push(newItem);
+                obj[nameId] = holderId;
+                const lastIx = (toGetById.length - 1);
+                foundNode = toGetById[lastIx];
+            }
+            obj = foundNode;
+            holderId = id;
+        }
+        return this;
     }
 }
 exports.JPath = JPath;

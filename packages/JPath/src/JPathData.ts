@@ -1,4 +1,8 @@
-export class JPathData {
+import { JPathDataInterface } from "./JPathDataInterface.js";
+
+
+
+export class JPathData implements JPathDataInterface {
 
   protected _jpath: (string|number)[];
   protected _jpathExpression: string;
@@ -20,7 +24,7 @@ export class JPathData {
 
 
 
-  public setIsPlaceholderValue( isPlaceholder: number ): JPathData {
+  public setIsPlaceholderValue( isPlaceholder: number ): JPathDataInterface {
     this._isPlaceholderValue = isPlaceholder;
 
 
@@ -35,7 +39,7 @@ export class JPathData {
 
 
 
-  public setJPath( jpath: (string|number)[] ): JPathData {
+  public setJPath( jpath: (string|number)[] ): JPathDataInterface {
     this._jpath = jpath;
 
     if ( !this._jpath || this._jpath.length === 0 ) {
@@ -58,7 +62,7 @@ export class JPathData {
 
 
 
-  public setJPathExpression( jpathExpression: string ): JPathData {
+  public setJPathExpression( jpathExpression: string ): JPathDataInterface {
     this._jpathExpression = jpathExpression;
 
 

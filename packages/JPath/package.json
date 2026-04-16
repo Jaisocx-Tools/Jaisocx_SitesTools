@@ -1,7 +1,7 @@
 {
-  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "author": "ILLIA POLIANSKYI, Jaisocx Inc.",
   "name": "@jaisocx/jpath",
-  "version": "1.2.3",
+  "version": "2.0.1",
   "description": "JPath accepts queries of datatype (string|number)[] and performs lookup in js objects and arrays",
   "keywords": [
     "jpath",
@@ -15,7 +15,6 @@
     "transpiled/CommonJS",
     "transpiled/ESNext",
     "transpiled/Simple",
-    "test",
     "README.md"
   ],
   "type": "module",
