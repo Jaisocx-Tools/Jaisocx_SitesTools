@@ -1,4 +1,5 @@
-![./images/software_labels/Jaisocx/software_tm_label_jaisocx.svg](./images/software_labels/Jaisocx/software_tm_label_jaisocx.svg)
+![./images/software_labels/Typescript/typescript_2.svg](./images/software_labels/Typescript/typescript_2.svg)
+![./images/software_labels/Node/nodejs_2.svg](./images/software_labels/Node/nodejs_2.svg)
 ![./images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
 ![./images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
