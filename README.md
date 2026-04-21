@@ -22,6 +22,9 @@ and published in `@jaisocx` namespace
 
 ### 🌿 CSS Tools
 
+
+[https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/css_clean_start_lite.preview.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/css_clean_start_lite.preview.html)
+
 ![CssTable.png](./images/md_images/sites_tools/size350/CssTable.png)
 
 ![CssCodeSnippet.png](./images/md_images/sites_tools/size350/CssCodeSnippet.png)
@@ -29,6 +32,10 @@ and published in `@jaisocx` namespace
 
 
 ### 🌿 Media Libs
+
+[https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/fonts_base.preview.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/fonts_base.preview.html)
+
+[https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/font_orbitron.preview.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/examples_html/sites_tools/font_orbitron.preview.html)
 
 ![MediaFontOrbitron.png](./images/md_images/sites_tools/size350/MediaFontOrbitron.png)
 
