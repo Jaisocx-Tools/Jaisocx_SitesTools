@@ -27,11 +27,11 @@
 
 
 
-@import url("./CssTable_main.css");
-
 /* main css file, css logics with rules set via variables in the theme .css files imported above */
 @import url("./CssTable_thin.css");
 @import url("./CssTable_bright.css");
+
+@import url("./CssTable_main.css");
 
 
 

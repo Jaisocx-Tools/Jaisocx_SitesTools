@@ -11,7 +11,7 @@
     "README.md",
     "webpack.aliases.json",
     "css_table_3records_12_columns.preview.html",
-    "css_table_imaged.preview.html",
+    "css_table_imaged_preview.html",
     "index.preview.html",
     "MediaAndStyles/*.css",
     "MediaAndStyles/columns",

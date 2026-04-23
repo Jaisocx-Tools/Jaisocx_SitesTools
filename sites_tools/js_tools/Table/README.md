@@ -1,7 +1,29 @@
 # js table
+  > this library aimed to improve quality of jstable by newer template renderer with tree walker for recursive tasks.
 
-#### status
-  > ❌ Under construction. Last updated in October 2024.
+  > ❌ Under construction. Last updated in Summer 2025
+
+
+
+#### why not solved still
+
+  1. base packages bugs encountered:
+
+     1.1. conf for node debug in IDE wasn't documented. am on writing and reviewing documentation for the project and every package.
+
+     1.2. css-importer needs bugfixes, after QA tests shown, works not always. needs node debug conf.
+
+
+
+  > This improved json rendering tool has 3 or 4 iterations levels, and thought of reading json fields for labels, and easiness of code review and bugfixes later.
+
+  2. base packages for improved quality by newer template renderer with tree walker for recursive tasks are still in plan.
+
+     2.1. still, tree walker methods and thoughts on base 3 or 4 cases for transformation of data objects isn't the very first priority.
+
+     2.2. template renderer with iterations option, like [foreach], and transparent html code block view like always, just with framework placeholders `{{ json_field_value }}`, needs more time. The normal way, jsp or php code blocks with html code blocks aren't easy to work with, for frontend sites developers or sites designers. The plan is, the variable of datatype string, with html code block, able to style with css, let's say in a standalone html page. Since the newer styles support for responsive design, the bugfixing of sites markup or styles, gets easier with the very transparent markup, on that might work several sites engineers in the same time. 
+
+     2.3. the nice thing is, we've done the html and styles for the markup, being the template [2.2], but the columns and records were hardcoded copy-pasted for the 3 or 4 weeks of work on styles for layout.
 
 
 
