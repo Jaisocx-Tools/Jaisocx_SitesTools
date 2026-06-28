@@ -1,0 +1,92 @@
+#!/bin/sh
+
+/.idea
+/.vscode
+
+
+
+# in the .env file in the root of this project are Your project's settings,
+# and therefore it is advised not to keep in open source repositories.
+# the .env file in .gitignore isn't published then in Your git repo.
+/.env
+
+/readme/md/README_aim_of_the_setup_sites_tools.md
+/libraries/sites_tools/json_styling_tools/jstable/www/imaged_data/original_images/
+/libraries/sites_tools/css_tools/pages/responses/exception_responses/http_404_exception/
+
+
+
+# node_modules by npm, yarn, or pnpm
+/cdn/node_cdn_installs/package.json
+/**/node_cdn_installs/package.json
+
+# npm
+/cdn/node_cdn_installs/package-lock.json
+/**/node_cdn_installs/package-lock.json
+
+# yarn
+/cdn/node_cdn_installs/yarn.lock
+/**/node_cdn_installs/yarn.lock
+
+# pnpm
+/cdn/node_cdn_installs/package.json5
+/cdn/node_cdn_installs/package.yml
+/cdn/node_cdn_installs/package.yaml
+/cdn/node_cdn_installs/pnpm-workspace.yaml
+/cdn/node_cdn_installs/.pnpmfile.cjs
+
+/**/node_cdn_installs/package.json5
+/**/node_cdn_installs/package.yml
+/**/node_cdn_installs/package.yaml
+/**/node_cdn_installs/pnpm-workspace.yaml
+/**/node_cdn_installs/.pnpmfile.cjs
+
+
+
+# -- ENVs --
+/.env
+/**/.env
+
+/.env*
+/**/.env*
+
+
+# -- TEMPORARY FOLDERS --
+/temp
+/**/temp
+
+/tmp
+/**/tmp
+
+/*_tmp.*
+/**/*_tmp.*
+
+
+# -- LOGS --
+/log
+/**/log
+
+/logs
+/**/logs
+
+/*.log
+/**/*.log
+
+
+
+# -- 3rd PARTIES SOFTWARE --
+# -- Javascript 3rd parties packs --
+/node_modules
+/**/node_modules
+
+# -- php 3rd parties packs --
+/vendor
+/**/vendor
+
+
+
+/.DS_Store
+/**/.DS_Store
+
+
+
