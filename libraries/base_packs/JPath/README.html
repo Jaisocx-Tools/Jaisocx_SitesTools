@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" id="readme_jpath" class="jsx salad">
+<head>
+
+  <title> JPath README </title>
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <!--# CSS CLEAN START 2: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <!--# STYLES CssCodeSnippet and theme_base -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css"
+      href-fallback="../css-code-snippet/MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+      href-fallback="../css-code-snippet/MediaAndStyles/CssCodeSnippet_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <style name="css clean start overrides for this site">
+
+    .jsx#readme_jpath {
+
+      --jsx--css-clean-start-2--site--padding: 2rem 1rem 10rem 1rem;
+
+      --jsx--css-clean-start-2--site--min-width: 62rem;
+      --jsx--css-clean-start-2--site--max-width: 100%;
+      --jsx--css-clean-start-2--site--width: 62rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.4rem;
+      --jsx--css-clean-start-2--h1--line-height: 1.9rem;
+      --jsx--css-clean-start-2--h1--margin: 0 0 0.5rem 0;
+
+      --jsx--css-clean-start-2--h2--font-size: 1.2rem;
+      --jsx--css-clean-start-2--h2--line-height: 1.6rem;
+      --jsx--css-clean-start-2--h2--margin: 3rem 0 0.5rem 0;
+
+      --jsx--css-clean-start-2--h3--font-size: 1rem;
+      --jsx--css-clean-start-2--h3--line-height: 1.4rem;
+      --jsx--css-clean-start-2--h3--margin: 1rem 0 0.5rem 0;
+
+    }
+
+    .jsx#readme_jpath label.bib {
+      background: #eafeea;
+      padding: 0.1rem 0.6rem;
+      line-height: 0.79rem;
+      font-size: 0.79rem;
+      border-radius: 0.52rem;
+      border: 1px solid lime;
+      color: green;
+    }
+
+    .jsx#readme_jpath aim_of_the_setup {
+      display: block;
+      margin: 2rem 0 2rem 0;
+      padding: 1rem 1rem 1rem 0.64rem;
+      border-left: 5px solid #b5d5fa;
+      background: #d3eafe;
+    }
+
+    .jsx#readme_jpath pre {
+      padding: 1rem 0 1rem 0;
+      overflow-x: auto;
+
+      scrollbar-color: lime #fefffe;
+      scrollbar-width: thin;
+    }
+
+  </style>
+
+  <style name="css clean start lite mobile portrait">
+
+    @media only screen and (min-width: 2px) and (max-width: 767px) and (orientation: portrait),
+      only screen and (min-width: 2px) and (max-width: 767px) and (orientation: landscape) {
+
+      .jsx#readme_jpath {
+
+        --responsive_size: responsive_size_til_h03_tablet_s_portrait;
+
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+
+      }
+
+    }
+
+  </style>
+
+
+
+  <style>
+    .jsx#readme_jpath .CodeSnippetHolder.little {
+      /* when a .css is loaded with hardcoded lines numbers in code-snippet-lines-numbers-99.css
+      on path MediaAndStyles/lines-numbers-variables/code-snippet-lines-numbers-99.css */
+
+      --lines-numbers--content: var(--lines-numbers--content--99);
+      --code_snippet__font_family: var(--css-clean-start-2--monospace--font-family);
+
+      --code-snippet-tool--width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      width: 100%;
+
+      --code-snippet--padding-top: 1rem;
+      --code-snippet--padding-bottom: 1rem;
+      --code-snippet--padding-left: 1rem;
+      --code-snippet--padding-right: 1rem;
+      --code-snippet--padding: var(--code-snippet--padding-top) var(--code-snippet--padding-right) var(--code-snippet--padding-bottom) var(--code-snippet--padding-left);
+
+      --code_snippet__column_numbers__padding-left: 1rem;
+      --code_snippet__column_numbers__padding-right: 0.62rem;
+      --code_snippet__column_numbers__padding: var(--code-snippet--padding-top) var(--code_snippet__column_numbers__padding-right) var(--code-snippet--padding-bottom) var(--code_snippet__column_numbers__padding-left);
+
+      --code-snippet--width: calc(100% - var(--column-numbers-holder--width));
+
+      margin: 0.3rem 0 3rem 0;
+      padding: 0 0 0 0;
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder::after {
+      top: var(--code-snippet--padding-top);
+      min-width: 0;
+      width: calc( var(--code-snippet--padding-right) - 2px);
+      min-height: 0;
+      height: calc( var(--code-snippet--height) - var(--code-snippet--padding-top) - var(--code-snippet--padding-bottom) );
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder.little .CodeSnippetArea {
+      min-width: var(--code-snippet--width);
+      max-width: var(--code-snippet--width);
+      width: var(--code-snippet--width);
+
+      padding: var(--code-snippet--padding);
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder#code_snippet_jpath_expression {
+      --lines-number: 3;
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder#code_snippet_in_html {
+      --lines-number: 12;
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder#code_snippet_typescript {
+      --lines-number: 12;
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder#code_snippet_jpath_interface {
+      --lines-number: 25;
+    }
+
+    .jsx#readme_jpath .CodeSnippetHolder#code_snippet_jpathdata_interface {
+      --lines-number: 10;
+    }
+
+  </style>
+
+</head>
+<body>
+<main>
+
+    <h1> JPath </h1>
+
+    <aim_of_the_setup> 💡 The JPath class gets or sets values of an object or array, without eval js func invoked. </aim_of_the_setup>
+
+<pre>
+| 🗂 Library  | <label class="bib"> @jaisocx/jpath </label> | 🏷 ver. 2.0.5 |
+
+| 🗓 Updated  | 🌷 Spring 2026 | 07. Mai AD 2026 07:23:20 UTC |
+
+| 📐 Size     | 🗂 Folder: 105 KB | 📦 Tarball: 10 KB | 📄 .js: 14 KB |
+
+| ⚡ JS Engine | 🌐 Browser: ✅ yes | 🧭 Express: ✅ yes | 🖥️ Console: ✅ yes |
+</pre>
+
+
+
+    <h2> Examples </h2>
+
+    <h3> JPath Expression </h3>
+
+    <CodeSnippetHolder id="code_snippet_jpath_expression" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+let jpathExpression_js: string                   = "data.records[0].id";
+let jpathExpression_points_joined: string        = "data.records.0.id";
+let jpathExpression_jsonkey_ext_symbols: string  = "[data][records][0][field 2]";
+          </pre>
+    </CodeSnippetHolder>
+
+
+
+    <h3> In HTML </h3>
+
+    <CodeSnippetHolder id="code_snippet_in_html" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+&lt;!-- 💡 In `.html` for the 'js framework like' Reactivity by central json data in a SPA. --&gt;
+&lt;html&gt;
+  ...
+  &lt;div data-jpath="data.records.0.id"&gt;&lt;/div&gt;
+  ...
+
+  &lt;script src="node_modules/@jaisocx/jpath/transpiled/Simple/JPathData.js"&gt;&lt;/script&gt;
+        &lt;script src="node_modules/@jaisocx/jpath/transpiled/Simple/JPath.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+    // DOMContentLoaded ...
+  &lt;/script&gt;
+&lt;/html&gt;
+          </pre>
+    </CodeSnippetHolder>
+
+
+
+    <h3> Typescript </h3>
+
+    <CodeSnippetHolder id="code_snippet_typescript" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+let obj: any = {
+  "data": {
+    "records": [
+      { "id": 1, "field 2": "text line of field 2" }
+    ]
+  }
+};
+let jPath: JPath = new JPath();
+let jpathExpression: string = "data.records[0][field 2]";
+let field2: any = jPath.getByJPathExpression( obj, jpathExpression );
+console.log ( field2 );
+// $ _ text line of field 2
+          </pre>
+    </CodeSnippetHolder>
+
+
+
+    <h2> Structure </h2>
+
+    <pre>
+📚 JPath
+    🗂 src/
+      📄 index.ts
+      📄 JPath.ts
+      📄 JPathData.ts
+      📄 JPathDataInterface.ts
+      📄 JPathInterface.ts
+    📊 test/
+      📄 JPath_Test.js
+      📄 Split_Test.js
+    🗂 transpiled/
+      🗂 CommonJS/
+      🗂 ESNext/
+      🗂 Simple/
+        📄 JPath.js
+        📄 JPathData.js
+    📦 jaisocx-jpath-2.0.4.tgz
+    📄 package.json
+    📄 package-lock.json
+    📒 README.md
+    </pre>
+
+
+
+    <h2> Interfaces </h2>
+
+    <h3> JPathInterface </h3>
+
+    <CodeSnippetHolder id="code_snippet_jpath_interface" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+// $ _ ${package}/src/JPathInterface.ts
+
+// @class JPath. 💡 To lookup in js objects and arrays, without eval js func invoked.
+export interface JPathInterface {
+
+  // jpath string exression as "subtree[1].opened" => [ "subtree", 1, "opened" ]
+  parse ( jpathExpression: string ): (string|number)[];
+
+  // @invokedBy method parse(), splits with symbol point, adds to jpathArray, numeric array elem id or textual field name.
+  parseDotted ( jpathExpressionDotted: string, jpathArray: ( string|number )[] ): number;
+
+  serialize ( jpath: (string|number)[], delimiter: string, start: string, finish: string ): string;
+
+  getByJPathExpression ( obj: any, jpathExpression: string ): any;
+
+  // faster than JPath.getByJPathExpression( jpathExpression: string, value: any );
+  getByJPath ( obj: any, jpath: (string|number)[] ): any;
+
+  setByJPathExpression ( obj: any, jpathExpression: string, value: any ): JPathInterface;
+  setByJPath ( obj: any, jpath: (string|number)[], value: any ): JPathInterface;
+
+  setByJPathWalkFlatRebuild ( obj: any, jpath: (string|number)[], value: any, nameHolderId: string, nameId: string, branchName: string ): JPathInterface;
+}
+          </pre>
+    </CodeSnippetHolder>
+
+
+
+    <h3> JPathDataInterface </h3>
+
+    <CodeSnippetHolder id="code_snippet_jpathdata_interface" class="CodeSnippetHolder little salad">
+          <pre class="CodeSnippetArea">
+// $ _ ${package}/src/JPathDataInterface.ts
+
+// @class JPathData. 💡 The data record for 2 fields: jpathExpression and jpathArray.
+export interface JPathDataInterface {
+  getJPathExpression(): string;
+  getJPath(): ( string | number )[];
+
+  setJPathExpression( jpathExpression: string ): JPathDataInterface;
+  setJPath( jpath: ( string | number )[] ): JPathDataInterface;
+}
+          </pre>
+    </CodeSnippetHolder>
+
+
+
+    <layout-block>
+      <text-block> Have a nice day, </text-block>
+      <text-block> Jaisocx Software Architect Elias </text-block>
+    </layout-block>
+
+</main>
+</body>
+</html>
+
+

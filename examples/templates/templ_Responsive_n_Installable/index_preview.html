@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx css_table_ordered_preview theme_visible_height">
+<head>
+
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css_clean_start_lite/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <title>  Preview Page Example </title>
+
+
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+
+
+  <!--# CSS CLEAN START LITE: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      href-fallback="../css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <!--# CSS TABLE ORDERED: css FOR THE SERVER SIDE PRODUCED TABLE MARKUP -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/SitesTool_main_resolved.css"
+  />
+
+
+
+  <style>
+
+    .jsx {
+      --jsx--css-clean-start-2--site--padding: 2rem 1rem 0 1rem;
+
+      --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+      --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+      --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+      --jsx--css-clean-start-2--h2--font-weight: 500;
+
+      --theme-button-width: fit-content;
+    }
+
+
+    .jsx themebuttons {
+      width: fit-content;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 3rem;
+      margin: 0.9rem 0px 1.6rem 0px;
+    }
+
+    .jsx themebuttons button {
+      width: var(--theme-button-width);
+    }
+
+    .current::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      border-bottom-width: 0.14rem;
+      border-bottom-style: solid;
+      border-bottom-color: var(--clean-start__text-color);
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    #tooltip-button {
+      font-family: fantasy;
+    }
+
+
+    @media screen and ( min-width: 2px) and (max-width: 767px) {
+      .jsx.css_table_ordered_preview {
+        --jsx--css-clean-start-2--site--min-width: 100%;
+        --jsx--css-clean-start-2--site--max-width: 100%;
+        --jsx--css-clean-start-2--site--width: 100%;
+      }
+
+      .jsx.css_table_ordered_preview h2,
+      .jsx.css_table_ordered_preview h3,
+      .jsx.css_table_ordered_preview description {
+        display: none;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <main>
+
+    <content>
+
+      <h1> Sites Tool </h1>
+      <h2> @jaisocx/css-table-ordered </h2>
+      <h3> index.preview.html </h3>
+      <description>
+        Css sites tool styling a server side rendered database table data to a grid view,
+        with solutions for sticky scroll and order by on columns via browser's js engine
+      </description>
+
+    </content>
+
+</main>
+
+</body>
+
+
+
+<script name="imaged_styles">
+
+  function onLoad( url ) {
+      // ...
+      // return 127;
+  }
+
+
+  // DOCUMENT ONLOAD
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+      onLoad();
+    }
+  );
+
+</script>
+
+</html>
+
+

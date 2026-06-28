@@ -1,0 +1,14 @@
+
+/* @import url("@{{ SitesToolName }}_MediaAndStyles/responsive_size_Constants.css"); */
+
+/* base theme: constants and @media queries */
+@import url("@{{ SitesToolName }}_MediaAndStyles/themes/theme_base/{{ SitesToolName }}_theme_base_main.css");
+@import url("@{{ SitesToolName }}_MediaAndStyles/themes/theme_base/responsive_size_Imports_{{ SitesToolName }}_theme_base_Webpack{{ min }}.css");
+
+
+
+/* main css file, css logics with rules set via variables in the theme .css files imported above */
+@import url("@{{ SitesToolName }}_MediaAndStyles/{{ SitesToolName }}_main.css");
+
+
+

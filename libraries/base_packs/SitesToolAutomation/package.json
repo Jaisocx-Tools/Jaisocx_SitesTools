@@ -1,0 +1,46 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/sites-tool-automation",
+  "version": "2.2.1",
+  "description": "Produces filesset for the quality improval in the responsive layout development and bugfixing",
+  "keywords": [
+    "responsive",
+    "js",
+    "mobile",
+    "display",
+    "css",
+    "styles",
+    "ui"
+  ],
+  "files": [
+    "bash/",
+    "data/",
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/",
+    "responsive_sizes_user_friendly_view.html",
+    "README.md"
+  ],
+  "dependencies": {
+    "@jaisocx/file-producer-by-template": "~1.2.2",
+    "@jaisocx/file-writer": "~1.2.7",
+    "@jaisocx/template-renderer": "~1.6.1"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css-clean-start-2": "^1.2.9",
+    "@jaisocx/tree": "^2.2.20"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,26 @@
+/* theme-lightmode */
+.jsx.theme_lightmode .jsx-css-table-holder,
+.jsx .theme_lightmode.jsx-css-table-holder {
+
+/* borders */
+  --jsx--CssTable--border-color:                         #e0f2ff;
+
+
+
+/* column label */
+  --jsx--CssTable--cell--column-label--color:            #eaeaea;
+  --jsx--CssTable--cell--column-label--background-color: #59e;
+
+
+
+/* cell value */
+  --jsx--CssTable--cell--cell-value--color:              #222a2e;
+  --jsx--CssTable--cell--cell-value--background-color:   #fff;
+
+  --jsx--CssTable--cell--cell-value--a--color:           #2255dd;
+  --jsx--CssTable--cell--cell-value--a-hover--color:     #2299ff;
+
+}
+
+
+

@@ -1,0 +1,27 @@
+@import url("@JscImages_mini_freepic_kawaii_MediaAndStyles/JscImages_mini_freepic_kawaii_main.css");
+
+
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/html.png");
+}
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii.house {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/house.png");
+}
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii.html-intence {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/html-intence.png");
+}
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii.html {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/html.png");
+}
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii.money-transfer {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/money-transfer.png");
+}
+
+.jsc .JscImages_mini_freepic_kawaii .mini-image.freepic_kawaii.truck {
+  background-image: url("@JscImages_mini_freepic_kawaii_MediaAndStyles/images/truck.png");
+}

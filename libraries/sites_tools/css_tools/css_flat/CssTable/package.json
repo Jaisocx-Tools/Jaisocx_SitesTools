@@ -1,0 +1,46 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/css-table",
+  "version": "3.5.93",
+  "description": "Css sites tool styling a server side rendered database table data to a grid view, with solutions for scrolling and columns styling based on fileds values data types",
+  "keywords": [
+    "css",
+    "styles"
+  ],
+  "files": [
+    "README.md",
+    "webpack.aliases.json",
+    "css_table_3records_12_columns.preview.html",
+    "css_table_imaged_preview.html",
+    "index.preview.html",
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/columns",
+    "MediaAndStyles/presets",
+    "MediaAndStyles/themes",
+    "src",
+    "transpiled/CommonJS",
+    "transpiled/ESNext"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.3",
+    "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.2.2"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

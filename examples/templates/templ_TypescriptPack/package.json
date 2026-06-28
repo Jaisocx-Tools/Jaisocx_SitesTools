@@ -1,0 +1,27 @@
+{
+  "author": "<Author's Name>",
+  "name": "namespace/package-name",
+  "version": "2.0.1",
+  "description": "The @jaisocx template for a Typescript Package",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

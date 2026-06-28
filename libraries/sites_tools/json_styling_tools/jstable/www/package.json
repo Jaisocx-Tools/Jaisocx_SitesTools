@@ -1,0 +1,54 @@
+{
+  "author": "ILLIA POLIANSKYI",
+  "name": "@jaisocx/sites_tool",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "grid",
+    "table",
+    "json",
+    "site tool"
+  ],
+  "files": [
+    "README.md",
+    "webpack.aliases.json",
+
+    "sites_tool_preview.html",
+    "index_preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/layout_theme_a/",
+    "MediaAndStyles/themes/colour_scheme_a/",
+
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/",
+    "transpiled/Simple/"
+  ],
+  "devDependencies": {
+    "@jaisocx/responsive-sizes": "latest"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "latest"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}
+
+

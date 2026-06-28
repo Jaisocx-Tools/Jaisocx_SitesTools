@@ -1,0 +1,51 @@
+{
+  "name": "@jaisocx/jsc_console_js_invoke",
+  "version": "1.0.3",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "@jaisocx/jsc_console_js_invoke",
+      "version": "1.0.3",
+      "dependencies": {
+        "@jaisocx/command-line": "~1.2.4",
+        "@jaisocx/css-importer": "~1.4.1",
+        "@jaisocx/event-emitter": "~1.4.3",
+        "@jaisocx/file-writer": "~1.2.7",
+        "@jaisocx/tokens-parser": "~1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/command-line": {
+      "version": "1.2.4",
+      "resolved": "https://registry.npmjs.org/@jaisocx/command-line/-/command-line-1.2.4.tgz",
+      "integrity": "sha512-ng5l/dSbBjyxwqRAmUdbgTFMIH5EMTLyoY1ZePFrHwqCqfgsihnF2LzlyjSK+R0EsK5w4SIdCUYprEF/85rBmg=="
+    },
+    "node_modules/@jaisocx/css-importer": {
+      "version": "1.4.1",
+      "resolved": "https://registry.npmjs.org/@jaisocx/css-importer/-/css-importer-1.4.1.tgz",
+      "integrity": "sha512-unzW3tQ9b09RzEIiISM/tp0l5gRxzjtId0aqZ9wkBhkpzCpp0c0JRk77aGtba+XvTJEZZN2RpissBad7Mzi4dg==",
+      "dependencies": {
+        "@jaisocx/file-writer": "^1.2.7",
+        "@jaisocx/tokens-parser": "^1.2.2"
+      }
+    },
+    "node_modules/@jaisocx/event-emitter": {
+      "version": "1.4.3",
+      "resolved": "https://registry.npmjs.org/@jaisocx/event-emitter/-/event-emitter-1.4.3.tgz",
+      "integrity": "sha512-jASz6RieXbhOF8Ldl0TB5J/hUX4IQwomTHgnGpVdWmK6D3qjuI7/IBosBkrOAiZhxsbyUmf8e3ydWCnoSv9j1w=="
+    },
+    "node_modules/@jaisocx/file-writer": {
+      "version": "1.2.7",
+      "resolved": "https://registry.npmjs.org/@jaisocx/file-writer/-/file-writer-1.2.7.tgz",
+      "integrity": "sha512-/ctwzRTeyGIxRypsS5FiIrtN2y4hV9PDC2qKngoKqfSJxqfWSBismXnZPkK+URmqUrTm1ZYtIEoCUR/YkCmQSg==",
+      "optionalDependencies": {
+        "@jaisocx/event-emitter": "^1.4.2"
+      }
+    },
+    "node_modules/@jaisocx/tokens-parser": {
+      "version": "1.2.2",
+      "resolved": "https://registry.npmjs.org/@jaisocx/tokens-parser/-/tokens-parser-1.2.2.tgz",
+      "integrity": "sha512-uBgE4HqDdvTv910j0zzr8cW/HMumpqhrtQsa1S0ZO7+2NjS6rtUCTsDcIajrxWnKZiDD1dBCmsNsuHjGRiTE8Q=="
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/media_tools_fonts_orbitron",
+  "version": "1.2.2",
+  "description": "The one npm package for the Jaisocx Sites Tools with fonts and styles importing fonts, for the sites tools preview. To install on demand, if not relaying on the cdn.",
+  "keywords": [
+    "imports",
+    "fonts",
+    "styles",
+    "css"
+  ],
+  "files": [
+    "README.md",
+    "webpack.aliases.json",
+
+    "index_preview.html",
+    "font_orbitron_preview.html",
+
+    "MediaAndStyles/fonts",
+    "MediaAndStyles/css_importer_relative",
+    "MediaAndStyles/webpack_styles",
+    "MediaAndStyles/*.css",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.3"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+
+

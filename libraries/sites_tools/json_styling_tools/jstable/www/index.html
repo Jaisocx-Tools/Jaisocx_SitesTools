@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> JS Table </title>
+
+  <base href="./" />
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link id="jstableStylesheet" rel="stylesheet" href="css/jstable.css" />
+  <link id="jstableStylesheetLittle" rel="stylesheet" href="css/jstable-little.css" />
+</head>
+<body>
+<main>
+  <div class="jstable" id="jstable-01"></div>
+</main>
+</body>
+
+
+
+<script src="js/JSTable.js"></script>
+<script>
+
+  let jsTable = null;
+  let jsonBaseUrl = "data/";
+  let extension = ".json";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    jstable = new JSTable();
+    jstable
+      .setElementId("jstable-01")
+      .setMetadataUrl( [jsonBaseUrl, "table-conf", extension ].join("") )
+      .setDataUrl( [jsonBaseUrl, "table-records", extension ].join("") )
+      .setMobileLookAndFeelMaxWidth(630)
+      .load();
+  });
+</script>
+</html>
+
+

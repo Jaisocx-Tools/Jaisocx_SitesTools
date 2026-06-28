@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx">
+<head>
+
+  <link
+      id="icon_jaisocx"
+      rel="icon"
+      type="image/x-icon"
+      href="node_modules/@jaisocx/css-clean-start-2/favicon/Icon_Jaisocx.ico"
+      href-fallback="../css-clean-start-2/favicon/Icon_Jaisocx.ico"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <title> Sizes Preview </title>
+
+
+
+  <base href="./" />
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <!--# CSS CLEAN START LITE: html & css WHEN STARTING A SITE FROM SCRATCH -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      href-fallback="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <link
+    rel="stylesheet"
+    type="text/css"
+    charset="utf-8"
+    href="node_modules/@jaisocx/tree/MediaAndStyles/Tree_main_resolved_minimal.css"
+    href-fallback="../tree/MediaAndStyles/Tree_main_resolved_minimal.css"
+    onerror="javascript: ( () => { this.onerror = null; this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+  <style naame="css_clean_start_overrides">
+
+      .jsx {
+        --jsx--css-clean-start-2--body-tag--background: white;
+        --jsx--css-clean-start-2--site--background: #fff5f0;
+
+        --jsx--css-clean-start-2--site--padding: 2rem 1rem 3rem 1rem;
+
+        --jsx--css-clean-start-2--h1--font-size: 1.05rem;
+        --jsx--css-clean-start-2--h2--font-size: 0.9rem;
+        --jsx--css-clean-start-2--h3--font-size: 0.83rem;
+
+        --jsx--css-clean-start-2--h2--font-weight: 500;
+
+        --theme-button--width: fit-content;
+        --theme-button--font-size: 0.795rem;
+      }
+
+      .jsx .theme-funny.tree {
+        --node-label--font-family: Niconne;
+      }
+
+
+      @media screen and ( min-width: 2px) and (max-width: 767px) {
+        .jsx {
+          --jsx--css-clean-start-2--site--min-width: 100%;
+          --jsx--css-clean-start-2--site--max-width: 100%;
+          --jsx--css-clean-start-2--site--width: 100%;
+        }
+
+        .jsx h2,
+        .jsx h3,
+        .jsx description {
+          display: none;
+        }
+      }
+
+    </style>
+
+
+
+    <style name="theme_buttons">
+
+        .jsx themebuttons {
+          width: fit-content;
+          display: grid;
+          grid-auto-flow: column;
+          column-gap: 3rem;
+          margin: 0.9rem 0px 1.6rem 0px;
+        }
+
+        .jsx themebuttons button {
+          width: var(--theme-button--width);
+          font-size: var(--theme-button--font-size);
+        }
+
+        .current::after {
+          content: "";
+          position: absolute;
+          bottom: -0.3rem;
+          left: 0;
+          width: 100%;
+          height: 0;
+          max-height: 0;
+          overflow-y: hidden;
+          border-bottom-width: 0.14rem;
+          border-bottom-style: solid;
+          border-bottom-color: var(--clean-start__text-color);
+        }
+
+        .jsx button {
+          background-color: transparent;
+          text-align: left;
+        }
+
+        #tooltip-button {
+          font-family: fantasy;
+        }
+
+    </style>
+
+
+
+    <style>
+
+        .jsx main content {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        textblock.testing_html {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: stretch;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            line-break: break-all;
+            word-break: break-all;
+            height: 7rem;
+            min-height: fit-content;
+            overflow-y: visible;
+            padding: 0.6rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        textblock.testing_html img.mini_image {
+            display: inline-block;
+            width: 2rem;
+            height: auto;
+            max-height: 2rem;
+            margin-right: 1rem;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+<main>
+
+    <content>
+
+        <lable> @jaisocx/sites-tool-automation </lable>
+
+        <h1> Responsive Sizes dataset </h1>
+
+    </content>
+
+
+    <h2>load by url ( works only when published by an http server )</h2>
+    <div id="example-tree-holder_load_by_url"></div>
+
+
+  </main>
+
+</body>
+
+
+
+<script>
+
+  let glob_TreeExamplesClassInstance = new Object();
+
+
+  let glob_CssClassesNames = [
+    "jsx"
+  ];
+
+  let glob_ButtonsQuerySelectors = [
+    "themebuttons button"
+  ];
+
+  let glob_TreeJsonDataIconBase                = "";
+
+  let glob_PreloaderStopTimeoutMillis          = 1200;
+  let glob_IsPreloadWithStopOnLoadTimeout      = true;
+
+
+
+  let glob_DataForScriptsLoader                = new Object();
+  let glob_DataForPreloaderOfMediaAndFontsData = new Object();
+
+  let glob_TreeJson_SubtreeArrayOfObjects      = new Array();
+  let glob_TreeJson_SubtreeLikeObjects         = new Object();
+  let glob_TreeJson_Url                        = "data/responsive_sizes/ResponsiveSizes.json";
+
+
+
+  glob_DataForScriptsLoader = {
+    "jpath": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "JPathData",
+        "JPath"
+      ]
+    },
+    "event-emitter": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "EventEmitter",
+        "ImprovedRenderEventEmitter"
+      ]
+    },
+    "tokens-parser": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "TokensParser"
+      ]
+    },
+    "template-renderer": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "TemplateRenderer"
+      ]
+    },
+    "tree": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "typescript/ArrayOrObjectPackage",
+        "typescript/TreeConstants",
+        "typescript/TreeConf",
+        "typescript/TreeAdapter",
+        "typescript/TreeAdapterModeEase",
+        "typescript/TreeAdapterModeConf",
+        "typescript/Tree"
+      ]
+    }
+  };
+
+
+
+  class TreeExamples {
+
+    themeTurnOn   = new Object();
+    scriptsLoader = new Object();
+    preloader     = new Object();
+
+    treeInstances = new Object();
+
+    tsHtml        = 1;
+
+
+
+    cssClassesNames                     = new Array();
+    buttonsQuerySelectors               = new Array();
+    treeJsonDataIconBase                = "";
+    preloaderStopTimeoutMillis          = 1200;
+    isPreloadWithStopOnLoadTimeout      = true;
+    dataForScriptsLoader                = new Object();
+    dataForPreloaderOfMediaAndFontsData = new Object();
+    treeJson_SubtreeArrayOfObjects      = new Array();
+    treeJson_SubtreeLikeObjects         = new Object();
+
+
+    constructor() {
+
+        this.themeTurnOn   = new Object();
+        this.scriptsLoader = new Object();
+        this.preloader     = new Object();
+
+        this.treeInstances = new Object();
+
+        this.tsHtml        = 1;
+
+        this.cssClassesNames                     = new Array();
+        this.buttonsQuerySelectors               = new Array();
+        this.treeJsonDataIconBase                = "";
+        this.preloaderStopTimeoutMillis          = 1200;
+        this.isPreloadWithStopOnLoadTimeout      = true;
+        this.dataForScriptsLoader                = new Object();
+        this.dataForPreloaderOfMediaAndFontsData = new Object();
+        this.treeJson_SubtreeArrayOfObjects      = new Array();
+        this.treeJson_SubtreeLikeObjects         = new Object();
+
+    }
+
+    loadDataAndRenderTree( holderElemId, dataUrl ) {
+
+        // example to load by url
+        this.treeInstances[ holderElemId ] = new Tree();
+        let tree = this.treeInstances[ holderElemId ];
+
+        tree
+            .setDebug( false )
+            .setMainHtmlNodeId( "example-tree-holder_load_by_url" )
+            .setRenderingMode( TreeConstants.RenderingMode.Ease )
+            .setNodesWithIcons( true )
+            .load( dataUrl );
+
+    }
+
+    renderJsonTreeExamples() {
+
+      this.loadDataAndRenderTree (
+        "example-tree-holder_SubtreeArrayOfObjects",
+        glob_TreeJson_Url
+      );
+
+    }
+
+    onDOMContentLoadedEventHandler() {
+
+        console.log ( "Scripts are loaded, starting TreeExamples.onDOMContentLoadedEventHandler() ..." );
+
+        try {
+          this.renderJsonTreeExamples();
+        } catch (e) {}
+
+        console.log ( "End: ScriptsChainedLoader.load(), TreeExamples.onDOMContentLoadedEventHandler()" );
+    }
+
+    loadScriptsAndRenderTree() {
+      let toLoadChained_true = true;
+
+      this.scriptsLoader = new ScriptsChainedLoader();
+      this.scriptsLoader.onload = this.onDOMContentLoadedEventHandler.bind( this );
+      this.scriptsLoader.load ( this.dataForScriptsLoader, toLoadChained_true );
+
+    }
+
+
+    onChainedDOMContentLoadedEventHandler (
+        inCssClassesNames,
+        inButtonsQuerySelectors,
+        inTreeJsonDataIconBase,
+        inPreloaderStopTimeoutMillis,
+        inIsPreloadWithStopOnLoadTimeout,
+        inDataForScriptsLoader,
+        inDataForPreloaderOfMediaAndFontsData,
+        inTreeJson_SubtreeArrayOfObjects,
+        inTreeJson_SubtreeLikeObjects
+    ) {
+
+        this.cssClassesNames                     = inCssClassesNames;
+        this.buttonsQuerySelectors               = inButtonsQuerySelectors;
+        this.treeJsonDataIconBase                = inTreeJsonDataIconBase;
+        this.preloaderStopTimeoutMillis          = inPreloaderStopTimeoutMillis;
+        this.isPreloadWithStopOnLoadTimeout      = inIsPreloadWithStopOnLoadTimeout;
+        this.dataForScriptsLoader                = inDataForScriptsLoader;
+        this.dataForPreloaderOfMediaAndFontsData = inDataForPreloaderOfMediaAndFontsData;
+        this.treeJson_SubtreeArrayOfObjects      = inTreeJson_SubtreeArrayOfObjects;
+        this.treeJson_SubtreeLikeObjects         = inTreeJson_SubtreeLikeObjects;
+
+
+
+        try {
+            let loaderInstance = typeof ScriptsChainedLoader;
+
+            if ( loaderInstance ) {
+              this.loadScriptsAndRenderTree();
+              console.log ( "Scripts loader started ..." );
+            }
+        } catch ( e ) {}
+
+    }
+
+  }
+
+
+  /* in prod mode,
+      You need to set conf json objects like in tree.prod_mode.html:
+        Preloader to improve performance when LazyLoad is on ( .ico, images, fonts ) to be available before, when a css classname applies.
+        ScriptsChainedLoader to develop and publish for npm or yarn the index.example.html
+          with fallback urls feature, due to multiple npm install strategies,
+          since with fallback urls, the "onload" event is emitted in the unforeseen timestamp, and after the "DOMContentLoaded" event.
+
+      The onChainedDOMContentLoadedEventHandler method invokes ScripsChainedLoader the right way,
+        and then ScripsChainedLoader.onload() invokes set of methods,
+        planned for DOMContentLoaded like normally when in dev mode or prod mode without fallback urls.
+  */
+
+</script>
+
+<script
+  type="text/javascript"
+  src="node_modules/@jaisocx/preloader/transpiled/Simple/scripts_chained_loader/ScriptsChainedLoader.js"
+  src-fallback="../preloader/transpiled/Simple/scripts_chained_loader/ScriptsChainedLoader.js"
+  onload="javascipt: ( () => { glob_TreeExamplesClassInstance = new TreeExamples(); glob_TreeExamplesClassInstance.onChainedDOMContentLoadedEventHandler( glob_CssClassesNames, glob_ButtonsQuerySelectors, glob_TreeJsonDataIconBase, glob_PreloaderStopTimeoutMillis, glob_IsPreloadWithStopOnLoadTimeout, glob_DataForScriptsLoader, glob_DataForPreloaderOfMediaAndFontsData, glob_TreeJson_SubtreeArrayOfObjects, glob_TreeJson_SubtreeLikeObjects ); } )();"
+  onerror="javascript: ( () => { let newTagScript = document.createElement( 'script' ); newTagScript.onload = this.onload.bind( newTagScript ); newTagScript.src = this.getAttribute( 'src-fallback' ); document.body.insertAdjacentElement( 'afterend', newTagScript ); this.remove(); } )();">
+</script>
+
+</html>
+
+
+
+

@@ -1,0 +1,62 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/tree",
+  "version": "2.2.22",
+  "description": "Sites tool, styling json",
+  "keywords": [
+    "json",
+    "tree"
+  ],
+  "files": [
+    "favicon/",
+    "software_labels/",
+
+    "README.md",
+    "webpack.aliases.json",
+
+    "index_preview.html",
+    "tree_preview.html",
+
+    "data/",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/presets/",
+    "MediaAndStyles/themes/theme-funny/",
+    "MediaAndStyles/themes/theme_base/",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple"
+  ],
+  "dependencies": {
+    "@jaisocx/event-emitter": "~1.4.3",
+    "@jaisocx/jpath": "~1.2.3",
+    "@jaisocx/template-renderer": "~1.6.2"
+  },
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "^1.0.3",
+    "@jaisocx/preloader": "~2.3.2",
+    "@jaisocx/theme-turn-on": "~1.0.4",
+    "@jaisocx/media_tools_fonts_base": "~1.2.2"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

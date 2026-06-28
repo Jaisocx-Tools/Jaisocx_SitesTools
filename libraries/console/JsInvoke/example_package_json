@@ -1,0 +1,47 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Inc.",
+  "name": "@jaisocx/jsc_console_js_invoke",
+  "version": "1.0.3",
+  "description": "The @jaisocx package calling a js class via by node in command line shell",
+  "update_info": "updated README.md",
+  "keywords": [
+    "console",
+    "command-line",
+    "sh",
+    "debug"
+  ],
+  "build": {
+    "typescript": "5.9.3",
+    "node": "24.11.0",
+    "npm": "11.6.1"
+  },
+  "files": [
+    "README.md",
+    "transpiled/CommonJS",
+    "transpiled/ESNext"
+  ],
+  "scripts": {
+    "start": "node ./transpiled/ESNext/invokeCssImporter.js"
+  },
+  "dependencies": {
+    "@jaisocx/command-line": "~1.2.4",
+    "@jaisocx/css-importer": "~1.4.1",
+    "@jaisocx/event-emitter": "~1.4.3",
+    "@jaisocx/file-writer": "~1.2.7",
+    "@jaisocx/tokens-parser": "~1.2.2"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

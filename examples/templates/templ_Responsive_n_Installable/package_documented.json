@@ -1,0 +1,67 @@
+{
+  "author": "<Author's name>",
+  "name": "@jaisocx/sites_tool",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "<keyword 1>",
+    "<keyword 2>"
+  ],
+  "files": [
+    "favicon",
+    "README.md",
+    "webpack.aliases.json",
+
+    "sites_tool_preview.html",
+    "index_preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/layout_theme_a/",
+    "MediaAndStyles/themes/colour_scheme_a/",
+
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/",
+    "transpiled/Simple/"
+  ],
+  "devDependencies": {
+    "@jaisocx/responsive-sizes": "latest" // Increasing Development Time Work Quality on 30 displays sizes
+  },
+  "optionalDependencies": { // for Preview Pages
+    "@jaisocx/css_clean_start_lite": "latest"
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality__forPreviewPages": {
+    "@jaisocx/preloader": "latest" // for management of timestamps and number of loads of files and images
+  },
+  "notInstalledPossibleDependencies__IncreasingQuality": {
+    "@jaisocx/css_clean_start_responsive": "latest",
+    "@jaisocx/media_tools_fonts_base": "latest", // like example for fonts install
+    "@jaisocx/media_tools_images_mini_datatypes_base": "latest" // like example of a published set of mini-images
+  },
+  "notInstalledPossibleDependencies__basePurposesForSitesTools": {
+    "@jaisocx/template-renderer": "latest",
+    "@jaisocx/event-emitter": "latest",
+    "@jaisocx/workspace-tree-walker": "latest", // few methods for processing of few types of datasets as js objects recursively
+    "@jaisocx/jpath": "latest"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}
+
+

@@ -1,0 +1,16 @@
+/* Sites tool: CssToolTemplate, theme: theme_base */
+.jsx .CssToolTemplate {
+
+  --jsx--css-clean-start-2--all-tags--font-family: LibreFranklin, "Franklin Gothic Medium", Tahoma, Verdana;
+
+
+
+  /* base theme css var assignment example */
+  /* --jsx--CssToolTemplate--toolHtmlElement--font-size: 1rem; */
+
+
+  /* same, but assigned value of css-clean-start */
+  /* --jsx--CssToolTemplate--toolHtmlElement--font-size: var(--jsx--css-clean-start-2--all-tags--font-size); */
+}
+
+

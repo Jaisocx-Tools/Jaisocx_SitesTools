@@ -1,0 +1,53 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/table",
+  "version": "2.1.0",
+  "description": "",
+  "keywords": [
+    "table",
+    "order_by",
+    "css",
+    "styles",
+    "json",
+    "ui"
+  ],
+  "files": [
+    "README.md",
+    "webpack.aliases.json",
+    "css_table_ordered_few_rows_preview.html",
+    "css_table_ordered_preview.html",
+    "index_preview.html",
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/themes/theme_base/",
+    "MediaAndStyles/themes/theme_fixed_columns_labels/",
+    "MediaAndStyles/themes/theme_jaisocx_folder_listing/",
+    "transpiled/CommonJS/",
+    "transpiled/ESNext/",
+    "transpiled/Simple/"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "~1.0.3",
+    "@jaisocx/css-table": "~3.5.93",
+    "@jaisocx/event-emitter": "~1.4.3",
+    "@jaisocx/media_tools_images_mini_mimetypes_base": "~1.2.2",
+    "@jaisocx/template-renderer": "~1.6.2"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  }
+}

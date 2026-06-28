@@ -1,0 +1,90 @@
+/*
+
+Responsive rules
+
+These styles for a display size in this primary template for a site from scratch,
+  I guess, need first the adjustments for sizes,
+  when tested on several displays for higher quality of a site shown in a browser on a display.
+
+That is why in the CssCleanStart just the css constants relevant for sizes are set in this template.
+
+*/
+@media only screen and (min-width: {{ min-width }}px) and (max-width: {{ max-width }}px) and (min-height: {{ min-height }}px) and (max-height: {{ max-height }}px) and (orientation: {{ orientation }}) {
+
+  .jsx .{{ SitesToolName }}{{ SitesTool_ThemeCssClassName }} {
+    --theme_name: {{ SitesToolName }}__{{ SitesTool_ThemeName }};
+    --theme_name__{{ SitesToolName }}: {{ SitesTool_ThemeName }};
+
+    {{ responsiveSizeConstantName }}: {{ responsiveSizeName }};
+
+    {{ responsiveSizeConstantName }}__min-width: {{ min-width }}px;
+    {{ responsiveSizeConstantName }}__max-width: {{ max-width }}px;
+
+    {{ responsiveSizeConstantName }}__min-height: {{ min-height }}px;
+    {{ responsiveSizeConstantName }}__max-height: {{ max-height }}px;
+
+
+
+    {{ responsiveSizeConstantName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }}: {{ responsiveSizeName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }};
+
+    {{ responsiveSizeConstantName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }}__min-width: {{ min-width }}px;
+    {{ responsiveSizeConstantName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }}__max-width: {{ max-width }}px;
+
+    {{ responsiveSizeConstantName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }}__min-height: {{ min-height }}px;
+    {{ responsiveSizeConstantName }}__{{ SitesToolName }}__{{ SitesTool_ThemeName }}__max-height: {{ max-height }}px;
+
+
+
+
+
+    /* HERE GO MODIFIED RESPONSIVE STYLES FOR YOUR SITES TOOL */
+    /*
+        # You may replace "jsx" with Your sites tool library name
+        #   to get know later in the browser dev tools Your css code.
+
+        # The advise is,
+        #   in these media queries
+        #   just to set the few css variables values
+        #   you need to override,
+        #   like this:
+        --jsx--example-sites-tool--some-html-elem--line-height: 1.2rem;
+
+
+        # the styles are assigned the css variables
+        # in main.css, and NO theme css class is set,
+        # like this:
+        .jsx    .example-sites-tool    .a-class-of-some-html-element-in-the-sites-tool {
+          line-height: var(--jsx--example-sites-tool--some-html-elem--line-height);
+        }
+
+
+        # neither in the themes/theme_base/theme_base.css file,
+        # NO theme css class is set,
+        # and all values to css variables are set like this:
+        .jsx    .example-sites-tool {
+          # all css variables You set in the main.css:
+          ...
+          ...
+          --jsx--example-sites-tool--...
+          --jsx--example-sites-tool--...
+          --jsx--example-sites-tool--...
+          --jsx--example-sites-tool--some-html-elem--line-height: 1.2rem;
+          --jsx--example-sites-tool--...
+          --jsx--example-sites-tool--...
+          --jsx--example-sites-tool--...
+          ...
+          ...
+        }
+
+
+        # Theme example in themes/theme_example/theme_example.css,
+        # just the few css variables You need to override, like this:
+        .jsx    .example-sites-tool.theme_example {
+          --jsx--example-sites-tool--some-html-elem--line-height: 1.4rem;
+        }
+    */
+    /* END RESPONSIVE STYLES FOR YOUR SITES TOOL */
+  }
+
+}
+

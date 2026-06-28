@@ -1,0 +1,32 @@
+@import url("@JscImages_mini_datatypes_base_MediaAndStyles/JscImages_mini_datatypes_base_main.css");
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-static-view-level2-80.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.object {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-static-view-level2-80.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.array {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-view-array-96.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.json {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-json-96.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.string {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-font-style-formatting-96.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.number {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-3-100.png");
+}
+
+.jsc .JscImages_mini_datatypes_base .mini-image.datatype.boolean {
+  background-image: url("@JscImages_mini_datatypes_base_MediaAndStyles/images/icons8-true-false-96.png");
+}
+
+
+

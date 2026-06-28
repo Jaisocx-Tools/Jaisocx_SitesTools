@@ -1,0 +1,57 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/media_tools_images_mini_mimetypes_base",
+  "version": "1.2.2",
+  "description": "",
+  "keywords": [
+    "css",
+    "styles",
+    "themes",
+    "images",
+    "mini-images"
+  ],
+  "files": [
+    "README.md",
+    "webpack.aliases.json",
+
+    "index_preview.html",
+    "img_mimetypes_base_preview.html",
+
+    "MediaAndStyles/*.css",
+    "MediaAndStyles/images",
+    "MediaAndStyles/scss",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext"
+  ],
+  "scripts": {
+    "build:sass": "/opt/jaisocx/sites_tools/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
+  },
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "optionalDependencies": {
+   "@jaisocx/css_clean_start_lite": "~1.0.3"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+
+

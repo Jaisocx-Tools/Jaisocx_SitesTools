@@ -1,0 +1,43 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/theme-turn-on",
+  "version": "1.0.4",
+  "description": "",
+  "keywords": [
+    "css",
+    "styles"
+  ],
+  "files": [
+    "index.example.html",
+
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "transpiled/Simple",
+
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/css_clean_start_lite": "^1.0.3"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    ".": {
+      "import": "./transpiled/ESNext/index.js",
+      "require": "./transpiled/CommonJS/index.js"
+    },
+    "./WebpackAliases": {
+      "import": "./transpiled/ESNext/webpack.aliases.mjs",
+      "require": "./transpiled/CommonJS/webpack.aliases.cjs"
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+
+

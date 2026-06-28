@@ -1,0 +1,37 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/linked-resources-integrity",
+  "version": "1.0.1",
+  "description": "",
+  "keywords": [
+    "link",
+    "integrity",
+    "checksum",
+    "font",
+    "image",
+    "quality"
+  ],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/command-line": "~1.0.3"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

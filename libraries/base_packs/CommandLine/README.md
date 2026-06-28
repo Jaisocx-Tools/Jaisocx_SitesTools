@@ -1,0 +1,234 @@
+
+# Command Line
+  > 💡 fine-tuning for console | 
+
+  | 📖️  **Library**  | `@jaisocx/command-line` | 🏷️  **ver.**: `1.2.4` | 
+
+  | 🗓  **Updated**  | Winter 2026 | `Mon Jan 19 03:29:44 UTC 2026` | 
+
+  | 📐  **Size**     | 🗂 Folder: 60 KB | 📦 Tarball: _ KB | 📋 .js: 5 KB | 
+
+  | ⚡  **JS Engine** | 🌐 Browser: ❌ no | 🧭 Express: ✅ yes | 🖥️ Console: ✅ yes | 
+
+---
+
+
+
+##  The aim of the setup
+  >  💡  Just a **fine-tuning** little js library **for console** javascript.
+
+
+```bash
+  node example.js  --arg1="value1"  --argBC="Another Value 2"  --debug
+```
+
+```json
+  { "arg1": "value1",   "argBC": "Another Value 2",   "debug": true }
+```
+
+
+  The very base library,
+  installable via `yarn` or `npm`,
+  written in `typescript` programming language.
+
+  Supports **bash key-value args**,
+  and provides in ts or js code **as a js variable** of js datatype **Object**.
+
+  The only `js` class `CommandLineArgs` with the `interface`,
+  was thought **for reading command line args**,
+  sent from console, **in another javascript function**.
+
+  **Other** `.js` or `.ts` files are **for the infrastructure** of this package,
+  like for example,
+  the current `README.md` is for the documentation
+  about this library.
+
+---
+
+
+
+
+
+
+## 📂 Package Structure
+  > 60 KB ( sixty kilobyte ) library folder's filesize
+
+```fs
+  📂 software_labels/
+      software_tm_label_jaisocx.svg
+  📂 src/
+      index.ts
+      CommandLineArgsInterface.ts
+      CommandLineArgs.ts
+    📂 example/
+        CommandArgsObjectExample.ts
+        invokeJsClassExample.ts
+  📂 transpiled/
+    📂 CommonJS/
+        CommandLineArgs.js
+        ...
+        ...
+      📂 example/
+          invokeJsClassExample.js
+          ...
+    📂 ESNext/
+        CommandLineArgs.js
+        ...
+        ...
+      📂 example/
+          invokeJsClassExample.js
+          ...
+  package.json
+📄 README.md
+```
+
+
+
+
+
+## 📄 Bash Coding Example
+  > 2 code lines ( bash | sh )
+
+```bash
+
+  # invokes the .js from example below 'ts coding example'
+  node invokeJsInConsoleExample.js --Root="/home/user/MyProject" --sitesToolPath="sites_tools/SitesTool"
+
+```
+
+
+
+
+## 📄 Interfaces
+
+  `src/CommandLineArgsInterface.ts`
+
+```typescript
+
+  interface CommandLineArgsInterface {
+
+    getCommandLineArgs(): object;
+
+    getAfterReadNTransformed(): object;
+
+    readCommandLineArgs(): CommandLineArgsInterface;
+
+    transformCommandLineArgs(): CommandLineArgsInterface;
+
+  }
+  
+```
+
+
+
+
+
+## 📄 Typescript Coding Example
+  > 10 - 30 code lines ( ts | js )
+
+
+
+```typescript
+
+  console.log( (new CommandLineArgs()).getAfterReadNTransformed() );
+
+```
+
+
+
+```typescript
+
+  // Script Name: invokeJsInConsoleExample.js
+  // invoked in bash terminal like this:
+  // $_ node invokeJsInConsoleExample.js --Root="/home/user/MyProject" --sitesToolPath="sites_tools/SitesTool"
+
+  import * as path from "node:path";
+  import { CommandLineArgs } from "@jaisocx/command-line";
+
+
+
+  type CommandArgsObject = {
+    Root: "",
+    sitesToolPath: ""
+  };
+
+  function invokeJsInConsoleExample(): number {
+
+    // NEW INSTANCE OF THE MAIN CLASS IN THIS LIBRARY ( CommandLineArgs )
+
+    let commandLineArgsInstance: CommandLineArgs = new CommandLineArgs();
+
+
+
+    // FIRST GET ALL CLI ARGS INTO ONE js VARIABLE ( commandArgs )
+
+    let commandArgs: CommandArgsObject = commandLineArgsInstance
+      .readCommandLineArgs()
+      .transformCommandLineArgs()
+      .getCommandLineArgs() as CommandArgsObject;
+
+
+
+    // PRINT COMMAND LINE ARGS TO CONSOLE: console.log( commandArgs );
+    //
+    // SEES IN CONSOLE LIKE THIS:
+    //    {
+    //      Root: '/home/user/MyProject',
+    //      sitesToolPath: 'sites_tools/SitesTool'
+    //    }
+
+    console.log( commandArgs );
+
+
+
+    // GET CLI ARGS IN .js CODE JUST LIKE PROP OF A js OBJECT,
+    //   the prop name after dot:        commandArgs.Root
+    //   or in square braces and quotes: commandArgs["Root"]
+
+    let resolvedSitesToolPath: any = path.resolve (
+      commandArgs.Root,
+      commandArgs["sitesToolPath"]
+    );
+
+
+
+    // OTHER CODE ...
+    let retVal: number = 2;
+
+    /**
+      Programm code ...
+    */
+
+    return retVal;
+  }
+
+
+
+  // A ts OR js CODE LINE,
+  //   NOT IN A CLASS OR FUNCTION DEFINITION,
+  //   INVOKES AT ONCE WHEN A .js IS INVOKED IN CONSOLE VIA node
+
+  // $_ node invokeJsInConsoleExample.js   --Root="/home/user/MyProject"   --sitesToolPath="sites_tools/SitesTool"
+
+
+
+  // Invokes function,
+  //   defined here on Line 14:    function invokeJsInConsoleExample()
+
+  let retVal: number = invokeJsInConsoleExample();
+
+
+
+  // END OF .ts EXAMPLE
+  
+```
+
+---
+
+
+
+Have a nice day.
+
+Elias, Software Architect of Jaisocx Company
+
+

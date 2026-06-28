@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx preloader_example theme_lightmode theme_font_LibreFranklin">
+<head>
+
+  <title> Font load example with the Preloader </title>
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <link
+      rel="stylesheet"
+      href="https://local.basetasks.site:9445/cdn/styles/media_tools_fonts_LibreFranklin.css"
+  />
+
+  <link
+      rel="stylesheet"
+      href="https://local.basetasks.site:9445/cdn/styles/media_tools_fonts_PlayfairDisplay.css"
+  />
+
+  <link
+      rel="stylesheet"
+      href="https://local.basetasks.site:9445/cdn/styles/media_tools_fonts_Source_Code_Pro.css"
+  />
+
+
+
+  <!-- importing styles of @jaisocx/css-clean-start -->
+  <link
+      rel="stylesheet"
+      href="https://local.basetasks.site:9445/jaisocx/css_clean_start_lite/MediaAndStyles/CssCleanStart_Lite_main_resolved.css"
+  />
+
+
+
+  <style name="font_families">
+
+    .jsx.preloader_example.theme_font_LibreFranklin {
+      --jsx--css-clean-start-2--all-tags--font-family: v_LibreFranklin;
+    }
+
+    .jsx.preloader_example.theme_font_PlayfairDisplay {
+      --jsx--css-clean-start-2--all-tags--font-family: v_PlayfairDisplay;
+    }
+
+    .jsx.preloader_example.theme_font_Source_Code_Pro {
+      --jsx--css-clean-start-2--all-tags--font-family: v_Source_Code_Pro;
+    }
+
+  </style>
+
+
+
+  <style name="theme_turn_on">
+
+    .jsx {
+      --theme-button-width: fit-content;
+    }
+
+    .jsx button {
+      background-color: transparent;
+      text-align: left;
+    }
+
+    .jsx themebuttons {
+      width: fit-content;
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 3rem;
+      margin: 0.9rem 0px 1.6rem 0px;
+    }
+
+    .jsx themebuttons button {
+      width: var(--theme-button-width);
+    }
+
+    .current::after {
+      content: "";
+      position: absolute;
+      bottom: -0.3rem;
+      left: 0;
+      width: 100%;
+      height: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      border-bottom-width: 0.14rem;
+      border-bottom-style: solid;
+      border-bottom-color: var(--clean-start__text-color);
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <main>
+
+    <content>
+
+      <h1> Jaisocx Preloader </h1>
+      <label> @jaisocx/preloader </label>
+
+      <ThemeButtons>
+        <button id="button-turn-on-theme_font_LibreFranklin" data-theme="theme_font_LibreFranklin"> LibreFranklin </button>
+        <button id="button-turn-on-theme_font_Source_Code_Pro" data-theme="theme_font_Source_Code_Pro"> Source_Code_Pro </button>
+        <button id="button-turn-on-theme_font_PlayfairDisplay" data-theme="theme_font_PlayfairDisplay"> PlayfairDisplay </button>
+      </ThemeButtons>
+
+    </content>
+
+
+
+    <div>
+      <p> By the @jaisocx/preloader, when You've tapped the theme button, the font of texts changes immediatelly, since the font file was already loaded at the site load. </p>
+    </div>
+
+    <div>
+      <p> Text line 1. Text line 1. Text line 1. Text line 1. Text line 1. Text line 1. Text line 1. Text line 1. Text line 1. </p>
+      <p> Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. Text line 2. </p>
+    </div>
+
+  </main>
+
+</body>
+
+
+
+<script src="https://local.basetasks.site:9445/jaisocx/theme-turn-on/transpiled/Simple/constants/ThemeTurnOnConstants.js"></script>
+<script src="https://local.basetasks.site:9445/jaisocx/theme-turn-on/transpiled/Simple/theme_turn_on/ThemeTurnOn.js"></script>
+
+<script>
+
+  let turnOn = new Object();
+
+  let cssClassesNames = [
+    "jsx",
+    "preloader_example",
+    "theme_lightmode"
+  ];
+
+  let buttonsQuerySelectors = [
+    "themebuttons button"
+  ];
+
+  document.addEventListener( 'DOMContentLoaded', () => {
+
+    // adding to buttons the event handler to turn on the theme.
+    turnOn = new ThemeTurnOn();
+    turnOn
+      .setKeptCssClassnames( cssClassesNames )
+      .addThemeButtonsEventHandlers( buttonsQuerySelectors );
+
+  });
+
+</script>
+
+
+
+<script>
+
+  let glob_Example_ScriptsLoader = new Object();
+
+  let glob_PreloaderStopTimeoutMillis          = 1200;
+  let glob_IsPreloadWithStopOnLoadTimeout      = true;
+
+  let glob_DataForScriptsLoader                = new Object();
+  let glob_DataForPreloaderOfMediaAndFontsData = new Object();
+
+  glob_DataForPreloaderOfMediaAndFontsData = {
+    "image": [],
+    "font": {
+      "theme_font_LibreFranklin": [
+        "https://local.basetasks.site:9445/jaisocx/media_tools_fonts_base/MediaAndStyles/fonts/Libre_Franklin/LibreFranklin_VariableFont_wght.ttf",
+      ],
+      "theme_font_PlayfairDisplay": [
+        "https://local.basetasks.site:9445/jaisocx/media_tools_fonts_base/MediaAndStyles/fonts/Playfair_Display/PlayfairDisplay_VariableFont_wght.ttf",
+      ],
+      "theme_font_Source_Code_Pro": [
+        "https://local.basetasks.site:9445/jaisocx/media_tools_fonts_base/MediaAndStyles/fonts/Source_Code_Pro/SourceCodePro_VariableFont_wght.ttf",
+      ],
+    }
+  };
+
+
+
+  glob_DataForScriptsLoader = {
+    "text": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "case_converter/types/DataRecordMatches",
+        "case_converter/case_converter_constants/CaseConverterConstants",
+        "case_converter/CaseConverter"
+      ]
+    },
+    "mime-type": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "mime_type_constants/SitesPreloaderMimeTypeConstants",
+        "MimeType"
+      ]
+    },
+    "preloader": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "media_preloader/media_preloader_constants/PreloaderConstants",
+        "media_preloader/preloader/Preloader"
+      ]
+    },
+    "jpath": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "JPathData",
+        "JPath"
+      ]
+    },
+    "event-emitter": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "EventEmitter",
+        "ImprovedRenderEventEmitter"
+      ]
+    },
+    "tokens-parser": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "TokensParser"
+      ]
+    },
+    "template-renderer": {
+      "node_modules": true,
+      "npm_namespace": "@jaisocx",
+      "scripts": [
+        "TemplateRenderer"
+      ]
+    }
+  };
+
+
+
+  class Example_ScriptsLoader {
+
+    scriptsLoader = new Object();
+    preloader     = new Object();
+
+    preloaderStopTimeoutMillis          = 1200;
+    isPreloadWithStopOnLoadTimeout      = true;
+
+    dataForScriptsLoader                = new Object();
+    dataForPreloaderOfMediaAndFontsData = new Object();
+
+    constructor() {
+
+        this.scriptsLoader = new Object();
+        this.preloader     = new Object();
+
+        this.preloaderStopTimeoutMillis          = 1200;
+        this.isPreloadWithStopOnLoadTimeout      = true;
+
+        this.dataForScriptsLoader                = new Object();
+        this.dataForPreloaderOfMediaAndFontsData = new Object();
+
+    }
+
+    preloadMedia() {
+
+      this.preloader = new Preloader();
+      this.preloader
+        .setThemesPreloads( this.dataForPreloaderOfMediaAndFontsData )
+        .setWebpackAlias( "" )
+        .setWebpackAliasReplace( "" )
+        .init (
+            this.preloaderStopTimeoutMillis,
+            this.isPreloadWithStopOnLoadTimeout
+        );
+
+    }
+
+    onDOMContentLoadedEventHandler() {
+
+        console.log ( "Scripts are loaded, starting Example_ScriptsLoader.onDOMContentLoadedEventHandler() ..." );
+
+        try {
+          this.preloadMedia();
+        } catch (e) {}
+
+        console.log ( "End: ScriptsChainedLoader.load(), Example_ScriptsLoader.onDOMContentLoadedEventHandler()" );
+    }
+
+    loadScriptsAndPreloadFonts() {
+      let toLoadChained_true = true;
+
+      this.scriptsLoader = new ScriptsChainedLoader();
+      this.scriptsLoader.onload = this.onDOMContentLoadedEventHandler.bind( this );
+      this.scriptsLoader.load ( this.dataForScriptsLoader, toLoadChained_true );
+
+    }
+
+    onChainedDOMContentLoadedEventHandler (
+        inPreloaderStopTimeoutMillis,
+        inIsPreloadWithStopOnLoadTimeout,
+        inDataForScriptsLoader,
+        inDataForPreloaderOfMediaAndFontsData
+    ) {
+
+        this.preloaderStopTimeoutMillis          = inPreloaderStopTimeoutMillis;
+        this.isPreloadWithStopOnLoadTimeout      = inIsPreloadWithStopOnLoadTimeout;
+        this.dataForScriptsLoader                = inDataForScriptsLoader;
+        this.dataForPreloaderOfMediaAndFontsData = inDataForPreloaderOfMediaAndFontsData;
+
+        try {
+            let loaderInstance = typeof ScriptsChainedLoader;
+
+            if ( loaderInstance ) {
+              this.loadScriptsAndPreloadFonts();
+              console.log ( "Scripts loader started ..." );
+            }
+        } catch ( e ) {}
+
+    }
+
+  }
+
+
+  /* in prod mode,
+      You need to set conf json objects like this:
+        Preloader to improve performance when LazyLoad is on ( .ico, images, fonts ) to be available before, when a css classname applies.
+        ScriptsChainedLoader to develop and publish for npm or yarn the index_preview.html
+          with fallback urls feature, due to multiple npm install strategies,
+          since with fallback urls, the "onload" event is emitted in the unforeseen timestamp, and after the "DOMContentLoaded" event.
+
+      The onChainedDOMContentLoadedEventHandler method invokes ScripsChainedLoader the right way,
+        and then ScripsChainedLoader.onload() invokes set of methods,
+        planned for DOMContentLoaded like normally when in dev mode or prod mode without fallback urls.
+  */
+
+</script>
+
+<script
+    type="text/javascript"
+    src="transpiled/Simple/scripts_chained_loader/ScriptsChainedLoader.js"
+    onload="javascipt: ( () => { glob_Example_ScriptsLoader = new Example_ScriptsLoader(); glob_Example_ScriptsLoader.onChainedDOMContentLoadedEventHandler ( glob_PreloaderStopTimeoutMillis, glob_IsPreloadWithStopOnLoadTimeout, glob_DataForScriptsLoader, glob_DataForPreloaderOfMediaAndFontsData ); } )();"
+>
+</script>
+
+</html>
+
+

@@ -1,0 +1,119 @@
+/* Sites tool: CssTable, theme: theme_base */
+.jsx-css-table-holder {
+
+  /* CSS TABLE WIDTH */
+
+  --jsx--CssTable--holder--width:         100%;
+  --jsx--CssTable--holder--max-width:     100%;
+  --jsx--CssTable--holder--min-width:     100%;
+
+  --jsx--CssTable--main--width:           100%;
+  --jsx--CssTable--main--max-width:       100%;
+  --jsx--CssTable--main--min-width:       100%;
+
+
+
+  /* CSS TABLE OVERFLOW */
+  /* these styles are well working with css-clean-start-2
+  for sticky table columns labels above
+  and scrolling vertically and horizontally */
+
+  --jsx--CssTable--holder--overflow-x:    auto;
+  --jsx--CssTable--holder--overflow-y:    auto;
+
+  --jsx--CssTable--main--overflow-x:      visible;
+  --jsx--CssTable--main--overflow-y:      visible;
+
+
+
+  /* BORDERS */
+  --jsx--CssTable--holder--border-radius: 0.5rem;
+
+  --jsx--CssTable--border-width:          1px;
+  --jsx--CssTable--border-style:          solid;
+  --jsx--CssTable--border-color:          #D2DCE4;
+
+  --jsx--CssTable--holder--border:        var(--jsx--CssTable--border-width)   var(--jsx--CssTable--border-style) var(--jsx--CssTable--border-color);
+  --jsx--CssTable--main--border:          0 var(--jsx--CssTable--border-style) var(--jsx--CssTable--border-color);
+  --jsx--CssTable--row--border:           var(--jsx--CssTable--border-width)   var(--jsx--CssTable--border-style) var(--jsx--CssTable--border-color);
+  --jsx--CssTable--cell--border:          var(--jsx--CssTable--border-width)   var(--jsx--CssTable--border-style) var(--jsx--CssTable--border-color);
+
+
+
+
+
+  /* TESTED CSS PROPS WITH EXTENSIBILITY FEATURE. EXTENSIBILTY DOESNT DO WITH BACKGROUND PROPS */
+
+  /* CELL */
+  --jsx--CssTable--cell--font-family:                           "Franklin Gothic Medium", Verdana, sans-serif;
+  --jsx--CssTable--cell--background-color:                      #fbfefc;
+  /*
+  --jsx--CssTable--cell--background-image:                      none;
+  --jsx--CssTable--cell--background-position:                   0 0;
+  --jsx--CssTable--cell--background-size:                       contain;
+  --jsx--CssTable--cell--background-repeat:                     no-repeat;
+  --jsx--CssTable--cell--background-origin:                     border-box;
+  --jsx--CssTable--cell--background-clip:                       border-box;
+  --jsx--CssTable--cell--background-attachment:                 scroll;
+  */
+
+
+
+  /* COLUMN LABELS */
+  --jsx--CssTable--cell--column-label--font-family:              var(--jsx--CssTable--cell--font-family);
+  /* --jsx--CssTable--cell--column-label--font-weight:              600;
+  --jsx--CssTable--cell--column-label--font-size:                0.9rem;
+  --jsx--CssTable--cell--column-label--line-height:              1.29rem;
+  --jsx--CssTable--cell--column-label--letter-spacing:           0;
+  --jsx--CssTable--cell--column-label--text-align:               left; */
+
+  --jsx--CssTable--cell--column-label--color:                    #339933;
+  --jsx--CssTable--cell--column-label--background-color:         #f2fff2;
+
+  /*
+  --jsx--CssTable--cell--column-label--background-image:          none;
+  --jsx--CssTable--cell--column-label--background-position:       0 0;
+  --jsx--CssTable--cell--column-label--background-size:           contain;
+  --jsx--CssTable--cell--column-label--background-repeat:         no-repeat;
+  --jsx--CssTable--cell--column-label--background-origin:         border-box;
+  --jsx--CssTable--cell--column-label--background-clip:           border-box;
+  --jsx--CssTable--cell--column-label--background-attachment:     scroll;
+  */
+
+  /* --jsx--CssTable--cell--column-label--line-break:                normal;
+  --jsx--CssTable--cell--column-label--word-break:                break-word; */
+
+
+
+
+
+  /* CELL VALUES */
+  --jsx--CssTable--cell--cell-value--font-family:                 var(--jsx--CssTable--cell--font-family);
+  /* --jsx--CssTable--cell--cell-value--font-weight:                 400;
+  --jsx--CssTable--cell--cell-value--font-size:                   0.85rem;
+  --jsx--CssTable--cell--cell-value--line-height:                 1.45rem;
+  --jsx--CssTable--cell--cell-value--letter-spacing:              0;
+  --jsx--CssTable--cell--cell-value--text-align:                  left; */
+
+  --jsx--CssTable--cell--cell-value--color:                       #333;
+  --jsx--CssTable--cell--cell-value--background-color:            #fbfefc;
+
+  /*
+  --jsx--CssTable--cell--cell-value--background-image:            none;
+  --jsx--CssTable--cell--cell-value--background-position:         0 0;
+  --jsx--CssTable--cell--cell-value--background-size:             contain;
+  --jsx--CssTable--cell--cell-value--background-repeat:           no-repeat;
+  --jsx--CssTable--cell--cell-value--background-origin:           border-box;
+  --jsx--CssTable--cell--cell-value--background-clip:             border-box;
+  --jsx--CssTable--cell--cell-value--background-attachment:       scroll;
+  */
+
+  /* --jsx--CssTable--cell--cell-value--line-break:                  normal;
+  --jsx--CssTable--cell--cell-value--word-break:                  break-word; */
+
+
+  --jsx--CssTable--cell--cell-value--a--color:                    #226d22;
+  --jsx--CssTable--cell--cell-value--a-hover--color:              #22a022;
+}
+
+

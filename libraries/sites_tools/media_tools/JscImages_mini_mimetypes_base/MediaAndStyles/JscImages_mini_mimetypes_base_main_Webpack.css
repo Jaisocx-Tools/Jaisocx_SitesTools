@@ -1,0 +1,49 @@
+
+/* main css file, css logics with rules set via variables in the theme .css files imported above */
+@import url("@JscImages_mini_mimetypes_base_MediaAndStyles/JscImages_mini_mimetypes_base_main.css");
+
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/mime_type_base.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.base {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/mime_type_base.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.folder {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/Folder.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.audio {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.video {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/audio_and_video_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.html {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/html_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.image {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/image_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.javascript {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/javascript_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.text {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/text_mime_type.png");
+}
+
+.jsc .JscImages_mini_mimetypes_base .mini-image.mimetype.php {
+  background-image: url("@JscImages_mini_mimetypes_base_MediaAndStyles/images/php_mime_type.png");
+}
+
+
+
+
+

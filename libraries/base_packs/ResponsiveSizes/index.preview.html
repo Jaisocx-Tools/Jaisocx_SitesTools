@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="jsx example_responsive_sizes">
+<head>
+
+  <title> Responsive Sizes </title>
+
+  <base href="./">
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="node_modules/@jaisocx/css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      href-fallback="../css-clean-start-2/MediaAndStyles/CssCleanStart_2_main_resolved.css"
+      onload="javascript: ( () => { onDOMContentLoaded(); } )();"
+      onerror="javascript: ( () => { console.log( this ); this.href = this.getAttribute( 'href-fallback' ); this.onerror = null; } )();"
+  />
+
+
+
+  <style>
+
+    .jsx.example_responsive_sizes {
+
+      --jsx--css-clean-start-2--body-tag--background: white;
+      --jsx--css-clean-start-2--site--background: #eafee5;
+
+      --jsx--css-clean-start-2--h--font-weight: 600;
+      --jsx--css-clean-start-2--h--color:       #524232;
+      --jsx--css-clean-start-2--h--margin:      0 0 0 0;
+      --jsx--css-clean-start-2--h--padding:     0 0 0 0;
+
+      --jsx--css-clean-start-2--h1--font-size: 2.0rem;
+      --jsx--css-clean-start-2--h1--line-height: 2.95rem;
+
+      --jsx--css-clean-start-2--h2--font-size: 1.4rem;
+      --jsx--css-clean-start-2--h2--line-height: 2.7rem;
+
+    }
+
+    #info {
+      display: block;
+      height: auto;
+
+      padding: 2rem;
+
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+
+      font-family: var(--css-clean-start-2--sans--font-family);
+      letter-spacing: 1px;
+
+      color: #f5f5f5;
+
+      background: #0F2027;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      overflow-y: visible;
+      overflow-x: scroll;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <main>
+
+    <h1> Responsive Sizes </h1>
+    <h2> @jaisocx/responsive-sizes </h2>
+
+    <description>
+      You get know the .css file where the @media query is set,
+      relevant to the currently opened browser's tab with the site being tested.
+    </description>
+
+    <h2 id="size_name">Tests</h2>
+
+    <pre id="info"></pre>
+
+  </main>
+
+</body>
+
+
+
+<script src="transpiled/Simple/ResponsiveSizesConstants.js"></script>
+<script src="transpiled/Simple/ResponsiveSizes.js"></script>
+
+
+
+<script>
+
+  let globResponsiveSizesConstants = new Object();
+  let globResponsiveSizesInstance  = new Object();
+
+
+
+  function setOnSite( id, html ) {
+    let info = document.getElementById( id );
+    info.innerHTML = html;
+  }
+
+  function responsiveSizeNameTestJson( recalcMediaQueriesVariables ) {
+    // globResponsiveSizesInstance = new ResponsiveSizes();
+    let getInfoShortAsArray_true = true;
+    let notToUpdate = false;
+
+    let sizeName = globResponsiveSizesInstance.getInfoShort (
+      getInfoShortAsArray_true,
+      recalcMediaQueriesVariables
+    ).join( " " );
+
+    const asShortInfo_false = false;
+    const shortInfoAsArray_false = false;
+    const toUpdate_true = true;
+    let responsiveSizeJson = globResponsiveSizesInstance.json (
+      asShortInfo_false,
+      shortInfoAsArray_false,
+      toUpdate_true
+    );
+
+    let responsiveSizeJsonText = JSON.stringify( responsiveSizeJson, null, 2 );
+
+    setOnSite( "size_name", sizeName );
+    setOnSite( "info", responsiveSizeJsonText );
+
+  }
+
+  function addResizeEventHandler() {
+    window.addEventListener (
+      "resize",
+      () => {
+        let recalcMediaQueriesVariables_true = true;
+        responsiveSizeNameTestJson ( recalcMediaQueriesVariables_true );
+      }
+    );
+  }
+
+  function assignEventsHandlers() {
+    addResizeEventHandler();
+  }
+
+  function onDOMContentLoaded() {
+      globResponsiveSizesConstants = new ResponsiveSizesConstants();
+      globResponsiveSizesInstance = new ResponsiveSizes();
+
+      globResponsiveSizesInstance
+        .setResponsiveSizeConstantName( "--responsive_size" )
+        .setResponsiveSizeSelector( "html.jsx" );
+
+      assignEventsHandlers();
+
+      let recalcMediaQueriesVariables_true = true;
+      responsiveSizeNameTestJson ( recalcMediaQueriesVariables_true );
+  }
+
+  // Call the function to load remote data when the DOM is fully loaded
+  // This ensures that the function is called after the HTML content is loaded
+  // and the DOM is ready for manipulation
+  document.addEventListener (
+    "DOMContentLoaded",
+    () => {
+
+      onDOMContentLoaded();
+
+    }
+  );
+</script>
+</html>
+
+

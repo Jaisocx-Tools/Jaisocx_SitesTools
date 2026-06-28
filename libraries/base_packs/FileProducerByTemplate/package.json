@@ -1,0 +1,30 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/file-producer-by-template",
+  "version": "1.2.2",
+  "description": "",
+  "keywords": [],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+    "README.md"
+  ],
+  "optionalDependencies": {
+    "@jaisocx/template-renderer": "~1.6.1",
+    "@jaisocx/file-writer": "~1.2.7"
+  },
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

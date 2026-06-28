@@ -1,0 +1,32 @@
+{
+  "author": "ILLIA POLIANSKYI, Jaisocx Company",
+  "name": "@jaisocx/command-line",
+  "version": "1.2.4",
+  "description": "",
+  "keywords": [
+    "command",
+    "script",
+    "console",
+    "terminal"
+  ],
+  "files": [
+    "transpiled/CommonJS",
+    "transpiled/ESNext",
+
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./transpiled/CommonJS/index.js",
+  "types": "./transpiled/ESNext/index.d.ts",
+  "module": "./transpiled/ESNext/index.js",
+  "exports": {
+    "require": "./transpiled/CommonJS/index.js",
+    "import": "./transpiled/ESNext/index.js"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
+
+

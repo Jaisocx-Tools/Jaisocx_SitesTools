@@ -1,0 +1,27 @@
+
+# node_modules by npm, yarn, or pnpm
+/package.json
+/**/package.json
+
+# npm
+/package-lock.json
+/**/package-lock.json
+
+# yarn
+/yarn.lock
+/**/yarn.lock
+
+# pnpm
+/package.json5
+/package.yml
+/package.yaml
+/pnpm-workspace.yaml
+/.pnpmfile.cjs
+
+/**/package.json5
+/**/package.yml
+/**/package.yaml
+/**/pnpm-workspace.yaml
+/**/.pnpmfile.cjs
+
+
