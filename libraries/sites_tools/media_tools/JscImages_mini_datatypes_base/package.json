@@ -25,7 +25,7 @@
     "transpiled/ESNext"
   ],
   "scripts": {
-    "build:sass": "/opt/jaisocx/sites_tools/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
+    "build:sass": "/opt/jaisocx/sites_docker_environment/workspace/ts/node_modules/.bin/sass --no-source-map ./MediaAndStyles/scss/:./MediaAndStyles/"
   },
   "devDependencies": {
     "sass": "^1.97.3"

@@ -102,7 +102,7 @@
 
 ```bash
 
-  /opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/bash/produceSitesToolTemplate.sh ( args )
+  /opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/packages/SitesToolAutomation/bash/produceSitesToolTemplate.sh ( args )
 
 ```
 
@@ -111,7 +111,7 @@
 
 ```bash
 
-  node /opt/jaisocx/sites_tools/workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/src/main/produceSitesTool_byExtendedPropsForTemplate.ts ( args )
+  node /opt/jaisocx/sites_docker_environment/workspace/ts/cloned_repos/jaisocx_sitestools/packages/SitesToolAutomation/src/main/produceSitesTool_byExtendedPropsForTemplate.ts ( args )
 
 ```
 
@@ -148,7 +148,7 @@
 
   1. responsiveDatasetPropName: id of the json object in dataset at path
 
-  `workspace/ts/Jaisocx_SitesTools/packages/SitesToolAutomation/data/ResponsiveSizes/ResponsiveSizes.json`
+  `workspace/ts/cloned_repos/jaisocx_sitestools/packages/SitesToolAutomation/data/ResponsiveSizes/ResponsiveSizes.json`
 
 
 

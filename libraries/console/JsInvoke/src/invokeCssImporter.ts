@@ -8,10 +8,10 @@ import { CssImporter } from "@jaisocx/css-importer";
 // ### invoked by bash script: {PROJECT}/cmd/cssImporter.sh
 /**
 
-  ## ./.env: IN_DOCKER_PROJECT_VOLUME="/opt/jaisocx/sites_tools/workspace/ts"
-  --Root="${IN_DOCKER_PROJECT_VOLUME}" \
+  ## ./.env: IN_DOCKER_WORKSPACE_VOLUME="/opt/jaisocx/sites_docker_environment/workspace/ts"
+  --Root="${IN_DOCKER_WORKSPACE_VOLUME}" \
 
-  --BuildData="${IN_DOCKER_PROJECT_VOLUME}/BuildData.json" \
+  --BuildData="${IN_DOCKER_WORKSPACE_VOLUME}/ts/BuildData.json" \
 
   ## this package's 2 paths, of the folder and of the script being invoked by bash script "./cmd/base/js_invoke.sh"
   --packagePath="Jaisocx_SitesTools/console/JsInvoke" \
