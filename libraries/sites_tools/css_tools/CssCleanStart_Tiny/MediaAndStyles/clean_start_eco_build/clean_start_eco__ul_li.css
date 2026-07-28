@@ -41,6 +41,7 @@
 
 .clean_start ul li i {
   padding: var(--clean_start--ul_li_a--padding);
+  font-style: normal;
 }
 
 .clean_start ul li i::after {
@@ -54,6 +55,7 @@
 
   content:       var(--clean_start--ul_li_a--list_style--content, '🔹');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
   font-size:     var(--clean_start--ul_li_a--list_style--font-size);
+  background-color: var(--clean_start--ul_li_a--list_style--color);
 }
 
 /* overrides wildcard style above */

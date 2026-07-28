@@ -52,10 +52,10 @@
 
 
   <style id="h" name="clean_start_preview_page">
-    .jaisocx.clean_start {
-      --clean_start--site--padding: 5.5rem 1rem 4rem 1rem;
-    }
 
+    .jaisocx.clean_start {
+      --clean_start--site--padding: 6.4rem 1rem 4rem 1rem;
+    }
     .jaisocx.clean_start h1 {
       position: absolute;
       top: 0;
@@ -71,23 +71,26 @@
       text-align: center;
 
       font-size: 1.25rem;
-      height: 4rem;
-      line-height: 4rem;
+      height: 5rem;
+      line-height: 5rem;
     }
 
     .jaisocx.clean_start h2 {
       font-size: 1.09rem;
       line-height: 1.5rem;
     }
-    .jaisocx.clean_start h3 {
-      font-size: 1rem;
-      line-height: 1.35rem;
+
+    .jaisocx.clean_start h3,
+      .jaisocx.clean_start h4,
+      .jaisocx.clean_start h5 {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
     }
 
   </style>
 
 
-  <style id="preview" name="clean_start_preview_page">
+  <style id="layout_block_preview" name="clean_start_preview_page">
     .jaisocx.clean_start layout-block.preview {
       display: block;
       border: 1px solid lime;
@@ -95,24 +98,14 @@
       padding: 1rem;
       margin: 1rem 0 0 1rem 0;
     }
-  </style>
-
-
-  <style id="pre_fonts" name="clean_start_preview_page">
-    .jaisocx.clean_start pre.code {
-      font-family: var(--clean_start--monospace--font-family);
-    }
-    .jaisocx.clean_start pre.ul_li {
-      font-family: var(--clean_start--sans--font-family);
-    }
 
     .jaisocx.clean_start layout-block.preview.tag_pre {
       margin: 0.3rem 0 0.3rem 0;
     }
-
     .jaisocx.clean_start layout-block.preview pre {
       margin: 0rem 0 -1.0rem 0;
     }
+
   </style>
 
 
@@ -121,9 +114,30 @@
     .jaisocx.clean_start ul {
       --clean_start--ul--margin: 0.3rem 0 0.4rem 1rem;
       --clean_start--ul_li_a--padding: 0 0 0 1rem;
+
       --clean_start--ul_li_a--list_style--content: '🟠';
-      --clean_start--ul_li_a--list_style--left: 0;
       --clean_start--ul_li_a--list_style--font-size: 0.4rem;
+      --clean_start--ul_li_a--list_style--left: 0;
+    }
+
+    .clean_start ul.list_style_dotted {
+      --clean_start--ul_li_a--padding: 0 0 0 0.79rem;
+      --clean_start--ul_li_a--list_style--content: '';
+      --clean_start--ul_li_a--list_style--color: #33bc4a;
+    }
+    .clean_start ul.list_style_dotted li i::after {
+      top: 0.55rem;
+
+      border-radius: 2px;
+      --clean_start--ul_li_a--list_style--size: 4px;
+
+      min-width: var(--clean_start--ul_li_a--list_style--size);
+      max-width: var(--clean_start--ul_li_a--list_style--size);
+      width: var(--clean_start--ul_li_a--list_style--size);
+
+      min-height: var(--clean_start--ul_li_a--list_style--size);
+      max-height: var(--clean_start--ul_li_a--list_style--size);
+      height: var(--clean_start--ul_li_a--list_style--size);
     }
 
     .jaisocx.clean_start ul.shopping_list {
@@ -184,28 +198,32 @@
     .clean_start.font_overrides.font_sans,
      .clean_start.font_overrides  .font_sans,
      .clean_start  .font_overrides.font_sans,
-     .clean_start  .font_overrides  .font_sans {
+     .clean_start  .font_overrides  .font_sans,
+     .clean_start  .font_overrides.font_sans * {
       font-family: var(--clean_start--sans--font-family);
     }
 
     .clean_start.font_overrides.font_serif,
      .clean_start.font_overrides  .font_serif,
      .clean_start  .font_overrides.font_serif,
-     .clean_start  .font_overrides  .font_serif {
+     .clean_start  .font_overrides  .font_serif,
+     .clean_start  .font_overrides.font_serif * {
       font-family: var(--clean_start--serif--font-family);
     }
 
     .clean_start.font_overrides.font_monospace,
      .clean_start.font_overrides  .font_monospace,
      .clean_start  .font_overrides.font_monospace,
-     .clean_start  .font_overrides  .font_monospace {
+     .clean_start  .font_overrides  .font_monospace,
+     .clean_start  .font_overrides.font_monospace * {
       font-family: var(--clean_start--monospace--font-family);
     }
 
     .clean_start.font_overrides.font_handwrite,
      .clean_start.font_overrides  .font_handwrite,
      .clean_start  .font_overrides.font_handwrite,
-     .clean_start  .font_overrides  .font_handwrite {
+     .clean_start  .font_overrides  .font_handwrite,
+     .clean_start  .font_overrides.font_handwrite *  {
       font-family: var(--clean_start--handwrite--font-family);
     }
   </style>
@@ -215,15 +233,76 @@
 
   <main>
 
-    <h1> Css Clean Start </h1>
+    <h1> Jaisocx css_clean_start ® </h1>
 
-  <layout-block name="layout1">
-    <label> @jaisocx/css_clean_start </label>
+    <layout-block name="layout1">
+      <p>
+        <text> Aligning styles of a site, the single file </text>
+        <text class="font_overrides font_sans" style="background-color: #fdfdfd;"> clean_start_eco_build.css </text>
+        <text> of 300 ( three hundred ) css code lines. </text>
+      </p>
 
-    <p>
-      Css sites resetting default styles with main.css of few hundereds css code lines
-    </p>
-  </layout-block>
+      <ul class="list_style_dotted" style="margin: 1rem 0 1rem 0;">
+        <li><i> <label> one css class name </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> clean_start </text> </i></li>
+        <li><i> <label> the same css variables namespace </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> --clean_start-- </text> </i></li>
+        <li><i> <label> the same css properties names </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> line-height: var(...--line-height); </text> </i></li>
+      </ul>
+
+
+      <layout-block class="preview tag_pre">
+        <!-- .clean_start * {
+          line-height: var(--clean_start--all_tags--line-height);
+        } -->
+        <pre class="font_overrides font_monospace">
+<text> .</text><text style="color: magenta;">clean_start</text><text> * { </text>
+  <text style="color: green;"> line-height</text><text>: var(--</text><text style="color: magenta;">clean_start</text><text>--all_tags--</text><text style="color: green;">line-height</text><text>); </text>
+<text> } </text>
+        </pre>
+      </layout-block>
+
+      <layout-block class="preview tag_pre">
+        <!-- .clean_start {
+          --clean_start--all_tags--line-height: 1.2rem;
+        } -->
+        <pre class="font_overrides font_monospace">
+<text> .</text><text style="color: white; background-color: navy;">jaisocx</text><text>.</text><text style="color: magenta;">clean_start</text><text> { </text>
+  <text> --</text><text style="color: magenta;">clean_start</text><text>--all_tags--</text><text style="color: green;">line-height</text><text>: 1.2rem;</text>
+<text> } </text>
+        </pre>
+      </layout-block>
+
+      <layout-block class="preview tag_pre">
+        <!-- .clean_start {
+          --clean_start--all_tags--line-height: 1.14rem;
+        } -->
+        <pre class="font_overrides font_monospace">
+<text> .</text><text style="color: magenta;">clean_start</text><text> { </text>
+  <text> --</text><text style="color: magenta;">clean_start</text><text>--all_tags--</text><text style="color: green;">line-height</text><text>: 1.14rem;</text>
+<text> } </text>
+        </pre>
+      </layout-block>
+
+      <layout-block class="preview tag_pre">
+        <!-- <html class="jaisocx clean_start">
+          ...
+        } -->
+        <pre class="font_overrides font_monospace">
+<text> &lt;html class="</text><text style="color: white; background-color: navy;">jaisocx</text> <text style="color: magenta;">clean_start</text><text>"&gt; </text>
+  <text> ... </text>
+        </pre>
+      </layout-block>
+
+      <layout-block class="preview tag_pre">
+        <!-- <html class="clean_start">
+            ...
+          } -->
+        <pre class="font_overrides font_monospace">
+<text> &lt;html class="</text><text style="color: magenta;">clean_start</text><text>"&gt; </text>
+  <text> ... </text>
+        </pre>
+      </layout-block>
+
+    </layout-block>
 
 
 

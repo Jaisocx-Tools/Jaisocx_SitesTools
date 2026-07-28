@@ -38,11 +38,12 @@
   --clean_start--ul_li_a--padding: 0 0 0 1rem;
   --clean_start--ul_li_a--list_style--content: '🟠';
   --clean_start--ul_li_a--list_style--left: 0;
+  --clean_start--ul_li_a--list_style--color: transparent;
   --clean_start--ul_li_a--list_style--font-size: 0.4rem;
 
   --clean_start--pre--font-family: var(--clean_start--monospace--font-family);
-  --clean_start--pre--font-size: 0.95rem;
-  --clean_start--pre--line-height: 1.25rem;
+  --clean_start--pre--font-size: 0.9rem;
+  --clean_start--pre--line-height: 1.2rem;
 
   --clean_start--site--min-height: 100vh;
   --clean_start--site--max-height: unset;
@@ -272,9 +273,17 @@ html.clean_start {
   margin:      var(--clean_start--p--margin);
 }
 
+.clean_start p:first-of-type {
+  margin-top:  0;
+}
+
 /* new lines and spaces are rendered like typed <pre> */
 .clean_start pre {
   font-family: var(--clean_start--pre--font-family);
+}
+
+.clean_start pre,
+ .clean_start pre * {
   font-size:   var(--clean_start--pre--font-size);
   line-height: var(--clean_start--pre--line-height);
 }
