@@ -28,7 +28,7 @@
   --clean_start--ul_li--padding:        0 0 0 0;
   --clean_start--ul_li--margin:         0 0 0 0;
 
-  --clean_start--ul_li--font-family:    var(--clean_star--sans--font-family);
+  --clean_start--ul_li--font-family:    var(--clean_start--sans--font-family);
   --clean_start--ul_li--font-size:      0.75rem;
   --clean_start--ul_li--line-height:    0.95rem;
   --clean_start--ul_li--letter-spacing: 0.01rem;

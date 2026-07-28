@@ -5,10 +5,10 @@
   /* @url: ../themes_fonts/clean_start_font_overrides.css */
 .clean_start {
                                          /* microsoft, ios, linux, android */
-  --clean_star--sans--font-family:      "Arial";
-  --clean_star--serif--font-family:     "Times New Roman";
-  --clean_star--monospace--font-family: "Courier";
-  --clean_star--written--font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+  --clean_start--sans--font-family:      "Arial";
+  --clean_start--serif--font-family:     "Times New Roman";
+  --clean_start--monospace--font-family: "Courier";
+  --clean_start--written--font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
 }
 
 
@@ -17,10 +17,10 @@
   /*  @url: ../themes_fonts/clean_start_font_overrides.css */
 .jaisocx.clean_start {
                                          /* microsoft, ios, linux, android */
-  --clean_star--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
-  --clean_star--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
-  --clean_star--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
-  --clean_star--written--font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
+  --clean_start--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_start--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_start--written--font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
 }
 
 
