@@ -7,7 +7,7 @@
 
 .clean_start table caption {
   display: 	table-caption;
-  width: 100%;
+  overflow-x: hidden;
   text-align: center;
 }
 

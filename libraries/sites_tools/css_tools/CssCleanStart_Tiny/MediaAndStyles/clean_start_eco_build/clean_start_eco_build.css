@@ -38,7 +38,8 @@
   --clean_start--ul_li_a--padding: 0 0 0 1rem;
   --clean_start--ul_li_a--list_style--content: '🟠';
   --clean_start--ul_li_a--list_style--left: 0;
-  --clean_start--ul_li_a--list_style--color: transparent;
+  --clean_start--ul_li_a--list_style--color: var(--clean_start--all_tags--color);
+  --clean_start--ul_li_a--list_style--background-color: transparent;
   --clean_start--ul_li_a--list_style--font-size: 0.4rem;
 
   --clean_start--pre--font-family: var(--clean_start--monospace--font-family);

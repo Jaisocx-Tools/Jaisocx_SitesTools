@@ -120,11 +120,35 @@
       --clean_start--ul_li_a--list_style--left: 0;
     }
 
+    .jaisocx.clean_start ul label {
+
+      font-size: 0.82rem;
+      line-height: 0.82rem;
+
+      padding: 0.05rem 1rem 0.05rem 0.70rem;
+
+      color: green;
+      background-color: #eefef2;
+
+      border: 1px solid lime;
+      border-radius: 0.3rem;
+    }
+
+    .clean_start ul.inline.slash {
+      --clean_start--ul_li_a--list_style--content: '|';
+      --clean_start--ul_li_a--list_style--font-size: 0.9rem;
+      --clean_start--ul_li_a--list_style--color: #33ab55;
+    }
+
+
     .clean_start ul.list_style_dotted {
       --clean_start--ul_li_a--padding: 0 0 0 0.79rem;
       --clean_start--ul_li_a--list_style--content: '';
-      --clean_start--ul_li_a--list_style--color: #33bc4a;
+      --clean_start--ul_li_a--list_style--background-color: #33bc4a;
+
+      left: 1rem;
     }
+
     .clean_start ul.list_style_dotted li i::after {
       top: 0.55rem;
 
@@ -153,10 +177,6 @@
       border: 0.4px solid lime;
       color: white;
       background-color: darkgreen;
-    }
-
-    .jaisocx.clean_start ul.shopping_list {
-      left: 2rem;
     }
 
   </style>
@@ -191,6 +211,7 @@
     }
 
   </style>
+
 
   <style name="fonts_styles">
   /* Css Clean Start Lite styles overrides */
@@ -230,8 +251,8 @@
 
 <head>
 <body>
+<main>
 
-  <main>
 
     <h1> Jaisocx css_clean_start ® </h1>
 
@@ -243,9 +264,9 @@
       </p>
 
       <ul class="list_style_dotted" style="margin: 1rem 0 1rem 0;">
-        <li><i> <label> one css class name </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> clean_start </text> </i></li>
-        <li><i> <label> the same css variables namespace </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> --clean_start-- </text> </i></li>
-        <li><i> <label> the same css properties names </label> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> line-height: var(...--line-height); </text> </i></li>
+        <li><i> <text> one css class name </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> clean_start </text> </i></li>
+        <li><i> <text> the same css variables namespace </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> --clean_start-- </text> </i></li>
+        <li><i> <text> the same css properties names </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> line-height: var(...--line-height); </text> </i></li>
       </ul>
 
 
@@ -353,7 +374,7 @@
     <h3> &lt;pre&gt; keeps lines and whitespaces </h3>
 
     <layout-block class="preview tag_pre">
-      <pre class="ul_li">
+      <pre class="font_overrides font_sans">
 🗒 💲 🍰 Shopping List
     🟠 Apples
     🟠 Bananas
@@ -363,7 +384,7 @@
     </layout-block>
 
     <layout-block class="preview tag_pre">
-      <pre class="code">
+      <pre class="font_overrides font_monospace">
 let func = ( a, b ) => {
   let r = ( a + b );
   return r;
@@ -375,13 +396,41 @@ let func = ( a, b ) => {
 
 
 
-  <h2> c) html tag ul li </h2>
+  <h2> &lt;ul&gt; &lt;li&gt; &lt;i&gt; lists </h2>
 
   <layout-block name="layout2_c_ul_li">
 
-    <h3> inline navigation links </h3>
+
+    <h3> inline navigation &lt;ul class="inline slash"&gt; </h3>
 
     <layout-block class="preview">
+
+      <ul class="inline slash">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> inline navigation &lt;ul class="inline"&gt; </h3>
+
+    <layout-block class="preview">
+
       <ul class="inline">
         <li>
           <i>
@@ -399,38 +448,70 @@ let func = ( a, b ) => {
           </i>
         </li>
       </ul>
+
     </layout-block>
 
 
 
-    <h3> navigation links </h3>
+    <h3> navigation links  &lt;ul&gt; &lt;a&gt; </h3>
 
     <layout-block class="preview">
       <ul>
+
         <li>
           <i>
-            <label> links </label>
+            <label> links 1 </label>
             <ul>
               <li><i>
-                <a href="javascript: void(0);">link 1.1 </a>
+                <a href="javascript: void(0);"> link 1.1 </a>
               </i></li>
               <li><i>
-                <a href="javascript: void(0);">link 1.2 </a>
+                <a href="javascript: void(0);"> link 1.2 </a>
               </i></li>
               <li><i>
-                <a href="javascript: void(0);">link 1.3 </a>
+                <a href="javascript: void(0);"> link 1.3 </a>
               </i></li>
             </ul>
           </i>
         </li>
+
         <li>
           <i>
-            <a href="javascript: void(0);">link example 2</a>
+            <label> links 2 </label>
+            <ul>
+              <li>
+                <i>
+                  <a href="javascript: void(0);"> link 2.1 </a>
+                </i>
+              </li>
+
+              <li>
+                <i>
+                  <label> links 2.2 </label>
+                  <ul>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.1 </a>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.2 </a>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.3 </a>
+                    </i></li>
+                  </ul>
+                </i>
+              </li>
+
+              <li><i>
+                <a href="javascript: void(0);"> link 2.3 </a>
+              </i></li>
+            </ul>
           </i>
         </li>
+
         <li>
           <i>
-            <a href="javascript: void(0);">link example 3</a>
+            <a href="javascript: void(0);"> link 3 </a>
           </i>
         </li>
       </ul>
@@ -438,7 +519,7 @@ let func = ( a, b ) => {
 
 
 
-    <h3> lists </h3>
+    <h3> list &lt;ul&gt; </h3>
 
     <layout-block class="preview">
 
@@ -457,7 +538,7 @@ let func = ( a, b ) => {
 
 
 
-  <h2> d) html tag table </h2>
+  <h2> d) &lt;table&gt; </h2>
 
   <layout-block name="layout2_d_tb" class="preview">
 
@@ -581,7 +662,6 @@ Emoji: 😀🔥✨🧪📦🧵🧩
     </layout-block>
 
   </layout-block>
-
 
 
 </main>
