@@ -22,32 +22,44 @@
 }
 
 .clean_start ul li ul {
-  margin:          var(--clean_start--ul--margin, 3rem);
+  margin:          var(--clean_start--ul--margin, 1rem);
 }
 
 .clean_start ul li {
   display: block;
 }
 
-.clean_start ul li a,
-.clean_start ul li i {
+
+.clean_start ul li * {
   display: inline-block;
-  padding: var(--clean_start--ul_li_a--padding);
+  padding: 0 0.3rem 0 0;
   margin:  0 0 0 0;
-  z-index: 50;
+
+  oveflow-x: visible;
+  oveflow-y: visible;
+}
+
+.clean_start ul li i {
+  padding: var(--clean_start--ul_li_a--padding);
 }
 
 .clean_start ul li i::after {
   position: absolute;
   display:  block;
   z-index: 99;
-  line-height: var(--clean_start--all_tags--line-height, 0.95rem);
+  line-height: var(--clean_start--all_tags--line-height, 1.25rem);
 
   top:           0;
   left:          var(--clean_start--ul_li_a--list_style--left);
 
-  content:       var(--clean_start--ul_li_a--list_style--content);   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  content:       var(--clean_start--ul_li_a--list_style--content, '🔹');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
   font-size:     var(--clean_start--ul_li_a--list_style--font-size);
+}
+
+/* overrides wildcard style above */
+.clean_start ul li,
+ .clean_start ul li ul {
+  display: block;
 }
 
 

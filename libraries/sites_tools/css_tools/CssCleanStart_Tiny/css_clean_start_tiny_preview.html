@@ -43,240 +43,465 @@
   />
 
 
-
-  <style>
-    /* Css Clean Start Lite styles overrides */
-
-
-
-  </style>
-
-
-  <!--  OVERRIDES -->
-  <style name="clean_start_font_overrides">
-    /* Css Clean Start Lite styles overrides */
-
-    /** Just need time for publishing same packages after renamings and tests.
-    *
-    * Renamings in future for the few sites tools,
-    * are aimed for Software Companies' Namespaces, like Jaisocx,
-    * and, whether the alignment library styles set,
-    * the class name for the CssCleanStart, clean_start.
-    *
-    * Due to the aim of the SetUp,
-    * the variables' namespace doesn't have the Companie's Name,
-    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
-    */
-
-    .jsx.jaisocx.clean_start,
-    .jsx.jaisocx.clean_start.theme_fonts_a,
-    .jsx.jaisocx.clean_start .theme_fonts_a,
-    .jsx.jaisocx.clean_start.theme_fonts_b,
-    .jsx.jaisocx.clean_start .theme_fonts_b,
-    .jsx.jaisocx.clean_start.theme_fonts_c,
-    .jsx.jaisocx.clean_start .theme_fonts_c {
-      --css-clean-start-2--sans--font-family: var(--clean_start__sans__font-family);
-      --css-clean-start-2--serif--font-family: var(--clean_start__serif__font-family);
-      --css-clean-start-2--monospace--font-family: var(--clean_start__monospace__font-family);
+  <style id="theme" name="clean_start_preview_page">
+    .jaisocx.clean_start {
+      --clean_start--body_tag--background: #f2fdfe;
+      --clean_start--site--background: #eafef9;
     }
   </style>
 
 
+  <style id="h" name="clean_start_preview_page">
+    .jaisocx.clean_start {
+      --clean_start--site--padding: 5.5rem 1rem 4rem 1rem;
+    }
+
+    .jaisocx.clean_start h1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+
+      width: 100%;
+
+      color: darkgreen;
+      background-color: white;
+
+      text-align: center;
+
+      font-size: 1.25rem;
+      height: 4rem;
+      line-height: 4rem;
+    }
+
+    .jaisocx.clean_start h2 {
+      font-size: 1.09rem;
+      line-height: 1.5rem;
+    }
+    .jaisocx.clean_start h3 {
+      font-size: 1rem;
+      line-height: 1.35rem;
+    }
+
+  </style>
 
 
+  <style id="preview" name="clean_start_preview_page">
+    .jaisocx.clean_start layout-block.preview {
+      display: block;
+      border: 1px solid lime;
+      background-color: #fdfdfd;
+      padding: 1rem;
+      margin: 1rem 0 0 1rem 0;
+    }
+  </style>
+
+
+  <style id="pre_fonts" name="clean_start_preview_page">
+    .jaisocx.clean_start pre.code {
+      font-family: var(--clean_start--monospace--font-family);
+    }
+    .jaisocx.clean_start pre.ul_li {
+      font-family: var(--clean_start--sans--font-family);
+    }
+
+    .jaisocx.clean_start layout-block.preview.tag_pre {
+      margin: 0.3rem 0 0.3rem 0;
+    }
+
+    .jaisocx.clean_start layout-block.preview pre {
+      margin: 0rem 0 -1.0rem 0;
+    }
+  </style>
+
+
+  <style id="ul_li" name="clean_start_preview_page">
+
+    .jaisocx.clean_start ul {
+      --clean_start--ul--margin: 0.3rem 0 0.4rem 1rem;
+      --clean_start--ul_li_a--padding: 0 0 0 1rem;
+      --clean_start--ul_li_a--list_style--content: '🟠';
+      --clean_start--ul_li_a--list_style--left: 0;
+      --clean_start--ul_li_a--list_style--font-size: 0.4rem;
+    }
+
+    .jaisocx.clean_start ul.shopping_list {
+      left: 2rem;
+    }
+
+  </style>
+
+
+  <style id="tb" name="clean_start_preview_page">
+
+    .jaisocx.clean_start table caption {
+      border: 0.4px solid lime;
+      color: white;
+      background-color: darkgreen;
+    }
+
+    .jaisocx.clean_start ul.shopping_list {
+      left: 2rem;
+    }
+
+  </style>
+
+
+  <style id="scrolls" name="clean_start_preview_page">
+
+    .clean_start .fixed_height_n_scrollbar {
+      height: 10rem;
+
+      min-width: unset;
+      max-width: 100%;
+      width: 30rem;
+
+      padding: 0 1rem 1rem 1rem;
+      border: 1px solid lime;
+      background-color: #fdfdfd;
+
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    .clean_start .fixed_height_n_scrollbar layout-block {
+      height: auto;
+
+      min-width:  45rem;
+      max-width:  45rem;
+      width:  45rem;
+
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+
+  </style>
+
+  <style name="fonts_styles">
+  /* Css Clean Start Lite styles overrides */
+
+    .clean_start.font_overrides.font_sans,
+     .clean_start.font_overrides  .font_sans,
+     .clean_start  .font_overrides.font_sans,
+     .clean_start  .font_overrides  .font_sans {
+      font-family: var(--clean_start--sans--font-family);
+    }
+
+    .clean_start.font_overrides.font_serif,
+     .clean_start.font_overrides  .font_serif,
+     .clean_start  .font_overrides.font_serif,
+     .clean_start  .font_overrides  .font_serif {
+      font-family: var(--clean_start--serif--font-family);
+    }
+
+    .clean_start.font_overrides.font_monospace,
+     .clean_start.font_overrides  .font_monospace,
+     .clean_start  .font_overrides.font_monospace,
+     .clean_start  .font_overrides  .font_monospace {
+      font-family: var(--clean_start--monospace--font-family);
+    }
+
+    .clean_start.font_overrides.font_handwrite,
+     .clean_start.font_overrides  .font_handwrite,
+     .clean_start  .font_overrides.font_handwrite,
+     .clean_start  .font_overrides  .font_handwrite {
+      font-family: var(--clean_start--handwrite--font-family);
+    }
+  </style>
 
 <head>
 <body>
-<main>
 
-  <h1> Css Clean Start Tiny </h1>
+  <main>
 
-  <label> @jaisocx/css_clean_start_tiny </label>
+    <h1> Css Clean Start </h1>
 
-  <p>
-    Css sites resetting default styles with main.css of few hundereds css code lines
-  </p>
+  <layout-block name="layout1">
+    <label> @jaisocx/css_clean_start </label>
+
+    <p>
+      Css sites resetting default styles with main.css of few hundereds css code lines
+    </p>
+  </layout-block>
 
 
 
-  <h2>1. Custom html tags </h2>
+  <h2> a) Custom html tags </h2>
 
-  <h5>1.1. raw html preview</h5>
+  <layout-block name="layout2_a_customtags">
 
-  <pre>
+    <h3> raw html preview </h3>
+
+    <layout-block class="preview tag_pre">
+      <pre>
 &lt;text&gt;
   &lt;span&gt;Hello&lt;/span&gt;
   &lt;span&gt;How are You&lt;/span&gt;
-&lt;/text&gt;</pre>
-
-  <h5>1.2. rendered html view</h5>
-  <text>
-    <span>Hello</span>
-    <span>How are You</span>
-  </text>
+&lt;/text&gt;
+      </pre>
+    </layout-block>
 
 
 
-  <h2> 2. Standard html tags </h2>
+    <h3> rendered html </h3>
 
-  <h5> 2.1. &lt;p&gt; text blocks </h5>
-  <text>
-    <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
-    <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
-    <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
-  </text>
+    <layout-block class="preview">
+      <text>
+        <span>Hello</span>
+        <span>How are You</span>
+      </text>
+    </layout-block>
 
-
-
-  <h5> 2.2. &lt;ul&gt;</h5>
-
-  <ul class="inline">
-    <li>
-      <i>
-        <a href="javascript: void(0);">link example 1</a>
-      </i>
-    </li>
-    <li>
-      <i>
-        <a href="javascript: void(0);">link example 2</a>
-      </i>
-    </li>
-    <li>
-      <i>
-        <a href="javascript: void(0);">link example 3</a>
-      </i>
-    </li>
-  </ul>
-
-
-
-  <h5> 2.3. &lt;ul&gt; </h5>
-
-  <nav>
-    <ul>
-      <li>
-        <i>
-          <a href="javascript: void(0);">link example 1</a>
-        </i>
-      </li>
-      <li>
-        <i>
-          <a href="javascript: void(0);">link example 2</a>
-        </i>
-      </li>
-      <li>
-        <i>
-          <a href="javascript: void(0);">link example 3</a>
-        </i>
-      </li>
-    </ul>
-  </nav>
-
-
-
-  <h5> 2.4. &lt;table&gt; </h5>
-  <table>
-    <!-- Table Caption -->
-    <caption>Table Caption</caption>
-
-    <!-- Define column styles -->
-    <colgroup>
-      <col style="width: 8rem;">
-      <col style="width: 8rem;">
-      <col style="width: 8rem;">
-      <col style="width: 8rem;">
-    </colgroup>
-
-    <!-- Table Header -->
-    <thead>
-    <tr>
-      <th>Product</th>
-      <th>Price</th>
-      <th>Quantity</th>
-      <th>Total</th>
-    </tr>
-    </thead>
-
-    <!-- Table Body -->
-    <tbody>
-    <tr>
-      <td>Apple</td>
-      <td>$1.00</td>
-      <td>5</td>
-      <td>$5.00</td>
-    </tr>
-    <tr>
-      <td>Banana</td>
-      <td>$0.50</td>
-      <td>10</td>
-      <td>$5.00</td>
-    </tr>
-    <tr>
-      <td>Orange</td>
-      <td>$0.80</td>
-      <td>7</td>
-      <td>$5.60</td>
-    </tr>
-    </tbody>
-
-    <!-- Table Footer -->
-    <tfoot>
-    <tr>
-      <td colspan="3">Sum</td>
-      <td>$15.60</td>
-    </tr>
-    </tfoot>
-  </table>
-
-
-
-
-  <h5> 2.5. &lt;pre&gt; </h5>
-
-  <pre>
-Shopping List:
-- Apples
-- Bananas
-- Milk
-- Bread
-    </pre>
-
-
-  <h2> Fonts </h2>
-
-  <h3> theme_fonts_old_good_fonts </h3>
-
-  <layout-block data-label="Theme Fonts Old Good Fonts" class="font_overrides   theme_fonts_old_good_fonts   fonts_block   labelled">
-    <text-block data-label="Arial" class="font_preview font_sans labelled">
-      "email": "john@example.com"
-      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
-      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
-      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
-      Emoji: 😀🔥✨🧪📦🧵🧩
-    </text-block>
-    <text-block data-label="Times New Roman" class="font_preview font_serif labelled">
-      "email": "john@example.com"
-      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
-      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
-      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
-      Emoji: 😀🔥✨🧪📦🧵🧩
-    </text-block>
-    <text-block data-label="Courier" class="font_preview font_monospace labelled">
-      "email": "john@example.com"
-      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
-      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
-      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
-      Emoji: 😀🔥✨🧪📦🧵🧩
-    </text-block>
-    <text-block data-label="font_written" class="font_preview font_written labelled">
-      "email": "john@example.com"
-      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
-      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
-      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
-      Emoji: 😀🔥✨🧪📦🧵🧩
-    </text-block>
   </layout-block>
 
+
+
+  <h2> b) Standard html tags </h2>
+
+  <layout-block name="layout2_b_standardtags">
+
+    <h3> &lt;p&gt; text blocks </h3>
+
+    <layout-block class="preview">
+      <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
+      <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+      <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+    </layout-block>
+
+
+
+    <h3> &lt;pre&gt; keeps lines and whitespaces </h3>
+
+    <layout-block class="preview tag_pre">
+      <pre class="ul_li">
+🗒 💲 🍰 Shopping List
+    🟠 Apples
+    🟠 Bananas
+    🟠 Milk
+    🟠 Bread
+      </pre>
+    </layout-block>
+
+    <layout-block class="preview tag_pre">
+      <pre class="code">
+let func = ( a, b ) => {
+  let r = ( a + b );
+  return r;
+};
+      </pre>
+    </layout-block>
+
+  </layout-block>
+
+
+
+  <h2> c) html tag ul li </h2>
+
+  <layout-block name="layout2_c_ul_li">
+
+    <h3> inline navigation links </h3>
+
+    <layout-block class="preview">
+      <ul class="inline">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+    </layout-block>
+
+
+
+    <h3> navigation links </h3>
+
+    <layout-block class="preview">
+      <ul>
+        <li>
+          <i>
+            <label> links </label>
+            <ul>
+              <li><i>
+                <a href="javascript: void(0);">link 1.1 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);">link 1.2 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);">link 1.3 </a>
+              </i></li>
+            </ul>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link example 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link example 3</a>
+          </i>
+        </li>
+      </ul>
+    </layout-block>
+
+
+
+    <h3> lists </h3>
+
+    <layout-block class="preview">
+
+      <label> 🗒 💲 🍰 Shopping List </label>
+
+      <ul class="shopping_list">
+        <li><i><text> Apples </text></i></li>
+        <li><i><text> Bananas </text></i></li>
+        <li><i><text> Milk </text></i></li>
+        <li><i><text> Bread </text></i></li>
+      </ul>
+
+    </layout-block>
+
+  </layout-block>
+
+
+
+  <h2> d) html tag table </h2>
+
+  <layout-block name="layout2_d_tb" class="preview">
+
+    <table>
+      <!-- Table Caption -->
+      <caption>Table Caption</caption>
+
+      <!-- Define column styles -->
+      <colgroup>
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+      </colgroup>
+
+      <!-- Table Header -->
+      <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+      <tr>
+        <td>Apple</td>
+        <td>$1.00</td>
+        <td>5</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>$0.50</td>
+        <td>10</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Orange</td>
+        <td>$0.80</td>
+        <td>7</td>
+        <td>$5.60</td>
+      </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+      <tr>
+        <td colspan="3">Sum</td>
+        <td>$15.60</td>
+      </tr>
+      </tfoot>
+    </table>
+
+  </layout-block>
+
+
+
+  <h2> e) scrollbar </h2>
+
+  <layout-block name="layout2_c_scrollbar">
+
+    <layout-block class="fixed_height_n_scrollbar">
+      <layout-block name="several_paragraphs">
+        <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
+        <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+        <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+      </layout-block>
+    </layout-block>
+
+  </layout-block>
+
+
+
+  <h2> f) font </h2>
+
+  <layout-block name="layout2_3font" data-label="Theme Fonts Old Good Fonts" class="font_overrides   theme_fonts_old_good_fonts   fonts_block   labelled">
+
+    <h3> theme_fonts_old_good_fonts </h3>
+
+    <layout-block class="preview tag_pre">
+      <pre data-label="font_handwrite" class="font_preview font_handwrite labelled">
+"email": "john@example.com"
+ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+@ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+Emoji: 😀🔥✨🧪📦🧵🧩
+      </pre>
+    </layout-block>
+
+    <layout-block class="preview tag_pre">
+      <pre data-label="Arial" class="font_preview font_sans labelled">
+"email": "john@example.com"
+ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+@ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+Emoji: 😀🔥✨🧪📦🧵🧩
+      </pre>
+    </layout-block>
+
+    <layout-block class="preview tag_pre">
+      <pre data-label="Times New Roman" class="font_preview font_serif labelled">
+"email": "john@example.com"
+ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+@ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+Emoji: 😀🔥✨🧪📦🧵🧩
+      </pre>
+    </layout-block>
+
+    <layout-block class="preview tag_pre">
+      <pre data-label="Courier" class="font_preview font_monospace labelled">
+"email": "john@example.com"
+ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+@ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+Emoji: 😀🔥✨🧪📦🧵🧩
+      </pre>
+    </layout-block>
+
+  </layout-block>
 
 
 

@@ -2,6 +2,7 @@
 /* Table no reset */
 .clean_start table {
   display: table;
+  border: 0.3px solid lime;
 }
 
 .clean_start table caption {
