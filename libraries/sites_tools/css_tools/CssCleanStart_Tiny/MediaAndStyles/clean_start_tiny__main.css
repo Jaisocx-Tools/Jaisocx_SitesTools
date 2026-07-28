@@ -1,0 +1,86 @@
+
+
+/* this style sets rem size for the html page. 1rem = 16px */
+html.clean_start {
+  font-size:    var(--clean_start--rem);
+}
+
+
+html.clean_start {
+  position: static;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+
+  width:        var(--clean_start--body_tag--width);
+  max-width:    var(--clean_start--body_tag--max-width);
+  min-width:    var(--clean_start--body_tag--min-width);
+
+  overflow-x:   hidden;
+}
+
+
+/* these html elems are invisible */
+.clean_start head,
+.clean_start head *,
+.clean_start style,
+.clean_start script {
+  visibility: hidden;
+  display: block;
+  min-height: unset;
+  max-height: 0;
+  height: 0;
+  min-width:  unset;
+  max-width:  0;
+  width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.clean_start body {
+  position: relative;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      var(--clean_start--block_tags--display);
+  box-sizing:   var(--clean_start--all_tags--box-sizing);
+
+  background:   var(--clean_start--body_tag--background);
+
+  height:       var(--clean_start--body_tag--height);
+  max-height:   var(--clean_start--body_tag--max-height);
+  min-height:   var(--clean_start--body_tag--min-height);
+
+  width:        var(--clean_start--body_tag--width);
+  max-width:    var(--clean_start--body_tag--max-width);
+  min-width:    var(--clean_start--body_tag--min-width);
+
+  overflow:     var(--clean_start--body_tag--overflow-x) var(--clean_start--body_tag--overflow-y);
+
+  font-size:    var(--clean_start--all_tags--font-size);
+}
+
+
+.clean_start main {
+
+  margin:       var(--clean_start--site--margin);
+  padding:      var(--clean_start--site--padding);
+
+  background:   var(--clean_start--site--background);
+
+  height:       var(--clean_start--site--height);
+  max-height:   var(--clean_start--site--max-height);
+  min-height:   var(--clean_start--site--min-height);
+
+  width:        var(--clean_start--site--width);
+  max-width:    var(--clean_start--site--max-width);
+  min-width:    var(--clean_start--site--min-width);
+
+  overflow:     var(--clean_start--site--overflow-x) var(--clean_start--site--overflow-y);
+
+  font-size:    var(--clean_start--all_tags--font-size);
+}
+
+

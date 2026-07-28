@@ -1,0 +1,9 @@
+
+.clean_start {
+  --clean_start--all_tags--font-family:    var(--clean_start--sans--font-family);
+  --clean_start--all_tags--font-size:      0.75rem;
+  --clean_start--all_tags--line-height:    0.95rem;
+  --clean_start--all_tags--color:          black;
+}
+
+

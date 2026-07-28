@@ -1,0 +1,48 @@
+
+.clean_start {
+  /** -------------------------------
+    this style sets rem size for the html page. 1rem = 16px
+  */
+  --clean_start--rem: 16px;
+
+
+  /** -------------------------------
+    height and width of the body elem
+  */
+  --clean_start--body_tag--min-height: 100vh;
+  --clean_start--body_tag--max-height: unset;
+  --clean_start--body_tag--height:     auto;
+
+
+  /** -------------------------------
+    height and width of the site, normally positioned in the center of the browser's tab
+  */
+  --clean_start--site--min-height: 100vh;
+  --clean_start--site--max-height: fit-content;
+  --clean_start--site--height:     fit-content;
+
+  --clean_start--site--min-width:  75%;
+  --clean_start--site--max-width:  100%;
+  --clean_start--site--width:      75%;
+
+  --clean_start--site--overflow-x: hidden;
+  --clean_start--site--overflow-y: visible;
+
+
+  /** -------------------------------
+    padding of the site
+  */
+  --clean_start--site--padding: 1rem 1rem 1rem 1rem;
+
+  /** -------------------------------
+    background styles of the html elem <body>, and, the direct anchester html elem <main>
+  */
+  --clean_start--body_tag--background:    #fafff5;
+  --clean_start--site--background:        #fff;
+
+
+  --clean_start--ul--margin:   0 0 0 2rem;
+  --clean_start--p--margin:    0.9rem 0 0.9rem 0;
+}
+
+

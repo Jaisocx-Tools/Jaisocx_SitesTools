@@ -1,0 +1,26 @@
+
+  /* Font Families */
+  /* Theme Fonts Old Good Fonts */
+  /* microsoft fonts: The browser shows texts the right way on all computers with all other OS, like: ios, linux, android */
+  /* @url: ../themes_fonts/clean_start_font_overrides.css */
+.clean_start {
+                                         /* microsoft, ios, linux, android */
+  --clean_star--sans--font-family:      "Arial";
+  --clean_star--serif--font-family:     "Times New Roman";
+  --clean_star--monospace--font-family: "Courier";
+  --clean_star--written--font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+}
+
+
+  /* Font Families */
+  /* theme_fonts_b */
+  /*  @url: ../themes_fonts/clean_start_font_overrides.css */
+.jaisocx.clean_start {
+                                         /* microsoft, ios, linux, android */
+  --clean_star--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_star--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_star--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_star--written--font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
+}
+
+

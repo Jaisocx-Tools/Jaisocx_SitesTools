@@ -1,0 +1,12 @@
+
+
+.clean_start p {
+  display:     var(--clean_start--block_tags--display, block);
+
+  padding:     var(--clean_start--p--padding);
+  margin:      var(--clean_start--p--margin);
+
+  font-size:   var(--clean_start--p--font-size);
+  line-height: var(--clean_start--p--line-height);
+}
+

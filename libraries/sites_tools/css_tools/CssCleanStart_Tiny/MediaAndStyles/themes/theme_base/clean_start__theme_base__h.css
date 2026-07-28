@@ -1,0 +1,28 @@
+
+.clean_start {
+
+  --clean_start--h--display:      var(--clean_start--block_tags--display);
+
+  --clean_start--h--padding:      0 0 0 0;
+  --clean_start--h--margin:       1rem 0 0.3rem 0;
+  --clean_start--h--color:        black;
+
+  --clean_start--h--font-size:    0.9rem;
+  --clean_start--h--line-height:  1.09rem;
+  --clean_start--h--font-weight:  600;
+
+
+  /** -------------------------------
+    h1 til h9 styles
+  */
+  --clean_start--h1--font-size:   2.0rem;
+  --clean_start--h1--line-height: 2.35rem;
+
+  --clean_start--h2--font-size:   1.5rem;
+  --clean_start--h2--line-height: 1.9rem;
+
+  --clean_start--h3--font-size:   1.0rem;
+  --clean_start--h3--line-height: 1.2rem;
+}
+
+

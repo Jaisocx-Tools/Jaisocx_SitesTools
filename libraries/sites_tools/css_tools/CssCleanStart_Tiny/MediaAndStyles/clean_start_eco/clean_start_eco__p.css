@@ -1,0 +1,7 @@
+
+
+/* Paragraph html tag <p> */
+.clean_start p {
+  margin:      var(--clean_start--p--margin);
+}
+

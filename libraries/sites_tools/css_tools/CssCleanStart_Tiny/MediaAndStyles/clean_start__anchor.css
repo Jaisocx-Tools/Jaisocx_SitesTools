@@ -1,0 +1,48 @@
+
+/* Hyperlink html tag <a> (anchor) */
+.clean_start a {
+  color:           var(--clean_start--anchor--color);
+  text-decoration: var(--clean_start--anchor--text-decoration);
+}
+.clean_start a:hover {
+  color:           var(--clean_start--anchor_hover--color);
+  text-decoration: var(--clean_start--anchor_hover--text-decoration);
+}
+
+.clean_start a:visited {
+  color:           var(--clean_start--anchor_visited--color);
+  text-decoration: var(--clean_start--anchor_visited--text-decoration);
+}
+.clean_start a:visited:hover {
+  color:           var(--clean_start--anchor_visited_hover--color);
+  text-decoration: var(--clean_start--anchor_visited_hover--text-decoration);
+}
+
+.clean_start a:active {
+  color:           var(--clean_start--anchor_active--color);
+  text-decoration: var(--clean_start--anchor_active--text-decoration);
+}
+.clean_start a:active:hover {
+  color:           var(--clean_start--anchor_active_hover--color);
+  text-decoration: var(--clean_start--anchor_active_hover--text-decoration);
+}
+
+.clean_start a {
+  display:         var(--clean_start--anchor--display, inline-block);
+  padding:         var(--clean_start--anchor--padding);
+  margin:          var(--clean_start--anchor--margin);
+
+  font-size:       var(--clean_start--anchor--font-size);
+  line-height:     var(--clean_start--anchor--line-height);
+  letter-spacing:  var(--clean_start--anchor--letter-spacing);
+  word-break:      var(--clean_start--anchor--word-break);
+
+  border:         var(--clean_start--anchor--border);
+  border-radius:  var(--clean_start--anchor--border-radius);
+  background:     var(--clean_start--anchor--background);
+
+  overflow-x:     var(--clean_start--anchor--overflow-x);
+  overflow-y:     var(--clean_start--anchor--overflow-y);
+}
+
+

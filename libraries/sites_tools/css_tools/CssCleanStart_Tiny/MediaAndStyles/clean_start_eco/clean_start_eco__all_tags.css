@@ -1,0 +1,39 @@
+
+
+.clean_start * {
+
+  position:        relative;
+  display:         inline-block;
+  box-sizing:      border-box;
+
+  padding:         0 0 0 0;
+  margin:          0 0 0 0;
+
+  font-family:     var(--clean_start--all_tags--font-family);
+  font-size:       var(--clean_start--all_tags--font-size);
+  line-height:     var(--clean_start--all_tags--line-height);
+
+  letter-spacing:  0.003rem;
+  line-break:      strict;
+  word-wrap:       normal;
+  word-break:      normal;
+  color:           var(--clean_start--all_tags--color);
+
+  border-color:    lime;
+  border-style:    solid;
+  border-width:    var(--clean_start--all_tags--border-width);
+
+  min-height:      0;
+  max-height:      unset;
+  height:          auto;
+
+  min-width:       0;
+  max-width:       100%;
+  width:           auto;
+
+  overflow-x:      hidden;
+  overflow-y:      visible;
+
+}
+
+

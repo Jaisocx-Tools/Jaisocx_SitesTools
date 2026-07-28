@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="jaisocx css_clean_start">
+<head>
+
+  <!--# FAVICON -->
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon/Icon_Jaisocx.ico"
+  />
+
+  <title> @jaisocx/css_clean_start_tiny </title>
+
+
+
+  <base href="./">
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+
+  <!--# STYLES CssCleanStart_Lite and theme_base -->
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/CssCleanStart_Tiny_main_relative.css"
+  />
+
+
+
+  <style>
+    /* Css Clean Start Lite styles overrides */
+
+
+
+  </style>
+
+
+  <!--  OVERRIDES -->
+  <style name="clean_start_font_overrides">
+    /* Css Clean Start Lite styles overrides */
+
+    /** Just need time for publishing same packages after renamings and tests.
+    *
+    * Renamings in future for the few sites tools,
+    * are aimed for Software Companies' Namespaces, like Jaisocx,
+    * and, whether the alignment library styles set,
+    * the class name for the CssCleanStart, clean_start.
+    *
+    * Due to the aim of the SetUp,
+    * the variables' namespace doesn't have the Companie's Name,
+    * in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+    */
+
+    .jsx.jaisocx.clean_start,
+    .jsx.jaisocx.clean_start.theme_fonts_a,
+    .jsx.jaisocx.clean_start .theme_fonts_a,
+    .jsx.jaisocx.clean_start.theme_fonts_b,
+    .jsx.jaisocx.clean_start .theme_fonts_b,
+    .jsx.jaisocx.clean_start.theme_fonts_c,
+    .jsx.jaisocx.clean_start .theme_fonts_c {
+      --css-clean-start-2--sans--font-family: var(--clean_start__sans__font-family);
+      --css-clean-start-2--serif--font-family: var(--clean_start__serif__font-family);
+      --css-clean-start-2--monospace--font-family: var(--clean_start__monospace__font-family);
+    }
+  </style>
+
+
+
+
+
+<head>
+<body>
+<main>
+
+  <h1> Css Clean Start Tiny </h1>
+
+  <label> @jaisocx/css_clean_start_tiny </label>
+
+  <p>
+    Css sites resetting default styles with main.css of few hundereds css code lines
+  </p>
+
+
+
+  <h2>1. Custom html tags </h2>
+
+  <h5>1.1. raw html preview</h5>
+
+  <pre>
+&lt;text&gt;
+  &lt;span&gt;Hello&lt;/span&gt;
+  &lt;span&gt;How are You&lt;/span&gt;
+&lt;/text&gt;</pre>
+
+  <h5>1.2. rendered html view</h5>
+  <text>
+    <span>Hello</span>
+    <span>How are You</span>
+  </text>
+
+
+
+  <h2> 2. Standard html tags </h2>
+
+  <h5> 2.1. &lt;p&gt; text blocks </h5>
+  <text>
+    <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
+    <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+    <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+  </text>
+
+
+
+  <h5> 2.2. &lt;ul&gt;</h5>
+
+  <ul>
+    <li>
+      <a href="javascript: void(0);">link example 1</a>
+    </li>
+    <li>
+      <a href="javascript: void(0);">link example 2</a>
+    </li>
+    <li>
+      <a href="javascript: void(0);">link example 3</a>
+    </li>
+  </ul>
+
+
+
+  <h5> 2.3. &lt;ul class="ul-reset"&gt; </h5>
+
+  <nav class="ul-reset">
+    <ul>
+      <li>
+        <a href="javascript: void(0);">link example 1</a>
+      </li>
+      <li>
+        <a href="javascript: void(0);">link example 2</a>
+      </li>
+      <li>
+        <a href="javascript: void(0);">link example 3</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <h5> 2.4. &lt;table&gt; </h5>
+  <table>
+    <!-- Table Caption -->
+    <caption>Table Caption</caption>
+
+    <!-- Define column styles -->
+    <colgroup>
+      <col style="width: 8rem;">
+      <col style="width: 8rem;">
+      <col style="width: 8rem;">
+      <col style="width: 8rem;">
+    </colgroup>
+
+    <!-- Table Header -->
+    <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+    </thead>
+
+    <!-- Table Body -->
+    <tbody>
+    <tr>
+      <td>Apple</td>
+      <td>$1.00</td>
+      <td>5</td>
+      <td>$5.00</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>$0.50</td>
+      <td>10</td>
+      <td>$5.00</td>
+    </tr>
+    <tr>
+      <td>Orange</td>
+      <td>$0.80</td>
+      <td>7</td>
+      <td>$5.60</td>
+    </tr>
+    </tbody>
+
+    <!-- Table Footer -->
+    <tfoot>
+    <tr>
+      <td colspan="3">Sum</td>
+      <td>$15.60</td>
+    </tr>
+    </tfoot>
+  </table>
+
+
+
+
+  <h5> 2.5. &lt;pre&gt; </h5>
+
+  <pre>
+Shopping List:
+- Apples
+- Bananas
+- Milk
+- Bread
+    </pre>
+
+
+  <h2> Fonts </h2>
+
+  <h3> theme_fonts_old_good_fonts </h3>
+
+  <layout-block data-label="Theme Fonts Old Good Fonts" class="font_overrides   theme_fonts_old_good_fonts   fonts_block   labelled">
+    <text-block data-label="Arial" class="font_preview font_sans labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="Times New Roman" class="font_preview font_serif labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="Courier" class="font_preview font_monospace labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+    <text-block data-label="font_written" class="font_preview font_written labelled">
+      "email": "john@example.com"
+      ÁÉÍÓÚ äëïöü ãõ ñ ç ß Ø ø Å å Þ þ Đ đ
+      0 1 2 3 4 5 6 7 8 9 — ① ② ③ ④ ⑤
+      @ # $ % &amp; * ( ) [ ] { } / \ | ~ ^ + = ! ? … — – ‑ ‘ ’ “ ” ‹ › « »
+      Emoji: 😀🔥✨🧪📦🧵🧩
+    </text-block>
+  </layout-block>
+
+
+
+
+</main>
+</body>
+<script>
+  // document.addEventListener (
+  //   "DOMContentLoaded",
+  //   () => {
+  //     //
+  //   });
+  // );
+</script>
+</html>
+
+

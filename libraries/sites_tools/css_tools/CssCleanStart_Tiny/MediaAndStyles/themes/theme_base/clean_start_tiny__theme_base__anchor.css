@@ -1,0 +1,10 @@
+
+.clean_start {
+  /** -------------------------------
+    hyperlnks text colors
+  */
+  --clean_start--anchor--color: navy;
+  --clean_start--anchor_hover--color: blue;
+}
+
+

@@ -57,19 +57,19 @@
 
 
 
-![./Jaisocx/js_clientside_tm_label_jaisocx.svg](Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![Jaisocx/js_clientside_tm_label_jaisocx.svg](Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
-![./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg](./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg)
+![Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg](./Jaisocx/clientside/jaisocx_css_clean_start_lite_1_0_3.svg)
 
-![./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg](./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg)
+![Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg](./Jaisocx/clientside/jaisocx_mini_images_datatypes_base_1_2_2.svg)
 
-![./Jaisocx/clientside/jaisocx_tree_2_2_22.svg](./Jaisocx/clientside/jaisocx_tree_2_2_22.svg)
+![Jaisocx/clientside/jaisocx_tree_2_2_22.svg](./Jaisocx/clientside/jaisocx_tree_2_2_22.svg)
 
 
 
 ![Jaisocx/js_serverside_tm_label_jaisocx.svg](Jaisocx/js_serverside_tm_label_jaisocx.svg)
 
-![./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg](./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg)
+![Jaisocx/serverside/jaisocx_command_line_1_2_4.svg](./Jaisocx/serverside/jaisocx_command_line_1_2_4.svg)
 
 
 

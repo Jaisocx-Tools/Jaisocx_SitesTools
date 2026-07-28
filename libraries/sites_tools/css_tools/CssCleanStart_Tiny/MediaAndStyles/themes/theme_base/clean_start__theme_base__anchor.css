@@ -1,0 +1,51 @@
+
+.clean_start {
+  /** -------------------------------
+    hyperlnks text colors
+  */
+  --clean_start--anchor--display: var(--clean_start--inline_tags--display);
+  --clean_start--anchor--padding: var(--clean_start--all_tags--padding);
+  --clean_start--anchor--margin:  var(--clean_start--all_tags--padding);
+
+  --clean_start--anchor--font-size:        var(--clean_start--all_tags--font-size);
+  --clean_start--anchor--line-height:      var(--clean_start--all_tags--line-height);
+  --clean_start--anchor--letter-spacing:   var(--clean_start--all_tags--letter-spacing);
+  --clean_start--anchor--word-break:       var(--clean_start--all_tags--word-break);
+
+
+  --clean_start--anchor--color: navy;
+  --clean_start--anchor_hover--color: blue;
+
+  --clean_start--anchor_visited--color: grey;
+  --clean_start--anchor_visited_hover--color: grey;
+
+  --clean_start--anchor_active--color: darkblue;
+  --clean_start--anchor_active_hover--color: blue;
+
+
+  /** -------------------------------
+    hyperlnks are underlined, or they have been set other css text-decoration style
+  */
+  --clean_start--anchor--text-decoration: none;
+  --clean_start--anchor_hover--text-decoration: underline;
+
+  --clean_start--anchor_visited--text-decoration: none;
+  --clean_start--anchor_visited_hover--text-decoration: underline;
+
+  --clean_start--anchor_active--text-decoration: underline;
+  --clean_start--anchor_active_hover--text-decoration: underline;
+
+
+  --clean_start--anchor--border-color:   var(--clean_start--all_tags--border-color);
+  --clean_start--anchor--border-style:   var(--clean_start--all_tags--border-style);
+  --clean_start--anchor--border-width:   var(--clean_start--all_tags--border-width);
+  --clean_start--anchor--border:         var(--clean_start--anchor--border-width) var(--clean_start--anchor--border-style) var(--clean_start--anchor--border-color);
+
+  --clean_start--anchor--border-radius:  0;
+  --clean_start--anchor--background:     unset;
+
+  --clean_start--anchor--overflow-x:     hidden;
+  --clean_start--anchor--overflow-y:     visible;
+}
+
+

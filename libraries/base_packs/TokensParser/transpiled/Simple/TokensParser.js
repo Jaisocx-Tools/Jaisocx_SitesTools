@@ -91,7 +91,6 @@ class TokensParser {
         }
 
         tokens: for (tokensSetId = 0; tokensSetId < severalTokensSets_AsUint8Array.length; tokensSetId++) {
-
             if (!inOutRanges_TokensSetsMatched[tokensSetId]) {
                 inOutRanges_TokensSetsMatched[tokensSetId] = new Array();
             }
@@ -150,7 +149,6 @@ class TokensParser {
         range_WithoutTokenizedAreas[0] = 0;
 
         lookupRanges: for (let lookupRange of inBitsbufRanges) {
-
             for (let range of orderedMatchedRanges) {
                 range_WithoutTokenizedAreas[1] = range[0];
                 inOutRanges_WithoutTokenizedAreas.push(range_WithoutTokenizedAreas);

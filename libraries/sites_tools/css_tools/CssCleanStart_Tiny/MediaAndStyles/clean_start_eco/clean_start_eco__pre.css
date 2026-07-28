@@ -1,0 +1,9 @@
+
+
+.clean_start pre {
+  font-family: var(--clean_start--pre--font-family);
+  font-size:   var(--clean_start--pre--font-size);
+  line-height: var(--clean_start--pre--line-height);
+}
+
+

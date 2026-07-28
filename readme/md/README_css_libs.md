@@ -1,7 +1,7 @@
-![./../../cdn/images/software_labels/Typescript/typescript_2.svg](./../../cdn/images/software_labels/Typescript/typescript_2.svg)
-![./../../cdn/images/software_labels/Node/nodejs_2.svg](./../../cdn/images/software_labels/Node/nodejs_2.svg)
-![./../../cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./../../cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![./../../cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./../../cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![../../cdn/images/software_labels/Typescript/typescript_2.svg](./../../cdn/images/software_labels/Typescript/typescript_2.svg)
+![../../cdn/images/software_labels/Node/nodejs_2.svg](./../../cdn/images/software_labels/Node/nodejs_2.svg)
+![../../cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./../../cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![../../cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./../../cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
 
 

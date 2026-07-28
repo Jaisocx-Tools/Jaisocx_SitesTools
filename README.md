@@ -1,7 +1,7 @@
-![./cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
-![./cdn/images/software_labels/Node/software_tm_label_nodejs_2.svg](./cdn/images/software_labels/Node/software_tm_label_nodejs_2.svg)
-![./cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
-![./cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
+![cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg](./cdn/images/software_labels/Typescript/software_tm_label_typescript_2_593.svg)
+![cdn/images/software_labels/Node/software_tm_label_nodejs_2.svg](./cdn/images/software_labels/Node/software_tm_label_nodejs_2.svg)
+![cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_serverside_tm_label_jaisocx.svg)
+![cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg](./cdn/images/software_labels/Jaisocx/js_clientside_tm_label_jaisocx.svg)
 
 
 # JAISOCX™ SITES TOOLS®
@@ -20,7 +20,7 @@ and published in `@jaisocx` namespace
 ### 🌿 Workarounds for Email viewed in Webmail
 
 
-![./cdn/images/readme_images/sites_tools/size350/html_inliner_mobile_portrait_350.jpg](./cdn/images/readme_images/sites_tools/size350/html_inliner_mobile_portrait_350.jpg)
+![cdn/images/readme_images/sites_tools/size350/html_inliner_mobile_portrait_350.jpg](./cdn/images/readme_images/sites_tools/size350/html_inliner_mobile_portrait_350.jpg)
 
   📙 [README @jaisocx/email-html-inliner](./libraries/sites_tools/js_tools/EmailHtmlInliner/README.md)
   
@@ -32,7 +32,7 @@ and published in `@jaisocx` namespace
 
 ### 🌿 JSON Styling Tools
 
-![./cdn/images/readme_images/sites_tools/size350/Tree.png](./cdn/images/readme_images/sites_tools/size350/Tree.png)
+![cdn/images/readme_images/sites_tools/size350/Tree.png](./cdn/images/readme_images/sites_tools/size350/Tree.png)
 
   📙 [README @jaisocx/tree](./libraries/sites_tools/json_styling_tools/Tree/README.md)
 
@@ -42,7 +42,7 @@ and published in `@jaisocx` namespace
 
 
 
-![./cdn/images/readme_images/sites_tools/size350/jstable_imaged_350.png](./cdn/images/readme_images/sites_tools/size350/jstable_imaged_350.png)
+![cdn/images/readme_images/sites_tools/size350/jstable_imaged_350.png](./cdn/images/readme_images/sites_tools/size350/jstable_imaged_350.png)
 
   📙 [README @jaisocx/jstable](./libraries/sites_tools/json_styling_tools/jstable/README.md)
 
@@ -54,7 +54,7 @@ and published in `@jaisocx` namespace
 
 ### 🌿 JS Tools
 
-![./cdn/images/readme_images/sites_tools/size350/Tooltip.png](./cdn/images/readme_images/sites_tools/size350/Tooltip.png)
+![cdn/images/readme_images/sites_tools/size350/Tooltip.png](./cdn/images/readme_images/sites_tools/size350/Tooltip.png)
 
   📙 [README @jaisocx/tooltip](./libraries/sites_tools/js_tools/Tooltip/README.md)
 
@@ -74,7 +74,7 @@ and published in `@jaisocx` namespace
 
 
 
-![./cdn/images/readme_images/sites_tools/size350/CssTable.png](./cdn/images/readme_images/sites_tools/size350/CssTable.png)
+![cdn/images/readme_images/sites_tools/size350/CssTable.png](./cdn/images/readme_images/sites_tools/size350/CssTable.png)
 
   📙 [README @jaisocx/css-table](./libraries/sites_tools/css_tools/css_flat/CssTable/README.md)
 
@@ -90,7 +90,7 @@ and published in `@jaisocx` namespace
 
 
 
-![./cdn/images/readme_images/sites_tools/size350/CssCodeSnippet.png](./cdn/images/readme_images/sites_tools/size350/CssCodeSnippet.png)
+![cdn/images/readme_images/sites_tools/size350/CssCodeSnippet.png](./cdn/images/readme_images/sites_tools/size350/CssCodeSnippet.png)
 
   📙 [README @jaisocx/css-code-snippet](./libraries/sites_tools/css_tools/css_flat/CssCodeSnippet/README.md)
 
@@ -102,7 +102,7 @@ and published in `@jaisocx` namespace
 
 ### 🌿 Media Libs
 
-![./cdn/images/readme_images/sites_tools/size350/MediaFontOrbitron.png](./cdn/images/readme_images/sites_tools/size350/MediaFontOrbitron.png)
+![cdn/images/readme_images/sites_tools/size350/MediaFontOrbitron.png](./cdn/images/readme_images/sites_tools/size350/MediaFontOrbitron.png)
 
   📙 [README @jaisocx/media_tools_fonts_orbitron](./libraries/sites_tools/media_tools/JscFonts_Orbitron/README.md)
 
@@ -117,7 +117,7 @@ and published in `@jaisocx` namespace
 
 
 
-![./cdn/images/readme_images/sites_tools/size350/MediaMiniImages.png](./cdn/images/readme_images/sites_tools/size350/MediaMiniImages.png)
+![cdn/images/readme_images/sites_tools/size350/MediaMiniImages.png](./cdn/images/readme_images/sites_tools/size350/MediaMiniImages.png)
 
   📙 [README @jaisocx/media_tools_images_mini_datatypes_base](./libraries/sites_tools/media_tools/JscImages_mini_datatypes_base/README.md)
 

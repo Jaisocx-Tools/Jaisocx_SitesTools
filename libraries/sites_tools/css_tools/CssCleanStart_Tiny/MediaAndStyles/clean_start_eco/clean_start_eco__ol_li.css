@@ -1,0 +1,70 @@
+
+  /** -------------------------------
+    ordered and unordered lists styles
+  */
+
+.clean_start ol.inline,
+.clean_start ul.inline {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li ul,
+.clean_start ul.inline li ol,
+.clean_start ol.inline li ul,
+.clean_start ol.inline li ol {
+  margin:           0 0 0 0;
+}
+
+.clean_start ul.inline li,
+.clean_start ol.inline li {
+  display:          inline-block;
+}
+
+
+
+.clean_start ol,
+.clean_start ul {
+  display:         block;
+  margin:          0 0 0 0;
+
+  list-style-type: none;
+}
+
+.clean_start ul li ul,
+.clean_start ul li ol,
+.clean_start ol li ul,
+.clean_start ol li ol {
+  margin:          var(--clean_start--ul--margin, 3rem);
+}
+
+.clean_start ul li,
+.clean_start ol li {
+  display: block;
+}
+
+
+.clean_start ul li a,
+.clean_start ol li a,
+.clean_start ul li i,
+.clean_start ol li i {
+  display: inline-block;
+  padding: var(--clean_start--ul_li_a--padding);
+  margin:  0 0 0 0;
+}
+
+
+
+.clean_start ul li i::after,
+.clean_start ol li i::after {
+  position: absolute;
+  display:  inline-block;
+  line-height: var(--clean_start--all_tags--line-height, 0.95rem);
+
+  top:           0;
+  left:          var(--clean_start--ul_li_a--list_style--left, -1.64rem);
+
+  content:       var(--clean_start--ul_li_a--list_style--content, '🟢');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  font-size:     var(--clean_start--ul_li_a--list_style--font-size, 0.3rem);
+}
+
+
