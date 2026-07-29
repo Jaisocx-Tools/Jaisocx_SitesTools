@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="jaisocx clean_start theme_fonts_old_good_fonts font_override">
+<html lang="en" class="jaisocx clean_start font_override theme_fonts_c">
 <head>
 
   <!--# FAVICON -->
@@ -67,6 +67,12 @@
     .jaisocx.clean_start {
       --clean_start--body_tag--background: #f2fdfe;
       --clean_start--site--background: #eafef9;
+
+      --clean_start--ul_li_a--list_style--content: '🟦';
+    }
+
+    .jaisocx.clean_start layout-block label {
+      margin: 0.5rem 0 0.5rem 0;
     }
 
   </style>
@@ -97,30 +103,46 @@
 
   <h1> Template by Jaisocx clean_start_tiny ® </h1>
 
-  <p> for fast typing in a text IDE </p>
+  <p>  💡  for fast typing in a text IDE </p>
 
 
   <h2> text blocks </h2>
 
-  <h3> just text </h3>
+  <h3> text font sans-serif </h3>
 
-  <layout-block>
-    <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
-    <p class="font_serif">sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+  <layout-block class="font_sans">
+    <p>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <label> label in sentence line 1. </label>
+      <a href="javascript: void(0);"> link to a site </a>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+    </p>
+    <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
     <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+  </layout-block>
+
+
+
+  <h3> text font serif </h3>
+
+  <layout-block class="font_serif">
+    <p>sentence line 1. sentence line 1. sentence line 1. sentence line 1. sentence line 1.</p>
   </layout-block>
 
 
 
   <h3> text keeps lines and whitespaces </h3>
 
-  <h4> font like all other texts </h4>
+  <h4> font handwrite </h4>
 
-  <layout-block class="preview tag_pre font_sans">
-      <pre>
-🗒 💲 🍰 Shopping List
-    🟠 Apples
-    🟠 Bananas
+  <layout-block class="preview tag_pre">
+      <pre class="font_handwrite">
+🗒 💲 🍰 Shopping
+    🍎 Apples
+    🍌 Bananas
     🟠 Milk
     🟠 Bread
       </pre>
@@ -131,12 +153,77 @@
   <h4> font like in programming </h4>
 
   <layout-block class="preview tag_pre">
-      <pre>
+      <pre class="font_monospace">
 let func = ( a, b ) => {
   let r = ( a + b );
   return r;
 };
       </pre>
+  </layout-block>
+
+
+
+
+
+  <h2> table </h2>
+
+  <layout-block name="layout2_d_tb">
+
+    <label> 🗒 💲 🍰  Shopping </label>
+
+    <table>
+      <!-- Table Caption -->
+      <caption>Table Caption</caption>
+
+      <!-- Define column styles -->
+      <colgroup>
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+        <col style="width: 8rem;">
+      </colgroup>
+
+      <!-- Table Header -->
+      <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody>
+      <tr>
+        <td>Apple</td>
+        <td>$1.00</td>
+        <td>5</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Banana</td>
+        <td>$0.50</td>
+        <td>10</td>
+        <td>$5.00</td>
+      </tr>
+      <tr>
+        <td>Orange</td>
+        <td>$0.80</td>
+        <td>7</td>
+        <td>$5.60</td>
+      </tr>
+      </tbody>
+
+      <!-- Table Footer -->
+      <tfoot>
+      <tr>
+        <td colspan="3">Sum</td>
+        <td>$15.60</td>
+      </tr>
+      </tfoot>
+    </table>
+
   </layout-block>
 
 
@@ -148,11 +235,11 @@ let func = ( a, b ) => {
 
   <layout-block>
 
-    <label> 🗒 💲 🍰 Shopping List </label>
+    <label> 🗒 💲 🍰  Shopping </label>
 
-    <ul class="shopping_list">
-      <li><i><text> Apples </text></i></li>
-      <li><i><text> Bananas </text></i></li>
+    <ul class="font_handwrite">
+      <li><i><label> 🍎 </label> <text> Apples </text></i></li>
+      <li><i><label> 🍌 </label> <text> Bananas </text></i></li>
       <li><i><text> Milk </text></i></li>
       <li><i><text> Bread </text></i></li>
     </ul>
@@ -165,7 +252,7 @@ let func = ( a, b ) => {
 
     <layout-block>
 
-      <label> 🗒 💲 🍰 inline navigation </label>
+      <label> 💲 🍰 inline slash </label>
 
       <ul class="inline slash">
         <li>
@@ -193,9 +280,14 @@ let func = ( a, b ) => {
 
     <layout-block>
 
-      <label> 🗒 💲 🍰 inline navigation </label>
+      <label>  💲 🍰 inline </label>
 
       <ul class="inline">
+        <li>
+          <i>
+            <label> 💲 🍰 </label>
+          </i>
+        </li>
         <li>
           <i>
             <a href="javascript: void(0);">link 1</a>
@@ -221,7 +313,7 @@ let func = ( a, b ) => {
 
     <layout-block>
 
-      <label> 🗒 💲 🍰 navigation </label>
+      <label> 💲 🍰 navigation </label>
 
       <ul>
 
@@ -285,70 +377,6 @@ let func = ( a, b ) => {
         </li>
       </ul>
     </layout-block>
-
-
-
-  <h2> table </h2>
-
-  <layout-block name="layout2_d_tb">
-
-    <label> 🗒 💲 🍰 table </label>
-
-    <table>
-      <!-- Table Caption -->
-      <caption>Table Caption</caption>
-
-      <!-- Define column styles -->
-      <colgroup>
-        <col style="width: 8rem;">
-        <col style="width: 8rem;">
-        <col style="width: 8rem;">
-        <col style="width: 8rem;">
-      </colgroup>
-
-      <!-- Table Header -->
-      <thead>
-      <tr>
-        <th>Product</th>
-        <th>Price</th>
-        <th>Quantity</th>
-        <th>Total</th>
-      </tr>
-      </thead>
-
-      <!-- Table Body -->
-      <tbody>
-      <tr>
-        <td>Apple</td>
-        <td>$1.00</td>
-        <td>5</td>
-        <td>$5.00</td>
-      </tr>
-      <tr>
-        <td>Banana</td>
-        <td>$0.50</td>
-        <td>10</td>
-        <td>$5.00</td>
-      </tr>
-      <tr>
-        <td>Orange</td>
-        <td>$0.80</td>
-        <td>7</td>
-        <td>$5.60</td>
-      </tr>
-      </tbody>
-
-      <!-- Table Footer -->
-      <tfoot>
-      <tr>
-        <td colspan="3">Sum</td>
-        <td>$15.60</td>
-      </tr>
-      </tfoot>
-    </table>
-
-  </layout-block>
-
 
 
 </main>

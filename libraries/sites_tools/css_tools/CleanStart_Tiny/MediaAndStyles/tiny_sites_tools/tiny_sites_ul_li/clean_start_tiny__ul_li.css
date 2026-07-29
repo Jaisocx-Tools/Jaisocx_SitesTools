@@ -39,7 +39,7 @@
   top:           0;
   left:          var(--clean_start--ul_li_a--list_style--left);
 
-  content:       var(--clean_start--ul_li_a--list_style--content, '🔹');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  content:       var(--clean_start--ul_li_a--list_style--content, '🟢');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
   font-size:     var(--clean_start--ul_li_a--list_style--font-size);
   color:         var(--clean_start--ul_li_a--list_style--color);
 }

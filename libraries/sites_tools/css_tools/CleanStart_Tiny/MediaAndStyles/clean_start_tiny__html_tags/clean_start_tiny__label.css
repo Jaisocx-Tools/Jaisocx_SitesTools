@@ -1,0 +1,40 @@
+
+.clean_start label {
+
+  font-size: 0.85rem;
+  line-height: 0.82rem;
+
+  padding: 0.05rem 1.2rem 0.05rem 0.9rem;
+
+  color: navy;
+  background-color: #eef2fe;
+
+  border: 1px solid #3355fd;
+  border-radius: 0.3rem;
+}
+
+
+.clean_start layout-block label {
+  display: block;
+
+  overflow-x: visible;
+  overflow-y: hidden;
+
+  min-width: min-content;
+  max-width: 100%;
+  width: fit-content;
+
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+
+.clean_start li label,
+.clean_start p label,
+.clean_start text-block label,
+.clean_start text-line label {
+  display: inline-block;
+
+  margin: 0 0 0 0;
+}
+
+

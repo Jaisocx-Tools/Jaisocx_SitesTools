@@ -27,6 +27,14 @@
       href="MediaAndStyles/clean_start_tiny.css"
   />
 
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/themes/themes_fonts/clean_start_tiny__fonts.css"
+  />
+
+
 
   <style id="layout_block_preview" name="clean_start_preview_page">
 
@@ -49,14 +57,6 @@
 
   </style>
 
-
-  <style id="ul_li" name="clean_start_preview_page">
-
-    .jaisocx.clean_start ul.shopping_list {
-      left: 2rem;
-    }
-
-  </style>
 
 
   <style id="scrolls" name="clean_start_preview_page">
@@ -86,32 +86,6 @@
       overflow-x: hidden;
       overflow-y: visible;
     }
-
-  </style>
-
-
-  <style name="fonts_styles">
-
-    .clean_start  .font_override  .font_sans,
-    .clean_start  .font_override  .font_sans * {
-      font-family: var(--clean_start--sans--font-family);
-    }
-
-    .clean_start  .font_override  .font_serif,
-    .clean_start  .font_override  .font_serif * {
-      font-family: var(--clean_start--serif--font-family);
-    }
-
-    .clean_start  .font_override  .font_monospace,
-    .clean_start  .font_override  .font_monospace * {
-      font-family: var(--clean_start--monospace--font-family);
-    }
-
-    .clean_start  .font_override  .font_handwrite,
-    .clean_start  .font_override  .font_handwrite *  {
-      font-family: var(--clean_start--handwrite--font-family);
-    }
-
 
   </style>
 
@@ -181,9 +155,9 @@
 
     <layout-block class="preview tag_pre">
       <pre class="font_override font_sans">
-🗒 💲 🍰 Shopping List
-    🟠 Apples
-    🟠 Bananas
+🗒 💲 🍰 Shopping
+    🍎 Apples
+    🍌 Bananas
     🟠 Milk
     🟠 Bread
       </pre>
@@ -234,13 +208,13 @@ let func = ( a, b ) => {
 
     <h3> List &lt;ul&gt; </h3>
 
-    <layout-block class="preview">
+    <layout-block class="preview font_override">
 
-      <label> 🗒 💲 🍰 Shopping List </label>
+      <label> 🗒 💲 🍰 Shopping </label>
 
-      <ul class="shopping_list">
-        <li><i><text> Apples </text></i></li>
-        <li><i><text> Bananas </text></i></li>
+      <ul class="font_handwrite">
+        <li><i><label> 🍎 </label> <text> Apples </text></i></li>
+        <li><i><label> 🍌 </label><text> Bananas </text></i></li>
         <li><i><text> Milk </text></i></li>
         <li><i><text> Bread </text></i></li>
       </ul>
