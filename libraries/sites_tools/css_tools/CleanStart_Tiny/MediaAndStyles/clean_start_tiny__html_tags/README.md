@@ -1,7 +1,7 @@
 
 # clean_start_tiny
 
-  > 💡 Aligning styles of a site, the single file `clean_start_eco_build.css` of 300 ( three hundred ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 300 ( three hundred ) css code lines.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
@@ -18,7 +18,7 @@
 
 ## The aim of the setup
 
-  >  💡  Aligning styles of a site, the single file `clean_start_eco_build.css` of 300 ( three hundred ) css code lines.
+  >  💡  Aligning styles of a site, the single file `clean_start_tiny.css` of 300 ( three hundred ) css code lines.
 
   in the `clean_start_tiny__html_tags` folder there are aligning styles for the well-known html tags.
 
