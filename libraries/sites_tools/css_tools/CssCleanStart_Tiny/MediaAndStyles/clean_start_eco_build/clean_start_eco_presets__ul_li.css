@@ -1,0 +1,32 @@
+
+
+    .clean_start ul.inline.slash {
+      --clean_start--ul_li_a--list_style--content: '|';
+      --clean_start--ul_li_a--list_style--font-size: 0.9rem;
+      --clean_start--ul_li_a--list_style--color: #33ab55;
+    }
+
+
+    .clean_start ul.list_style_dotted {
+      --clean_start--ul_li_a--padding: 0 0 0 0.79rem;
+      --clean_start--ul_li_a--list_style--content: '';
+      --clean_start--ul_li_a--list_style--background-color: #33bc4a;
+    }
+
+    .clean_start ul.list_style_dotted li i::after {
+      top: var(--clean_start--ul_li_a--list_style--top);
+
+      min-height: var(--clean_start--ul_li_a--list_style--size);
+      max-height: var(--clean_start--ul_li_a--list_style--size);
+      height: var(--clean_start--ul_li_a--list_style--size);
+
+      min-width: var(--clean_start--ul_li_a--list_style--size);
+      max-width: var(--clean_start--ul_li_a--list_style--size);
+      width: var(--clean_start--ul_li_a--list_style--size);
+
+      border: var(--clean_start--ul_li_a--list_style--border);
+      border-radius: var(--clean_start--ul_li_a--list_style--border-radius);
+      background-color: var(--clean_start--ul_li_a--list_style--background-color);
+    }
+
+

@@ -1,0 +1,15 @@
+
+    .clean_start ul label {
+
+      font-size: 0.82rem;
+      line-height: 0.82rem;
+
+      padding: 0.05rem 1rem 0.05rem 0.70rem;
+
+      color: green;
+      background-color: #eefef2;
+
+      border: 1px solid lime;
+      border-radius: 0.3rem;
+    }
+

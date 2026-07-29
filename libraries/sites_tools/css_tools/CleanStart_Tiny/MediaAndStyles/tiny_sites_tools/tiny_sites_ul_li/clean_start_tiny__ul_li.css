@@ -1,19 +1,5 @@
 
 
-.clean_start ul.inline {
-  display:          inline-block;
-}
-
-.clean_start ul.inline li ul {
-  margin:           0 0 0 0;
-}
-
-.clean_start ul.inline li {
-  display:          inline-block;
-}
-
-
-
 .clean_start ul {
   display:         block;
   margin:          0 0 0 0;
@@ -55,7 +41,7 @@
 
   content:       var(--clean_start--ul_li_a--list_style--content, '🔹');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
   font-size:     var(--clean_start--ul_li_a--list_style--font-size);
-  color: var(--clean_start--ul_li_a--list_style--color);
+  color:         var(--clean_start--ul_li_a--list_style--color);
 }
 
 /* overrides wildcard style above */

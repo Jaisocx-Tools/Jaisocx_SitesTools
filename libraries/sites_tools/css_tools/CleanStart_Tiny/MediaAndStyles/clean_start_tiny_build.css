@@ -24,10 +24,10 @@
   --clean_start--anchor--color: navy;
   --clean_start--anchor_hover--color: blue;
 
-  --clean_start--h1--font-size: 2rem;
-  --clean_start--h1--line-height: 2.63rem;
+  --clean_start--h1--font-size: 1.25rem;
+  --clean_start--h1--line-height: 1.7rem;
 
-  --clean_start--h--font-size: 1rem;
+  --clean_start--h--font-size: 0.9rem;
   --clean_start--h--line-height: 1.4rem;
   --clean_start--h--margin: 1.4rem 0 0.4rem 0;
   --clean_start--h--color: black;
@@ -256,6 +256,7 @@ html.clean_start {
 .clean_start form,
 .clean_start header,
 .clean_start hr,
+.clean_start layout-block,
 .clean_start li,
 .clean_start main,
 .clean_start nav,
@@ -271,22 +272,34 @@ html.clean_start {
 }
 
 
-.clean_start h1 {
-  font-size:   var(--clean_start--h1--font-size);
-  line-height: var(--clean_start--h1--line-height);
-}
 
 .clean_start h1, .clean_start h2, .clean_start h3, .clean_start h4,
  .clean_start h5, .clean_start h6, .clean_start h7, .clean_start h8,
  .clean_start h9 {
   display:     block;
   margin:      var(--clean_start--h--margin);
-  color:       var(--clean_start--h--color);
 
-  font-size:   var(--clean_start--h--font-size);
-  line-height: var(--clean_start--h--line-height);
   font-weight: 600;
 }
+
+.clean_start h1 {
+  text-align: center;
+
+  font-size:   var(--clean_start--h1--font-size);
+  line-height: var(--clean_start--h1--line-height);
+
+  color: var(--clean_start--h1--color);
+  background-color: var(--clean_start--h1--background-color);
+}
+
+.clean_start h2, .clean_start h3, .clean_start h4,
+ .clean_start h5, .clean_start h6, .clean_start h7, .clean_start h8,
+ .clean_start h9 {
+  color:       var(--clean_start--h--color);
+  font-size:   var(--clean_start--h--font-size);
+  line-height: var(--clean_start--h--line-height);
+}
+
 
 
 /* Paragraph html tag <p> */

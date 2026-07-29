@@ -1,0 +1,61 @@
+
+/*
+  <layout-block class="layout_h1">
+    <h1> Jaisocx clean_start_tiny ® </h1>
+  </layout-block>
+*/
+
+    .jaisocx.clean_start {
+      --clean_start--layout_h1--height: 5rem;
+      --clean_start--site--padding: 9rem 2rem 4rem 2rem;
+
+      --clean_start--h1--color: darkgreen;
+      --clean_start--h1--background-color: #fdfdfd;
+    }
+
+    .jaisocx.clean_start layout-block.layout_h1 {
+
+      position: absolute;
+      display: block;
+
+      top: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+
+      text-align: center;
+
+      min-height: var(--clean_start--layout_h1--height);
+      max-height: var(--clean_start--layout_h1--height);
+      height: var(--clean_start--layout_h1--height);
+      line-height: var(--clean_start--layout_h1--height);
+
+      font-size: var(--clean_start--h1--line-height);
+
+      width: 100%;
+
+      overflow-x: hidden;
+      overflow-y: hidden;
+
+      color: var(--clean_start--h1--color);
+      background-color: var(--clean_start--h1--background-color);
+    }
+
+    .jaisocx.clean_start h1 {
+      position: relative;
+      display: inline-block;
+
+      padding: 0;
+      margin: 0;
+
+      min-height: unset;
+      max-height: var(--clean_start--h1--height);
+      height: var(--clean_start--h1--height);
+
+      width: auto;
+
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+
