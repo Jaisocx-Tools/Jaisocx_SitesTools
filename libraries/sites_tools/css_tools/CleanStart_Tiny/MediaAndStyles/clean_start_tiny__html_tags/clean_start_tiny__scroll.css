@@ -1,0 +1,28 @@
+
+@supports selector(::-webkit-scrollbar) {
+
+  .clean_start *::-webkit-scrollbar {
+    width:  var(--clean_start--webkit-scrollbar--size);
+    height: var(--clean_start--webkit-scrollbar--size);
+  }
+
+  .clean_start *::-webkit-scrollbar-thumb {
+    background-color: var(--clean_start--scrollbar-thumb--background-color);
+  }
+  .clean_start *::-webkit-scrollbar-track {
+    background-color: var(--clean_start--scrollbar-track--background-color);
+  }
+}
+
+@supports (scrollbar-color: auto) {
+  .clean_start * {
+    scrollbar-width: var(--clean_start--scrollbar--width);
+  }
+
+  .clean_start * {
+    scrollbar-color: var(--clean_start--scrollbar--color);
+  }
+
+}
+
+

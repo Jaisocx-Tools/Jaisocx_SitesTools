@@ -23,12 +23,12 @@
       --clean_start--arial--font-family:            "Arial";
       --clean_start--times_new_roman--font-family:  "Times New Roman";
       --clean_start--courier--font-family:          "Courier";
-      --clean_start--written--font-family:          "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+      --clean_start--handwrite--font-family:        "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
 
       --clean_start--sans--font-family:      "Arial";
       --clean_start--serif--font-family:     "Times New Roman";
       --clean_start--monospace--font-family: "Courier";
-      --clean_start--written--font-family:   "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
+      --clean_start--handwrite--font-family:  "<microsoft>",   "Bradley Hand",   "Z003",   "cursive";
     }
 
 
@@ -49,7 +49,7 @@
       --clean_start--sans--font-family:      "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
       --clean_start--serif--font-family:     "Gautami",     "Charter",              "Nimbus Roman",     "serif";
       --clean_start--monospace--font-family: "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
-      --clean_start--written--font-family:   "<microsoft>", "Chalkduster",          "Z003",             "cursive";
+      --clean_start--handwrite--font-family:   "<microsoft>", "Chalkduster",          "Z003",             "cursive";
     }
 
     .clean_start.theme_fonts_b,
@@ -58,7 +58,7 @@
       --clean_start--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
       --clean_start--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
       --clean_start--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
-      --clean_start--written--font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
+      --clean_start--handwrite--font-family:   "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
     }
 
     .clean_start.theme_fonts_c,
@@ -67,37 +67,30 @@
       --clean_start--sans--font-family:      "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
       --clean_start--serif--font-family:     "Sitka",       "Charter",          "DejaVu Serif",     "serif";
       --clean_start--monospace--font-family: "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
-      --clean_start--written--font-family:   "<microsoft>", "Snell Roundhand",  "Z003",             "cursive";
+      --clean_start--handwrite--font-family:   "<microsoft>", "Snell Roundhand",  "Z003",             "cursive";
     }
 
 
+      .clean_start  .font_override  .font_sans,
+      .clean_start  .font_override  .font_sans * {
+        font-family: var(--clean_start--sans--font-family);
+      }
 
-    .clean_start.font_overrides.font_sans,
-    .clean_start.font_overrides  .font_sans,
-    .clean_start  .font_overrides.font_sans,
-    .clean_start  .font_overrides  .font_sans {
-      font-family: var(--clean_start--sans--font-family);
-    }
+      .clean_start  .font_override  .font_serif,
+      .clean_start  .font_override  .font_serif * {
+        font-family: var(--clean_start--serif--font-family);
+      }
 
-    .clean_start.font_overrides.font_serif,
-    .clean_start.font_overrides  .font_serif,
-    .clean_start  .font_overrides.font_serif,
-    .clean_start  .font_overrides  .font_serif {
-      font-family: var(--clean_start--serif--font-family);
-    }
+      .clean_start  .font_override  .font_monospace,
+      .clean_start  .font_override  .font_monospace * {
+        font-family: var(--clean_start--monospace--font-family);
+      }
 
-    .clean_start.font_overrides.font_monospace,
-    .clean_start.font_overrides  .font_monospace,
-    .clean_start  .font_overrides.font_monospace,
-    .clean_start  .font_overrides  .font_monospace {
-      font-family: var(--clean_start--monospace--font-family);
-    }
+      .clean_start  .font_override  .font_handwrite,
+      .clean_start  .font_override  .font_handwrite *  {
+        font-family: var(--clean_start--handwrite--font-family);
+      }
 
-    .clean_start.font_overrides.font_written,
-    .clean_start.font_overrides  .font_written,
-    .clean_start  .font_overrides.font_written,
-    .clean_start  .font_overrides  .font_written {
-      font-family: var(--clean_start--written--font-family);
-    }
+
 
 

@@ -71,13 +71,14 @@
           📄 clean_start_tiny__ul_li.css
           📄 tiny_sites_tools__ul_li.css
       📄 clean_start_tiny__build.css
-    📄 clean_start_tiny__preview.html
-    📄 clean_start_tiny__table.html
-    📄 clean_start_tiny__ul_li.html
+    📄 clean_start_tiny_preview.html
+
+
     📒 README.md
-    📄 readme__clean_start_tiny.html
 
 ```
+
+
 
 
 

@@ -1,8 +1,0 @@
-
-/* base theme: constants and @media queries */
-@import url("./themes/theme_base/CssCleanStart_Tiny_theme_base.css");
-
-/* the main css file, css logics with rules set via variables in the theme .css files imported above */
-@import url("./CssCleanStart_Tiny_main.css");
-
-

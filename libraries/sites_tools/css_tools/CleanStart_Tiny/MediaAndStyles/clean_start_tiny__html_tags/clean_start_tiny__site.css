@@ -1,0 +1,82 @@
+
+
+/* this style sets rem size for the html page. 1rem = 16px */
+html.clean_start {
+  font-size:    var(--clean_start--rem);
+}
+
+html.clean_start {
+  position: static;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+
+  width:        100%;
+  max-width:    100%;
+  min-width:    100%;
+
+  overflow-x:   hidden;
+}
+
+/* these html elems are invisible */
+.clean_start head,
+.clean_start head *,
+.clean_start style,
+.clean_start script {
+  visibility: hidden;
+  display: block;
+  min-height: unset;
+  max-height: 0;
+  height: 0;
+  min-width:  unset;
+  max-width:  0;
+  width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.clean_start body {
+  position: relative;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      block;
+  box-sizing:   border-box;
+
+  font-size:    var(--clean_start--all_tags--font-size);
+
+  height:       auto;
+  max-height:   unset;
+  min-height:   100vh;
+
+  width:        100%;
+  max-width:    100%;
+  min-width:    100%;
+
+  background:   var(--clean_start--body_tag--background);
+
+  overflow-x:   hidden;
+  overflow-y:   auto;
+}
+
+.clean_start main {
+  margin:       var(--clean_start--site--margin);
+  padding:      var(--clean_start--site--padding);
+
+  font-size:    var(--clean_start--all_tags--font-size);
+
+  height:       var(--clean_start--site--height);
+  max-height:   var(--clean_start--site--max-height);
+  min-height:   var(--clean_start--site--min-height);
+
+  width:        var(--clean_start--site--width);
+  max-width:    var(--clean_start--site--max-width);
+  min-width:    var(--clean_start--site--min-width);
+
+  background:   var(--clean_start--site--background);
+
+  overflow:     var(--clean_start--site--overflow-x) var(--clean_start--site--overflow-y);
+}
+
+

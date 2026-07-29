@@ -1,0 +1,54 @@
+
+
+html.clean_start {
+  display:      block;
+}
+
+.clean_start * {
+  display:      inline-block;
+}
+
+.clean_start body {
+  display:      block;
+}
+
+.clean_start main {
+  display:      block;
+}
+
+
+
+/* block tags reset */
+.clean_start address,
+.clean_start article,
+.clean_start aside,
+.clean_start blockquote,
+.clean_start body,
+.clean_start canvas,
+.clean_start dd,
+.clean_start div,
+.clean_start dl,
+.clean_start dt,
+.clean_start fieldset,
+.clean_start figcaption,
+.clean_start figure,
+.clean_start footer,
+.clean_start form,
+.clean_start header,
+.clean_start hr,
+.clean_start layout-block,
+.clean_start li,
+.clean_start main,
+.clean_start nav,
+.clean_start noscript,
+.clean_start ol,
+.clean_start output,
+.clean_start p,
+.clean_start pre,
+.clean_start section,
+.clean_start ul,
+.clean_start video {
+  display: block;
+}
+
+

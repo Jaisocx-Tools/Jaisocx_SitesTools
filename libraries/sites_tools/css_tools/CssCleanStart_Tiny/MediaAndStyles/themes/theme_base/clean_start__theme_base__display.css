@@ -1,9 +1,0 @@
-
-
-.clean_start {
-  --clean_start--inline_tags--display:     inline-block;
-  --clean_start--block_tags--display:      block;
-  --clean_start--custom_tags--display:     var(--clean_start--inline_tags--display);
-}
-
-
