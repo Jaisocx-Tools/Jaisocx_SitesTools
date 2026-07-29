@@ -1,0 +1,11 @@
+
+.clean_start.theme_fonts_c,
+.clean_start  .theme_fonts_c  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Sitka",       "Charter",          "DejaVu Serif",     "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
+  --clean_start--handwrite--font-family: "<microsoft>", "Snell Roundhand",  "Z003",             "cursive";
+}
+
+

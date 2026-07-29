@@ -1,0 +1,11 @@
+
+.clean_start.theme_fonts_b,
+.clean_start  .theme_fonts_b  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_start--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_start--handwrite--font-family: "<microsoft>", "Bradley Hand",     "Z003",                      "cursive";
+}
+
+

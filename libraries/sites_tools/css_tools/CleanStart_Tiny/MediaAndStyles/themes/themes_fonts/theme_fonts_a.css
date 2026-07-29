@@ -1,0 +1,11 @@
+
+.clean_start.theme_fonts_a,
+.clean_start  .theme_fonts_a {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+  --clean_start--monospace--font-family: "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+  --clean_start--handwrite--font-family: "<microsoft>", "Chalkduster",          "Z003",             "cursive";
+}
+
+

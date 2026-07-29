@@ -75,8 +75,6 @@
           📄 tiny_sites_tools__ul_li.css
       📄 clean_start_tiny.css
     📄 clean_start_tiny__preview.html
-
-
     📒 README.md
 
 ```
