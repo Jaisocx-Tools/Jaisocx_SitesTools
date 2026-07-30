@@ -1,5 +1,4 @@
 
-
 .clean_start {
 
   --clean_start--rem: 16px;
@@ -30,7 +29,7 @@
   --clean_start--ul_li_a--list_style--content: '🟠';
   --clean_start--ul_li_a--list_style--left: 0;
   --clean_start--ul_li_a--list_style--color: var(--clean_start--all_tags--color);
-  --clean_start--ul_li_a--list_style--font-size: 0.4rem;
+  --clean_start--ul_li_a--list_style--font-size: 0.25rem;
 
   /* ul.list_style_dotted */
   --clean_start--ul_li_a--list_style--top: 0.55rem;

@@ -1,5 +1,5 @@
 
-/* Table no reset */
+/* Table */
 .clean_start table {
   display: table;
   border: 0.5px solid lime;

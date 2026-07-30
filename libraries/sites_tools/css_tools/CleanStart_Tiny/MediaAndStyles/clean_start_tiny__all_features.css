@@ -1,0 +1,613 @@
+
+
+.clean_start * {
+
+  position:        relative;
+  display:         inline-block;
+  box-sizing:      border-box;
+
+  padding:         0 0 0 0;
+  margin:          0 0 0 0;
+
+  font-family:     var(--clean_start--all_tags--font-family);
+  font-size:       var(--clean_start--all_tags--font-size);
+  line-height:     var(--clean_start--all_tags--line-height);
+
+  letter-spacing:  0.003rem;
+  line-break:      strict;
+  word-wrap:       normal;
+  word-break:      normal;
+  color:           var(--clean_start--all_tags--color);
+
+  border-color:    lime;
+  border-style:    solid;
+  border-width:    var(--clean_start--all_tags--border-width);
+
+  min-height:      0;
+  max-height:      unset;
+  height:          auto;
+
+  min-width:       0;
+  max-width:       100%;
+  width:           auto;
+
+  overflow-x:      hidden;
+  overflow-y:      visible;
+
+}
+
+
+/* this style sets rem size for the html page. 1rem = 16px */
+html.clean_start {
+  font-size:    var(--clean_start--rem);
+}
+
+html.clean_start {
+  position: static;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  box-sizing: border-box;
+
+  width:        100%;
+  max-width:    100%;
+  min-width:    100%;
+
+  overflow-x:   hidden;
+}
+
+/* these html elems are invisible */
+.clean_start head,
+.clean_start head *,
+.clean_start style,
+.clean_start script {
+  visibility: hidden;
+  display: block;
+  min-height: unset;
+  max-height: 0;
+  height: 0;
+  min-width:  unset;
+  max-width:  0;
+  width:  0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.clean_start body {
+  position: relative;
+  top:           0;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0;
+  display:      block;
+  box-sizing:   border-box;
+
+  font-size:    var(--clean_start--all_tags--font-size);
+
+  height:       auto;
+  max-height:   unset;
+  min-height:   100vh;
+
+  width:        100%;
+  max-width:    100%;
+  min-width:    100%;
+
+  background:   var(--clean_start--body_tag--background);
+
+  overflow-x:   hidden;
+  overflow-y:   auto;
+}
+
+.clean_start main {
+  margin:       var(--clean_start--site--margin);
+  padding:      var(--clean_start--site--padding);
+
+  font-size:    var(--clean_start--all_tags--font-size);
+
+  height:       var(--clean_start--site--height);
+  max-height:   var(--clean_start--site--max-height);
+  min-height:   var(--clean_start--site--min-height);
+
+  width:        var(--clean_start--site--width);
+  max-width:    var(--clean_start--site--max-width);
+  min-width:    var(--clean_start--site--min-width);
+
+  background:   var(--clean_start--site--background);
+
+  overflow:     var(--clean_start--site--overflow-x) var(--clean_start--site--overflow-y);
+}
+
+/* block tags reset */
+.clean_start address,
+.clean_start article,
+.clean_start aside,
+.clean_start blockquote,
+.clean_start body,
+.clean_start canvas,
+.clean_start dd,
+.clean_start div,
+.clean_start dl,
+.clean_start dt,
+.clean_start fieldset,
+.clean_start figcaption,
+.clean_start figure,
+.clean_start footer,
+.clean_start form,
+.clean_start header,
+.clean_start hr,
+.clean_start layout-block,
+.clean_start li,
+.clean_start main,
+.clean_start nav,
+.clean_start noscript,
+.clean_start ol,
+.clean_start output,
+.clean_start p,
+.clean_start pre,
+.clean_start section,
+.clean_start ul,
+.clean_start video {
+  display: block;
+}
+
+
+
+.clean_start h1, .clean_start h2, .clean_start h3, .clean_start h4,
+ .clean_start h5, .clean_start h6, .clean_start h7, .clean_start h8,
+ .clean_start h9 {
+  display:     block;
+  margin:      var(--clean_start--h--margin);
+
+  font-weight: 600;
+}
+
+.clean_start h1 {
+  text-align: center;
+
+  font-size:   var(--clean_start--h1--font-size);
+  line-height: var(--clean_start--h1--line-height);
+
+  color: var(--clean_start--h1--color);
+  background-color: var(--clean_start--h1--background-color);
+}
+
+.clean_start h2, .clean_start h3, .clean_start h4,
+ .clean_start h5, .clean_start h6, .clean_start h7, .clean_start h8,
+ .clean_start h9 {
+  color:       var(--clean_start--h--color);
+  font-size:   var(--clean_start--h--font-size);
+  line-height: var(--clean_start--h--line-height);
+}
+
+
+
+/* Paragraph html tag <p> */
+.clean_start p {
+  margin:      var(--clean_start--p--margin);
+}
+
+.clean_start p:first-of-type {
+  margin-top:  0;
+}
+
+/* new lines and spaces are rendered like typed <pre> */
+.clean_start pre {
+  font-family: var(--clean_start--pre--font-family);
+}
+
+.clean_start pre,
+ .clean_start pre * {
+  font-size:   var(--clean_start--pre--font-size);
+  line-height: var(--clean_start--pre--line-height);
+}
+
+
+/* Hyperlink html tag <a> (anchor) */
+.clean_start a,
+.clean_start a:active,
+.clean_start a:visited {
+  color:           var(--clean_start--anchor--color);
+  text-decoration: none;
+}
+
+.clean_start a:hover,
+.clean_start a:active:hover,
+.clean_start a:visited:hover {
+  color:           var(--clean_start--anchor_hover--color);
+  text-decoration: underline;
+}
+
+
+
+/* label */
+.clean_start label {
+
+  font-size: 0.85rem;
+  line-height: 0.82rem;
+
+  padding: 0.05rem 1.2rem 0.05rem 0.9rem;
+
+  color: navy;
+  background-color: #eef2fe;
+
+  border: 1px solid #3355fd;
+  border-radius: 0.3rem;
+}
+
+.clean_start layout-block label {
+  display: block;
+
+  overflow-x: visible;
+  overflow-y: hidden;
+
+  min-width: min-content;
+  max-width: 100%;
+  width: fit-content;
+
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.clean_start li label,
+.clean_start p label,
+.clean_start text-block label,
+.clean_start text-line label {
+  display: inline-block;
+
+  margin: 0 0 0 0;
+}
+
+
+
+
+/* Table */
+.clean_start table {
+  display: table;
+  border: 0.5px solid lime;
+}
+
+.clean_start table caption {
+  display: 	table-caption;
+  overflow-x: hidden;
+  text-align: var(--clean_start--table_caption--text-align);
+
+  border: var(--clean_start--table_caption--border);
+  color: var(--clean_start--table_caption--color);
+  background-color: var(--clean_start--table_caption--background-color);
+}
+
+.clean_start colgroup {
+  display: table-column-group;
+}
+
+.clean_start col {
+  display: table-column;
+}
+
+.clean_start thead {
+  display: table-header-group;
+}
+
+.clean_start th {
+  display: table-cell;
+  text-align: left;
+}
+
+.clean_start thead tr,
+.clean_start thead th {
+  background-color: var(--clean_start--thead--background-color);
+}
+
+.clean_start tbody {
+  display: table-row-group;
+}
+
+.clean_start tr {
+  display: table-row;
+}
+
+.clean_start td {
+  display: table-cell;
+  text-align: left;
+}
+
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  font-weight: 600;
+}
+
+.clean_start tfoot {
+  display: table-footer-group;
+}
+
+.clean_start tfoot td {
+  font-weight: 600;
+}
+
+.clean_start tfoot tr,
+.clean_start tfoot th {
+  background-color: var(--clean_start--tfoot--background-color);
+}
+
+
+
+
+.clean_start ul {
+  display:         block;
+  margin:          0 0 0 0;
+
+  list-style-type: none;
+}
+
+.clean_start ul li ul {
+  margin:          var(--clean_start--ul--margin, 1rem);
+}
+
+.clean_start ul li {
+  display: block;
+}
+
+
+.clean_start ul li * {
+  display: inline-block;
+  padding: 0 0.3rem 0 0;
+  margin:  0 0 0 0;
+
+  oveflow-x: visible;
+  oveflow-y: visible;
+}
+
+.clean_start ul li i {
+  padding: var(--clean_start--ul_li_a--padding);
+  font-style: normal;
+}
+
+.clean_start ul li i::after {
+  position: absolute;
+  display:  block;
+  z-index: 99;
+  line-height: var(--clean_start--all_tags--line-height, 1.25rem);
+
+  top:           0;
+  left:          var(--clean_start--ul_li_a--list_style--left);
+
+  content:       var(--clean_start--ul_li_a--list_style--content, '🟢');   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  font-size:     var(--clean_start--ul_li_a--list_style--font-size);
+  color:         var(--clean_start--ul_li_a--list_style--color);
+}
+
+/* overrides wildcard style above */
+.clean_start ul li,
+ .clean_start ul li ul {
+  display: block;
+}
+
+
+
+
+/* inline */
+.clean_start ul.inline {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li ul {
+  margin:           0 0 0 0;
+}
+
+.clean_start ul.inline li {
+  display:          inline-block;
+}
+
+
+/* ul inline slash */
+    .clean_start ul.inline.slash {
+      --clean_start--ul_li_a--list_style--content: '|';
+      --clean_start--ul_li_a--list_style--font-size: 0.9rem;
+      --clean_start--ul_li_a--list_style--color: #33ab55;
+    }
+
+
+    .clean_start ul.list_style_dotted {
+      --clean_start--ul_li_a--padding: 0 0 0 0.79rem;
+      --clean_start--ul_li_a--list_style--content: '';
+      --clean_start--ul_li_a--list_style--background-color: #33bc4a;
+    }
+
+    .clean_start ul.list_style_dotted li i::after {
+      top: var(--clean_start--ul_li_a--list_style--top);
+
+      min-height: var(--clean_start--ul_li_a--list_style--size);
+      max-height: var(--clean_start--ul_li_a--list_style--size);
+      height: var(--clean_start--ul_li_a--list_style--size);
+
+      min-width: var(--clean_start--ul_li_a--list_style--size);
+      max-width: var(--clean_start--ul_li_a--list_style--size);
+      width: var(--clean_start--ul_li_a--list_style--size);
+
+      border: var(--clean_start--ul_li_a--list_style--border);
+      border-radius: var(--clean_start--ul_li_a--list_style--border-radius);
+      background-color: var(--clean_start--ul_li_a--list_style--background-color);
+    }
+
+
+/* ul li i label rounded border */
+    .clean_start ul label {
+
+      font-size: 0.82rem;
+      line-height: 0.82rem;
+
+      padding: 0.05rem 1rem 0.05rem 0.70rem;
+
+      color: green;
+      background-color: #eefef2;
+
+      border: 1px solid lime;
+      border-radius: 0.3rem;
+    }
+
+
+
+/* Css Clean Start Lite font families new styles */
+
+/** Just need time for publishing same packages after renamings and tests.
+*
+* Renamings in future for the few sites tools,
+* are aimed for Software Companies' Namespaces, like Jaisocx,
+* and, whether the alignment librarie's styles set,
+* the class name for the CssCleanStart, clean_start.
+*
+* Due to the aim of the SetUp,
+* the variables' namespace doesn't have the Companie's Name,
+* in order to allow to other Companies, ease and free setup of this opensource library on other sites, modified.
+*/
+
+/* Font Families */
+
+/* microsoft, ios, android, linux */
+.clean_start.theme_fonts_old_good_fonts,
+.clean_start  .theme_fonts_old_good_fonts {
+                                              /* microsoft fonts: The browser shows texts the right way on all computers with all other OS, like: ios, linux, android */
+
+                                              /* microsoft, ios, linux, android */
+  --clean_start--arial--font-family:            "Arial";
+  --clean_start--times_new_roman--font-family:  "Times New Roman";
+  --clean_start--courier--font-family:          "Courier";
+  --clean_start--handwrite--font-family:        "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
+
+  --clean_start--sans--font-family:             "Arial";
+  --clean_start--serif--font-family:            "Times New Roman";
+  --clean_start--monospace--font-family:        "Courier";
+  --clean_start--handwrite--font-family:        "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
+}
+
+
+
+/**
+On every OS install Microsoft fonts:
+Times New Roman, Arial, Courier, Courier New.
+However, on other OS these fonts show not the same way.
+
+3 themes, all same fonts for:
+. Android: sans-serif, serif, monospace, cursive.
+. Linux handwrite font: Z003.
+*/
+
+.clean_start.theme_fonts_a,
+.clean_start  .theme_fonts_a {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Tahoma",      "Khmer Sangam MN",      "Nimbus Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Gautami",     "Charter",              "Nimbus Roman",     "serif";
+  --clean_start--monospace--font-family: "Vivaldi",     "American Typewriter",  "Liberation Mono",  "monospace";
+  --clean_start--handwrite--font-family: "Freestyle Script", "Chalkduster",          "Z003",             "cursive";
+}
+
+.clean_start.theme_fonts_b,
+.clean_start  .theme_fonts_b  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Franklin Gothic Medium",  "Hiragino Sans",  "Bitstream Vera Sans",   "sans-serif";
+  --clean_start--serif--font-family:     "Cambria",     "Iowan Old Style",  "Bitstream Vera Serif",      "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Optima",           "Bitstream Vera Sans Mono",  "monospace";
+  --clean_start--handwrite--font-family: "Bradley Hand ITC", "Bradley Hand",     "Z003",                      "cursive";
+}
+
+.clean_start.theme_fonts_c,
+.clean_start  .theme_fonts_c  {
+                                       /* microsoft, ios, linux, android */
+  --clean_start--sans--font-family:      "Candara",     "Tamil Sangam MN",  "DejaVu Sans",      "sans-serif";
+  --clean_start--serif--font-family:     "Sitka",       "Charter",          "DejaVu Serif",     "serif";
+  --clean_start--monospace--font-family: "Consolas",    "Rockwell",         "DejaVu Sans Mono", "monospace";
+  --clean_start--handwrite--font-family: "Kristen ITC", "Snell Roundhand",  "Z003",             "cursive";
+}
+
+
+
+.clean_start.font_override.font_handwrite,
+.clean_start.font_override.font_handwrite *,
+
+.clean_start.font_override  .font_handwrite,
+.clean_start.font_override  .font_handwrite *,
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite *,
+
+.clean_start  .font_override  .font_handwrite,
+.clean_start  .font_override  .font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family);
+}
+
+
+
+.clean_start.font_override.font_sans,
+.clean_start.font_override.font_sans *,
+
+.clean_start.font_override  .font_sans,
+.clean_start.font_override  .font_sans *,
+
+.clean_start  .font_override.font_sans,
+.clean_start  .font_override.font_sans *,
+
+.clean_start  .font_override  .font_sans,
+.clean_start  .font_override  .font_sans * {
+  font-family: var(--clean_start--sans--font-family);
+}
+
+
+
+.clean_start.font_override.font_serif,
+.clean_start.font_override.font_serif *,
+
+.clean_start.font_override  .font_serif,
+.clean_start.font_override  .font_serif *,
+
+.clean_start  .font_override.font_serif,
+.clean_start  .font_override.font_serif *,
+
+.clean_start  .font_override  .font_serif,
+.clean_start  .font_override  .font_serif * {
+  font-family: var(--clean_start--serif--font-family);
+}
+
+
+
+.clean_start.font_override.font_monospace,
+.clean_start.font_override.font_monospace *,
+
+.clean_start.font_override  .font_monospace,
+.clean_start.font_override  .font_monospace *,
+
+.clean_start  .font_override.font_monospace,
+.clean_start  .font_override.font_monospace *,
+
+.clean_start  .font_override  .font_monospace,
+.clean_start  .font_override  .font_monospace * {
+  font-family: var(--clean_start--monospace--font-family);
+}
+
+
+
+@supports selector(::-webkit-scrollbar) {
+
+  .clean_start *::-webkit-scrollbar {
+    width:  var(--clean_start--webkit-scrollbar--size);
+    height: var(--clean_start--webkit-scrollbar--size);
+  }
+
+  .clean_start *::-webkit-scrollbar-thumb {
+    background-color: var(--clean_start--scrollbar-thumb--background-color);
+  }
+  .clean_start *::-webkit-scrollbar-track {
+    background-color: var(--clean_start--scrollbar-track--background-color);
+  }
+}
+
+@supports (scrollbar-color: auto) {
+  .clean_start * {
+    scrollbar-width: var(--clean_start--scrollbar--width);
+  }
+
+  .clean_start * {
+    scrollbar-color: var(--clean_start--scrollbar--color);
+  }
+
+}
+
+

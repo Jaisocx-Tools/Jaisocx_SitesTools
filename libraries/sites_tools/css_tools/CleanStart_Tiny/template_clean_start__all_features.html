@@ -25,44 +25,96 @@
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/clean_start_tiny.css"
+      href="MediaAndStyles/clean_start_tiny__all_features.css"
   />
 
 
-  <!--# ul li -->
-  <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/clean_start_tiny__ul_li.css"
-  />
 
-  <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/tiny_sites_tools__ul_li.css"
-  />
+  <style id="theme_base" name="clean_start_preview_page">
 
+    .clean_start {
 
-  <!--# table -->
-  <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_table/clean_start_tiny__table.css"
-  />
+      --clean_start--rem: 16px;
 
+      --clean_start--all_tags--font-family: var(--clean_start--sans--font-family);
+      --clean_start--all_tags--font-size: 0.95rem;
+      --clean_start--all_tags--line-height: 1.29rem;
+      --clean_start--all_tags--color: black;
+      --clean_start--all_tags--border-width: 0px;
 
-  <!--# fonts -->
-  <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/themes/themes_fonts/clean_start_tiny__fonts.css"
-  />
+      --clean_start--anchor--color: navy;
+      --clean_start--anchor_hover--color: blue;
+
+      --clean_start--h1--font-size: 1.25rem;
+      --clean_start--h1--line-height: 1.7rem;
+
+      --clean_start--h--font-size: 0.9rem;
+      --clean_start--h--line-height: 1.4rem;
+      --clean_start--h--margin: 1.4rem 0 0.4rem 0;
+      --clean_start--h--color: black;
+
+      --clean_start--p--margin: 1.4rem 0 0 0;
 
 
+      /* ul li i */
+      --clean_start--ul--margin: 0.3rem 0 0.4rem 1rem;
+      --clean_start--ul_li_a--padding: 0 0 0 1rem;
+      --clean_start--ul_li_a--list_style--content: '🟠';
+      --clean_start--ul_li_a--list_style--left: 0;
+      --clean_start--ul_li_a--list_style--color: var(--clean_start--all_tags--color);
+      --clean_start--ul_li_a--list_style--font-size: 0.25rem;
+
+      /* ul.list_style_dotted */
+      --clean_start--ul_li_a--list_style--top: 0.55rem;
+      --clean_start--ul_li_a--list_style--size: 4px;
+      --clean_start--ul_li_a--list_style--border: 0 solid #33bc4a;
+      --clean_start--ul_li_a--list_style--border-radius: 2px;
+      --clean_start--ul_li_a--list_style--background-color: #33bc4a;
+
+
+      /* pre */
+      --clean_start--pre--font-family: var(--clean_start--monospace--font-family);
+      --clean_start--pre--font-size: 0.9rem;
+      --clean_start--pre--line-height: 1.2rem;
+
+
+      --clean_start--site--min-height: 100vh;
+      --clean_start--site--max-height: unset;
+      --clean_start--site--height: auto;
+
+      --clean_start--site--min-width: 72%;
+      --clean_start--site--max-width: 100%;
+      --clean_start--site--width: 72%;
+
+      --clean_start--site--padding: 1rem 1rem 1rem 1rem;
+      --clean_start--site--margin: 0 auto 0 auto;
+
+      --clean_start--site--overflow-x: hidden;
+      --clean_start--site--overflow-y: visible;
+
+      --clean_start--body_tag--background: #eefefa;
+      --clean_start--site--background: #fdfdfd;
+
+
+      /* table */
+      --clean_start--table_caption--text-align: center;
+      --clean_start--table_caption--color: #fdfdfd;
+      --clean_start--table_caption--background-color: darkgreen;
+      --clean_start--table_caption--border: 0.5px solid green;
+
+      --clean_start--thead--background-color: #eefedd;
+      --clean_start--tfoot--background-color: #ddfedd;
+
+
+      /* scroll */
+      --clean_start--scrollbar-thumb--background-color: lime;
+      --clean_start--scrollbar-track--background-color: #fafefa;
+      --clean_start--webkit-scrollbar--size: 0.3rem;
+      --clean_start--scrollbar--width: thin;
+      --clean_start--scrollbar--color: lime #e5fee5;
+    }
+
+  </style>
 
   <style id="theme" name="clean_start_preview_page">
 
@@ -79,7 +131,6 @@
 
   </style>
 
-
   <style id="layout_block_preview" name="clean_start_preview_page">
 
     .jaisocx.clean_start layout-block.preview {
@@ -95,95 +146,6 @@
     }
     .jaisocx.clean_start layout-block.preview pre {
       margin: 0rem 0 -1.0rem 0;
-    }
-
-  </style>
-
-
-  <style id="mobile_friendly" name="clean_start_preview_page_responsive">
-
-    /* portrait, xxxs til mobile xxs */
-    /* filters by widths */
-    @media only screen and (min-width: 5px) and (max-width: 280px) and (min-height: 5px) and (max-height: 1240px) and (orientation: portrait) {
-      .jaisocx.clean_start {
-
-        /* @start_block: @jaisocx/responsive_sizes helper library variables */
-        --theme_name: clean_start_tiny__theme_base;
-        --theme_name__clean_start_tiny: theme_base;
-
-        --responsive_size: responsive_size__html__xxxs_til_d05_very_small_xxs_portrait;
-
-        --responsive_size__min-width: 5px;
-        --responsive_size__max-width: 280px;
-
-        --responsive_size__min-height: 5px;
-        --responsive_size__max-height: 1240px;
-        /* @finish_block: @jaisocx/responsive_sizes helper library variables */
-
-
-        /* styles */
-        --clean_start--site--min-width: 100%;
-        --clean_start--site--max-width: 100%;
-        --clean_start--site--width: 100%;
-
-        --clean_start--site--padding: 1rem 0.3rem 2rem 0.3rem;
-      }
-    }
-
-
-    /* portrait, mobile xs til mobile md */
-    /* filters both by by widths and heights */
-    @media only screen and (min-width: 281px) and (max-width: 480px) and (min-height: 431px) and (max-height: 1240px) and (orientation: portrait) {
-      .jaisocx.clean_start {
-
-        /* @start_block: @jaisocx/responsive_sizes helper library variables */
-        --theme_name: clean_start_tiny__theme_base;
-        --theme_name__clean_start_tiny: theme_base;
-
-        --responsive_size: responsive_size__html__d05_e08_very_small_xxs__til__midsize_md_portrait;
-
-        --responsive_size__min-width: 281px;
-        --responsive_size__max-width: 480px;
-
-        --responsive_size__min-height: 431px;
-        --responsive_size__max-height: 1240px;
-        /* @finish_block: @jaisocx/responsive_sizes helper library variables */
-
-
-        --clean_start--site--min-width: 92%;
-        --clean_start--site--max-width: 100%;
-        --clean_start--site--width: 92%;
-
-        --clean_start--site--padding: 1.2rem 0.3rem 5rem 0.3rem;
-      }
-    }
-
-
-    /* landscape, xxxs height til mobile md */
-    /* filters both by by widths and heights */
-    @media only screen and (min-width: 281px) and (max-width: 1024px) and (min-height: 5px) and (max-height: 480px) and (orientation: landscape) {
-      .jaisocx.clean_start {
-
-        /* @start_block: @jaisocx/responsive_sizes helper library variables */
-        --theme_name: clean_start_tiny__theme_base;
-        --theme_name__clean_start_tiny: theme_base;
-
-        --responsive_size: responsive_size__html__d05_e08_very_small_xxs__til__midsize_md_landscape;
-
-        --responsive_size__min-width: 281px;
-        --responsive_size__max-width: 1024px;
-
-        --responsive_size__min-height: 5px;
-        --responsive_size__max-height: 480px;
-        /* @finish_block: @jaisocx/responsive_sizes helper library variables */
-
-
-        --clean_start--site--min-width: 95%;
-        --clean_start--site--max-width: 100%;
-        --clean_start--site--width: 95%;
-
-        --clean_start--site--padding: 0.3rem 0.3rem 1rem 0.3rem;
-      }
     }
 
   </style>
