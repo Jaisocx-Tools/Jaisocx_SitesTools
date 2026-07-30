@@ -15,6 +15,13 @@ and published in `@jaisocx` namespace
 
 
 
+## News 
+
+  🗓 Summer 🌼 2026, 30. July AD 2026 12:30 UTC. **clean_start_tiny**
+[libraries/sites_tools/css_tools/CleanStart_Tiny/README.md](./libraries/sites_tools/css_tools/CleanStart_Tiny/README.md)
+
+
+
 ## 🌿 Sites Tools
 
 ### 🌿 Workarounds for Email viewed in Webmail
