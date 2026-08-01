@@ -61,22 +61,23 @@ html.clean_start {
 }
 
 .clean_start main {
-  margin:       var(--clean_start--site--margin);
   padding:      var(--clean_start--site--padding);
+  margin:       0 auto 0 auto;
 
   font-size:    var(--clean_start--all_tags--font-size);
 
-  height:       var(--clean_start--site--height);
-  max-height:   var(--clean_start--site--max-height);
-  min-height:   var(--clean_start--site--min-height);
+  min-height:   100vh;
+  max-height:   unset;
+  height:       auto;
 
   width:        var(--clean_start--site--width);
-  max-width:    var(--clean_start--site--max-width);
-  min-width:    var(--clean_start--site--min-width);
+  max-width:    100%;
+  min-width:    var(--clean_start--site--width);
 
   background:   var(--clean_start--site--background);
 
-  overflow:     var(--clean_start--site--overflow-x) var(--clean_start--site--overflow-y);
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 

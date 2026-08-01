@@ -1,9 +1,13 @@
 
+.clean_start {
+  --clean_start--scrollbar--color: var(--clean_start--scrollbar-thumb--background-color)  var(--clean_start--scrollbar-track--background-color);
+}
+
 @supports selector(::-webkit-scrollbar) {
 
   .clean_start *::-webkit-scrollbar {
-    width:  var(--clean_start--webkit-scrollbar--size);
-    height: var(--clean_start--webkit-scrollbar--size);
+    width:  var(--clean_start--scrollbar--size);
+    height: var(--clean_start--scrollbar--size);
   }
 
   .clean_start *::-webkit-scrollbar-thumb {

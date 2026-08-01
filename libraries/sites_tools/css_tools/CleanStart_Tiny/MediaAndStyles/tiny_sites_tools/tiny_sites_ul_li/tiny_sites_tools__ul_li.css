@@ -5,59 +5,127 @@
   display:          inline-block;
 }
 
-.clean_start ul.inline li ul {
-  margin:           0 0 0 0;
-}
-
 .clean_start ul.inline li {
   display:          inline-block;
 }
 
+.clean_start ul.inline li i {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li i * {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li i::after {
+  display:          inline-block;
+}
+
+.clean_start ul.inline li ul {
+  margin:           0 0 0 0;
+}
+
+/* ul inline */
+.clean_start ul.inline {
+  --clean_start--ul_li_i_c--content: '🔵';
+
+  --clean_start--ul_li_i_c--top: 0;
+  --clean_start--ul_li_i_c--left: -0.5rem;
+
+  --clean_start--ul--margin: 0.3rem 0 0.4rem 0.5rem;
+  --clean_start--i_ul--margin: 0.3rem 0 0.4rem 3.0rem;
+
+  --clean_start--ul_li_i--padding: 0 0.44rem 0 0.44rem;
+  --clean_start--i_ul_li_i--padding: 0 0 0 0.2rem;
+
+  --clean_start--ul_li_i_c--font-size: 0.4rem;
+  --clean_start--ul_li_i_c--line-height: var(--clean_start--ul_li_i--line-height);
+
+  --clean_start--ul_li_i_c--color: #33ab55;
+}
 
 /* ul inline slash */
-    .clean_start ul.inline.slash {
-      --clean_start--ul_li_a--list_style--content: '|';
-      --clean_start--ul_li_a--list_style--font-size: 0.9rem;
-      --clean_start--ul_li_a--list_style--color: #33ab55;
-    }
+.clean_start ul.inline.slash {
+  --clean_start--ul_li_i_c--content: '|';
+
+  --clean_start--ul_li_i_c--top: 0;
+  --clean_start--ul_li_i_c--left: -0.5rem;
+
+  --clean_start--ul--margin: 0.3rem 0 0.4rem 0.5rem;
+  --clean_start--i_ul--margin: 0.3rem 0 0.4rem 3.0rem;
+
+  --clean_start--ul_li_i--padding: 0 0.44rem 0 0.44rem;
+  --clean_start--i_ul_li_i--padding: 0 0 0 0.2rem;
+
+  --clean_start--ul_li_i_c--font-size: var(--clean_start--ul_li_i--font-size);
+  --clean_start--ul_li_i_c--line-height: var(--clean_start--ul_li_i--line-height);
+
+  --clean_start--ul_li_i_c--color: #33ab55;
+}
 
 
-    .clean_start ul.list_style_dotted {
-      --clean_start--ul_li_a--padding: 0 0 0 0.79rem;
-      --clean_start--ul_li_a--list_style--content: '';
-      --clean_start--ul_li_a--list_style--background-color: #33bc4a;
-    }
+.clean_start ul.tag_border li i::after {
+  content:       '';
 
-    .clean_start ul.list_style_dotted li i::after {
-      top: var(--clean_start--ul_li_a--list_style--top);
+  display:       var(--clean_start--ul_li_i_o--tag_border--display);
 
-      min-height: var(--clean_start--ul_li_a--list_style--size);
-      max-height: var(--clean_start--ul_li_a--list_style--size);
-      height: var(--clean_start--ul_li_a--list_style--size);
+  top:           var(--clean_start--ul_li_i_o--tag_border--top);
+  left:          var(--clean_start--ul_li_i_o--tag_border--left);
 
-      min-width: var(--clean_start--ul_li_a--list_style--size);
-      max-width: var(--clean_start--ul_li_a--list_style--size);
-      width: var(--clean_start--ul_li_a--list_style--size);
+  font-size:     0;
+  line-height:   0;
 
-      border: var(--clean_start--ul_li_a--list_style--border);
-      border-radius: var(--clean_start--ul_li_a--list_style--border-radius);
-      background-color: var(--clean_start--ul_li_a--list_style--background-color);
-    }
+  min-height: var(--clean_start--ul_li_i_o--tag_border--size);
+  max-height: var(--clean_start--ul_li_i_o--tag_border--size);
+  height: var(--clean_start--ul_li_i_o--tag_border--size);
+
+  min-width: var(--clean_start--ul_li_i_o--tag_border--size);
+  max-width: var(--clean_start--ul_li_i_o--tag_border--size);
+  width: var(--clean_start--ul_li_i_o--tag_border--size);
+
+  border: var(--clean_start--ul_li_i_o--tag_border--border);
+  border-radius: var(--clean_start--ul_li_i_o--tag_border--border-radius);
+  background: var(--clean_start--ul_li_i_o--tag_border--background);
+}
+
+.clean_start ul.tag_border {
+  --clean_start--ul_li_i_c--content: '';
+
+  --clean_start--ul_li_i_o--tag_border--display: block;
+
+  --clean_start--ul_li_i_o--tag_border--content: '';
+
+  --clean_start--ul_li_i_o--tag_border--top: 0.5rem;
+  --clean_start--ul_li_i_o--tag_border--left: -1.05rem;
+
+  --clean_start--ul--margin: 0.3rem 0 0.4rem 1.05rem;
+  --clean_start--i_ul--margin: 0.3rem 0 0.4rem 3.0rem;
+
+  --clean_start--ul_li_i--padding: 0 0 0 0.2rem;
+  --clean_start--i_ul_li_i--padding: 0 0 0 0.2rem;
+
+
+  /* --clean_start--ul_li_i_o--tag_border--font-size: 0; */
+
+  --clean_start--ul_li_i_o--tag_border--size: 8px;
+  --clean_start--ul_li_i_o--tag_border--border: 1px solid lime;
+  --clean_start--ul_li_i_o--tag_border--border-radius: 4px;
+  --clean_start--ul_li_i_o--tag_border--background: lime; /* #eafdf2; */
+}
 
 
 /* ul li i label rounded border */
-    .clean_start ul label {
+.clean_start ul label {
+  font-size: 0.82rem;
+  line-height: 0.82rem;
 
-      font-size: 0.82rem;
-      line-height: 0.82rem;
+  padding: 0.05rem 1rem 0.05rem 0.70rem;
 
-      padding: 0.05rem 1rem 0.05rem 0.70rem;
+  color: green;
+  background-color: #eefef2;
 
-      color: green;
-      background-color: #eefef2;
-
-      border: 1px solid lime;
-      border-radius: 0.3rem;
-    }
+  border: 1px solid lime;
+  border-radius: 0.3rem;
+}
 
 

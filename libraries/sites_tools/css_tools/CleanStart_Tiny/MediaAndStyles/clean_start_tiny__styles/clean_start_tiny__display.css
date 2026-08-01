@@ -18,7 +18,28 @@ html.clean_start {
 
 
 
-/* block tags reset */
+/* block tags reset, the Jaisocx tags proposed */
+.clean_start layout-block,
+.clean_start text-lines-block {
+  display: block;
+}
+
+/* block tags reset, the tags normally in html */
+.clean_start canvas,
+.clean_start fieldset,
+.clean_start nav,
+.clean_start ol,
+.clean_start ul,
+.clean_start div,
+.clean_start p,
+.clean_start pre,
+clean_start video {
+  display: block;
+}
+
+
+
+/* block tags reset standard docs */
 .clean_start address,
 .clean_start article,
 .clean_start aside,
@@ -36,7 +57,6 @@ html.clean_start {
 .clean_start form,
 .clean_start header,
 .clean_start hr,
-.clean_start layout-block,
 .clean_start li,
 .clean_start main,
 .clean_start nav,
