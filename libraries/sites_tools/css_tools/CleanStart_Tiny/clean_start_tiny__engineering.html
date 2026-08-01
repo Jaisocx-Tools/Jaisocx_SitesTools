@@ -111,6 +111,14 @@
       --clean_start--site--background: #fefdf9;
     }
 
+    .clean_start ul.shopping {
+      --clean_start--ul_li_i_c--content: '';
+      --clean_start--ul_li_i_c--font-size: 0;
+      --clean_start--ul_li_i_c--left: 0;
+      --clean_start--ul--margin: 0 0 0 0.5rem;
+      --clean_start--ul_li_i--padding: 0 0 0 0;
+    }
+
   </style>
 
   <head>
@@ -119,9 +127,25 @@
 
   <h1> Jaisocx clean_start_tiny ® </h1>
 
-  <h2> list </h2>
+  <label> list </label>
 
   <layout-block name="layout2_c_ul_li">
+
+    <h3> list &lt;ul&gt; </h3>
+
+    <layout-block>
+
+      <label> 🗒 💲 🍰 Shopping </label>
+
+      <ul class="shopping">
+        <li><i><text>  🍎  Apples </text></i></li>
+        <li><i><text>  🍌  Bananas </text></i></li>
+        <li><i><text>  🍊 Orange </text></i></li>
+      </ul>
+
+    </layout-block>
+
+
 
     <h3> navigation </h3>
 
@@ -397,27 +421,7 @@
 
     </layout-block>
 
-
-
-    <h3> list &lt;ul&gt; </h3>
-
-    <layout-block>
-
-      <label> 🗒 💲 🍰 Shopping List </label>
-
-      <ul class="shopping_list">
-        <li><i><text> Apples </text></i></li>
-        <li><i><text> Bananas </text></i></li>
-        <li><i><text> Milk </text></i></li>
-        <li><i><text> Bread </text></i></li>
-      </ul>
-
-    </layout-block>
-
-
   </layout-block>
-
-
 
 </main>
 </body>
