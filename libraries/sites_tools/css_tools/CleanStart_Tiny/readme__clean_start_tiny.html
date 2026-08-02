@@ -42,17 +42,18 @@
       display: block;
       border: 1px solid lime;
       background-color: #fdfdfd;
-      padding: 1rem;
+      padding: 0.4rem 1rem 0.4rem 1rem;
       margin: 1rem 0 0 1rem 0;
       overflow: auto;
     }
 
     .jaisocx.clean_start layout-block.preview.tag_pre {
       margin: 0.3rem 0 0.3rem 0;
+      overflow: hidden;
     }
     .jaisocx.clean_start layout-block.preview pre {
-      margin: 0rem 0 -1.0rem 0;
-      overflow: visible;
+      margin: 0rem 0 -1.8rem 0;
+      overflow: hidden;
     }
 
   </style>
@@ -181,19 +182,19 @@
 <body>
 <main>
 
-<h1> Jaisocx clean_start_tiny ® </h1>
+  <h1> Jaisocx clean_start_tiny ® </h1>
 
   <layout-block name="layout1">
       <p style="margin: 0 0 1rem 0;">
         <text> 💡 Aligning styles of a site, the single file </text>
-        <text class="font_overrides font_sans" style="background-color: #fdfdfd;"> clean_start_eco_build.css </text>
+        <text class="font_override font_sans" style="background-color: #fdfdfd;"> clean_start_eco_build.css </text>
         <text> of 300 ( three hundred ) css code lines. </text>
       </p>
 
       <ul class="list_style_dotted">
-        <li><i> <text> one css class name </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> clean_start </text> </i></li>
-        <li><i> <text> the same css variables namespace </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> --clean_start-- </text> </i></li>
-        <li><i> <text> the same css properties names </text> <text class="font_overrides font_monospace" style="background-color: #fdfdfd;"> line-height: var(...--line-height); </text> </i></li>
+        <li><i> <text> one css class name </text> <text class="font_override font_monospace" style="background-color: #fdfdfd;"> clean_start </text> </i></li>
+        <li><i> <text> the same css variables namespace </text> <text class="font_override font_monospace" style="background-color: #fdfdfd;"> --clean_start-- </text> </i></li>
+        <li><i> <text> the same css properties names </text> <text class="font_override font_monospace" style="background-color: #fdfdfd;"> line-height: var(...--line-height); </text> </i></li>
       </ul>
 
 
@@ -212,7 +213,7 @@
         <!-- .clean_start {
           --clean_start--all_tags--line-height: 1.2rem;
         } -->
-        <pre class="font_overrides font_monospace">
+        <pre class="font_override font_monospace">
 <text> .</text><text style="color: white; background-color: navy;">jaisocx</text><text>.</text><text style="color: magenta;">clean_start</text><text> { </text>
   <text> --</text><text style="color: magenta;">clean_start</text><text>--all_tags--</text><text style="color: green;">line-height</text><text>: 1.2rem;</text>
 <text> } </text>
@@ -244,7 +245,7 @@
         <!-- <html class="clean_start">
             ...
           } -->
-        <pre class="font_overrides font_monospace">
+        <pre class="font_override font_monospace">
 <text> &lt;html class="</text><text style="color: magenta;">clean_start</text><text>"&gt; </text>
   <text> ... </text>
         </pre>

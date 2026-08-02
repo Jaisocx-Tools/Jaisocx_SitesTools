@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="jaisocx clean_start">
+<html lang="en" class="jaisocx clean_start theme_fonts_a font_override">
 <head>
 
   <!--# FAVICON -->
@@ -34,6 +34,38 @@
       charset="utf-8"
       href="MediaAndStyles/themes/theme_base/clean_start_tiny__theme_base.css"
   />
+
+
+
+  <style id="scrolls" name="clean_start_preview_page">
+
+    .clean_start .fixed_height_n_scrollbar {
+      height: 10rem;
+
+      min-width: unset;
+      max-width: 100%;
+      width: 30rem;
+
+      padding: 0 1rem 1rem 1rem;
+      border: 1px solid lime;
+      background-color: #fdfdfd;
+
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    .clean_start .fixed_height_n_scrollbar layout-block {
+      height: auto;
+
+      min-width:  45rem;
+      max-width:  45rem;
+      width:  45rem;
+
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+
+  </style>
 
 
   <style id="mobile_friendly" name="clean_start_preview_page_responsive">
@@ -128,9 +160,76 @@
 <body>
 <main>
 
-<h1> Template by Jaisocx clean_start_tiny ® </h1>
+  <h1> all features Jaisocx clean_start_tiny ® </h1>
 
-  <p>  💡  for fast typing in a text IDE </p>
+  <layout-block>
+
+    <label> features </label>
+
+    <ul>
+
+      <li>
+        <i>
+          <label> Aligned styles </label>
+
+          <ul>
+            <li>
+              <i>
+                <text> css class names and styles variables namespaces </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> multiplatform fonts </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> mobile friendly </text>
+              </i>
+            </li>
+          </ul>
+        </i>
+      </li>
+
+
+      <li>
+        <i>
+          <label> html restyled </label>
+
+          <ul>
+            <li>
+              <i>
+                <text> text </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> label </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> table </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> list </text>
+              </i>
+            </li>
+            <li>
+              <i>
+                <text> scrollbar </text>
+              </i>
+            </li>
+          </ul>
+        </i>
+      </li>
+    </ul>
+
+  </layout-block>
+
 
 
   <h2> text blocks </h2>
@@ -168,10 +267,9 @@
   <layout-block class="preview tag_pre">
       <pre class="font_handwrite">
 🗒 💲 🍰 Shopping
-    🍎 Apples
-    🍌 Bananas
-    🟠 Milk
-    🟠 Bread
+    🍎 Apple
+    🍌 Banana
+    🍊 Orange
       </pre>
   </layout-block>
 
@@ -192,13 +290,11 @@ let func = ( a, b ) => {
 
   <h2> table </h2>
 
-  <layout-block name="layout2_d_tb">
-
-    <label> 🗒 💲 🍰  Shopping </label>
+  <layout-block name="tb">
 
     <table>
       <!-- Table Caption -->
-      <caption>Table Caption</caption>
+      <caption> Table Caption </caption>
 
       <!-- Define column styles -->
       <colgroup>
@@ -221,19 +317,19 @@ let func = ( a, b ) => {
       <!-- Table Body -->
       <tbody>
       <tr>
-        <td>Apple</td>
+        <td> 🍎 Apple </td>
         <td>$1.00</td>
         <td>5</td>
         <td>$5.00</td>
       </tr>
       <tr>
-        <td>Banana</td>
+        <td> 🍌 Banana </td>
         <td>$0.50</td>
         <td>10</td>
         <td>$5.00</td>
       </tr>
       <tr>
-        <td>Orange</td>
+        <td> 🍊 Orange </td>
         <td>$0.80</td>
         <td>7</td>
         <td>$5.60</td>
@@ -244,7 +340,7 @@ let func = ( a, b ) => {
       <tfoot>
       <tr>
         <td colspan="3">Sum</td>
-        <td>$15.60</td>
+        <td> $15.60 </td>
       </tr>
       </tfoot>
     </table>
@@ -255,28 +351,113 @@ let func = ( a, b ) => {
 
   <h2> lists </h2>
 
-  <h3> list </h3>
+  <layout-block name="layout2_c_ul_li">
 
-  <layout-block>
-
-    <label> 🗒 💲 🍰  Shopping </label>
-
-    <ul class="font_handwrite">
-      <li><i><label> 🍎 </label> <text> Apples </text></i></li>
-      <li><i><label> 🍌 </label> <text> Bananas </text></i></li>
-      <li><i><text> Milk </text></i></li>
-      <li><i><text> Bread </text></i></li>
-    </ul>
-
-  </layout-block>
-
-
-
-  <h3> inline navigation &lt;ul class="inline slash"&gt; </h3>
+    <h3> list </h3>
 
     <layout-block>
 
-      <label> 💲 🍰 inline slash </label>
+      <label> 🗒 💲 🍰 Shopping </label>
+
+      <ul class="shopping">
+        <li><i><text>  🍎  Apple </text></i></li>
+        <li><i><text>  🍌  Banana </text></i></li>
+        <li><i><text>  🍊  Orange </text></i></li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation ul a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
+
+      <ul>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation links ul.tag_border a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
+
+      <ul class="tag_border">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> inline navigation ul.inline a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="inline"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
+
+      <ul class="inline">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> inline navigation ul.inline.slash a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="inline slash"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
 
       <ul class="inline slash">
         <li>
@@ -300,18 +481,13 @@ let func = ( a, b ) => {
 
 
 
-    <h3> inline navigation &lt;ul class="inline"&gt; </h3>
+    <h3> inline navigation ul.inline.tag_border a </h3>
 
     <layout-block>
 
-      <label>  💲 🍰 inline </label>
+      <label> &lt;ul class="inline tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
 
-      <ul class="inline">
-        <li>
-          <i>
-            <label> 💲 🍰 </label>
-          </i>
-        </li>
+      <ul class="tag_border inline">
         <li>
           <i>
             <a href="javascript: void(0);">link 1</a>
@@ -333,13 +509,87 @@ let func = ( a, b ) => {
 
 
 
-    <h3> navigation links </h3>
+    <h3> navigation links ul a </h3>
 
     <layout-block>
 
-      <label> 💲 🍰 navigation </label>
+      <label> &lt;ul&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
 
       <ul>
+
+        <li>
+          <i>
+            <label> links 1 </label>
+            <ul>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.1 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.2 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.3 </a>
+              </i></li>
+            </ul>
+          </i>
+        </li>
+
+        <li>
+          <i>
+            <label> links 2 </label>
+            <ul>
+              <li>
+                <i>
+                  <a href="javascript: void(0);"> link 2.1 </a>
+                </i>
+              </li>
+
+              <li>
+                <i>
+                  <label> links 2.2 </label>
+                  <ul>
+                    <li><i>
+                      <text> text a 2.2.1 </text>
+                      <text> text b 2.2.1 </text>
+                      <label> label 2.2.1 </label>
+                      <a href="javascript: void(0);"> link 2.2.1 </a>
+                      <text> text c 2.2.1 </text>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.2 </a>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.3 </a>
+                    </i></li>
+                  </ul>
+                </i>
+              </li>
+
+              <li><i>
+                <a href="javascript: void(0);"> link 2.3 </a>
+              </i></li>
+            </ul>
+          </i>
+        </li>
+
+        <li>
+          <i>
+            <a href="javascript: void(0);"> link 3 </a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation links ul.tag_border a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
+
+      <ul class="tag_border">
 
         <li>
           <i>
@@ -379,9 +629,7 @@ let func = ( a, b ) => {
                       <a href="javascript: void(0);"> link 2.2.2 </a>
                     </i></li>
                     <li><i>
-                      <label> label 2.2.3 </label>
                       <a href="javascript: void(0);"> link 2.2.3 </a>
-                      <text> text 2.2.3 </text>
                     </i></li>
                   </ul>
                 </i>
@@ -400,7 +648,31 @@ let func = ( a, b ) => {
           </i>
         </li>
       </ul>
+
     </layout-block>
+
+
+
+    <h2> Scrollbars </h2>
+
+    <layiut-block class="fixed_height_n_scrollbar">
+      <layout-block class="font_sans">
+        <p>
+          <text> sentence line 1. </text>
+          <text> sentence line 1. </text>
+          <text> sentence line 1. </text>
+          <label> label in sentence line 1. </label>
+          <a href="javascript: void(0);"> link to a site </a>
+          <text> sentence line 1. </text>
+          <text> sentence line 1. </text>
+        </p>
+        <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+        <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+      </layout-block>
+    </layiut-block>
+
+
+  </layout-block>
 
 
 </main>
