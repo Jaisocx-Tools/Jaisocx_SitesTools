@@ -1,7 +1,7 @@
 
 # clean_start_tiny
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 340 ( three hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
@@ -18,7 +18,7 @@
 
 ## The aim of the setup
 
-  >  💡  Aligning styles of a site, the single file `clean_start_tiny.css` of 340 ( three hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
 
   The tiny css clean start has all styles set hardcoded, 
     and, thanks to this, the css variables code block just has 100 code lines.
@@ -49,23 +49,6 @@
 
 **all features in one html file 46.33kb**
 [https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/template_clean_start_one__all_features.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/template_clean_start_one__all_features.html)
-
-
-
-
-
-
-clean_start_tiny__engineering.html
-clean_start_tiny__preview.html
-clean_start_tiny__table.html
-clean_start_tiny__ul_li.html
-readme__clean_start_tiny.html
-template_clean_start__icons.html
-template_clean_start__zero.html
-
-
-
-
 
 
 
