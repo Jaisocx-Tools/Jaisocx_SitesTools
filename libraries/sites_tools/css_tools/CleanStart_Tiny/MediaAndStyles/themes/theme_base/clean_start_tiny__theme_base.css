@@ -10,7 +10,7 @@
   --clean_start--all_tags--border-width: 0;
 
   --clean_start--anchor--color: navy;
-  --clean_start--anchor_hover--color: blue;
+  --clean_start--anchor_hover--color: #2292e5;
 
   --clean_start--h1--font-size: 1.25rem;
   --clean_start--h1--line-height: 1.7rem;
@@ -50,6 +50,22 @@
   --clean_start--ul_li_i_o--tag_border--border-radius: 5px;
   --clean_start--ul_li_i_o--tag_border--border: 1px solid lime;
   --clean_start--ul_li_i_o--tag_border--background: #eafdf2;
+
+
+  /* label */
+  --clean_start--label--display:           block;
+
+  --clean_start--label--font-size:         0.79rem;
+  --clean_start--label--line-height:       var(--clean_start--label--font-size);
+
+  --clean_start--label--padding:           0.12rem 0.5rem 0.16rem 0.5rem;
+  --clean_start--label--margin:            0 0 0 0;
+
+  --clean_start--label--color:             green;
+  --clean_start--label--background-color:  #eefafd;
+
+  --clean_start--label--border:            1px solid green;
+  --clean_start--label--border-radius:     0.8rem;
 
 
   /* pre */

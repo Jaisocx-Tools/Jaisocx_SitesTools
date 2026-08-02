@@ -1,40 +1,73 @@
 
-.clean_start label {
-
-  font-size: 0.85rem;
-  line-height: 0.82rem;
-
-  padding: 0.05rem 1.2rem 0.05rem 0.9rem;
-
-  color: navy;
-  background-color: #eef2fe;
-
-  border: 1px solid #3355fd;
-  border-radius: 0.3rem;
-}
 
 
-.clean_start layout-block label {
-  display: block;
-
-  overflow-x: visible;
-  overflow-y: hidden;
-
-  min-width: min-content;
-  max-width: 100%;
-  width: fit-content;
-
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-
-.clean_start li label,
+.clean_start li i label,
 .clean_start p label,
 .clean_start text-block label,
 .clean_start text-line label {
-  display: inline-block;
+  --clean_start--label--display:            inline-block;
 
-  margin: 0 0 0 0;
+  --clean_start--label--font-size:          0.72rem;
+  --clean_start--label--line-height:        var(--clean_start--label--font-size);
+
+  --clean_start--label--padding:            0.14rem 0.45rem 0.14rem 0.45rem;
+
+  --clean_start--label--color: green;
+  --clean_start--label--background-color:   #eefef2;
+
+  --clean_start--label--border:             1px solid lime;
+  --clean_start--label--border-radius:      0.5rem;
+}
+
+
+
+.clean_start label {
+  display:    var(--clean_start--label--display);
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  min-height: unset;
+  max-height: 100%;
+  height: fit-content;
+
+  min-width: unset;
+  max-width: 100%;
+  width: fit-content;
+
+  font-size:           var(--clean_start--label--font-size);
+  line-height:         var(--clean_start--label--line-height);
+
+  padding:             var(--clean_start--label--padding);
+  margin:              var(--clean_start--label--margin);
+
+  color:               var(--clean_start--label--color);
+  background-color:    var(--clean_start--label--background-color);
+
+  border:              var(--clean_start--label--border);
+  border-radius:       var(--clean_start--label--border-radius);
+}
+
+
+.clean_start li i label,
+.clean_start p label,
+.clean_start text-block label,
+.clean_start text-line label {
+
+  font-size:           var(--clean_start--label--font-size);
+  line-height:         var(--clean_start--label--line-height);
+
+  padding:             var(--clean_start--label--padding);
+  margin:              var(--clean_start--label--margin);
+
+  color:               var(--clean_start--label--color);
+  background-color:    var(--clean_start--label--background-color);
+
+  border:              var(--clean_start--label--border);
+  border-radius:       var(--clean_start--label--border-radius);
+
+  overflow-x:          var(--clean_start--label--overflow-x);
+  overflow-y:          var(--clean_start--label--overflow-y);
 }
 
 

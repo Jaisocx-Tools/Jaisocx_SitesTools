@@ -2,7 +2,7 @@
 
 .clean_start ul,
 .clean_start ul li,
-.clean_start ul li i {
+.clean_start li i {
   display:         block;
 
   font-size:       var(--clean_start--ul_li_i--font-size);
@@ -14,7 +14,7 @@
 }
 
 .clean_start ul li,
-.clean_start ul li i {
+.clean_start li i {
   margin:          0 0 0 0;
 }
 
@@ -23,18 +23,18 @@
   padding:         0 0 0 0;
 }
 
-.clean_start ul li i {
+.clean_start li i {
   padding:         var(--clean_start--ul_li_i--padding);
   font-style:      normal;
 }
 
-.clean_start ul li i ul li i {
+.clean_start i ul i {
   padding:         var(--clean_start--ul_li_i--padding);
 }
 
 .clean_start ul,
 .clean_start ul li,
-.clean_start ul li i {
+.clean_start li i {
   overflow-x:      visible;
   overflow-y:      visible;
 }
@@ -43,7 +43,7 @@
   list-style-type: none;
 }
 
-.clean_start ul li i * {
+.clean_start li i * {
   display:     inline-block;
   padding:     0 0.3rem 0 0;
   overflow-x:  visible;
@@ -53,7 +53,7 @@
   font-size:   var(--clean_start--ul_li_i--font-size);
 }
 
-.clean_start ul li i::after {
+.clean_start li i::after {
   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
 
   content:       var(--clean_start--ul_li_i_c--content, '-');
@@ -77,12 +77,12 @@
 
 
 /* overrides wildcard style above */
-.clean_start ul li i ul,
-.clean_start ul li i ul li {
+.clean_start i ul,
+.clean_start i ul li {
   display:   block;
 }
 
-.clean_start ul li i ul {
+.clean_start i ul {
   margin: var(--clean_start--i_ul--margin);
 }
 

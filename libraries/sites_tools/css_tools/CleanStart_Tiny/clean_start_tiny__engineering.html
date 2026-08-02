@@ -77,7 +77,15 @@
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/clean_start_tiny__ul_li.css"
+      href="MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__anchor.css"
+  />
+
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/theme__tiny_sites_tools__ul_li.css"
   />
 
   <link
@@ -86,6 +94,14 @@
       charset="utf-8"
       href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/tiny_sites_tools__ul_li.css"
   />
+
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/clean_start_tiny__ul_li.css"
+  />
+
 
   <link
       rel="stylesheet"
@@ -109,6 +125,12 @@
 
     .jaisocx.clean_start {
       --clean_start--site--background: #fefdf9;
+
+      --clean_start--label--margin:    0 0 0 0;
+    }
+
+    .jaisocx.clean_start ul li {
+      --clean_start--label--margin:    var(--clean_start--ul--margin);
     }
 
     .clean_start ul.shopping {
@@ -127,11 +149,11 @@
 
   <h1> Jaisocx clean_start_tiny ® </h1>
 
-  <label> list </label>
+  <h2> lists </h2>
 
   <layout-block name="layout2_c_ul_li">
 
-    <h3> list &lt;ul&gt; </h3>
+    <h3> list </h3>
 
     <layout-block>
 
@@ -147,11 +169,11 @@
 
 
 
-    <h3> navigation </h3>
+    <h3> navigation ul a </h3>
 
     <layout-block>
 
-      <label> navigation </label>
+      <label> &lt;ul&gt; &lt;a&gt; </label>
 
       <ul>
         <li>
@@ -175,11 +197,11 @@
 
 
 
-    <h3> ul li i o tag_border </h3>
+    <h3> navigation links ul.tag_border a </h3>
 
     <layout-block>
 
-      <label> ul li i o tag_border </label>
+      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
 
       <ul class="tag_border">
         <li>
@@ -203,11 +225,11 @@
 
 
 
-    <h3> inline navigation &lt;ul class="inline"&gt; </h3>
+    <h3> inline navigation ul.inline a </h3>
 
     <layout-block>
 
-      <label> inline navigation &lt;ul class="inline"&gt; </label>
+      <label> &lt;ul class="inline"&gt; &lt;a&gt; </label>
 
       <ul class="inline">
         <li>
@@ -231,11 +253,11 @@
 
 
 
-    <h3> inline navigation &lt;ul class="inline slash"&gt; </h3>
+    <h3> inline navigation ul.inline.slash a </h3>
 
     <layout-block>
 
-      <label> inline navigation &lt;ul class="inline slash"&gt; </label>
+      <label> &lt;ul class="inline slash"&gt; &lt;a&gt; </label>
 
       <ul class="inline slash">
         <li>
@@ -259,11 +281,11 @@
 
 
 
-    <h3> ul li i o tag_border.inline </h3>
+    <h3> inline navigation ul.inline.tag_border a </h3>
 
     <layout-block>
 
-      <label> ul li i o tag_border </label>
+      <label> &lt;ul class="inline tag_border"&gt; &lt;a&gt; </label>
 
       <ul class="tag_border inline">
         <li>
@@ -287,9 +309,11 @@
 
 
 
-    <h3> navigation links  &lt;ul&gt; &lt;a&gt; </h3>
+    <h3> navigation links ul a </h3>
 
     <layout-block>
+
+      <label> &lt;ul&gt; &lt;a&gt; </label>
 
       <ul>
 
@@ -325,7 +349,11 @@
                   <label> links 2.2 </label>
                   <ul>
                     <li><i>
+                      <text> text a 2.2.1 </text>
+                      <text> text b 2.2.1 </text>
+                      <label> label 2.2.1 </label>
                       <a href="javascript: void(0);"> link 2.2.1 </a>
+                      <text> text c 2.2.1 </text>
                     </i></li>
                     <li><i>
                       <a href="javascript: void(0);"> link 2.2.2 </a>
@@ -355,9 +383,11 @@
 
 
 
-    <h3> navigation links tag_border  &lt;ul&gt; &lt;a&gt; </h3>
+    <h3> navigation links ul.tag_border a </h3>
 
     <layout-block>
+
+      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
 
       <ul class="tag_border">
 
