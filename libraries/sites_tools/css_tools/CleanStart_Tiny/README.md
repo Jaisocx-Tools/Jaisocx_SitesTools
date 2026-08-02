@@ -68,15 +68,32 @@
     <html language="en" class="clean_start">
   ```
 
+  ```html
+    <html language="en" class="<Namespace> clean_start">
+  ```
+
+  ```html
+    <html language="en" class="clean_start theme_fonts_a">
+  ```
+
+  ```html
+    <html language="en" class="clean_start theme_fonts_a font_override">
+  ```
+
+
 
 ### css example
 
   ```css
-  
     .clean_start {
     
     }
-   
+  ```
+
+  ```css
+    .clean_start.<Your Namespace> {
+      --clean_start--all_tags--font-size: 0.94rem;
+    }
   ```
 
 
