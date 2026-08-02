@@ -19,40 +19,21 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
-
   <!--# CleanStart_Tiny -->
   <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/clean_start_tiny.css"
+      href="MediaAndStyles/clean_start_tiny__all_features.css"
   />
 
-
-
+  <!--# CleanStart_Tiny Theme_Base -->
   <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/clean_start_tiny__ul_li.css"
+      href="MediaAndStyles/themes/theme_base/clean_start_tiny__theme_base.css"
   />
-
-  <link
-      rel="stylesheet"
-      type="text/css"
-      charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_ul_li/tiny_sites_tools__ul_li.css"
-  />
-
-
-  <style id="theme" name="clean_start_preview_page">
-
-    .jaisocx.clean_start {
-      --clean_start--body_tag--background: #f2fdfe;
-      --clean_start--site--background: #eafef9;
-    }
-
-  </style>
 
 
   <style id="layout_block_preview" name="clean_start_preview_page">
@@ -63,6 +44,7 @@
       background-color: #fdfdfd;
       padding: 1rem;
       margin: 1rem 0 0 1rem 0;
+      overflow: auto;
     }
 
     .jaisocx.clean_start layout-block.preview.tag_pre {
@@ -70,6 +52,38 @@
     }
     .jaisocx.clean_start layout-block.preview pre {
       margin: 0rem 0 -1.0rem 0;
+      overflow: visible;
+    }
+
+  </style>
+
+
+  <style id="scrolls" name="clean_start_preview_page">
+
+    .clean_start .fixed_height_n_scrollbar {
+      height: 10rem;
+
+      min-width: unset;
+      max-width: 100%;
+      width: 30rem;
+
+      padding: 0 1rem 1rem 1rem;
+      border: 1px solid lime;
+      background-color: #fdfdfd;
+
+      overflow-x: scroll;
+      overflow-y: scroll;
+    }
+
+    .clean_start .fixed_height_n_scrollbar layout-block {
+      height: auto;
+
+      min-width:  45rem;
+      max-width:  45rem;
+      width:  45rem;
+
+      overflow-x: hidden;
+      overflow-y: visible;
     }
 
   </style>
@@ -167,15 +181,35 @@
 <body>
 <main>
 
-  <h1> Jaisocx clean_start_tiny ® </h1>
+<h1> Jaisocx clean_start_tiny ® </h1>
+
+  <h2> lists </h2>
 
   <layout-block name="layout2_c_ul_li">
 
-    <h3> inline navigation &lt;ul class="inline slash"&gt; </h3>
+    <h3> list </h3>
 
-    <layout-block class="preview">
+    <layout-block>
 
-      <ul class="inline slash">
+      <label> 🗒 💲 🍰 Shopping </label>
+
+      <ul class="shopping">
+        <li><i><text>  🍎  Apples </text></i></li>
+        <li><i><text>  🍌  Bananas </text></i></li>
+        <li><i><text>  🍊 Orange </text></i></li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation ul a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul&gt; &lt;a&gt; </label>
+
+      <ul>
         <li>
           <i>
             <a href="javascript: void(0);">link 1</a>
@@ -197,9 +231,39 @@
 
 
 
-    <h3> inline navigation &lt;ul class="inline"&gt; </h3>
+    <h3> navigation links ul.tag_border a </h3>
 
-    <layout-block class="preview">
+    <layout-block>
+
+      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
+
+      <ul class="tag_border">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> inline navigation ul.inline a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="inline"&gt; &lt;a&gt; </label>
 
       <ul class="inline">
         <li>
@@ -223,10 +287,143 @@
 
 
 
-    <h3> navigation links  &lt;ul&gt; &lt;a&gt; </h3>
+    <h3> inline navigation ul.inline.slash a </h3>
 
-    <layout-block class="preview">
+    <layout-block>
+
+      <label> &lt;ul class="inline slash"&gt; &lt;a&gt; </label>
+
+      <ul class="inline slash">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> inline navigation ul.inline.tag_border a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="inline tag_border"&gt; &lt;a&gt; </label>
+
+      <ul class="tag_border inline">
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 1</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 2</a>
+          </i>
+        </li>
+        <li>
+          <i>
+            <a href="javascript: void(0);">link 3</a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation links ul a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul&gt; &lt;a&gt; </label>
+
       <ul>
+
+        <li>
+          <i>
+            <label> links 1 </label>
+            <ul>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.1 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.2 </a>
+              </i></li>
+              <li><i>
+                <a href="javascript: void(0);"> link 1.3 </a>
+              </i></li>
+            </ul>
+          </i>
+        </li>
+
+        <li>
+          <i>
+            <label> links 2 </label>
+            <ul>
+              <li>
+                <i>
+                  <a href="javascript: void(0);"> link 2.1 </a>
+                </i>
+              </li>
+
+              <li>
+                <i>
+                  <label> links 2.2 </label>
+                  <ul>
+                    <li><i>
+                      <text> text a 2.2.1 </text>
+                      <text> text b 2.2.1 </text>
+                      <label> label 2.2.1 </label>
+                      <a href="javascript: void(0);"> link 2.2.1 </a>
+                      <text> text c 2.2.1 </text>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.2 </a>
+                    </i></li>
+                    <li><i>
+                      <a href="javascript: void(0);"> link 2.2.3 </a>
+                    </i></li>
+                  </ul>
+                </i>
+              </li>
+
+              <li><i>
+                <a href="javascript: void(0);"> link 2.3 </a>
+              </i></li>
+            </ul>
+          </i>
+        </li>
+
+        <li>
+          <i>
+            <a href="javascript: void(0);"> link 3 </a>
+          </i>
+        </li>
+      </ul>
+
+    </layout-block>
+
+
+
+    <h3> navigation links ul.tag_border a </h3>
+
+    <layout-block>
+
+      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
+
+      <ul class="tag_border">
 
         <li>
           <i>
@@ -285,27 +482,10 @@
           </i>
         </li>
       </ul>
-    </layout-block>
-
-
-
-    <h3> list &lt;ul&gt; </h3>
-
-    <layout-block class="preview">
-
-      <label> 🗒 💲 🍰 Shopping List </label>
-
-      <ul class="shopping_list">
-        <li><i><text> Apples </text></i></li>
-        <li><i><text> Bananas </text></i></li>
-        <li><i><text> Milk </text></i></li>
-        <li><i><text> Bread </text></i></li>
-      </ul>
 
     </layout-block>
 
   </layout-block>
-
 
 </main>
 </body>
