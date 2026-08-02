@@ -1,12 +1,12 @@
 
 # clean_start_tiny
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 300 ( three hundred ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
 
-  | 🗓  **Updated**  | 🌼 Summer 2026 | `29. Jul AD 2026 01:53 CET` |
+  | 🗓  **Updated**  | 🌼 Summer 2026 | `02. August AD 2026 12:10 UTC` |
 
   | 📐  **Size**     | 🗂 Folder: . KB | 📦 Tarball: . KB | 📄 .js: . KB |
 
@@ -18,7 +18,7 @@
 
 ## The aim of the setup
 
-  >  💡  Aligning styles of a site, the single file `clean_start_tiny.css` of 300 ( three hundred ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
 
   in the `clean_start_tiny__html_tags` folder there are aligning styles for the well-known html tags.
 
@@ -48,34 +48,42 @@
 ##  Structure
 
 ```ls
-📚 CeanStart_Tiny/
+📚 CleanStart_Tiny/
     🗂 favicon/
       📄 Icon_Jaisocx.ico
     🗂 MediaAndStyles/
-      🗂 clean_start_tiny__html_tags/
-        📄 clean_start_tiny__all_tags.css
-        📄 clean_start_tiny__anchor.css
-        📄 clean_start_tiny__display.css
-        📄 clean_start_tiny__h.css
-        📄 clean_start_tiny__p.css
-        📄 clean_start_tiny__pre.css
-        📄 clean_start_tiny__site.css
-        📒 README.md
-      🗂 themes/
-        🗂 theme_base/
-          📄 clean_start_tiny__theme_base.css
-      🗂 tiny_sites_tools/
-        🗂 tiny_sites_table/
-          📄 clean_start_tiny__table.css
-        🗂 tiny_sites_ul_li/
-          📄 clean_start_tiny__ul_li.css
-          📄 tiny_sites_tools__ul_li.css
-      📄 clean_start_tiny__build.css
+        🗂 clean_start_tiny__html_tags/ 
+          📄 clean_start_tiny__all_tags.css
+          📄 clean_start_tiny__anchor.css
+          📄 clean_start_tiny__h.css
+          📄 clean_start_tiny__p.css
+          📄 clean_start_tiny__pre.css
+          📄 clean_start_tiny__site.css
+          📒 README.md
+        🗂 clean_start_tiny__responsive/ 
+          📄 responsive_mobile_friendly.css
+        🗂 clean_start_tiny__styles/ 
+        🗂 themes/ 
+          🗂 theme_base/
+            📄 clean_start_tiny__theme_base.css
+          🗂 themes_fonts/
+            📄 clean_start__font_override.css
+            📄 clean_start_tiny__fonts.css
+            📄 theme_fonts_a.css
+            📄 theme_fonts_b.css
+            📄 theme_fonts_c.css
+            📄 theme_fonts_old_good_fonts.css
+        🗂 tiny_sites_tools/ 
+          🗂 tiny_sites_label/ 
+          🗂 tiny_sites_scrolls/ 
+          🗂 tiny_sites_table/ 
+          🗂 tiny_sites_ul_li/ 
+        📄 clean_start_tiny__all_features.css
+        📄 clean_start_tiny__base.css
     📄 clean_start_tiny__preview.html
-    📄 clean_start_tiny__table.html
-    📄 clean_start_tiny__ul_li.html
     📒 README.md
-    📄 readme__clean_start_tiny.html
+    📄 template_clean_start_linked__all_features.html
+    📄 template_clean_start_one__all_features.html
 
 ```
 
