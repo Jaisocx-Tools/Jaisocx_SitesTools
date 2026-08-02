@@ -3,8 +3,10 @@
 
 .clean_start li i label,
 .clean_start p label,
-.clean_start text-block label,
-.clean_start text-line label {
+.clean_start layout-block p label,
+.clean_start text-block p label,
+.clean_start layout-block text-block label,
+.clean_start layout-block text-line label {
   --clean_start--label--display:            inline-block;
 
   --clean_start--label--font-size:          0.72rem;
@@ -12,13 +14,18 @@
 
   --clean_start--label--padding:            0.14rem 0.45rem 0.14rem 0.45rem;
 
-  --clean_start--label--color: green;
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  --clean_start--label--margin:             0 0.24rem -2px 0;
+
+  --clean_start--label--color:              green;
   --clean_start--label--background-color:   #eefef2;
 
   --clean_start--label--border:             1px solid lime;
   --clean_start--label--border-radius:      0.5rem;
-}
 
+  --clean_start--label--overflow-x:   hidden;
+  --clean_start--label--overflow-y:   hidden;
+}
 
 
 .clean_start label {
@@ -50,10 +57,10 @@
 
 
 .clean_start li i label,
-.clean_start p label,
-.clean_start text-block label,
-.clean_start text-line label {
-
+.clean_start layout-block p label,
+.clean_start text-block p label,
+.clean_start layout-block text-block label,
+.clean_start layout-block text-line label {
   font-size:           var(--clean_start--label--font-size);
   line-height:         var(--clean_start--label--line-height);
 
@@ -68,6 +75,33 @@
 
   overflow-x:          var(--clean_start--label--overflow-x);
   overflow-y:          var(--clean_start--label--overflow-y);
+}
+
+
+.clean_start li i label {
+  max-height:          var(--clean_start--ul_li_i--line-height);
+
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  margin:              var(--clean_start--label--margin);
+
+  margin-top:          0;
+
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  margin-bottom:       -2px;
+}
+
+
+.clean_start p label,
+.clean_start layout-block p label {
+  max-height:          var(--clean_start--p--line-height);
+
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  margin:              var(--clean_start--label--margin);
+
+  margin-top:          0;
+
+  /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
+  margin-bottom:       -2px;
 }
 
 

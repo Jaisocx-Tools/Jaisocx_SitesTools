@@ -1,7 +1,7 @@
 
 # clean_start_tiny
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
@@ -18,20 +18,15 @@
 
 ## The aim of the setup
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny.css` of 740 ( seven hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
 
   The tiny css clean start has all styles set hardcoded, 
-    and, thanks to this, the css variables code block just has 100 code lines.
+    and, thanks to this, the css variables code block just has 230 code lines.
 
-  The clean_start_tiny.css file of size 8_660 B, doesn't solve ul li and tables styling. 
+  The `clean_start_tiny__base.css` file of smaller size doesn't resolve all features.
 
 
 ## Links
-
-**docs**
-[https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/readme__clean_start_tiny.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/readme__clean_start_tiny.html)
-
-
 
 ### clean_start_tiny examples
 
@@ -49,6 +44,11 @@
 
 **all features in one html file 46.33kb**
 [https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/template_clean_start_one__all_features.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/template_clean_start_one__all_features.html)
+
+
+
+**readme**
+[https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/readme__clean_start_tiny.html](https://jaisocx-tools.github.io/jaisocx_sites_tools/libraries/sites_tools/css_tools/CleanStart_Tiny/readme__clean_start_tiny.html)
 
 
 

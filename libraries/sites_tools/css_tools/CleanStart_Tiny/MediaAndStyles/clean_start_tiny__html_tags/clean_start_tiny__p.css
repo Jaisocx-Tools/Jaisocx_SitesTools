@@ -1,11 +1,25 @@
 
 /* Paragraph html tag <p> */
 .clean_start p {
-  margin:      var(--clean_start--p--margin);
+  line-height:  var(--clean_start--p--line-height);
+  font-size:    var(--clean_start--p--font-size);
+  margin:       var(--clean_start--p--margin);
 }
 
 .clean_start p:first-of-type {
   margin-top:  0;
+}
+
+.clean_start p *,
+.clean_start layout-block p * {
+  margin-top:      0;
+  margin-bottom:   0;
+
+  line-height:     var(--clean_start--p--font-size);
+  max-height:      var(--clean_start--p--line-height);
+
+  overflow-x: visible;
+  overflow-y: hidden;
 }
 
 

@@ -79,12 +79,11 @@
       href="MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__anchor.css"
   />
 
-
   <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
-      href="MediaAndStyles/tiny_sites_tools/tiny_sites_label/clean_start_tiny__label.css"
+      href="MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__p.css"
   />
 
 
@@ -110,6 +109,14 @@
   />
 
 
+  <link
+      rel="stylesheet"
+      type="text/css"
+      charset="utf-8"
+      href="MediaAndStyles/tiny_sites_tools/tiny_sites_label/clean_start_tiny__label.css"
+  />
+
+
 
   <link
       rel="stylesheet"
@@ -129,22 +136,6 @@
     }
 
 
-    .jaisocx.clean_start ul li {
-      --clean_start--label--margin:    var(--clean_start--ul--margin);
-    }
-    .jaisocx.clean_start ul li label {
-      margin-left: 0;
-    }
-
-
-    .clean_start ul.shopping {
-      --clean_start--ul_li_i_c--content: '';
-      --clean_start--ul_li_i_c--font-size: 0;
-      --clean_start--ul_li_i_c--left: 0;
-      --clean_start--ul--margin: 0 0 0 0.5rem;
-      --clean_start--ul_li_i--padding: 0 0 0 0;
-    }
-
   </style>
 
   <head>
@@ -153,309 +144,124 @@
 
   <h1> Jaisocx clean_start_tiny ® </h1>
 
-  <h2> lists </h2>
 
-  <layout-block name="layout2_c_ul_li">
 
-    <h3> list </h3>
-
-    <layout-block>
-
-      <label> 🗒 💲 🍰 Shopping </label>
-
-      <ul class="shopping">
-        <li><i><text>  🍎  Apples </text></i></li>
-        <li><i><text>  🍌  Bananas </text></i></li>
-        <li><i><text>  🍊 Orange </text></i></li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> navigation ul a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul&gt; &lt;a&gt; </label>
-
-      <ul>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> navigation links ul.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> inline navigation ul.inline a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="inline"&gt; &lt;a&gt; </label>
-
-      <ul class="inline">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> inline navigation ul.inline.slash a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="inline slash"&gt; &lt;a&gt; </label>
-
-      <ul class="inline slash">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> inline navigation ul.inline.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="inline tag_border"&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border inline">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> navigation links ul a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul&gt; &lt;a&gt; </label>
-
-      <ul>
-
-        <li>
-          <i>
-            <label> links 1 </label>
-            <ul>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.1 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.2 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <label> links 2 </label>
-            <ul>
-              <li>
-                <i>
-                  <a href="javascript: void(0);"> link 2.1 </a>
-                </i>
-              </li>
-
-              <li>
-                <i>
-                  <label> links 2.2 </label>
-                  <ul>
-                    <li><i>
-                      <text> text a 2.2.1 </text>
-                      <text> text b 2.2.1 </text>
-                      <label> label 2.2.1 </label>
-                      <a href="javascript: void(0);"> link 2.2.1 </a>
-                      <text> text c 2.2.1 </text>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.2 </a>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.3 </a>
-                    </i></li>
-                  </ul>
-                </i>
-              </li>
-
-              <li><i>
-                <a href="javascript: void(0);"> link 2.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <a href="javascript: void(0);"> link 3 </a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> navigation links ul.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="tag_border"&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border">
-
-        <li>
-          <i>
-            <label> links 1 </label>
-            <ul>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.1 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.2 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <label> links 2 </label>
-            <ul>
-              <li>
-                <i>
-                  <a href="javascript: void(0);"> link 2.1 </a>
-                </i>
-              </li>
-
-              <li>
-                <i>
-                  <label> links 2.2 </label>
-                  <ul>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.1 </a>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.2 </a>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.3 </a>
-                    </i></li>
-                  </ul>
-                </i>
-              </li>
-
-              <li><i>
-                <a href="javascript: void(0);"> link 2.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <a href="javascript: void(0);"> link 3 </a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
+  <h2> text blocks </h2>
+
+  <h3> text font sans-serif </h3>
+
+  <layout-block class="font_sans">
+
+    <p>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <label> label in sentence line 1. </label>
+      <text> sentence line 1. </text>
+      <text>
+        <label> label in text in sentence line 1. </label>
+      </text>
+      <a href="javascript: void(0);"> link to a site </a>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+    </p>
+
+    <p> sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. </p>
+
+    <p> sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. </p>
 
   </layout-block>
+
+
+
+  <h3> navigation links ul a </h3>
+
+  <layout-block>
+
+    <label> &lt;ul&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
+
+    <ul>
+
+      <li>
+        <i>
+          <label> links 1 </label>
+          <ul>
+            <li><i>
+              <a href="javascript: void(0);"> link 1.1 </a>
+            </i></li>
+            <li><i>
+              <a href="javascript: void(0);"> link 1.2 </a>
+            </i></li>
+            <li><i>
+              <a href="javascript: void(0);"> link 1.3 </a>
+            </i></li>
+          </ul>
+        </i>
+      </li>
+
+      <li>
+        <i>
+          <label> links 2 </label>
+          <ul>
+            <li>
+              <i>
+                <a href="javascript: void(0);"> link 2.1 </a>
+              </i>
+            </li>
+
+            <li>
+              <i>
+                <label> links 2.2 </label>
+                <ul>
+                  <li><i>
+                    <text> text a 2.2.1 </text>
+                    <text> text b 2.2.1 </text>
+                    <label> label 2.2.1 </label>
+                    <a href="javascript: void(0);"> link 2.2.1 </a>
+                    <text> text c 2.2.1 </text>
+                  </i></li>
+                  <li><i>
+                    <a href="javascript: void(0);"> link 2.2.2 </a>
+                  </i></li>
+                  <li><i>
+                    <a href="javascript: void(0);"> link 2.2.3 </a>
+                  </i></li>
+                </ul>
+              </i>
+            </li>
+
+            <li><i>
+              <a href="javascript: void(0);"> link 2.3 </a>
+            </i></li>
+          </ul>
+        </i>
+      </li>
+
+      <li>
+        <i>
+          <a href="javascript: void(0);"> link 3 </a>
+        </i>
+      </li>
+    </ul>
+
+  </layout-block>
+
 
 </main>
 </body>
