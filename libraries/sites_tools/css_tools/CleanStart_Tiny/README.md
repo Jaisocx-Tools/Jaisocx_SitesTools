@@ -95,45 +95,48 @@
 ```ls
 📚 CleanStart_Tiny/
     🗂 favicon/
-      📄 Icon_Jaisocx.ico
+      📄 Icon_Jaisocx.ico                                 4_286 b
     🗂 MediaAndStyles/
         🗂 clean_start_tiny__html_tags/ 
-          📄 clean_start_tiny__all_tags.css
-          📄 clean_start_tiny__anchor.css
-          📄 clean_start_tiny__h.css
-          📄 clean_start_tiny__p.css
-          📄 clean_start_tiny__pre.css
-          📄 clean_start_tiny__site.css
-          📒 README.md
+          📄 clean_start_tiny__all_tags.css                844 b
+          📄 clean_start_tiny__anchor.css                  361 b
+          📄 clean_start_tiny__h.css                       787 b
+          📄 clean_start_tiny__p.css                       504 b
+          📄 clean_start_tiny__pre.css                     281 b
+          📄 clean_start_tiny__site.css                  1_566 b
+          📒 README.md                                   2_533 b
         🗂 clean_start_tiny__responsive/ 
-          📄 responsive_mobile_friendly.css
+          📄 responsive_mobile_friendly.css              3_120 b
         🗂 clean_start_tiny__styles/ 
-          📄 clean_start_tiny__display.css 
-          📄 clean_start_tiny__scrollbar.css 
+          📄 clean_start_tiny__display.css               1_175 b
+          📄 clean_start_tiny__scrollbar.css               807 b
         🗂 themes/ 
           🗂 theme_base/
-            📄 clean_start_tiny__theme_base.css
+            📄 clean_start_tiny__theme_base.css          9_723 b
           🗂 themes_fonts/
-            📄 clean_start__font_override.css
-            📄 clean_start_tiny__fonts.css
-            📄 theme_fonts_a.css
-            📄 theme_fonts_b.css
-            📄 theme_fonts_c.css
-            📄 theme_fonts_old_good_fonts.css
+            📄 clean_start__font_override.css            1_650 b
+            📚 clean_start_tiny__fonts.css               5_246 b
+            📄 theme_fonts_a.css                           592 b
+            📄 theme_fonts_b.css                           619 b
+            📄 theme_fonts_c.css                           572 b
+            📄 theme_fonts_old_good_fonts.css              957 b
         🗂 tiny_sites_tools/ 
           🗂 tiny_sites_label/ 
             📄 clean_start_tiny__label.css               3_300 b
           🗂 tiny_sites_scrolls/ 
-            📄 clean_start_tiny__scrolls.css               500 b
+            📄 clean_start_tiny__scrolls.css               486 b
           🗂 tiny_sites_table/ 
-            📄 clean_start_tiny__table.css               1_900 b
+            📄 clean_start_tiny__table.css               1_856 b
           🗂 tiny_sites_ul_li/ 
-            📄 clean_start_tiny__ul_li.css               1_790 b
-        📄 clean_start_tiny__all_features.css           22_160 b
-        📄 clean_start_tiny__base.css                   22_300 b
-    📒 README.md
+            📄 clean_start_tiny__ul_li.css               1_838 b
+            📄 theme__tiny_sites_tools__ul_li.css        3_645 b 
+            📄 tiny_sites_tools__ul_li.css               1_300 b
+        📚 clean_start_tiny__all_features.css           22_160 b
+        📚 clean_start_tiny__base.css                   22_300 b
+    📒 README.md                                        14_600 b
+    📦 clean_start_tiny.tar.gz                           7_920 b
     📄 template_clean_start_linked__all_features.html   18_104 b
-    📄 template_clean_start_one__all_features.html      55_627 b
+    📚 template_clean_start_one__all_features.html      55_627 b
 
 ```
 
