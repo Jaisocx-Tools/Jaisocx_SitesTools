@@ -1,14 +1,14 @@
 
 # clean_start_tiny
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 190 css code lines.
 
 
   | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
 
-  | 🗓  **Updated**  | 🌼 Summer 2026 | `02. August AD 2026 12:10 UTC` |
+  | 🗓  **Updated**  | 🌼 Summer 2026 | `04. August AD 2026 12:10 UTC` |
 
-  | 📐  **Size**     | 🗂 Folder: 300 kb | 📦 Tarball: . KB | 📄 .css: 18.28 kb | 📄 .html: 10.34 kb, 46.33 kb | 
+  | 📐  **Size**     | 🗂 Folder: 300 kb | 📦 Tarball: 7.6 KB | 📄 .css: 20 kb | 📄 .html: 4 kb, 55 kb | 
 
   | ⚡  **JS Engine** | 🌐 Browser: ✅ yes | 🧭 Express: ✅ yes | 🖥️ Console: ❌ no | 
 
@@ -18,7 +18,7 @@
 
 ## The aim of the setup
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
+  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 190 css code lines.
 
   The tiny css clean start has all styles set hardcoded, 
     and, thanks to this, the css variables code block just has 230 code lines.
