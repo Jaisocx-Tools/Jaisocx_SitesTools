@@ -1,0 +1,42 @@
+
+/* @start clean_start_tiny display style for all html tags */
+html.clean_start {
+  display:      block;
+}
+
+.clean_start * {
+  display:      inline-block;
+}
+
+.clean_start body {
+  display:      block;
+}
+
+.clean_start main {
+  display:      block;
+}
+
+
+
+/* block tags reset, the Jaisocx tags proposed */
+.clean_start layout-block,
+.clean_start text-lines-block {
+  display: block;
+}
+
+/* block tags reset, the tags normally in html */
+.clean_start canvas,
+.clean_start fieldset,
+.clean_start nav,
+.clean_start ol,
+.clean_start ul,
+.clean_start aside,
+.clean_start p,
+.clean_start pre,
+.clean_start div,
+.clean_start video {
+  display: block;
+}
+/* @finish clean_start_tiny display style for all html tags */
+
+

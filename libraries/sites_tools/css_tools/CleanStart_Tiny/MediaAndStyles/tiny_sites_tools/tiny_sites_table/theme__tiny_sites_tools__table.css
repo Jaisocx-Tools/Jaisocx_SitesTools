@@ -1,0 +1,29 @@
+
+/* @start base theme for clean_start_tiny sites_tool table */
+.clean_start {
+  --clean_start--table--border:                     0.5px solid green;
+
+  --clean_start--table_caption--text-align:         left;
+  --clean_start--table_caption--color:              #333;
+  --clean_start--table_caption--background-color:   #fdfdfd;
+  --clean_start--table_caption--border:             0.5px solid green;
+
+  --clean_start--table_th--text-align:              center;
+  --clean_start--table_th--color:                   black;
+  --clean_start--table_th--background-color:        #eefedd;
+
+  --clean_start--table_td--color:                   green;
+  --clean_start--table_td--background-color:        #fdfdfd;
+
+  --clean_start--table_td_odd--color:               #553322;
+  --clean_start--table_td_odd--background-color:    #fafaf2;
+
+  --clean_start--table_td_even--color:              darkgreen;
+  --clean_start--table_td_even--background-color:   #f2faf2;
+
+  --clean_start--table_tfoot--color:                black;
+  --clean_start--table_tfoot--background-color:     #fdfdfd;
+}
+/* @finish base theme for clean_start_tiny sites_tool table */
+
+

@@ -1,5 +1,5 @@
 
-
+/* @start clean_start_tiny html tag ul_li */
 .clean_start ul,
 .clean_start ul li,
 .clean_start li i {
@@ -29,7 +29,7 @@
 }
 
 .clean_start i ul i {
-  padding:         var(--clean_start--ul_li_i--padding);
+  padding:         var(--clean_start--i_ul_li_i--padding);
 }
 
 .clean_start ul,
@@ -44,8 +44,8 @@
 }
 
 .clean_start li i * {
-  display:     inline-block;
-  padding:     0 0.3rem 0 0;
+  display:     var(--clean_start--ul_li_i_tags--display, inline-block);
+  padding:     var(--clean_start--ul_li_i_tags--padding);
   overflow-x:  visible;
   overflow-y:  visible;
 
@@ -53,11 +53,7 @@
   font-size:   var(--clean_start--ul_li_i--font-size);
 }
 
-
-
 .clean_start li i::after {
-  /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
-
   content:       var(--clean_start--ul_li_i_c--content, '-');
 
   position:      absolute;
@@ -76,9 +72,7 @@
   overflow-y:    hidden;
 }
 
-
-
-/* overrides wildcard style above */
+  /* overrides wildcard style above */
 .clean_start i ul,
 .clean_start i ul li {
   display:   block;
@@ -87,4 +81,6 @@
 .clean_start i ul {
   margin: var(--clean_start--i_ul--margin);
 }
+/* @finish clean_start_tiny html tag ul_li */
+
 

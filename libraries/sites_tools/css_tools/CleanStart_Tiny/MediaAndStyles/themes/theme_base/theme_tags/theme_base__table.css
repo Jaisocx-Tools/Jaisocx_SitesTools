@@ -1,0 +1,15 @@
+
+/* @start base theme for clean_start_tiny html tag table */
+.clean_start {
+  --clean_start--table--border:                     0.5px solid green;
+
+  --clean_start--table_th--text-align:              center;
+  --clean_start--table_th--color:                   black;
+  --clean_start--table_th--background-color:        #eefedd;
+
+  --clean_start--table_td--color:                   green;
+  --clean_start--table_td--background-color:        #fdfdfd;
+}
+/* @finish base theme for clean_start_tiny html tag table */
+
+

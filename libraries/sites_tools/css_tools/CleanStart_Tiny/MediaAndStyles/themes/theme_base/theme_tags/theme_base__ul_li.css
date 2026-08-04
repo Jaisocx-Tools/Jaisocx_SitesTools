@@ -1,0 +1,28 @@
+
+/* @start base theme for clean_start_tiny html tag ul_li */
+.clean_start {
+  --clean_start--ul_li_i_c--top:            0;
+  --clean_start--ul_li_i_c--left:          -0.5rem;
+
+  --clean_start--ul_li_i--padding:          0 0.44rem 0 0.44rem;
+  --clean_start--i_ul_li_i--padding:        0 0.44rem 0 0.44rem;
+  --clean_start--ul_li_i_tags--padding:     0 0.3rem 0 0;
+  --clean_start--ul_li_i_tags--display:     inline-block;
+
+  --clean_start--ul--margin:                0.3rem 0 0.3rem 0.5rem;
+  --clean_start--i_ul--margin:              0 0 0 3rem;
+
+  --clean_start--ul_li_i--font-size:        var(--clean_start--all_tags--font-size);
+  --clean_start--ul_li_i--line-height:      var(--clean_start--all_tags--line-height);
+
+  --clean_start--ul_li_i_c--font-size:      0.4rem;
+  --clean_start--ul_li_i_c--line-height:    var(--clean_start--ul_li_i--line-height);
+
+  --clean_start--ul_li_i_c--color:          #33ab55;
+
+  /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
+  --clean_start--ul_li_i_c--content:        '🟢';
+}
+/* @finish base theme for clean_start_tiny html tag ul_li */
+
+

@@ -1,0 +1,23 @@
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--label--display:           block;
+
+  --clean_start--label--font-size:         0.79rem;
+  --clean_start--label--line-height:       var(--clean_start--label--font-size);
+
+  --clean_start--label--padding:           0.12rem 0.5rem 0.16rem 0.5rem;
+  --clean_start--label--margin:            0 0 0 0;
+
+  --clean_start--label--color:             green;
+  --clean_start--label--background-color:  #eefafd;
+
+  --clean_start--label--border:            1px solid green;
+  --clean_start--label--border-radius:     0.8rem;
+
+  --clean_start--label--overflow-x:        hidden;
+  --clean_start--label--overflow-y:        hidden;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+

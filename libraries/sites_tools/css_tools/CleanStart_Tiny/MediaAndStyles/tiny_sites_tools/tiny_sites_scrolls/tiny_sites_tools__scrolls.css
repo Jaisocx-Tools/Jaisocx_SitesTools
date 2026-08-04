@@ -1,6 +1,6 @@
 
-
-.clean_start .fixed_height_n_scrollbar {
+/* @start clean_start_tiny sites_tool having scrollbars */
+.clean_start .scrolls {
   height: 10rem;
 
   min-width: unset;
@@ -15,8 +15,8 @@
   overflow-y: scroll;
 }
 
-.clean_start .fixed_height_n_scrollbar layout-block,
-.clean_start .fixed_height_n_scrollbar text-lines-block {
+.clean_start .scrolls layout-block,
+.clean_start .scrolls text-lines-block {
   height: auto;
 
   min-width:  45rem;
@@ -26,5 +26,6 @@
   overflow-x: hidden;
   overflow-y: visible;
 }
+/* @finish clean_start_tiny sites_tool having scrollbars */
 
 

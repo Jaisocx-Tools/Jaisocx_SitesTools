@@ -30,13 +30,13 @@ html.clean_start {
 .clean_start nav,
 .clean_start ol,
 .clean_start ul,
-.clean_start div,
+.clean_start aside,
 .clean_start p,
 .clean_start pre,
-clean_start video {
+.clean_start div,
+.clean_start video {
   display: block;
 }
-
 
 
 /* block tags reset standard docs */

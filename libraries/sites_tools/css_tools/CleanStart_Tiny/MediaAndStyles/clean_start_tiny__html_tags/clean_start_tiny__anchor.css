@@ -1,4 +1,5 @@
 
+/* @start clean_start_tiny html tag a */
 /* Hyperlink html tag <a> (anchor) */
 .clean_start a,
 .clean_start a:active,
@@ -13,5 +14,6 @@
   color:           var(--clean_start--anchor_hover--color);
   text-decoration: underline;
 }
+/* @finish clean_start_tiny html tag a */
 
 

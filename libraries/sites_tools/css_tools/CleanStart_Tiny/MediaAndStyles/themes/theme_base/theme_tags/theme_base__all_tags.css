@@ -1,0 +1,14 @@
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--rem:  16px;
+
+  --clean_start--all_tags--font-family:   var(--clean_start--sans--font-family);
+  --clean_start--all_tags--font-size:     0.95rem;
+  --clean_start--all_tags--line-height:   1.49rem;
+  --clean_start--all_tags--color:         black;
+  --clean_start--all_tags--border-width:  0;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+

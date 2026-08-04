@@ -1,0 +1,58 @@
+
+/* @start clean_start_tiny html tag table */
+.clean_start table {
+  display: table;
+  border: var(--clean_start--table--border);
+}
+
+.clean_start colgroup {
+  display: table-column-group;
+}
+
+.clean_start col {
+  display: table-column;
+}
+
+.clean_start thead {
+  display: table-header-group;
+}
+
+.clean_start th {
+  display: table-cell;
+  text-align: var(--clean_start--table_th--text-align);
+}
+
+.clean_start thead tr,
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  color: var(--clean_start--table_th--color);
+  background-color: var(--clean_start--table_th--background-color);
+}
+
+.clean_start tbody {
+  display: table-row-group;
+}
+
+.clean_start tr {
+  display: table-row;
+}
+
+.clean_start td {
+  display: table-cell;
+  text-align: left;
+}
+
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  font-weight: 600;
+}
+
+.clean_start table td {
+  color: var(--clean_start--table_td--color);
+  background-color: var(--clean_start--table_td--background-color);
+}
+/* @finish clean_start_tiny html tag table */
+
+

@@ -1,30 +1,13 @@
 
-
+/* @start clean_start_tiny sites_tool ul_li */
 /* inline */
-.clean_start ul.inline {
-  display:          inline-block;
-}
-
 .clean_start ul.inline li {
-  display:          inline-block;
-}
-
-.clean_start ul.inline li i {
   display:          inline-block;
 }
 
 .clean_start ul.inline li i * {
   display:          inline-block;
 }
-
-.clean_start ul.inline li i::after {
-  display:          inline-block;
-}
-
-.clean_start ul.inline li ul {
-  margin:           0 0 0 0;
-}
-
 
 .clean_start ul.tag_border li i::after {
   content:       '';
@@ -49,5 +32,6 @@
   border-radius: var(--clean_start--ul_li_i_o--tag_border--border-radius);
   background: var(--clean_start--ul_li_i_o--tag_border--background);
 }
+/* @finish clean_start_tiny sites_tool ul_li */
 
 

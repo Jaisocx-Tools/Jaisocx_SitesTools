@@ -1,0 +1,24 @@
+
+/* @start font override */
+.clean_start  .font_override.font_sans,
+.clean_start  .font_override.font_sans * {
+  font-family: var(--clean_start--sans--font-family);
+}
+
+.clean_start  .font_override.font_serif,
+.clean_start  .font_override.font_serif * {
+  font-family: var(--clean_start--serif--font-family);
+}
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family);
+}
+
+.clean_start  .font_override.font_monospace,
+.clean_start  .font_override.font_monospace * {
+  font-family: var(--clean_start--monospace--font-family);
+}
+/* @finish font override */
+
+

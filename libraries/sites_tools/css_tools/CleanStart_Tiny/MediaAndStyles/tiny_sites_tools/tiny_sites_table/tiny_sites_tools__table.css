@@ -1,5 +1,5 @@
 
-/* Table */
+/* @start clean_start_tiny sites_tool table */
 .clean_start table {
   display: table;
   border: var(--clean_start--table--border);
@@ -33,7 +33,9 @@
 }
 
 .clean_start thead tr,
-.clean_start thead th {
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
   color: var(--clean_start--table_th--color);
   background-color: var(--clean_start--table_th--background-color);
 }
@@ -84,5 +86,6 @@
   color: var(--clean_start--table_tfoot--color);
   background-color: var(--clean_start--table_tfoot--background-color);
 }
+/* @finish clean_start_tiny sites_tool table */
 
 

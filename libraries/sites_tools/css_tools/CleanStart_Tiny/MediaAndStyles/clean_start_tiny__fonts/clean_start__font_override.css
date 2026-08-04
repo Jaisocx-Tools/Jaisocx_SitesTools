@@ -1,21 +1,25 @@
+/* @start font override */
 
+/* @doc
+ <html class="clean_start theme_fonts_c">
+   ...
+   <layout-block class="font_override">
 
+     <text-line class="font_monospace">
+        text rendered with the monospace font,
+        set by fonts theme class="theme_fonts_c" for 4 font families groups:
+        sans, serif, monospace, handwrite.
+        .clean_start.theme_fonts_c {
+          --clean_start--monospace--font-family: "Consolas", "Rockwell", "DejaVu Sans Mono", "monospace";
+        }
+     </text-line>
 
-.clean_start.font_override.font_handwrite,
-.clean_start.font_override.font_handwrite *,
-
-.clean_start.font_override  .font_handwrite,
-.clean_start.font_override  .font_handwrite *,
-
-.clean_start  .font_override.font_handwrite,
-.clean_start  .font_override.font_handwrite *,
-
-.clean_start  .font_override  .font_handwrite,
-.clean_start  .font_override  .font_handwrite * {
-  font-family: var(--clean_start--handwrite--font-family);
-}
-
-
+     <text-line class="font_handwrite">
+        friendly regards, Illia
+     </text-line>
+     ...
+ </html>
+*/
 
 .clean_start.font_override.font_sans,
 .clean_start.font_override.font_sans *,
@@ -30,7 +34,6 @@
 .clean_start  .font_override  .font_sans * {
   font-family: var(--clean_start--sans--font-family);
 }
-
 
 
 .clean_start.font_override.font_serif,
@@ -48,6 +51,20 @@
 }
 
 
+.clean_start.font_override.font_handwrite,
+.clean_start.font_override.font_handwrite *,
+
+.clean_start.font_override  .font_handwrite,
+.clean_start.font_override  .font_handwrite *,
+
+.clean_start  .font_override.font_handwrite,
+.clean_start  .font_override.font_handwrite *,
+
+.clean_start  .font_override  .font_handwrite,
+.clean_start  .font_override  .font_handwrite * {
+  font-family: var(--clean_start--handwrite--font-family);
+}
+
 
 .clean_start.font_override.font_monospace,
 .clean_start.font_override.font_monospace *,
@@ -62,5 +79,5 @@
 .clean_start  .font_override  .font_monospace * {
   font-family: var(--clean_start--monospace--font-family);
 }
-
+/* @finish font override */
 

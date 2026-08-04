@@ -90,47 +90,144 @@
 
 
 
+##  Tasks solved
+
+
+### Four fonts themes
+
+    💡  Texts look well, saving SIM mobile traffic.
+
+
+  Multiplatform tested font styles, set by styles variables for 4 font familie groups:
+
+  . sans
+
+  . serif
+
+  . handwrite
+
+  . monospace
+
+  ```css
+                                           /* microsoft,  ios,         linux,               android  */
+    --clean_start--monospace--font-family:   "Consolas",  "Rockwell",  "DejaVu Sans Mono",  "monospace";
+  ```
+
+
+
+#### Jaisocx workaround, class .font_override
+
+  text renders by the monospace font,
+  set by fonts theme class="theme_fonts_c" for 4 font familie groups:
+  
+  . sans
+
+  . serif
+
+  . handwrite
+
+  . monospace
+
+
+  
+  ```css
+    .clean_start.theme_fonts_c,
+    .clean_start  .theme_fonts_c {
+      ...
+      --clean_start--monospace--font-family: "Consolas", "Rockwell", "DejaVu Sans Mono", "monospace";
+      ...
+    }
+  ```
+
+
+  ```html
+    <html class="clean_start theme_fonts_c">
+      ...
+      <layout-block class="font_override">
+        <text-line class="font_monospace"> text rendered with the monospace font </text-line>
+     
+        <text-line class="font_handwrite">
+          friendly regards, Illia
+        </text-line>
+      </layout-block>
+     ...
+    </html>
+  ```
+
+
+
 ##  Structure
 
 ```ls
-📚 CleanStart_Tiny/
-    🗂 favicon/
-      📄 Icon_Jaisocx.ico                                 4_286 b
-    🗂 MediaAndStyles/
-        🗂 clean_start_tiny__html_tags/ 
+📚 CleanStart_Tiny/                                    145_147 b  l_d0_d
+_________________________________________________________________
+    🗂 favicon/                                          4_286 b  l_d1_f
+      📄 Icon_Jaisocx.ico                                4_286 b
+    _____________________________________________________________
+    🗂 MediaAndStyles/                                  44_610 b  l_d1_d
+        🗂 clean_start_tiny__html_tags/                  6_876 b  l_d2_f
           📄 clean_start_tiny__all_tags.css                844 b
           📄 clean_start_tiny__anchor.css                  361 b
           📄 clean_start_tiny__h.css                       787 b
           📄 clean_start_tiny__p.css                       504 b
           📄 clean_start_tiny__pre.css                     281 b
           📄 clean_start_tiny__site.css                  1_566 b
+          -------------------------------------------------------
+          📚 SUM filesizes                               4_343 b  sum_l_d2_f
+          _______________________________________________________
           📒 README.md                                   2_533 b
-        🗂 clean_start_tiny__responsive/ 
-          📄 responsive_mobile_friendly.css              3_120 b
-        🗂 clean_start_tiny__styles/ 
+        _________________________________________________________
+        🗂 clean_start_tiny__responsive/                 3_120 b  l_d2_f
+          📄 clean_start_tiny__mobile_friendly.css       3_120 b
+        _________________________________________________________
+        🗂 clean_start_tiny__styles/                     1_982 b  l_d2_f
           📄 clean_start_tiny__display.css               1_175 b
           📄 clean_start_tiny__scrollbar.css               807 b
-        🗂 themes/ 
-          🗂 theme_base/
+          -------------------------------------------------------
+          📚 SUM filesizes                               1_982 b  sum_l_d2_f
+          _______________________________________________________
+        🗂 themes/                                      14_210 b  l_d2_d
+          🗂 theme_base/                                 9_723 b  l_d3_f
             📄 clean_start_tiny__theme_base.css          9_723 b
-          🗂 themes_fonts/
+          _______________________________________________________
+          🗂 themes_fonts/                               5_246 b  l_d3_f
             📄 clean_start__font_override.css            1_650 b
-            📚 clean_start_tiny__fonts.css               5_246 b
             📄 theme_fonts_a.css                           592 b
             📄 theme_fonts_b.css                           619 b
             📄 theme_fonts_c.css                           572 b
             📄 theme_fonts_old_good_fonts.css              957 b
-        🗂 tiny_sites_tools/ 
-          🗂 tiny_sites_label/ 
+          -------------------------------------------------------
+            📚 SUM filesizes                             5_246 b  sum_l_d3_f
+          _______________________________________________________
+        ---------------------------------------------------------
+          📚 SUM filesizes                              14_210 b  sum_l_d2_d
+        _________________________________________________________
+        _________________________________________________________
+        🗂 tiny_sites_tools/                            12_425 b  l_d2_d
+          _______________________________________________________
+          🗂 tiny_sites_label/                           3_300 b  l_d3_f
             📄 clean_start_tiny__label.css               3_300 b
-          🗂 tiny_sites_scrolls/ 
-            📄 clean_start_tiny__scrolls.css               486 b
-          🗂 tiny_sites_table/ 
+          _______________________________________________________
+          🗂 tiny_sites_scrolls/                           486 b  l_d3_f
+            📄 tiny_sites_tools__scrolls.css               486 b
+          _______________________________________________________
+          🗂 tiny_sites_table/                           1_856 b  l_d3_f
             📄 clean_start_tiny__table.css               1_856 b
-          🗂 tiny_sites_ul_li/ 
+          _______________________________________________________
+          🗂 tiny_sites_ul_li/                           6_783 b  l_d3_f
             📄 clean_start_tiny__ul_li.css               1_838 b
             📄 theme__tiny_sites_tools__ul_li.css        3_645 b 
             📄 tiny_sites_tools__ul_li.css               1_300 b
+          -------------------------------------------------------
+            📚 SUM filesizes                             6_783 b  sum_l_d3_f
+          _______________________________________________________
+        ---------------------------------------------------------
+          📚 SUM filesizes                              12_425 b  sum_l_d2_d
+        _________________________________________________________
+      -----------------------------------------------------------
+        📚 SUM filesizes                                44_610 b  sum_l_d1_d
+      ___________________________________________________________
+        
         📚 clean_start_tiny__all_features.css           22_160 b
         📚 clean_start_tiny__base.css                   22_300 b
     📒 README.md                                        14_600 b

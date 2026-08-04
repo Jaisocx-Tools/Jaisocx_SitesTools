@@ -1,0 +1,61 @@
+
+/* @start clean_start_tiny sites_tool having scrollbars */
+.clean_start .scrolls {
+  height: 10rem;
+
+  min-width: unset;
+  max-width: 100%;
+  width: 30rem;
+
+  padding: 0 1rem 1rem 1rem;
+  border: 1px solid lime;
+  background-color: #fdfdfd;
+
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.clean_start .scrolls layout-block,
+.clean_start .scrolls text-lines-block {
+  height: auto;
+
+  min-width:  45rem;
+  max-width:  45rem;
+  width:  45rem;
+
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+/* @finish clean_start_tiny sites_tool having scrollbars */
+
+
+
+/* @start sites_tool base theme for clean_start_tiny sites_tool for html tag Label */
+.clean_start ul li label,
+.clean_start ul li i label,
+.clean_start p label {
+  padding: var(--clean_start--label--padding);
+
+  margin: var(--clean_start--label--margin);
+
+  margin-top:      0;
+  margin-bottom:   0;
+
+  font-size:       var(--clean_start--label--font-size);
+  line-height:     var(--clean_start--label--line-height);
+
+  overflow-x: visible;
+  overflow-y: hidden;
+}
+
+.clean_start ul li label,
+.clean_start ul li i label {
+  max-height:      var(--clean_start--ul_li_i--line-height);
+}
+
+.clean_start p label {
+  max-height:      var(--clean_start--p--line-height);
+}
+/* @finish sites_tool base theme for clean_start_tiny sites_tool for html tag Label */
+
+

@@ -1,0 +1,14 @@
+
+/* @start base theme for clean_start_tiny html tag h */
+.clean_start {
+  --clean_start--h1--font-size:           1.25rem;
+  --clean_start--h1--line-height:         1.7rem;
+
+  --clean_start--h--font-size:            0.9rem;
+  --clean_start--h--line-height:          1.4rem;
+  --clean_start--h--margin:               1.4rem 0 0.4rem 0;
+  --clean_start--h--color:                black;
+}
+/* @finish base theme for clean_start_tiny html tag h */
+
+

@@ -1,15 +1,12 @@
 
+/* microsoft fonts:
+     the browser shows texts the right way
+     on all computers with all other OS, like: ios, linux, android
+*/
 /* microsoft, ios, android, linux */
 .clean_start.theme_fonts_old_good_fonts,
 .clean_start  .theme_fonts_old_good_fonts {
-                                              /* microsoft fonts: The browser shows texts the right way on all computers with all other OS, like: ios, linux, android */
-
                                               /* microsoft, ios, linux, android */
-  --clean_start--arial--font-family:            "Arial";
-  --clean_start--times_new_roman--font-family:  "Times New Roman";
-  --clean_start--courier--font-family:          "Courier";
-  --clean_start--handwrite--font-family:        "Segoe Script",   "Bradley Hand",   "Z003",   "cursive";
-
   --clean_start--sans--font-family:             "Arial";
   --clean_start--serif--font-family:            "Times New Roman";
   --clean_start--monospace--font-family:        "Courier";

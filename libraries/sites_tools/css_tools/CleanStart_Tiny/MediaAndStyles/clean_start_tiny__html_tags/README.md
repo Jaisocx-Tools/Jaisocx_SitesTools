@@ -1,97 +1,27 @@
 
-# clean_start_tiny
+`Jaisocx sites tools`
 
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
+# clean start tiny
 
+## Css Clean Start styles for html tags
 
-  | 🗂  **Library**  | `@jaisocx/clean_start_tiny` | 🏷  **ver.**: `1.0.1` |
+. site
 
-  | 🗓  **Updated**  | 🌼 Summer 2026 | `02. August AD 2026 12:10 UTC` |
+. all_tags
 
-  | 📐  **Size**     | 🗂 Folder: 300 kb | 📦 Tarball: . KB | 📄 .css: 18.28 kb | 📄 .html: 10.34 kb, 46.33 kb |
+. h, h1 til h9 html tags
 
-  | ⚡  **JS Engine** | 🌐 Browser: ✅ yes | 🧭 Express: ✅ yes | 🖥️ Console: ❌ no |
+. a tag for links
 
----
+. label
 
+. p paragraphs html tag
 
+. pre
 
-## The aim of the setup
-
-  > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
-  
-  The tiny css clean start has all styles set hardcoded,
-  and, thanks to this, the css variables code block just has 230 code lines.
-  
-  The `clean_start_tiny__base.css` file of smaller size doesn't resolve all features.
-  
+___
 
 
-## Examples
-
-### html example
-
-  ```html
-    <html language="en" class="clean_start">
-  ```
-
-
-### css example
-
-  ```css
-  
-    .clean_start {
-    
-    }
-   
-  ```
-
-
-
-##  Structure
-
-```ls
-📚 CleanStart_Tiny/
-    🗂 favicon/
-      📄 Icon_Jaisocx.ico
-    🗂 MediaAndStyles/
-        🗂 clean_start_tiny__html_tags/ 
-          📄 clean_start_tiny__all_tags.css
-          📄 clean_start_tiny__anchor.css
-          📄 clean_start_tiny__h.css
-          📄 clean_start_tiny__p.css
-          📄 clean_start_tiny__pre.css
-          📄 clean_start_tiny__site.css
-          📒 README.md
-        🗂 clean_start_tiny__responsive/ 
-          📄 responsive_mobile_friendly.css
-        🗂 clean_start_tiny__styles/ 
-        🗂 themes/ 
-          🗂 theme_base/
-            📄 clean_start_tiny__theme_base.css
-          🗂 themes_fonts/
-            📄 clean_start__font_override.css
-            📄 clean_start_tiny__fonts.css
-            📄 theme_fonts_a.css
-            📄 theme_fonts_b.css
-            📄 theme_fonts_c.css
-            📄 theme_fonts_old_good_fonts.css
-        🗂 tiny_sites_tools/ 
-          🗂 tiny_sites_label/ 
-          🗂 tiny_sites_scrolls/ 
-          🗂 tiny_sites_table/ 
-          🗂 tiny_sites_ul_li/ 
-        📄 clean_start_tiny__all_features.css
-        📄 clean_start_tiny__base.css
-    📄 clean_start_tiny__preview.html
-    📒 README.md
-    📄 template_clean_start_linked__all_features.html
-    📄 template_clean_start_one__all_features.html
-
-```
-
-
-
-Have a nice day, Jaisocx Software Architect Elias
+Friendly regards, Jaisocx Software Arcitect Elias
 
 

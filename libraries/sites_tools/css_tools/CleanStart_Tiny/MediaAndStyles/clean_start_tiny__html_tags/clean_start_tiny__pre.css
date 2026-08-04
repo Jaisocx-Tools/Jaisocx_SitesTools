@@ -1,4 +1,5 @@
 
+/* @start clean_start_tiny html tag pre */
 /* new lines and spaces are rendered like typed <pre> */
 .clean_start pre {
   font-family: var(--clean_start--pre--font-family);
@@ -9,5 +10,6 @@
   font-size:   var(--clean_start--pre--font-size);
   line-height: var(--clean_start--pre--line-height);
 }
+/* @finish clean_start_tiny html tag pre */
 
 

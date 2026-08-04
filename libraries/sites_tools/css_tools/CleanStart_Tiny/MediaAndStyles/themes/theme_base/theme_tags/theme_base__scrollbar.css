@@ -1,0 +1,24 @@
+
+/* @start base theme for clean_start_tiny html tag having scrollbar */
+.clean_start {
+
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar--size:     0.3rem;
+
+  /* standard styles */
+  /*
+  scrollbar-width: auto;
+  scrollbar-width: thin;
+  scrollbar-width: none;
+  */
+  --clean_start--scrollbar--width:    thin;
+
+  /* scrollbar colors */
+  /* by browsers, having webkit styles */
+  --clean_start--scrollbar-thumb--background-color:    lime;
+  --clean_start--scrollbar-track--background-color:    #fafefa;
+  --clean_start--scrollbar--color:                     var(--clean_start--scrollbar-thumb--background-color)  var(--clean_start--scrollbar-track--background-color);
+}
+/* @finish base theme for clean_start_tiny html tag having scrollbar */
+
+
