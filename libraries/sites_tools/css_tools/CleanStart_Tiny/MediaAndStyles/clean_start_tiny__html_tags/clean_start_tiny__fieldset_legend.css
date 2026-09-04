@@ -1,0 +1,20 @@
+
+/* @start clean_start_tiny html tag fieldset */
+.clean_start fieldset {
+  border:          var(--clean_start--fieldset--border, 0.2px solid #999);
+  padding:         var(--clean_start--fieldset--padding, 0 0 0 0);
+  margin:          var(--clean_start--fieldset--margin, 0 0 0 0);
+}
+
+.clean_start fieldset legend {
+  font-size:    var(--clean_start--fieldset_legend--font-size, 0.9rem);
+  line-height:  var(--clean_start--fieldset_legend--line-height, 1.2rem);
+  border:       var(--clean_start--fieldset_legend--border, 0.2px solid #ddd);
+  padding:      var(--clean_start--fieldset_legend--padding, 0 0 0 0);
+  margin:       var(--clean_start--fieldset_legend--margin, 0 0 0 0);
+  color:        var(--clean_start--fieldset_legend--color, black);
+  background:   var(--clean_start--fieldset_legend--background, #fdfdfd);
+}
+/* @finish clean_start_tiny html tag fieldset */
+
+

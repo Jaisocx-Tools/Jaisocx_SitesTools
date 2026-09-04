@@ -1,0 +1,17 @@
+
+/* @start clean_start_tiny html tag input */
+.clean_start input {
+  font-family:  var(--clean_start--input--font-family, Arial);
+  font-size:    var(--clean_start--input--font-size, 0.9rem);
+  line-height:  var(--clean_start--input--line-height, 1.2rem);
+  padding:      var(--clean_start--input--padding, 0);
+  margin:       var(--clean_start--input--margin, 0);
+  min-width:    var(--clean_start--input--min-width, unset);
+  max-width:    var(--clean_start--input--max-width, 100%);
+  width:        var(--clean_start--input--width, 10rem);
+  border:       var(--clean_start--input--border, 0.2px solid #ddd);
+  outline:      var(--clean_start--input--outline, unset);
+}
+/* @finish clean_start_tiny html tag input */
+
+

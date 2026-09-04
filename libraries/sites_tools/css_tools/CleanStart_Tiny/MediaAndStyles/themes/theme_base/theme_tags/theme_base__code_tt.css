@@ -1,0 +1,20 @@
+
+/* @start base theme for clean_start_tiny html tag tt */
+.clean_start {
+  --clean_start--tt--font-family:       var(--clean_start--monospace--font-family);
+  --clean_start--tt--font-size:         var(--clean_start--all_tags--font-size);
+  --clean_start--tt--line-height:       var(--clean_start--all_tags--line-height);
+}
+/* @finish base theme for clean_start_tiny html tag tt */
+
+
+
+/* @start base theme for clean_start_tiny html tag code */
+.clean_start {
+  --clean_start--code--font-family:       var(--clean_start--monospace--font-family);
+  --clean_start--code--font-size:         var(--clean_start--all_tags--font-size);
+  --clean_start--code--line-height:       var(--clean_start--all_tags--line-height);
+}
+/* @finish base theme for clean_start_tiny html tag code */
+
+

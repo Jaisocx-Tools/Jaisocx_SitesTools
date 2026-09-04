@@ -1,0 +1,40 @@
+
+/* @start clean_start_tiny html tag select */
+.clean_start select,
+.clean_start select * {
+  font-family:     var(--clean_start--select--font-family, Arial);
+}
+
+.clean_start select {
+  padding:         var(--clean_start--select--padding, 0 0 0 0);
+  margin:          var(--clean_start--select--margin, 0 0 0 0);
+
+  font-size:       var(--clean_start--select--font-size, 0.9rem);
+  line-height:     var(--clean_start--select--line-height, 1.2rem);
+
+  min-width:       var(--clean_start--select--min-width, unset);
+  max-width:       var(--clean_start--select--max-width, 100%);
+  width:           var(--clean_start--select--width, 10rem);
+
+  background:      var(--clean_start--select--background, #fdfdfd);
+  border:          var(--clean_start--select--border, 0.2px solid #ddd);
+}
+
+.clean_start select * {
+  font-size:       var(--clean_start--select_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--select_tags--line-height, 1.2rem);
+}
+
+.clean_start option {
+  padding:         var(--clean_start--select_option--padding, 0 0 0 0);
+  margin:          var(--clean_start--select_option--margin, 0 0 0 0);
+
+  min-width:       var(--clean_start--select_option--min-width, unset);
+  max-width:       var(--clean_start--select_option--max-width, 100%);
+  width:           var(--clean_start--select_option--width, 10rem);
+
+  background:      var(--clean_start--select_option--background, #fdfdfd);
+}
+/* @finish clean_start_tiny html tag select */
+
+

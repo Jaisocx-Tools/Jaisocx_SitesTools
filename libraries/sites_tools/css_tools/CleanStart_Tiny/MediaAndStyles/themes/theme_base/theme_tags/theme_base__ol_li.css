@@ -1,0 +1,71 @@
+
+/* @start base theme for clean_start html tag ol_li */
+.clean_start {
+  --clean_start--ol--padding: 0 0 0 0;
+  --clean_start--ol--display: block;
+  --clean_start--ol--margin: 0 0 0 0;
+  --clean_start--ol--line-height: 0.9rem;
+  --clean_start--ol--font-size: 0.9rem;
+  --clean_start--ol_li--min-height: 0;
+  --clean_start--ol_li--max-height: unset;
+  --clean_start--ol_li--height: auto;
+  --clean_start--ol--overflow-x: visible;
+  --clean_start--ol--overflow-y: visible;
+  --clean_start--ol_li--padding: 0 0 0 0;
+  --clean_start--ol_li--display: block;
+  --clean_start--ol_li--margin: 0 0 0 0;
+  --clean_start--ol_li--line-height: 1.2rem;
+  --clean_start--ol_li--font-size: 0.9rem;
+  --clean_start--ol_li--min-height: 0;
+  --clean_start--ol_li--max-height: unset;
+  --clean_start--ol_li--height: auto;
+  --clean_start--ol_li--overflow-x: visible;
+  --clean_start--ol_li--overflow-y: visible;
+  --clean_start--ol_li_tags--padding: 0 0 0 0;
+  --clean_start--ol_li_tags--display: block;
+  --clean_start--ol_li_tags--margin: 0 0 0 0;
+  --clean_start--ol_li_tags--font-size: 0.9rem;
+  --clean_start--ol_li_tags--line-height: 0.9rem;
+  --clean_start--ol_li_tags--min-height: 0;
+  --clean_start--ol_li_tags--max-height: 0.9rem;
+  --clean_start--ol_li_tags--height: 0.9rem;
+  --clean_start--ol_li_tags--overflow-x: visible;
+  --clean_start--ol_li_tags--overflow-y: visible;
+  --clean_start--li_ol--padding: 0 0 0 0;
+  --clean_start--li_ol--display: block;
+  --clean_start--li_ol--margin: 0 0 0 0;
+  --clean_start--li_ol--line-height: 0.9rem;
+  --clean_start--li_ol--font-size: 0.9rem;
+  --clean_start--li_ol--min-height: 0;
+  --clean_start--li_ol--max-height: unset;
+  --clean_start--li_ol--height: auto;
+  --clean_start--li_ol--overflow-x: visible;
+  --clean_start--li_ol--overflow-y: visible;
+  --clean_start--li_ol_li--padding: 0 0 0 0;
+  --clean_start--li_ol_li--display: block;
+  --clean_start--li_ol_li--margin: 0 0 0 0;
+  --clean_start--li_ol_li--line-height: 1.2rem;
+  --clean_start--li_ol_li--font-size: 0.9rem;
+  --clean_start--li_ol_li--min-height: 0;
+  --clean_start--li_ol_li--max-height: 1.2rem;
+  --clean_start--li_ol_li--height: auto;
+  --clean_start--li_ol_li--overflow-x: visible;
+  --clean_start--li_ol_li--overflow-y: visible;
+  --clean_start--ol_li_c--position: absolute;
+  --clean_start--ol_li_c--display: block;
+  --clean_start--ol_li_c--top: 0;
+  --clean_start--ol_li_c--left: 0;
+  --clean_start--ol_li_c--line-height: 1.2rem;
+  --clean_start--ol_li_c--font-size: 0.9rem;
+  --clean_start--ol_li_c--min-height: 0;
+  --clean_start--ol_li_c--max-height: 1.2rem;
+  --clean_start--ol_li_c--height: 1.2rem;
+  --clean_start--ol_li_c--color: black;
+  --clean_start--ol_li_c--background: #fdfdfd;
+  --clean_start--ol_li_c--border: 0 solid #ddd;
+  --clean_start--ol_li_c--overflow-x: hidden;
+  --clean_start--ol_li_c--overflow-y: hidden;
+}
+/* @finish base theme for clean_start html tag ol_li */
+
+

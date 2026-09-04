@@ -2,49 +2,30 @@
 /* @start clean_start_tiny sites_tool for html tag Label */
 .clean_start ul li label,
 .clean_start ul li i label,
-.clean_start p label,
-.clean_start text-block label,
-.clean_start layout-block label {
-  font-size:           var(--clean_start--label--font-size);
-  line-height:         var(--clean_start--label--line-height);
-
-  padding:             var(--clean_start--label--padding);
-  margin:              var(--clean_start--label--margin);
-
-  color:               var(--clean_start--label--color);
-  background-color:    var(--clean_start--label--background-color);
-
-  border:              var(--clean_start--label--border);
-  border-radius:       var(--clean_start--label--border-radius);
-
-  overflow-x:          var(--clean_start--label--overflow-x);
-  overflow-y:          var(--clean_start--label--overflow-y);
-}
-
-.clean_start ul li label,
-.clean_start ul li i label,
 .clean_start p label {
-  padding: var(--clean_start--label--padding);
+  font-size:           var(--clean_start--label--font-size, 0.72rem);
+  line-height:         var(--clean_start--label--font-size);
 
-  margin: var(--clean_start--label--margin);
+  padding:             var(--clean_start--label--padding, 0.12rem 0.4rem 0.12rem 0.4rem);
+  margin:              var(--clean_start--label--margin, 0 0.24rem 0 0);
 
-  /* margin-top:      0;
-  margin-bottom:   0; */
+  color:               var(--clean_start--label--color, darkgreen);
+  background-color:    var(--clean_start--label--background-color, #eafdfa);
 
-  font-size:       var(--clean_start--label--font-size);
-  line-height:     var(--clean_start--label--line-height);
+  border:              var(--clean_start--label--border, 1px solid lime);
+  border-radius:       var(--clean_start--label--border-radius, 0.4rem);
 
-  overflow-x: visible;
-  overflow-y: hidden;
+  overflow-x:          var(--clean_start--label--overflow-x, hidden);
+  overflow-y:          var(--clean_start--label--overflow-y, hidden);
 }
 
 .clean_start ul li label,
 .clean_start ul li i label {
-  max-height:      var(--clean_start--ul_li_i--line-height);
+  max-height:          var(--clean_start--ul_li_i--line-height, 1.2rem);
 }
 
 .clean_start p label {
-  max-height:      var(--clean_start--p--line-height);
+  max-height:          var(--clean_start--p--line-height, 1.2rem);
 }
 /* @finish clean_start_tiny sites_tool for html tag Label */
 

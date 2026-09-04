@@ -1,0 +1,37 @@
+
+/* @start clean_start_tiny html tag code */
+/* new lines and spaces are rendered like typed <code> */
+.clean_start code {
+  font-family:   var(--clean_start--code--font-family, Courier);
+}
+
+.clean_start code {
+  font-size:     var(--clean_start--code--font-size, 0.9rem);
+  line-height:   var(--clean_start--code--line-height, 1.2rem);
+}
+
+.clean_start code * {
+  font-size:     var(--clean_start--code_tags--font-size, 0.9rem);
+  line-height:   var(--clean_start--code_tags--line-height, 0.9rem);
+}
+/* @finish clean_start_tiny html tag code */
+
+
+/* @start clean_start_tiny html tag tt */
+/* new lines and spaces are rendered like typed <tt> */
+.clean_start tt {
+  font-family:   var(--clean_start--tt--font-family, Courier);
+}
+
+.clean_start tt {
+  font-size:     var(--clean_start--tt--font-size, 0.9rem);
+  line-height:   var(--clean_start--tt--line-height, 1.2rem);
+}
+
+.clean_start tt * {
+  font-size:     var(--clean_start--tt_tags--font-size, 0.9rem);
+  line-height:   var(--clean_start--tt_tags--line-height, 0.9rem);
+}
+/* @finish clean_start_tiny html tag tt */
+
+

@@ -1,13 +1,21 @@
 
 /* @start base theme for clean_start_tiny html tag h */
 .clean_start {
-  --clean_start--h1--font-size:           1.25rem;
-  --clean_start--h1--line-height:         1.7rem;
+  --clean_start--h1--text-align: center;
+  --clean_start--h1--font-size: 1.9rem;
+  --clean_start--h1--line-height: 2.3rem;
+  --clean_start--h1--color: black;
+  --clean_start--h1--background: #fdfdfd;
 
-  --clean_start--h--font-size:            0.9rem;
-  --clean_start--h--line-height:          1.4rem;
-  --clean_start--h--margin:               1.4rem 0 0.4rem 0;
-  --clean_start--h--color:                black;
+  --clean_start--h--display: block;
+  --clean_start--h--padding: 0 0 0 0;
+  --clean_start--h--margin: 0 0 0 0;
+  --clean_start--h--font-weight: 600;
+  --clean_start--h--color: black;
+  --clean_start--h--background: #fdfdfd;
+  --clean_start--h--text-align: left;
+  --clean_start--h--font-size: 1.09rem;
+  --clean_start--h--line-height: 1.4rem;
 }
 /* @finish base theme for clean_start_tiny html tag h */
 

@@ -2,27 +2,31 @@
 /* @start clean_start_tiny html tag h1 til h6 */
 .clean_start h1, .clean_start h2, .clean_start h3,
  .clean_start h4, .clean_start h5, .clean_start h6 {
-  display:     block;
-  margin:      var(--clean_start--h--margin);
+  display:       var(--clean_start--h--display, block);
+  padding:       var(--clean_start--h--padding, 0 0 0 0);
+  margin:        var(--clean_start--h--margin, 0 0 0 0);
 
-  font-weight: 600;
+  font-weight:   var(--clean_start--h--font-weight, 600);
+  color:         var(--clean_start--h--color, black);
+  background:    var(--clean_start--h--background, #fdfdfd);
 }
 
 .clean_start h1 {
-  text-align: center;
+  text-align:    var(--clean_start--h1--text-align, center);
 
-  font-size:   var(--clean_start--h1--font-size);
-  line-height: var(--clean_start--h1--line-height);
+  font-size:     var(--clean_start--h1--font-size, 1.9rem);
+  line-height:   var(--clean_start--h1--line-height, 2.3rem);
 
-  color: var(--clean_start--h1--color);
-  background-color: var(--clean_start--h1--background-color);
+  color:         var(--clean_start--h1--color, black);
+  background:    var(--clean_start--h1--background, #fdfdfd);
 }
 
 .clean_start h2, .clean_start h3,
  .clean_start h4, .clean_start h5, .clean_start h6 {
-  color:       var(--clean_start--h--color);
-  font-size:   var(--clean_start--h--font-size);
-  line-height: var(--clean_start--h--line-height);
+  text-align:    var(--clean_start--h--text-align, left);
+
+  font-size:     var(--clean_start--h--font-size, 1.09rem);
+  line-height:   var(--clean_start--h--line-height, 1.4rem);
 }
 /* @finish clean_start_tiny html tag h1 til h6 */
 

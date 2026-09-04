@@ -13,13 +13,17 @@
 
 
 
-  <base href="../../tmp/bundle_css/" />
+  <base href="../../tmp/tiniest_bundle_css/" />
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
 
-  <!--# CleanStart_Tiny Theme_Base 5_375 b -->
+
+  <!--  html 10 k, every style linked and favicon 4 k, site load 33 k -->
+  <!--  html 10 k, styles html_tags and scrollbar 553 b, and favicon 4 k, site load 25 k -->
+
+  <!--# CleanStart_Tiny Theme_Base 4_592 b | 5_375 b -->
   <!-- <link
       rel="stylesheet"
       type="text/css"
@@ -27,7 +31,7 @@
       href="clean_start_tiny__theme_base.css"
   /> -->
 
-  <!--# CleanStart_Tiny 11_616 b -->
+  <!--# CleanStart_Tiny 10_663 b | 11_616 b -->
   <link
       rel="stylesheet"
       type="text/css"
@@ -36,14 +40,14 @@
   />
 
   <!--# CleanStart_Tiny Mobile friendly 1_966 b -->
-  <link
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="clean_start_tiny__responsive.css"
-  />
+  /> -->
 
-  <!--# CleanStart_Tiny Fonts 592 b | 3_174 b -->
+  <!--# CleanStart_Tiny Fonts 1_338 b | 3_174 b -->
   <link
       rel="stylesheet"
       type="text/css"
@@ -51,7 +55,7 @@
       href="clean_start_tiny__fonts.css"
   />
 
-  <!--# CleanStart_Tiny Sites Tools 10_526 b -->
+  <!--# CleanStart_Tiny Sites Tools, scrollbar 553 b | 10_526 b -->
   <link
       rel="stylesheet"
       type="text/css"
@@ -66,7 +70,7 @@
   <h1> Jaisocx clean_start_tiny ® </h1>
 
   <notice>
-    styles base ../../tmp/bundle_css/
+    styles base ../../tmp/tiniest_bundle_css/
   </notice>
 
   <notice>
@@ -75,71 +79,25 @@
 
   <layout-block>
 
-    <label> features </label>
-
-    <ul>
-
-      <li>
-        <i>
-          <label> Aligned styles </label>
-
-          <ul>
-            <li>
-              <i>
-                <text> css class names and styles variables namespaces </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> multiplatform fonts </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> mobile friendly </text>
-              </i>
-            </li>
-          </ul>
-        </i>
-      </li>
 
 
-      <li>
-        <i>
-          <label> html restyled </label>
+  <h2> Scrollbars </h2>
 
-          <ul>
-            <li>
-              <i>
-                <text> text </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> label </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> table </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> list </text>
-              </i>
-            </li>
-            <li>
-              <i>
-                <text> scrollbar </text>
-              </i>
-            </li>
-          </ul>
-        </i>
-      </li>
-    </ul>
-
-  </layout-block>
+  <layiut-block class="scrolls">
+    <layout-block class="font_override font_sans">
+      <p>
+        <text> sentence line 1. </text>
+        <text> sentence line 1. </text>
+        <text> sentence line 1. </text>
+        <label> label in sentence line 1. </label>
+        <a href="javascript: void(0);"> link to a site </a>
+        <text> sentence line 1. </text>
+        <text> sentence line 1. </text>
+      </p>
+      <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
+      <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
+    </layout-block>
+  </layiut-block>
 
 
 
@@ -327,34 +285,6 @@ let func = ( a, b ) => {
 
 
 
-    <h3> navigation links ul.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
     <h3> inline navigation ul.inline a </h3>
 
     <layout-block>
@@ -362,62 +292,6 @@ let func = ( a, b ) => {
       <label> &lt;ul class="inline"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
 
       <ul class="inline">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> inline navigation ul.inline.slash a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="inline slash"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
-
-      <ul class="inline slash">
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 1</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 2</a>
-          </i>
-        </li>
-        <li>
-          <i>
-            <a href="javascript: void(0);">link 3</a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
-
-
-    <h3> inline navigation ul.inline.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="inline tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border inline">
         <li>
           <i>
             <a href="javascript: void(0);">link 1</a>
@@ -511,97 +385,8 @@ let func = ( a, b ) => {
 
     </layout-block>
 
-
-
-    <h3> navigation links ul.tag_border a </h3>
-
-    <layout-block>
-
-      <label> &lt;ul class="tag_border"&gt; &lt;li&gt; &lt;i&gt; &lt;a&gt; </label>
-
-      <ul class="tag_border">
-
-        <li>
-          <i>
-            <label> links 1 </label>
-            <ul>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.1 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.2 </a>
-              </i></li>
-              <li><i>
-                <a href="javascript: void(0);"> link 1.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <label> links 2 </label>
-            <ul>
-              <li>
-                <i>
-                  <a href="javascript: void(0);"> link 2.1 </a>
-                </i>
-              </li>
-
-              <li>
-                <i>
-                  <label> links 2.2 </label>
-                  <ul>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.1 </a>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.2 </a>
-                    </i></li>
-                    <li><i>
-                      <a href="javascript: void(0);"> link 2.2.3 </a>
-                    </i></li>
-                  </ul>
-                </i>
-              </li>
-
-              <li><i>
-                <a href="javascript: void(0);"> link 2.3 </a>
-              </i></li>
-            </ul>
-          </i>
-        </li>
-
-        <li>
-          <i>
-            <a href="javascript: void(0);"> link 3 </a>
-          </i>
-        </li>
-      </ul>
-
-    </layout-block>
-
   </layout-block>
 
-
-
-  <h2> Scrollbars </h2>
-
-  <layiut-block class="scrolls">
-    <layout-block class="font_override font_sans">
-      <p>
-        <text> sentence line 1. </text>
-        <text> sentence line 1. </text>
-        <text> sentence line 1. </text>
-        <label> label in sentence line 1. </label>
-        <a href="javascript: void(0);"> link to a site </a>
-        <text> sentence line 1. </text>
-        <text> sentence line 1. </text>
-      </p>
-      <p>sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2. sentence line 2.</p>
-      <p>sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3. sentence line 3.</p>
-    </layout-block>
-  </layiut-block>
 
 </main>
 </body>

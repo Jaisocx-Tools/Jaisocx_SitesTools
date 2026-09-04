@@ -1,0 +1,31 @@
+
+/* @start base theme for clean_start html tag select */
+.clean_start {
+  --clean_start--select--font-family:       var(--clean_start--all_tags--font-family);
+  --clean_start--select--line-height:       var(--clean_start--all_tags--line-height);
+  --clean_start--select--font-size:         var(--clean_start--all_tags--font-size);
+
+  --clean_start--select--padding:           0 0 0 0;
+  --clean_start--select--margin:            0 0 0 0;
+
+  --clean_start--select--min-width:         unset;
+  --clean_start--select--max-width:         100%;
+  --clean_start--select--width:             10rem;
+
+  --clean_start--select--border:            0.2px solid #ddd;
+  --clean_start--select--background:        #fdfdfd;
+
+  --clean_start--select_option--font-family:       var(--clean_start--all_tags--font-family);
+  --clean_start--select_option--padding:           0 0 0 0;
+  --clean_start--select_option--margin:            0 0 0 0;
+  --clean_start--select_option--min-width:         unset;
+  --clean_start--select_option--max-width:         100%;
+  --clean_start--select_option--width:             10rem;
+  --clean_start--select_option--background:        #fdfdfd;
+
+  --clean_start--select_tags--font-size:           var(--clean_start--all_tags--font-size);
+  --clean_start--select_tags--line-height:         var(--clean_start--all_tags--line-height);
+}
+/* @finish base theme for clean_start html tag select */
+
+

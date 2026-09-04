@@ -1,0 +1,18 @@
+
+/* @start base theme for clean_start_tiny html tag label */
+.clean_start {
+  --clean_start--fieldset--border: 0.2px solid #999;
+  --clean_start--fieldset--padding: 0 0 0 0;
+  --clean_start--fieldset--margin: 0 0 0 0;
+
+  --clean_start--fieldset_legend--font-size: 0.9rem;
+  --clean_start--fieldset_legend--line-height: 1.2rem;
+  --clean_start--fieldset_legend--border: 0.2px solid #ddd;
+  --clean_start--fieldset_legend--padding: 0 0 0 0;
+  --clean_start--fieldset_legend--margin: 0 0 0 0;
+  --clean_start--fieldset_legend--color: black;
+  --clean_start--fieldset_legend--background: #fdfdfd;
+}
+/* @finish base theme for clean_start_tiny html tag label */
+
+

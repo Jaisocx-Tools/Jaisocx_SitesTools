@@ -1,6 +1,8 @@
 
 # clean_start_tiny
 
+  I appologize, the library is in enginering. 
+
   > 💡 Aligning styles of a site, the single file `clean_start_tiny__all_features.css` of 740 ( seven hundred fourty ) css code lines.
 
 
@@ -24,6 +26,55 @@
     and, thanks to this, the css variables code block just has 230 code lines.
 
   The `clean_start_tiny__base.css` file of smaller size doesn't resolve all features.
+
+
+
+### Html pages advantages
+
+. Html pages are of the same technology like multiuser applications in sites browsers.
+
+. Styles for html pages were thought for news and magazines and therefore have wide range of styles and allow styling precision, by typing styles like in programming, til the smallest point rendered by displays.
+
+. Html page may be stored to one file, the styles aren't referenced from other files, however are typed in style tags in html pages.
+
+
+
+### Ways of Use.
+
+In order to save up, the styles for the html page are to reference on demand.
+
+Several files may be concatenated to one via command line shell instruction.
+
+The encommented line in the example below, doesn't write the label styles of 1_000 bytes, 
+if didn't plan typing label tags in Your html page.
+
+```bash
+  cat "MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__all_tags.html" >> bundled_styles.css
+  cat "MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__anchor.html" >> bundled_styles.css
+  # cat "MediaAndStyles/clean_start_tiny__html_tags/clean_start_tiny__label.html" >> bundled_styles.css
+```
+
+
+Then, the html single page may have site load of 55 ( fifty five ) k, or 20 (twenty) k., twice smaller.
+
+One of the aims of the setup was to reduce librarie's size, to save up traffic and to raise user experience.
+
+Reducing later in the same SPA images sizes thanks to compression algorythms, 
+brings the same good quality site to nice site load time and the traffic save up.
+
+
+
+. typing texts in IDE, saving texts in html page.
+in the folder MediaAndStyles/clean_start_tiny__styles/styles_display/
+  786 bytes     clean_start_tiny__display.css
+
+. aligning of existing other html pages.
+1_200 bytes   clean_start_tiny__standard_block_tags__display.css
+
+. 
+
+
+
 
 
 ## Links

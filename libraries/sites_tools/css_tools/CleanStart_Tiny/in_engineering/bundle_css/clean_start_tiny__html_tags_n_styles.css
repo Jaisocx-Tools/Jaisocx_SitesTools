@@ -227,17 +227,17 @@ html.clean_start {
   max-width: 100%;
   width: fit-content;
 
-  font-size:           var(--clean_start--label--font-size, 0.79rem);
-  line-height:         var(--clean_start--label--line-height, 0.79rem);
+  font-size:           var(--clean_start--label--font-size, 0.82rem);
+  line-height:         var(--clean_start--label--line-height, 0.82rem);
 
-  padding:             var(--clean_start--label--padding, 0.14rem 0.3rem 0.14rem 0.3rem);
+  padding:             var(--clean_start--label--padding, 0.14rem 0.5rem 0.14rem 0.5rem);
   margin:              var(--clean_start--label--margin, 0 0.24rem 0 0);
 
-  color:               var(--clean_start--label--color, green);
-  background-color:    var(--clean_start--label--background-color, #eefef2);
+  color:               var(--clean_start--label--color, darkgreen);
+  background-color:    var(--clean_start--label--background-color, #d3fafd);
 
   border:              var(--clean_start--label--border, 1px solid lime);
-  border-radius:       var(--clean_start--label--border-radius, 0.4rem);
+  border-radius:       var(--clean_start--label--border-radius, 0.8rem);
 }
 /* @finish clean_start_tiny html tag Label */
 
@@ -394,7 +394,8 @@ html.clean_start {
 /* @start clean_start_tiny html tag table */
 .clean_start table {
   display: table;
-  border: var(--clean_start--table--border);
+  border: var(--clean_start--table--border, 1px solid green);
+  border-collapse: collapse;
 }
 
 .clean_start colgroup {
@@ -407,19 +408,27 @@ html.clean_start {
 
 .clean_start thead {
   display: table-header-group;
+  border: var(--clean_start--table_th--border, 1px solid green );
 }
 
 .clean_start th {
   display: table-cell;
-  text-align: var(--clean_start--table_th--text-align);
 }
 
 .clean_start thead tr,
 .clean_start thead th,
 .clean_start thead td,
 .clean_start tbody th {
+  background-color: var(--clean_start--table_th--background-color, #eefedd);
+}
+
+.clean_start thead th,
+.clean_start thead td,
+.clean_start tbody th {
+  text-align: var(--clean_start--table_th--text-align, center);
+  padding: var(--clean_start--table_td--padding, 0.2rem 0.3rem 0.2rem 0.4rem);
   color: var(--clean_start--table_th--color);
-  background-color: var(--clean_start--table_th--background-color);
+  border: var(--clean_start--table_th--border, 1px solid green);
 }
 
 .clean_start tbody {
@@ -433,6 +442,8 @@ html.clean_start {
 .clean_start td {
   display: table-cell;
   text-align: left;
+  padding: var(--clean_start--table_td--padding, 0.2rem 0.3rem 0.2rem 0.4rem);
+  border: var(--clean_start--table_td--border, 0.2px solid green);
 }
 
 .clean_start thead th,
@@ -442,8 +453,8 @@ html.clean_start {
 }
 
 .clean_start table td {
-  color: var(--clean_start--table_td--color);
-  background-color: var(--clean_start--table_td--background-color);
+  color: var(--clean_start--table_td--color, black);
+  background-color: var(--clean_start--table_td--background-color, #fdfdfd);
 }
 /* @finish clean_start_tiny html tag table */
 

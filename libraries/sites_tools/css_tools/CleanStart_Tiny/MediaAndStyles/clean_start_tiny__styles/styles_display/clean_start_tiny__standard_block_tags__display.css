@@ -19,7 +19,7 @@ html.clean_start {
 
 
 /* block tags reset, the Jaisocx tags proposed */
-.clean_start layout-block,
+.clean_start block,
 .clean_start text-lines-block {
   display: block;
 }

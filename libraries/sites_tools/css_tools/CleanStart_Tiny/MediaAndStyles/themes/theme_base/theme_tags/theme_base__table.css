@@ -1,15 +1,73 @@
 
-/* @start base theme for clean_start_tiny html tag table */
+/* @start base theme for clean_start html tag table */
 .clean_start {
-  --clean_start--table--border:                     0.5px solid green;
 
-  --clean_start--table_th--text-align:              center;
-  --clean_start--table_th--color:                   black;
-  --clean_start--table_th--background-color:        #eefedd;
+  --clean_start--table--border: 0 solid #fdfd40;
+  --clean_start--table--border-collapse: collapse;
+  --clean_start--table--overflow-x: hidden;
+  --clean_start--table--overflow-y: hidden;
+  --clean_start--table--min-width: unset;
+  --clean_start--table--max-width: 100%;
+  --clean_start--table--width: auto;
+  --clean_start--table_caption--padding: 0 0 0 0;
+  --clean_start--table_caption--text-align: center;
+  --clean_start--table_caption--font-size: 0.9rem;
+  --clean_start--table_caption--font-weight: 600;
+  --clean_start--table_caption--border: 0 solid lime;
+  --clean_start--table_caption--color: black;
+  --clean_start--table_caption--background: #fdfdfd;
+  --clean_start--table_caption--overflow-x: hidden;
+  --clean_start--table_caption--overflow-y: hidden;
+  --clean_start--table_th--text-align: left;
+  --clean_start--table_th--font-weight: 600;
+  --clean_start--table_th--padding: 0 0 0 0;
+  --clean_start--table_th--margin: 0 0 0 0;
+  --clean_start--table_th--color: black;
+  --clean_start--table_th--border: 0.2px solid #ddd;
+  --clean_start--table_th--background: #fdfdfd;
+  --clean_start--table_td--text-align: left;
+  --clean_start--table_td--font-weight: 400;
+  --clean_start--table_td--padding: 0 0 0 0;
+  --clean_start--table_td--margin: 0 0 0 0;
+  --clean_start--table_td--font-size: 0.9rem;
+  --clean_start--table_td--line-height: 1.2rem;
+  --clean_start--table_td--border: 0.2px solid #ddd;
+  --clean_start--table_td--color: black;
+  --clean_start--table_td--background: #fdfdfd;
+  --clean_start--table_td_tags--padding: 0 0 0 0;
+  --clean_start--table_td_tags--margin: 0 0 0 0;
+  --clean_start--table_td_tags--font-size: 0.9rem;
+  --clean_start--table_td_tags--line-height: 0.9rem;
+  --clean_start--table_tf--text-align: left;
+  --clean_start--table_tf--font-weight: 600;
+  --clean_start--table_tf--padding: 0 0 0 0;
+  --clean_start--table_tf--margin: 0 0 0 0;
+  --clean_start--table_tf--border: 0.2px solid #ddd;
+  --clean_start--table_tf--color: black;
+  --clean_start--table_tf--background: #fdfdfd;
 
-  --clean_start--table_td--color:                   green;
-  --clean_start--table_td--background-color:        #fdfdfd;
+  /** variables of a sites tool.
+  *     I have to think later: how to write theme styles,
+  *     when the clean_start_tiny or clean_start was referenced in the html via link node,
+  *     whether the styles variables were in the clean_start_tiny.
+  *     the very interesting question,
+  *     if the aim of the setup was,
+  *     the namespaces of variables names are easy to know,
+  *     and for the clean_start_tiny for the same html node we set other namespace
+  *     for telling variables namespaces from each other,
+  *     no one never knows later whether a variable neds namespace of clean start or clean start tiny)).
+  *     --clean_start--table_td--
+  *     --clean_start_tiny--table_td--
+  *     if another .css: then the styles variables don't do.
+  **/
+  /**
+  --clean_start--table_td_odd--color:               #553322;
+  --clean_start--table_td_odd--background-color:    #fafaf2;
+
+  --clean_start--table_td_even--color:              darkgreen;
+  --clean_start--table_td_even--background-color:   #f2faf2;
+  */
 }
-/* @finish base theme for clean_start_tiny html tag table */
+/* @finish base theme for clean_start html tag table */
 
 

@@ -6,14 +6,14 @@
   <link
       rel="icon"
       type="image/x-icon"
-      href="favicon/Icon_Jaisocx.ico"
+      href="Icon_Jaisocx.ico"
   />
 
   <title> Jaisocx clean_start_tiny </title>
 
 
 
-  <base href="./in_engineering/clean_start_tiny/" />
+  <base href="./" />
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -27,22 +27,44 @@
   />
 
   <!--# CleanStart_Tiny Theme_Base -->
-  <link
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="clean_start_tiny__theme_base.css"
-  />
+  /> -->
 
   <!--# CleanStart_Tiny Mobile friendly -->
-  <link
+  <!-- <link
       rel="stylesheet"
       type="text/css"
       charset="utf-8"
       href="../bundle_css/clean_start_tiny__responsive.css"
-  />
+  /> -->
 
-  </head>
+
+  <style>
+    .clean_start {
+      --clean_start--site--padding: 1rem 3rem 10rem 3rem;
+      --clean_start--site--width: 55%;
+    }
+
+    @media screen and (min-width: 2px) and (max-width: 480px) and (orientation: portrait) {
+      .clean_start {
+        --clean_start--site--padding: 1rem 1rem 3rem 1rem;
+        --clean_start--site--width: 95%;
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 960px) and (orientation: portrait) {
+      .clean_start {
+        --clean_start--site--padding: 1rem 1rem 3rem 1rem;
+        --clean_start--site--width: 95%;
+      }
+    }
+  </style>
+
+</head>
 <body>
 <main>
 
@@ -82,9 +104,21 @@
 
 
 
-  <layout-block class="font_sans">
+  <block class="font_sans">
 
     <p>
+      <text> sentence line 1. </text>
+      <label> label in sentence line 1. </label>
+      <a href="javascript: void(0);"> link to a site </a>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <label> label in sentence line 1. </label>
+      <a href="javascript: void(0);"> link to a site </a>
+      <text> sentence line 1. </text>
+      <text> sentence line 1. </text>
+      <label> label in sentence line 1. </label>
+      <a href="javascript: void(0);"> link to a site </a>
+      <text> sentence line 1. </text>
       <text> sentence line 1. </text>
       <label> label in sentence line 1. </label>
       <a href="javascript: void(0);"> link to a site </a>
@@ -93,8 +127,7 @@
 
     <p> sentence line 3. sentence line 3. </p>
 
-  </layout-block>
-
+  </block>
 
 </main>
 </body>

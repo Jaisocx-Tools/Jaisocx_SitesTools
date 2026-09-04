@@ -8,14 +8,14 @@
   width: 30rem;
 
   padding: 0 1rem 1rem 1rem;
-  border: 1px solid lime;
+  border: var(--clean_start--scrolls--border);
   background-color: #fdfdfd;
 
   overflow-x: scroll;
   overflow-y: scroll;
 }
 
-.clean_start .scrolls layout-block,
+.clean_start .scrolls block,
 .clean_start .scrolls text-lines-block {
   height: auto;
 

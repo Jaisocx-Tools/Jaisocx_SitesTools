@@ -2,37 +2,37 @@
 /* @start clean_start_tiny for all html tags */
 .clean_start * {
 
-  position:        relative;
-  display:         inline-block;
-  box-sizing:      border-box;
+  position:        var(--clean_start--all_tags--position, relative);
+  display:         var(--clean_start--all_tags--display, inline-block);
+  box-sizing:      var(--clean_start--all_tags--box-sizing, border-box);
 
-  padding:         0 0 0 0;
-  margin:          0 0 0 0;
+  padding:         var(--clean_start--all_tags--padding, 0 0 0 0);
+  margin:          var(--clean_start--all_tags--margin, 0 0 0 0);
 
-  font-family:     var(--clean_start--all_tags--font-family);
-  font-size:       var(--clean_start--all_tags--font-size);
-  line-height:     var(--clean_start--all_tags--line-height);
+  font-family:     var(--clean_start--all_tags--font-family, Arial);
+  font-size:       var(--clean_start--all_tags--font-size, 0.9rem);
+  line-height:     var(--clean_start--all_tags--line-height, 1.2rem);
 
-  letter-spacing:  0.003rem;
-  line-break:      strict;
-  word-wrap:       normal;
-  word-break:      normal;
-  color:           var(--clean_start--all_tags--color);
+  letter-spacing:  var(--clean_start--all_tags--letter-spacing, 0);
+  line-break:      var(--clean_start--all_tags--line-break, strict);
+  word-wrap:       var(--clean_start--all_tags--word-wrap, normal);
+  word-break:      var(--clean_start--all_tags--word-break, normal);
+  color:           var(--clean_start--all_tags--color, black);
 
-  border-color:    lime;
-  border-style:    solid;
-  border-width:    var(--clean_start--all_tags--border-width);
+  border-color:    var(--clean_start--all_tags--border-color, lime);
+  border-style:    var(--clean_start--all_tags--border-style, solid);
+  border-width:    var(--clean_start--all_tags--border-width, 0);
 
-  min-height:      0;
-  max-height:      unset;
-  height:          auto;
+  min-height:      var(--clean_start--all_tags--min-height, 0);
+  max-height:      var(--clean_start--all_tags--max-height, unset);
+  height:          var(--clean_start--all_tags--height, auto);
 
-  min-width:       0;
-  max-width:       100%;
-  width:           auto;
+  min-width:       var(--clean_start--all_tags--min-width, 0);
+  max-width:       var(--clean_start--all_tags--max-width, 100%);
+  width:           var(--clean_start--all_tags--width, auto);
 
-  overflow-x:      hidden;
-  overflow-y:      visible;
+  overflow-x:      var(--clean_start--all_tags--overflow-x, visible);
+  overflow-y:      var(--clean_start--all_tags--overflow-y, visible);
 }
 /* @finish clean_start_tiny for all html tags */
 

@@ -1,9 +1,8 @@
 
 /* @start sites_tool base theme for clean_start_tiny sites_tool for html tag Label */
-.clean_start li i label,
-.clean_start p label,
-.clean_start layout-block p label,
-.clean_start text-block p label,
+.clean_start ul li label,
+.clean_start ul li i label,
+.clean_start p label {
 .clean_start layout-block text-block label,
 .clean_start layout-block text-line label {
   --clean_start--label--display:            inline-block;
@@ -11,13 +10,13 @@
   --clean_start--label--font-size:          0.72rem;
   --clean_start--label--line-height:        var(--clean_start--label--font-size);
 
-  --clean_start--label--padding:            0.14rem 0.45rem 0.14rem 0.45rem;
+  --clean_start--label--padding:            0.12rem 0.3rem 0.12rem 0.3rem;
 
   /* margin: left and right allowed. in styles hardcoded margin-bottom: -2px; */
-  --clean_start--label--margin:             0 0.24rem -2px 0;
+  --clean_start--label--margin:             0 0.24rem 0 0;
 
   --clean_start--label--color:              green;
-  --clean_start--label--background-color:   #eefef2;
+  --clean_start--label--background-color:   #eefdfa;
 
   --clean_start--label--border:             1px solid lime;
   --clean_start--label--border-radius:      0.5rem;

@@ -1,0 +1,16 @@
+
+.clean_start {
+  --clean_start--h1--color: var(--clean_start_color--text_color_accent--lighter1);
+  --clean_start--h--color: var(--clean_start_color--text_color_accent--medium);
+
+  --clean_start--all_tags--color: var(--clean_start_color--text_color_base--medium);
+  --clean_start--scrolls--border: 0.2px solid var(--clean_start_color--text_color_intence--medium);
+
+  --clean_start--site--background: var(--clean_start_color--background_color_base--lighter1);
+  --clean_start--body_tag--background: var(--clean_start_color--background_color_base--darker2);
+
+  --clean_start--scrollbar-thumb--background-color: var(--clean_start_color--text_color_accent--lighter1);
+  --clean_start--scrollbar-track--background-color: var(--clean_start_color--background_color_intence--darker2);
+}
+
+

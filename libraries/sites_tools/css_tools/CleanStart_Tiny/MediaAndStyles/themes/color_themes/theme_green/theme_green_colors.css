@@ -1,0 +1,107 @@
+
+.clean_start.theme_green_colors {
+
+  /**
+  * text color
+  */
+  --clean_start_color--text_color_base--medium: #333;
+
+  --clean_start_color--text_color_base--lighter1: #393939;
+  --clean_start_color--text_color_base--lighter2: #3e3e3e;
+
+  --clean_start_color--text_color_base--darker1: #222;
+  --clean_start_color--text_color_base--darker2: #090909;
+
+
+
+  /**
+  * background color
+  */
+  --clean_start_color--background_color_base--lighter2: #fdfefd;
+  --clean_start_color--background_color_base--lighter1: #fafdfa;
+
+  --clean_start_color--background_color_base--medium: #f9fdf9;
+
+  --clean_start_color--background_color_base--darker1: #f5faf5;
+  --clean_start_color--background_color_base--darker2: #f2faf2;
+
+
+
+  /**
+  * text color
+  */
+  --clean_start_color--text_color_base_step2--lighter2: #3e3e3e;
+  --clean_start_color--text_color_base_step2--lighter1: #393939;
+
+  --clean_start_color--text_color_base_step2--medium: #333;
+
+  --clean_start_color--text_color_base_step2--darker1: #222;
+  --clean_start_color--text_color_base_step2--darker2: #090909;
+
+
+
+  /**
+  * background color
+  */
+  --clean_start_color--background_color_base_step2--lighter2: #edfded;
+  --clean_start_color--background_color_base_step2--lighter1: #eafdea;
+
+  --clean_start_color--background_color_base_step2--medium:   #e9fde9;
+
+  --clean_start_color--background_color_base_step2--darker1:  #e5fde5;
+  --clean_start_color--background_color_base_step2--darker2:  #e0fde0;
+
+
+
+  /**
+  * accent text color
+  */
+  --clean_start_color--text_color_accent--lighter2:  #fefe30;
+  --clean_start_color--text_color_accent--lighter1:  #fafa30;
+
+  --clean_start_color--text_color_accent--medium:    #f9f930;
+
+  --clean_start_color--text_color_accent--darker1:   #f5f530;
+  --clean_start_color--text_color_accent--darker2:   #f2f230;
+
+
+
+  /**
+  * accent text color step2
+  */
+  --clean_start_color--text_color_accent_step2--lighter2:  #fefe14;
+  --clean_start_color--text_color_accent_step2--lighter1:  #fafa14;
+
+  --clean_start_color--text_color_accent_step2--medium:    #f9f914;
+
+  --clean_start_color--text_color_accent_step2--darker1:   #f5f514;
+  --clean_start_color--text_color_accent_step2--darker2:   #f5f514;
+
+
+
+  /**
+  * intence text color
+  */
+  --clean_start_color--text_color_intence--medium: #fafdfa;
+
+  --clean_start_color--text_color_intence--lighter1: #fafdfa;
+  --clean_start_color--text_color_intence--lighter2: #fafdfa;
+
+  --clean_start_color--text_color_intence--darker1: #fafdfa;
+  --clean_start_color--text_color_intence--darker2: #fafdfa;
+
+
+
+  /**
+  * intence background color
+  */
+  --clean_start_color--background_color_intence--lighter2: #4efd4e;
+  --clean_start_color--background_color_intence--lighter1: #4afa4a;
+
+  --clean_start_color--background_color_intence--medium: #49f949;
+
+  --clean_start_color--background_color_intence--darker1: #45f545;
+  --clean_start_color--background_color_intence--darker2: #40f040;
+}
+
+

@@ -1,0 +1,17 @@
+
+/* @start clean_start_tiny html tag textarea */
+.clean_start textarea {
+  font-family:  var(--clean_start--textarea--font-family, Arial);
+  font-size:    var(--clean_start--textarea--font-size, 0.9rem);
+  line-height:  var(--clean_start--textarea--line-height, 1.2rem);
+  padding:      var(--clean_start--textarea--padding, 0 0 0 0);
+  margin:       var(--clean_start--textarea--margin, 0 0 0 0);
+  min-width:    var(--clean_start--textarea--min-width, unset);
+  max-width:    var(--clean_start--textarea--max-width, 100%);
+  width:        var(--clean_start--textarea--width, 10rem);
+  border:       var(--clean_start--textarea--border, 0.2px solid #ddd);
+  outline:      var(--clean_start--textarea--outline, unset);
+}
+/* @finish clean_start_tiny html tag textarea */
+
+

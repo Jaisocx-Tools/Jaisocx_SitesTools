@@ -3,6 +3,8 @@
 .clean_start {
   --clean_start--anchor--color:           navy;
   --clean_start--anchor_hover--color:     #2292e5;
+  --clean_start--anchor--text-decoration: none;
+  --clean_start--anchor_hover--text-decoration: underline;
 }
 /* @finish base theme for clean_start_tiny html tag a */
 

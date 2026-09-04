@@ -1,29 +1,35 @@
 
 /* @start clean_start_tiny scrollbar styles for all html tags */
 .clean_start {
-  --clean_start--scrollbar--color: var(--clean_start--scrollbar-thumb--background-color)  var(--clean_start--scrollbar-track--background-color);
+  --clean_start--scrollbar--color: var(--clean_start--scrollbar-thumb--background-color, lime)  var(--clean_start--scrollbar-track--background-color, #eafdfa);
 }
 
 @supports selector(::-webkit-scrollbar) {
 
+  .clean_start::-webkit-scrollbar,
   .clean_start *::-webkit-scrollbar {
-    width:  var(--clean_start--scrollbar--size);
-    height: var(--clean_start--scrollbar--size);
+    width:  var(--clean_start--scrollbar--size, 0.3rem);
+    height: var(--clean_start--scrollbar--size, 0.3rem);
   }
 
+  .clean_start::-webkit-scrollbar-thumb,
   .clean_start *::-webkit-scrollbar-thumb {
-    background-color: var(--clean_start--scrollbar-thumb--background-color);
+    background-color: var(--clean_start--scrollbar-thumb--background-color, lime);
   }
+
+  .clean_start::-webkit-scrollbar-track,
   .clean_start *::-webkit-scrollbar-track {
-    background-color: var(--clean_start--scrollbar-track--background-color);
+    background-color: var(--clean_start--scrollbar-track--background-color, #eafdfa);
   }
 }
 
 @supports (scrollbar-color: auto) {
+  .clean_start,
   .clean_start * {
-    scrollbar-width: var(--clean_start--scrollbar--width);
+    scrollbar-width: var(--clean_start--scrollbar--width, thin);
   }
 
+  .clean_start,
   .clean_start * {
     scrollbar-color: var(--clean_start--scrollbar--color);
   }

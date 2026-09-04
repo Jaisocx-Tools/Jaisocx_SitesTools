@@ -2,13 +2,17 @@
 /* @start clean_start_tiny html tag pre */
 /* new lines and spaces are rendered like typed <pre> */
 .clean_start pre {
-  font-family: var(--clean_start--pre--font-family);
+  font-family:    var(--clean_start--pre--font-family, Courier);
 }
 
-.clean_start pre,
- .clean_start pre * {
-  font-size:   var(--clean_start--pre--font-size);
-  line-height: var(--clean_start--pre--line-height);
+.clean_start pre {
+  font-size:      var(--clean_start--pre--font-size, 0.9rem);
+  line-height:    var(--clean_start--pre--line-height, 1.2rem);
+}
+
+.clean_start pre * {
+  font-size:      var(--clean_start--pre_tags--font-size, 0.9rem);
+  line-height:    var(--clean_start--pre_tags--line-height, 0.9rem);
 }
 /* @finish clean_start_tiny html tag pre */
 

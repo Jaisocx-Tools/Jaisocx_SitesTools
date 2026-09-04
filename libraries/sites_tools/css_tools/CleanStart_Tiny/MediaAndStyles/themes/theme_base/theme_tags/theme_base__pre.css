@@ -1,10 +1,10 @@
 
-/* @start base theme for clean_start_tiny html tag label */
+/* @start base theme for clean_start html tag pre */
 .clean_start {
   --clean_start--pre--font-family:    var(--clean_start--monospace--font-family);
   --clean_start--pre--font-size:      0.9rem;
   --clean_start--pre--line-height:    1.2rem;
 }
-/* @finish base theme for clean_start_tiny html tag label */
+/* @finish base theme for clean_start html tag pre */
 
 

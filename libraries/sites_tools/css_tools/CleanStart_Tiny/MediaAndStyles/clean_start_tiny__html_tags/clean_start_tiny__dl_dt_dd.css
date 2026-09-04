@@ -1,0 +1,143 @@
+
+/* @start clean_start_tiny html tag dl_dt_dd */
+.clean_start dl dd::after {
+  content:       var(--clean_start--dl_dt_dd_c--content, '');
+}
+
+.clean_start dl.inline dd::after {
+  content:       var(--clean_start--dl_dt_dd_c--content, '');
+}
+
+
+
+.clean_start dl,
+.clean_start dl dt,
+.clean_start dl dd {
+  font-size:       var(--clean_start--dl_dt_dd--font-size, 0.9rem);
+  line-height:     var(--clean_start--dl_dt_dd--line-height, 1.2rem);
+}
+
+
+
+.clean_start dl {
+  display:         var(--clean_start--dl--display, block);
+}
+
+.clean_start dl dt {
+  display:         var(--clean_start--dl_dt--display, block);
+}
+
+.clean_start dl dd {
+  display:         var(--clean_start--dl_dt_dd--display, inline-block);
+}
+
+
+
+.clean_start dl {
+  padding:          var(--clean_start--dl--padding, 0 0 0 0);
+}
+
+.clean_start dl dt {
+  padding:          var(--clean_start--dl_dt--padding, 0 0 0 0);
+}
+
+.clean_start dl dd {
+  padding:          var(--clean_start--dl_dt_dd--padding, 0 0 0 0);
+}
+
+
+
+.clean_start dl {
+  margin:          var(--clean_start--dl--margin, 0 0 0 0);
+}
+
+.clean_start dl dt {
+  margin:          var(--clean_start--dl_dt--margin, 0 0 0 0);
+}
+
+.clean_start dl dd {
+  margin:          var(--clean_start--dl_dt_dd--margin, 0 0 0 0);
+}
+
+
+
+.clean_start dl dt {
+  font-weight:     var(--clean_start--dl_dt--font-weight, 600);
+}
+
+.clean_start dl dd {
+  font-style:      var(--clean_start--dl_dt_dd--font-style, normal);
+}
+
+
+
+.clean_start dl,
+.clean_start dl dt,
+.clean_start dl dd {
+  overflow-x:      var(--clean_start--dl_dt_dd--overflow-x, visible);
+  overflow-y:      var(--clean_start--dl_dt_dd--overflow-y, visible);
+}
+
+.clean_start dl {
+  list-style-type: var(--clean_start--dl--list-style-type, none);
+}
+
+.clean_start dl dd * {
+  display:     var(--clean_start--dl_dt_dd_tags--display, inline-block);
+  padding:     var(--clean_start--dl_dt_dd_tags--padding, 0 0 0 0);
+  margin:      var(--clean_start--dl_dt_dd_tags--margin, 0 0 0 0);
+  overflow-x:  var(--clean_start--dl_dt_dd_tags--overflow-x, visible);
+  overflow-y:  var(--clean_start--dl_dt_dd_tags--overflow-y, visible);
+
+  font-size:   var(--clean_start--dl_dt_dd_tags--font-size, 0.9rem);
+  line-height: var(--clean_start--dl_dt_dd_tags--line-height, 0.9rem);
+}
+
+.clean_start dl dd::after {
+  position:      var(--clean_start--dl_dt_dd_c--position, absolute);
+  display:       var(--clean_start--dl_dt_dd_c--display, block);
+
+  top:           var(--clean_start--dl_dt_dd_c--top, 0);
+  left:          var(--clean_start--dl_dt_dd_c--left, 0);
+
+  font-size:     var(--clean_start--dl_dt_dd_c--font-size, 0.9rem);
+  line-height:   var(--clean_start--dl_dt_dd_c--line-height, 1.2rem);
+
+  min-height:    var(--clean_start--dl_dt_dd_c--min-height, 0);
+  max-height:    var(--clean_start--dl_dt_dd_c--max-height, unset);
+  height:        var(--clean_start--dl_dt_dd_c--height, auto);
+
+  color:         var(--clean_start--dl_dt_dd_c--color, lime);
+
+  overflow-x:    var(--clean_start--dl_dt_dd_c--overflow-x, hidden);
+  overflow-y:    var(--clean_start--dl_dt_dd_c--overflow-y, hidden);
+}
+
+
+
+/* overrides wildcard style above */
+.clean_start dd dl {
+  display:   var(--clean_start--dl--display, block);
+}
+
+.clean_start dd dl dt {
+  display:   var(--clean_start--dl_dt--display, block);
+}
+
+.clean_start dd dl {
+  margin:    var(--clean_start--dd_dl--margin, 0 0 0 0);
+}
+
+
+
+/* inline */
+.clean_start dl.inline dt {
+  display:       inline-block;
+}
+
+.clean_start dl.inline dd * {
+  display:       inline-block;
+}
+/* @finish clean_start_tiny html tag dl_dt_dd */
+
+

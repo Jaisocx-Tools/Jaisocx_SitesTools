@@ -1,0 +1,17 @@
+
+/* @start base theme for clean_start_tiny html tag input */
+.clean_start {
+  --clean_start--input--font-family:       var(--clean_start--sans--font-family);
+  --clean_start--input--font-size:         var(--clean_start--all_tags--font-size);
+  --clean_start--input--line-height:       var(--clean_start--all_tags--line-height);
+  --clean_start--input--padding:           0 0 0 0;
+  --clean_start--input--margin:            0 0 0 0;
+  --clean_start--input--min-width:         unset;
+  --clean_start--input--max-width:         100%;
+  --clean_start--input--width:             10rem;
+  --clean_start--input--border:            0.2px solid #ddd;
+  --clean_start--input--outline:           unset;
+}
+/* @finish base theme for clean_start_tiny html tag input */
+
+

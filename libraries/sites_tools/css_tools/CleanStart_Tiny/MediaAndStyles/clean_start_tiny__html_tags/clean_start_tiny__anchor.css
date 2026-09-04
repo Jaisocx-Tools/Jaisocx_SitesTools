@@ -4,15 +4,15 @@
 .clean_start a,
 .clean_start a:active,
 .clean_start a:visited {
-  color:           var(--clean_start--anchor--color);
-  text-decoration: none;
+  color:             var(--clean_start--anchor--color, navy);
+  text-decoration:   var(--clean_start--anchor--text-decoration, none);
 }
 
 .clean_start a:hover,
 .clean_start a:active:hover,
 .clean_start a:visited:hover {
-  color:           var(--clean_start--anchor_hover--color);
-  text-decoration: underline;
+  color:             var(--clean_start--anchor_hover--color, #2255ab);
+  text-decoration:   var(--clean_start--anchor_hover--text-decoration, underline);
 }
 /* @finish clean_start_tiny html tag a */
 

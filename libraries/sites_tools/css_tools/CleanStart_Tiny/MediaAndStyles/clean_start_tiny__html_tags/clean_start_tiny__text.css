@@ -1,0 +1,43 @@
+
+/* @start clean_start_tiny for all html tags */
+.clean_start text {
+
+  position:        var(--clean_start--text--position, relative);
+  display:         var(--clean_start--text--display, inline-block);
+  box-sizing:      var(--clean_start--text--box-sizing, border-box);
+
+  padding:         var(--clean_start--text--padding, 0 0 0 0);
+  margin:          var(--clean_start--text--margin, 0 0 0 0);
+
+  font-family:     var(--clean_start--text--font-family, Arial);
+  font-size:       var(--clean_start--text--font-size, 0.9rem);
+  line-height:     var(--clean_start--text--line-height, 1.2rem);
+
+  font-style:      var(--clean_start--text--font-style, normal);
+  font-variant:    var(--clean_start--text--font-variant, normal);
+  letter-spacing:  var(--clean_start--text--letter-spacing, 0.005rem);
+  line-break:      var(--clean_start--text--line-break, strict);
+  word-wrap:       var(--clean_start--text--word-wrap, normal);
+  word-break:      var(--clean_start--text--word-break, normal);
+  color:           var(--clean_start--text--color, black);
+
+  border-color:    var(--clean_start--text--border-color, lime);
+  border-style:    var(--clean_start--text--border-style, solid);
+  border-width:    var(--clean_start--text--border-width, 0);
+
+  background:      var(--clean_start--text--background, #fdfdfd);
+
+  min-height:      var(--clean_start--text--min-height, 0);
+  max-height:      var(--clean_start--text--max-height, unset);
+  height:          var(--clean_start--text--height, auto);
+
+  min-width:       var(--clean_start--text--min-width, 0);
+  max-width:       var(--clean_start--text--max-width, 100%);
+  width:           var(--clean_start--text--width, auto);
+
+  overflow-x:      var(--clean_start--text--overflow-x, visible);
+  overflow-y:      var(--clean_start--text--overflow-y, visible);
+}
+/* @finish clean_start_tiny for all html tags */
+
+

@@ -3,11 +3,39 @@
 .clean_start {
   --clean_start--rem:  16px;
 
-  --clean_start--all_tags--font-family:   var(--clean_start--sans--font-family);
-  --clean_start--all_tags--font-size:     0.95rem;
-  --clean_start--all_tags--line-height:   1.49rem;
-  --clean_start--all_tags--color:         black;
-  --clean_start--all_tags--border-width:  0;
+  --clean_start--all_tags--font-family: var(--clean_start--sans--font-family);
+
+  --clean_start--all_tags--position: relative;
+  --clean_start--all_tags--display: inline-block;
+  --clean_start--all_tags--box-sizing: border-box;
+
+  --clean_start--all_tags--padding: 0 0 0 0;
+  --clean_start--all_tags--margin: 0 0 0 0;
+
+  --clean_start--all_tags--font-family: Arial;
+  --clean_start--all_tags--font-size: 0.9rem;
+  --clean_start--all_tags--line-height: 1.2rem;
+
+  --clean_start--all_tags--letter-spacing: 0;
+  --clean_start--all_tags--line-break: strict;
+  --clean_start--all_tags--word-wrap: normal;
+  --clean_start--all_tags--word-break: normal;
+  --clean_start--all_tags--color: black;
+
+  --clean_start--all_tags--border-color: lime;
+  --clean_start--all_tags--border-style: solid;
+  --clean_start--all_tags--border-width: 0;
+
+  --clean_start--all_tags--min-height: 0;
+  --clean_start--all_tags--max-height: unset;
+  --clean_start--all_tags--height: auto;
+
+  --clean_start--all_tags--min-width: 0;
+  --clean_start--all_tags--max-width: 100%;
+  --clean_start--all_tags--width: fit-content;
+
+  --clean_start--all_tags--overflow-x: visible;
+  --clean_start--all_tags--overflow-y: visible;
 }
 /* @finish base theme for clean_start_tiny html tag label */
 

@@ -1,27 +1,91 @@
 
 /* @start base theme for clean_start_tiny html tag ul_li */
+
+.clean_start ul.inline {
+  --clean_start--ul_li_c--content:        '';
+}
+
 .clean_start {
-  --clean_start--ul_li_i_c--top:            0;
-  --clean_start--ul_li_i_c--left:          -0.5rem;
-
-  --clean_start--ul_li_i--padding:          0 0.44rem 0 0.44rem;
-  --clean_start--i_ul_li_i--padding:        0 0.44rem 0 0.44rem;
-  --clean_start--ul_li_i_tags--padding:     0 0.3rem 0 0;
-  --clean_start--ul_li_i_tags--display:     inline-block;
-
-  --clean_start--ul--margin:                0.3rem 0 0.3rem 0.5rem;
-  --clean_start--i_ul--margin:              0 0 0 3rem;
-
-  --clean_start--ul_li_i--font-size:        var(--clean_start--all_tags--font-size);
-  --clean_start--ul_li_i--line-height:      var(--clean_start--all_tags--line-height);
-
-  --clean_start--ul_li_i_c--font-size:      0.4rem;
-  --clean_start--ul_li_i_c--line-height:    var(--clean_start--ul_li_i--line-height);
-
-  --clean_start--ul_li_i_c--color:          #33ab55;
-
   /*  🟢  🔴  🔵  🔶  🔷  🔸  🔹  🔺  🔻  🟠  🟡  🟢  🟣  🟤  🟥  🟦  */
-  --clean_start--ul_li_i_c--content:        '🟢';
+  --clean_start--ul_li_c--content:        '';
+}
+
+.clean_start {
+  --clean_start--ul--padding: 0 0 0 0;
+  --clean_start--ul--display: block;
+  --clean_start--ul--margin: 0 0 0 0;
+  --clean_start--ul--line-height: 0.9rem;
+  --clean_start--ul--font-size: 0.9rem;
+  --clean_start--ul--min-height: 0;
+  --clean_start--ul--max-height: unset;
+  --clean_start--ul--height: auto;
+  --clean_start--ul--overflow-x: visible;
+  --clean_start--ul--overflow-y: visible;
+  --clean_start--ul_li--padding: 0 0 0 0;
+  --clean_start--ul_li--display: block;
+  --clean_start--ul_li--margin: 0 0 0 0;
+  --clean_start--ul_li--line-height: 1.2rem;
+  --clean_start--ul_li--font-size: 0.9rem;
+  --clean_start--ul_li--min-height: 0;
+  --clean_start--ul_li--max-height: unset;
+  --clean_start--ul_li--height: auto;
+  --clean_start--ul_li--overflow-x: visible;
+  --clean_start--ul_li--overflow-y: visible;
+  --clean_start--ul_li_tags--padding: 0 0 0 0;
+  --clean_start--ul_li_tags--display: inline-block;
+  --clean_start--ul_li_tags--margin: 0 0 0 0;
+  --clean_start--ul_li_tags--line-height: 0.9rem;
+  --clean_start--ul_li_tags--min-height: 0;
+  --clean_start--ul_li_tags--max-height: unset;
+  --clean_start--ul_li_tags--height: 0.9rem;
+  --clean_start--ul_li_tags--overflow-x: visible;
+  --clean_start--ul_li_tags--overflow-y: visible;
+  --clean_start--li_ul--padding: 0 0 0 0;
+  --clean_start--li_ul--display: block;
+  --clean_start--li_ul--margin: 0 0 0 0;
+  --clean_start--li_ul--line-height: 0.9rem;
+  --clean_start--li_ul--font-size: 0.9rem;
+  --clean_start--li_ul--min-height: 0;
+  --clean_start--li_ul--max-height: unset;
+  --clean_start--li_ul--height: auto;
+  --clean_start--li_ul--overflow-x: visible;
+  --clean_start--li_ul--overflow-y: visible;
+  --clean_start--li_ul_li--padding: 0 0 0 0;
+  --clean_start--li_ul_li--display: block;
+  --clean_start--li_ul_li--margin: 0 0 0 0;
+  --clean_start--li_ul_li--line-height: 1.2rem;
+  --clean_start--li_ul_li--font-size: 0.9rem;
+  --clean_start--li_ul_li--min-height: 0;
+  --clean_start--li_ul_li--max-height: unset;
+  --clean_start--li_ul_li--height: auto;
+  --clean_start--li_ul_li--overflow-x: visible;
+  --clean_start--li_ul_li--overflow-y: visible;
+  --clean_start--ul_li_c--position: absolute;
+  --clean_start--ul_li_c--display: block;
+  --clean_start--ul_li_c--top: 0;
+  --clean_start--ul_li_c--left: 0;
+  --clean_start--ul_li_c--line-height: 1.2rem;
+  --clean_start--ul_li_c--font-size: 0.9rem;
+  --clean_start--ul_li_c--min-height: 0;
+  --clean_start--ul_li_c--max-height: 1.2rem;
+  --clean_start--ul_li_c--height: 1.2rem;
+  --clean_start--ul_li_c--color: black;
+  --clean_start--ul_li_c--background: #fdfdfd;
+  --clean_start--ul_li_c--border: 0 solid #ddd;
+  --clean_start--ul_li_c--overflow-x: hidden;
+  --clean_start--ul_li_c--overflow-y: hidden;
+}
+
+.clean_start ul.inline {
+  --clean_start--ul_li_c--height:         var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--line-height:    var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--font-size:      var(--clean_start--ul_li--font-size);
+}
+
+.clean_start {
+  --clean_start--ul_li_c--height:         var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--line-height:    var(--clean_start--ul_li--line-height);
+  --clean_start--ul_li_c--font-size:      var(--clean_start--ul_li--font-size);
 }
 /* @finish base theme for clean_start_tiny html tag ul_li */
 

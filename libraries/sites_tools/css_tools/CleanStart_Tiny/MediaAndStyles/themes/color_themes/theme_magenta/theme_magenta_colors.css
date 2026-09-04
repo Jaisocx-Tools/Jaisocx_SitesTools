@@ -1,0 +1,77 @@
+
+.clean_start.theme_magenta_colors {
+
+  /**
+  * text color
+  */
+  --clean_start_color--text_color_base--medium: #333;
+
+  --clean_start_color--text_color_base--lighter1: #393939;
+  --clean_start_color--text_color_base--lighter2: #3e3e3e;
+
+  --clean_start_color--text_color_base--darker1: #222;
+  --clean_start_color--text_color_base--darker2: #090909;
+
+
+  /**
+  * background color
+  */
+  --clean_start_color--background_color_base--medium: #fdf9f9;
+
+  --clean_start_color--background_color_base--lighter1: #fdfafa;
+  --clean_start_color--background_color_base--lighter2: #fdfefe;
+
+  --clean_start_color--background_color_base--darker1: #faf5f5;
+  --clean_start_color--background_color_base--darker2: #faf2f2;
+
+
+  /**
+  * accent text color
+  */
+  --clean_start_color--text_color_accent--medium: #335577;
+
+  --clean_start_color--text_color_accent--lighter1: #335585;
+  --clean_start_color--text_color_accent--lighter2: #335a90;
+
+  --clean_start_color--text_color_accent--darker1: #225577;
+  --clean_start_color--text_color_accent--darker2: #204060;
+
+
+  /**
+  * accent background color
+  */
+  --clean_start_color--background_color_accent--medium: #f2f2fd;
+
+  --clean_start_color--background_color_accent--lighter1: #f9f9fd;
+  --clean_start_color--background_color_accent--lighter2: #fdfdfe;
+
+  --clean_start_color--background_color_accent--darker1: #eeeefd;
+  --clean_start_color--background_color_accent--darker2: #eaeafd;
+
+
+  /**
+  * intence text color
+  */
+  --clean_start_color--text_color_intence--medium: #f25280;
+
+  --clean_start_color--text_color_intence--lighter1: #f25280;
+  --clean_start_color--text_color_intence--lighter2: #f25280;
+
+  --clean_start_color--text_color_intence--darker1: #f25280;
+  --clean_start_color--text_color_intence--darker2: #f25280;
+
+
+  /**
+  * intence background color
+  */
+  --clean_start_color--background_color_intence--medium: #fdf2f2;
+
+  --clean_start_color--background_color_intence--lighter1: #fdf9f9;
+  --clean_start_color--background_color_intence--lighter2: #fefdfd;
+
+  --clean_start_color--background_color_intence--darker1: #fdeeee;
+  --clean_start_color--background_color_intence--darker2: #fdeaea;
+
+}
+
+

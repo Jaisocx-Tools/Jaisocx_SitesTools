@@ -1,0 +1,48 @@
+
+/* @start base theme for clean_start_tiny html tag dl dt dd */
+.clean_start dl.inline dt dd::after {
+  --clean_start--dl_dt_dd_c--content: '';
+}
+
+.clean_start {
+  --clean_start--dl_dt_dd_c--content: '';
+  --clean_start--dl_dt_dd--font-size: 0.9rem;
+  --clean_start--dl_dt_dd--line-height: 1.2rem;
+  --clean_start--dl--display: block;
+  --clean_start--dl_dt--display: block;
+  --clean_start--dl_dt_dd--display: inline-block;
+  --clean_start--dl--padding: 0 0 0 0;
+  --clean_start--dl_dt--padding: 0 0 0 0;
+  --clean_start--dl_dt_dd--padding: 0 0 0 0;
+  --clean_start--dl--margin: 0 0 0 0;
+  --clean_start--dl_dt--margin: 0 0 0 0;
+  --clean_start--dl_dt_dd--margin: 0 0 0 0;
+  --clean_start--dl_dt--font-weight: 600;
+  --clean_start--dl_dt_dd--font-style: normal;
+  --clean_start--dl_dt_dd--overflow-x: visible;
+  --clean_start--dl_dt_dd--overflow-y: visible;
+  --clean_start--dl--list-style-type: none;
+  --clean_start--dl_dt_dd_tags--display: inline-block;
+  --clean_start--dl_dt_dd_tags--padding: 0 0 0 0;
+  --clean_start--dl_dt_dd_tags--margin: 0 0 0 0;
+  --clean_start--dl_dt_dd_tags--overflow-x: visible;
+  --clean_start--dl_dt_dd_tags--overflow-y: visible;
+  --clean_start--dl_dt_dd_tags--line-height: 1.2rem;
+  --clean_start--dl_dt_dd_tags--font-size: 0.9rem;
+  --clean_start--dl_dt_dd_c--position: absolute;
+  --clean_start--dl_dt_dd_c--display: block;
+  --clean_start--dl_dt_dd_c--top: 0;
+  --clean_start--dl_dt_dd_c--left: 0;
+  --clean_start--dl_dt_dd_c--line-height: 1.2rem;
+  --clean_start--dl_dt_dd_c--font-size: 0.9rem;
+  --clean_start--dl_dt_dd_c--min-height: 0;
+  --clean_start--dl_dt_dd_c--max-height: unset;
+  --clean_start--dl_dt_dd_c--height: auto;
+  --clean_start--dl_dt_dd_c--color: lime;
+  --clean_start--dl_dt_dd_c--overflow-x: hidden;
+  --clean_start--dl_dt_dd_c--overflow-y: hidden;
+  --clean_start--dd_dl--margin: 0 0 0 0;
+}
+/* @finish base theme for clean_start_tiny html tag dl dt dd */
+
+

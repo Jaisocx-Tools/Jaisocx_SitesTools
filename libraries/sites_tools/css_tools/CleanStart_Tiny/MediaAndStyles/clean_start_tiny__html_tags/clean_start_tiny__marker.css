@@ -1,0 +1,37 @@
+
+/* @start clean_start_tiny for all html tags */
+.clean_start marker {
+
+  position:        var(--clean_start--marker--position, relative);
+  display:         var(--clean_start--marker--display, inline-block);
+
+  padding:         var(--clean_start--marker--margin, 0 0 0 0);
+  margin:          var(--clean_start--marker--margin, 0 0 0 0);
+
+  font-family:     var(--clean_start--marker--font-family, Arial);
+  font-size:       var(--clean_start--marker--font-size, 0.9rem);
+  line-height:     var(--clean_start--marker--line-height, 0.9rem);
+
+  letter-spacing:  var(--clean_start--marker--letter-spacing, 0);
+  color:           var(--clean_start--marker--color, green);
+
+  border-color:    var(--clean_start--marker--border-color, #99fd55);
+  border-style:    var(--clean_start--marker--border-style, solid);
+  border-width:    var(--clean_start--marker--border-width, 0.2px);
+
+  background:      var(--clean_start--marker--color, #effdea);
+
+  min-height:      var(--clean_start--marker--min-height, 0.9rem);
+  max-height:      var(--clean_start--marker--max-height, 0.9rem);
+  height:          var(--clean_start--marker--height, 0.9rem);
+
+  min-width:       var(--clean_start--marker--min-width, 0);
+  max-width:       var(--clean_start--marker--max-width, 100%);
+  width:           var(--clean_start--marker--width, auto);
+
+  overflow-x:      var(--clean_start--marker--overflow-x, visible);
+  overflow-y:      var(--clean_start--marker--overflow-y, visible);
+}
+/* @finish clean_start_tiny for all html tags */
+
+
